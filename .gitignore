@@ -38,4 +38,4 @@ next-env.d.ts
 
 #visual code
 .vscode/
-.code-workspace
+*.code-workspace
