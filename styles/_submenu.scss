@@ -1,0 +1,131 @@
+
+.nav-submenu {
+  overflow-y: auto;
+  display: none;
+  max-height: 400px;
+  top: 74px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid $border-color;
+  
+  &.open {
+    display: flex;
+    align-items: center;
+    // animation: fade;
+    transition: 1s;
+    animation: fade 0.5s ease-in;
+    -webkit-animation: fade 0.5s ease-in;
+  }
+
+   a {
+    float: left;
+    // font-size: 16px;
+    color: #474747 !important;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: table;
+  
+    &::hover {
+      color: #0080ff;
+    }
+  }
+  
+  > ul {
+    margin: 12px 0;
+    color: #474747;
+    cursor: pointer;
+
+    > li {
+      float: left;
+      clear: both;
+    }
+  }
+
+
+  .mega-menu {
+    display: block;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    border-radius: 4px;
+    
+    .sub-menu {
+      h5 {
+        font-size: 0.8em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: black;
+        // opacity: 0.6;
+      }
+      
+      > div {
+        padding:  10px 30px ;
+      }
+    }
+    li {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media #{$mq-large} {
+  .nav-submenu {
+    position: static;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    // top: 0;
+    background:transparent;
+    z-index: 99;
+    overflow: visible;
+
+    > ul {
+      display: flex;
+      align-items: center;
+        li {
+        
+        float: none;
+        position: relative;
+        clear: none;
+      }
+    } 
+
+    .mega-menu {
+      //  float: left;
+      //  display:flex ;
+       flex-direction: row !important;
+       clear: none;
+       float: none;
+       position: absolute;
+       top: 50px;
+       height: 350px;
+       background: #f6f7fb;
+       border: 1px solid;
+       width: 1140px;
+       background: #f6f7fb;
+      border: 1px solid #97979715;
+      box-shadow: 12px 12px 20px 4px rgba(0, 0, 0, .1);
+      padding: 20px;
+
+      .sub-menu {
+        display: flex;
+        flex-direction: row !important; 
+        // padding-top: 10px;
+
+        > div {
+          padding:  20px;
+        }
+
+        li {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+import Link from "next/link";
+import ZenSpaceAppLogo from '../public/images/logo/zenspace-logo@2x.png';
+import Image
+  from "next/image";
+export default function Footer() {
+  
+  return (
+    <>
+      <div className="footer">
+        <div className="container">
+          <div className="row" style={{borderTop: '0px solid #d8d8d8', borderBottom: '1px solid #d8d8d850', padding: '100px 0'}}>
+            <div className="col-lg-3 col-md-12 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <div>
+                <Link
+                  href="/"
+                  className="logo-footer"
+                >
+                  <Image
+                    className="logo-only"
+                    alt="ZenSpaceApp logo"
+                    src={ZenSpaceAppLogo}
+                    height={32}
+                    width={0}
+                  />
+                  <div>ZenSpaceApp</div>
+                  </Link>
+                <div
+                  className="slogan">
+                Empowering mental wellness with a touch of Zen.
+                </div>
+                </div>
+            </div>
+            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h6 className="text-dark  mb-4"><b>Solutions</b></h6>
+              <ul className="list-unstyled footer-list mt-2">
+                <li><a href="/insta-patients" className="text-muted">Patients</a></li>
+                <li><a href="/insta-physicians" className="text-muted">Therapists</a></li>
+                <li><a href="/insta-physicians" className="text-muted">ZenNotes</a></li>
+                <li><a href="/insta-physicians" className="text-muted">ZenMatch</a></li>
+              </ul>
+            </div>    
+            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <h6 className="text-dark  mb-4"><b>Company</b></h6>
+              <ul className="list-unstyled footer-list mt-2">
+                <li><a href="/about-us" className="text-muted">About Us</a></li>
+                <li><a href="/careers" className="text-muted">Careers</a></li>
+                <li><a href="/planet-health" className="text-muted">Healthy Planet</a></li>
+              </ul>
+            </div>
+            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h6 className="text-dark  mb-4"><b>Resources</b></h6>
+              <ul className="list-unstyled footer-list mt-2">
+                <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
+                <li><a href="/insta-security" className="text-muted">Security</a></li>
+                <li><a href="/hipaa-compliance" className="text-muted">HIPAA Compliance</a></li>
+                {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
+              </ul>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h6 className="text-dark mb-4"><b>Support</b></h6>
+                <ul className="list-unstyled footer-list mt-2">
+                  <li><a href="/help" className="text-muted">Help</a></li>
+                  <li><a href="/contact-us" className="text-muted">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+          <div className="copyright">
+            <div> © 2024 ZenSpaceApp Inc. All Rights Reserved.</div>
+            <ul>
+            <li><a href="/privacy" className="text-muted">Cookies</a></li>
+              <li><a href="/privacy" className="text-muted">Privacy Policy</a></li>
+              <li><a href="/service-terms" className="text-muted">Service Terms</a></li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
