@@ -5,9 +5,10 @@ import { left } from "@popperjs/core";
 
 export const CTA = () => {
   return <section id="cta">
-    <div className="cta-container">
+    <div className="cta-container" style={{position: "relative"}}>
       <div style={{
-        display: "flex"
+        display: "flex",
+        justifyContent: "center",
       }}
       >
       <Image 
@@ -17,9 +18,6 @@ export const CTA = () => {
           width={0}
           style={{
             marginTop: "-120px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            textAlign: "center",
           }}
       />
 
