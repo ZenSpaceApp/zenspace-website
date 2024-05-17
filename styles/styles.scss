@@ -4345,6 +4345,16 @@ input::-webkit-inner-spin-button {
 }
 
 
+.media {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 1rem !important;
+  .icon {
+    align-self: flex-start !important;
+    // margin-bottom: 1rem;
+  }
+}
+
 
 @import './bootstrap-custom-overrides';
 @import "~bootstrap/scss/bootstrap";

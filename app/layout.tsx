@@ -7,7 +7,7 @@ const inter = Inter({
 const syne = Syne({
   subsets: ['latin'],
 });
-// import 'bootstrap/dist/css/bootstrap.css';
+
 import '../styles/styles.scss';
 
 

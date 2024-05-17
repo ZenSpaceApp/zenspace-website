@@ -7,6 +7,15 @@ import ZenNotesImg from '../public/images/zen-notes@2x.png';
 import StatsImg from '../public/images/stats.jpg';
 import Link from 'next/link';
 
+//import icons 
+import ZenNotesIcon from '../public/images/icons/therapy-notes.svg';
+import VideoIcon from '../public/images/icons/video-calling.svg';
+import ChatIcon from '../public/images/icons/chat-bubble.svg';
+import CreditCardIcon from '../public/images/icons/credit-card.svg';
+import CalendarIcon from '../public/images/icons/calendar.svg';
+import SecurityIcon from '../public/images/icons/security.svg';
+
+  
 export const metadata: Metadata = {
   title: "ZenSpaceApp",
   description: "Empowering mental wellness with a touch of Zen.",
@@ -15,11 +24,10 @@ export const metadata: Metadata = {
 const Discover = () => {
   return (
     <section className="section bg-half-170" id="platform">
-      <div className="container text-center mb- mt-4" >
-        <h3 className="display-5">Discover</h3>
+      <div className="container mt-4" >
         <div className="row mt-5" style={{ borderRadius: '12px', background: 'rgba(0, 128, 255, 0.1)', boxShadow: '0 6px 8px 0 rgba(0, 0, 0, 0.015), 0 6px 8px 0 rgba(0, 0, 0, 0.015) !important'}}>
         </div>
-        {renderSectionSyncCalendars()}
+        {/* {renderSectionSyncCalendars()} */}
       </div>
     </section>
   )
@@ -41,66 +49,101 @@ function renderSectionSyncCalendars() {
 /**
  * 
  */
-function renderBenefits() {
+function Benefits() {
   return (
-    <div className="row justify-content-center align-items-center">
+    <section className="section bg-half-260">
+      <div className="container">
+        <div className="mb-4 mt-4" style={{maxWidth: "760px"}}>
+          <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>
+          <div className="lead subheading mb-4 ">
+            Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
+          </div>
+        </div>
+
+    <div className="row justify-content-center align-items-center" style={{padding: "0 16px"}}>
       {/* <div className="col-lg-10 col-md-12"> */}
         {/* <h5 className="sub-heading">Benefits</h5> */}
         <div className="row mt-4 pt-2">
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
-              <div className="media pt-4 pb-4">
-                <div className="icon text-center  text-primary mr-3 mt-2">
-                  <i className="uil uil-video d-block rounded h3 mb-0"></i>
-                  </div>
-                  <div className="media-body">
-                    <h5>Seamless video calling</h5>
-                    <p className="lead mb-0">Receive care from the comfort of your home. </p>
-                  </div>
+            <div className="media pt-4 pb-4" >
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={ZenNotesIcon}
+                  height={28}
+                  width={0}
+                  />
               </div>
+              <div className="media-body">
+                <h5>ChatGPT-powered Therapy Notes</h5>
+                <p className="lead mb-0">Experience the power of AI in your practice, making documentation a breeze so you can focus on your clients&apos; needs. </p>
+              </div>
+            </div>
           </div>
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
               <div className="media  pt-4 pb-4">
-                <div className="icon text-center text-primary mr-3 mt-2">
-                  <i className="uil uil-comment d-block rounded h3 mb-0"></i>
-                  </div>
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={VideoIcon}
+                  height={28}
+                  width={0}
+                  />
+              </div>
                   <div className="media-body">
-                    <h5 className="title">Effortless communications</h5>
-                    <p className="lead mb-0">Stay connected, ask questions, and share updates.</p>
+                    <h5 className="title">Convenience</h5>
+                <p className="lead mb-0">
+                Offer remote sessions and streamline scheduling to make therapy more accessible for patients and more efficient for providers.</p>
                   </div>
               </div>
           </div>
    
           <div className="col-md-4 col-12" style={{borderBottom: '1px solid #00000010'}}>
               <div className="media pt-4 pb-4">
-                <div className="icon text-center  text-primary mr-3 mt-2">
-                  <i className="uil uil-image-upload d-block rounded h3 mb-0" ></i>
-                  </div>
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={ChatIcon}
+                  height={32}
+                  width={0}
+                  />
+              </div>
                   <div className="media-body">
-                    <h5 className="title">Share anything</h5>
-                    <p className="lead mb-0">Securely exchange documents, prescriptions and photos.</p>
+                    <h5 className="title">Communication</h5>
+                    <p className="lead mb-0">Secure messaging and document sharing help keep everyone on the same page and facilitate better collaboration between therapists and patients.</p>
                   </div>
               </div>
           </div>
           
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
               <div className="media pt-4 pb-4">
-                <div className="icon text-center text-primary mr-3 mt-2">
-                  <i className="uil uil-prescription-bottle d-block rounded h3 mb-0"></i>
-                  </div>
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={CreditCardIcon}
+                  height={30}
+                  width={0}
+                  />
+              </div>
                   <div className="media-body">
-                    <h5 className="title">Refill prescriptions</h5>
-                    <p className="lead mb-0">Get prescriptions delivered to your preferred pharmacy.</p>
+                    <h5 className="title">Financial Management</h5>
+                    <p className="lead mb-0">Payments to help therapists get paid faster and with less hassle, so they can focus on what they do best.</p>
                   </div>
               </div>
           </div>
           
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
               <div className="media  pt-4 pb-4">
-                <div className="icon text-center  text-primary mr-3 mt-2">
-                  <i className="uil uil-selfie d-block rounded h3 mb-0" style={{lineHeight: '1.6'}}></i>
-                  </div>
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={CalendarIcon}
+                  height={30}
+                  width={0}
+                  />
+              </div>
                   <div className="media-body">
-                    <h5 className="title">Device agnostic</h5>
+                    <h5 className="title">Streamlined Scheduling</h5>
                     <p className="lead mb-0">Video consult on a myriad of devices and platforms.</p>
                   </div>
               </div>
@@ -108,18 +151,24 @@ function renderBenefits() {
 
           <div className="col-md-4 col-12">
               <div className="media pt-4 pb-4">
-                <div className="icon text-center  text-primary mr-3 mt-2">
-                  <i className="uil uil-cloud-lock d-block rounded h3 mb-0"> </i>
-                  </div>
+              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
+                <Image 
+                  alt='ChatGPT-powered Therapy Notes'
+                  src={SecurityIcon}
+                  height={30}
+                  width={0}
+                  />
+              </div>
                   <div className="media-body">
-                    <h5 className="title">For your eyes only</h5>
-                    <p className="lead mb-0">We protect and safeguard your data as if it was our own. </p>
+                    <h5 className="title">Built-in Security for Peace of Mind</h5>
+                    <p className="lead mb-0">All sensitive information is encrypted while in transit [TLS] or at rest using 256-bit encryption. </p>
                   </div>
               </div>
           </div>
         </div>
       </div>
-    // </div>
+      </div>
+      </section>
   )
 }
 
@@ -180,28 +229,27 @@ const Stats = () => {
   )
 }
 
-const Benefits = () => {
-  return (
-    <section className="section bg-half-260">
-      <div className="container">
-        <div className="textcenter mb-4 mt-4" style={{maxWidth: "640px"}}>
-          <h2 className="display-4">Unlock the potential of your practice.</h2>
-          <div className="lead subheading mb-4 ">
-            Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
-          </div>
-        </div>
+// const Benefits = () => {
+//   return (
+//     <section className="section bg-half-260">
+//       <div className="container">
+//         <div className="textcenter mb-4 mt-4" style={{maxWidth: "760px"}}>
+//           <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>
+//           <div className="lead subheading mb-4 ">
+//             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
+//           </div>
+//         </div>
         
-        {/* {renderPatientAppScreenshots()} */}
-        {renderBenefits()}
+//         {renderBenefits()}
         
-        {/* <div className=" text-center mt-5">
-          <a href="/insta-patients" className="btn btn-outline-primary mt-2 mr-2">Learn More</a>
-          <a href="/insta-patients" className="btn btn-primary mt-2 mr-2">Download App</a>
-        </div> */}
-      </div>
-    </section>
-  )
-}
+//         <div className=" text-center mt-5">
+//           <a href="/insta-patients" className="btn btn-outline-primary mt-2 mr-2">Learn More</a>
+//           <a href="/insta-patients" className="btn btn-primary mt-2 mr-2">Download App</a>
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
 
 
 
