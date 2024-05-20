@@ -68,7 +68,7 @@ $value in $colors {
     outline: none;
     text-decoration: none;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    // letter-spacing: 0.5px;
     transition: all 0.3s;
     font-weight: normal;
     border-radius: 6px;
@@ -99,7 +99,7 @@ $value in $colors {
     }
     &.btn-secondary {
         border: 3px solid $secondary !important;
-        margin: 0 1rem;
+        // margin: 0 1rem;
     }
     &.btn-light {
         color: $dark !important;
@@ -132,7 +132,7 @@ $value in $colors {
             background-color: $light !important;
 
         }
-        margin: 0 1rem;
+        // margin: 0 1rem;
     }    
     &.btn-icon {
         height: 36px;
