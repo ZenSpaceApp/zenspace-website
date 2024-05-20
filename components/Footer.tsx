@@ -36,7 +36,7 @@ export default function Footer() {
                 <li><a href="/insta-patients" className="text-muted">Patients</a></li>
                 <li><a href="/insta-physicians" className="text-muted">Therapists</a></li>
                 <li><a href="/insta-physicians" className="text-muted">ZenNotes</a></li>
-                <li><a href="/insta-physicians" className="text-muted">ZenMatch</a></li>
+                <li><a href="/insta-physicians" className="text-muted">Download Apps</a></li>
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">

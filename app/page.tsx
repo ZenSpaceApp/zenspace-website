@@ -3,9 +3,16 @@ import Layout from '../components/Layout';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import FAQ from '@/components/FAQ';
+
+import Link from 'next/link';
+
 import ZenNotesImg from '../public/images/zen-notes@2x.png';
 import StatsImg from '../public/images/stats.jpg';
-import Link from 'next/link';
+import TherapistDashImg from '../public/images/home/therapist-dash.jpg';
+import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
+import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
+import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
+
 
 //import icons 
 import ZenNotesIcon from '../public/images/icons/therapy-notes.svg';
@@ -21,31 +28,204 @@ export const metadata: Metadata = {
   description: "Empowering mental wellness with a touch of Zen.",
 };
 
-const Discover = () => {
+
+const CrossDeviceSync = () => {
   return (
-    <section className="section bg-half-170" id="platform">
-      <div className="container mt-4" >
-        <div className="row mt-5" style={{ borderRadius: '12px', background: 'rgba(0, 128, 255, 0.1)', boxShadow: '0 6px 8px 0 rgba(0, 0, 0, 0.015), 0 6px 8px 0 rgba(0, 0, 0, 0.015) !important'}}>
+    <div className="container mt-100 mt-60">
+      <div className="row align-items-center">
+        <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
+          <div className="org-benefits">
+            <h2 className="display-6">Cross-device Syncing.</h2>
+            <ul className="list-unstyled">
+              <li>  
+                ZenSpaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
+              </li>
+              <li>
+                Access your practice data from your iPad, iPhone, or web browser, anytime, anywhere.
+              </li>
+              <li>
+                Keep your data in sync across all your devices, so you never miss a beat.
+              </li>
+            </ul>
+          </div>
         </div>
-        {/* {renderSectionSyncCalendars()} */}
+
+        <div className="col-lg-6 col-md-5 order-1 order-md-2">
+          <div className="app-feature-shape-right position-relative">
+            <div className="text-center text-md-right">
+            <Image
+                className="img-fluid"
+                alt="Cross device sync"
+                src={CrossDevSyncImg}
+                height={0}
+                width={0}
+                style={{
+                  maxWidth: "80%"
+                }}
+              />
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  )
+}
+
+const SimpleWorkflow = () => {
+  return (
+    <section id="med-group--dashboard" className="bg-half-170" style={{color: "#fafafa"}}>
+      <div
+        className="text-center"
+        style={{ padding: "4rem 0rem", width:"90%", maxWidth: "1800px", margin:"auto", background: "#373836", borderRadius: "20px", color: "white !important"}}
+      >
+      <h2 className="display-6">Simple workflow. Built for scale.</h2>
+        <div className="subheading mb-5 narrow" style={{maxWidth: "640px", margin: "auto"}}>Secure multi-cloud architecture, integrated full-service solution
+        to keep doctors, patients and the whole organization connected.</div>
+        
+        <div className="row text-left pb-5">
+          <div className=" col-lg-6 col-12 order-1 pt-4 order-lg-2" style={{display: 'flex', alignItems: 'center'}}>
+            <div>
+              <Image
+                className="img-fluid "
+                alt="Therapist workflow and dashboard"
+                src={TherapistDashImg}
+                height={0}
+                width={0}
+                style={{
+                  maxWidth: "95%",
+                  margin: "auto",
+                  display: "block"
+                }}
+              />
+            </div>
+          </div>
+          
+          <div className="offset-lg-1 col-lg-4 col-12 order-1 mt-4 pt-2 mt-lg-0 pt-lg-0">
+            <div className="section-title mr-lg-4">
+              <div className="row pt-4">
+                <div className="col-12">
+                    <div className="d-flex align-items-center pt-4">
+                      <h2><i className="uil uil-video align-middle text-primary"></i></h2>
+                      <div className="ml-3">
+                        <h6><b>Integrated video-calling</b></h6>
+                        <p className=" mb-0">Built from scratch as a video-first tool. End-to-end encryption and HIPAA-compliance baked-in.</p>
+                      </div>
+                    </div>
+                </div>
+                <div className="col-12">
+                  <div className="d-flex d-flex feature-card align-items-center pt-4">
+                    <h2><i className="uil uil-user-plus align-middle text-primary"></i></h2>
+                    <div className="ml-3">
+                      <h6><b>BYOP (bring your own patients)</b></h6>
+                      <p className="para mb-0">Extend virtual care to your existing patients.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="d-flex align-items-center pt-4">
+                    <h5><i className="uil uil-user-arrows align-middle h2 text-primary"></i></h5>
+                    <div className="ml-3">
+                      <h6><b>In-app messaging</b></h6>
+                      <p className="para mb-0">Answer questions. Share tips and articles. Engage patients
+                      in their care.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="d-flex align-items-center pt-4">
+                    <h2><i className="uil uil-shield-check align-middle text-primary"></i></h2>
+                      <div className="ml-3">
+                        <h6><b>Robust security</b></h6>
+                        <p className="para mb-0">Encrypted health information and communications, stored on HIPAA-compliant cloud and servers.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
 }
 
-function renderSectionSyncCalendars() {
+const PersonalizedTherapyExperience = () => {
   return (
-    <div className="g-half-170" style={{paddingTop: '170px'}}>
-      <h2>Pro</h2>
-      <p className="lead subheading mb-5">Stay connected with existing patients on web, mobile or tablet.</p>
-      {/* <img src="/images/syncd-calendars.jpg" style={{maxWidth: '100%', border: '1px solid #00000010', boxShadow: '0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 18px 48px 0 rgba(0, 0, 1, 0.1)'}} /> */}
-      <div className="text-center mt-5">
-        <a className="btn btn-primary-dark-border mt-2" href="/pricing">Start free trial</a>
+    <div className="container mt-100">
+        <div className="row align-items-center">
+          <div className="offset-lg-1 col-lg-6 col-md-5">
+            <div className="app-feature-shape-left position-relative">
+              <div className="text-center text-md-left">
+              <Image
+                className="img-fluid "
+                alt="Personalized Therapy"
+                src={PersonalizedTherapyImg}
+                height={0}
+                width={0}
+                style={{
+                  maxWidth: "80%"
+                }}
+              />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-5 col-md-7 mt-5 mt-sm-0">
+            <div className="org-benefits">
+              <h2 className="display-6">Personalized Therapy Experience</h2>
+              <ul className="list-unstyled">
+              <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
+              <li>ZenSpaceApp&apos;s dedicated mobile apps for patients allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 
+
+const CollabMoodTracking = () => {
+  return (
+    <section className="bg-half-170" style={{paddingBottom: 0}}>
+      <div className="container mt-100">
+        <div className="row align-items-center">
+          <div className="offset-lg-2  col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
+            <div className="org-benefits">
+              <h3 className="display-6">Collaborative Mood Tracking</h3>
+              <ul className="list-unstyled">
+                <li>
+                  <span>
+                    Empower patients to actively engage in their therapy by tracking and sharing their mood levels.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-5 order-1 order-md-2">
+            <div className="app-feature-shape-righposition-relative">
+              <div className="text-center text-md-right">
+              <Image
+                  className="img-fluid"
+                  alt="Collaborative mood tracking"
+                  src={CollabMoodTrackingImg}
+                  height={0}
+                  width={0}
+                  style={{
+                    maxWidth: "80%"
+                  }}
+                />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  )
+}
 /**
  * 
  */
@@ -171,13 +351,14 @@ function Benefits() {
 }
 
 
+
 const Stats = () => {
   return (
     <section  className="section bg-half-260" style={{borderBottom: "1px solid #00000010"}}>
       <div className="container">
-        <h5 className="sub-heading mb-4">By the numbers</h5>
+        <h5 className="sub-heading ml-10 mb-4 offset-md-1">By the numbers</h5>
         <div className="row align-items-center pt-4 ">
-          <div className="col-12 col-md-5 offset-md- order-2 order-lg-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
+          <div className="col-12 col-md-5 offset-md-1 order-2 order-lg-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
             <div className="section-title mr-lg-4">
               <div className="row">
                 <div className="col-12">
@@ -205,7 +386,7 @@ const Stats = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 offset-md-1 order-lg-2 " >
+          <div className="col-md-6 offset-md1 order-lg-2 " style={{ padding: 0}}>
             <Image 
               alt='telehealth benefits by number'
               src={StatsImg}
@@ -252,7 +433,7 @@ const Hero = () => {
                   Start 30-day free trial
                 </Link>
                 <Link
-                  className="btn btn-outline-dark ml-4 mt-2"
+                  className="btn btn-outline-dark ml-md-4 mt-2"
                   href="/">
                   Schedule a demo
                 </Link>
@@ -284,21 +465,16 @@ const Hero = () => {
   )
 }
 
-const Faqs = () => {
-  return <>
-    <div className="container">
-      
-    </div>
-  </>
-}
-
 export default function HomePage() {
   return (
     <Layout>
       <Hero />
       <Stats/>
       <Benefits />
-      <Discover />
+      <CrossDeviceSync />
+      <SimpleWorkflow />
+      <PersonalizedTherapyExperience />
+      <CollabMoodTracking />
       <FAQ />
     </Layout>   
   )
