@@ -231,7 +231,7 @@ const CollabMoodTracking = () => {
  */
 function Benefits() {
   return (
-    <section className="section bg-half-260">
+    <section className="bg-half-260">
       <div className="container">
         <div className="mb-4 mt-4" style={{maxWidth: "760px"}}>
           <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>

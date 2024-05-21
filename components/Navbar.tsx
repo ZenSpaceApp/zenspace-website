@@ -104,7 +104,7 @@ export default function Navbar({ home }: { home: string} ) {
               <a>ZenMatch</a>
               {renderCompany()}
             </li>
-            <li><a href='/pricing'>Pricing</a></li>
+            <li><Link href='/pricing'>Pricing</Link></li>
           </ul>
         </div>
             <div>
