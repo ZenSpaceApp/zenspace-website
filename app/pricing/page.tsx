@@ -48,7 +48,7 @@ const PayAsYouGo = () => {
     <div>
       <h3 className="display-6">Pay-as-you-go</h3>
       <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
-      <h2 className="display-4">$79.00/mo</h2>
+      <h2 className="display-4">$79/mo</h2>
       <div>
         Perfect for therapists with a flexible workload or those just starting out.
       </div>
@@ -115,7 +115,7 @@ const Monthly = () => {
   <div>
     <h3 className="display-6">Monthly</h3>
     <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
-    <h2 className="display-4">$79.00/mo</h2>
+    <h2 className="display-4">$207/mo</h2>
     <div>
       Well-suited for therapists with a consistent client base who prefer predictable monthly costs.
     </div>
