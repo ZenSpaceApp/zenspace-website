@@ -413,7 +413,7 @@ const Stats = () => {
  */
 const Hero = () => {
   return (
-    <section className="bg-half-260 d-table w-100 overflow-hidden" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010' }}>
+    <section className="bg-half-170 d-table w-100 overflow-hidden" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010', paddingBottom: "20rem" }}>
       <div className="container">
         <div className="row mt-5 align-items-center">
           <div className="col-md-6 col-12 order-2 order-lg-1">

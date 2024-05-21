@@ -8,31 +8,35 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
-    border: 3px solid #d8d8d865;
-    &.border-gray {
-        // border: 1px solid #d8d8d8;
-        // border: 1px solid #0080ff25;
+    border: 1px solid;
+
+    &.styling-yearly {
+        border: 3px solid;
+        box-shadow: 10px 10px rgba(0, 0,0, 0.8);
     }
 
-    &.border-azure {
-        // border: 1px solid #0080ff;
+    h6 { 
+        text-transform: uppercase;
+        font-weight: 700;
+        opacity: 0.5;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
     }
 
-    &.border-dark {
-        // border: 1px solid #00000010;
-    }
-    
     ul {
-        padding:  0 !important;
-
-        // border-radius: 12px;
+        padding-left:  0 !important;
         li {
-            font-size: 0.8em;
+            font-size: 1rem;
+            line-height: 1.5;
             display: flex;
+            margin: 10px 0;
+            // margin-top: -5px;
+            // align-items: center;
             &::before {
                 content: "\25a0";
-                color: #22222225;
-                font-size: 12px !important;
+                // color: #222222;
+                font-size: 9px !important;
+                margin-top: 6px;
                 display: inline-flex;
                 padding-right: 10px;
             }
