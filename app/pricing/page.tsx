@@ -44,7 +44,7 @@ const PatientPlans = () => {
 
 const TherapistPlans = () => {
   return (
-    <section className="bg-half-260">
+    <section className="bg-half-170">
 
       <div className="container" style={{ paddingBottom: '170px' }}>
         {/* <h5 className="mt-5 mb-5">PHYSICIANS</h5> */}

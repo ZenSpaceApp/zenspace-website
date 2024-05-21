@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 import ZenNotesImg from '../public/images/zen-notes@2x.png';
 import StatsImg from '../public/images/stats.jpg';
-import TherapistDashImg from '../public/images/home/therapist-dash.jpg';
+import TherapistDashImg from '../public/images/home/web-app.gif';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
 import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const CrossDeviceSync = () => {
   return (
-    <div className="container mt-100 mt-60">
+    <div className="container bg-half-170 overflow-hidden">
       <div className="row align-items-center">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
           <div className="org-benefits">
@@ -51,7 +51,7 @@ const CrossDeviceSync = () => {
         </div>
 
         <div className="col-lg-6 col-md-5 order-1 order-md-2">
-          <div className="app-feature-shape-right position-relative">
+          <div className="app-feature-shape-left position-relative">
             <div className="text-center text-md-right">
             <Image
                 className="img-fluid"
@@ -81,7 +81,7 @@ const SimpleWorkflow = () => {
       >
       <h2 className="display-6">Simple workflow. Built for scale.</h2>
         <div className="subheading mb-5 narrow" style={{maxWidth: "640px", margin: "auto"}}>Secure multi-cloud architecture, integrated full-service solution
-        to keep doctors, patients and the whole organization connected.</div>
+        to keep therapists and clients connected.</div>
         
         <div className="row text-left pb-5">
           <div className=" col-lg-6 col-12 order-1 pt-4 order-lg-2" style={{display: 'flex', alignItems: 'center'}}>
@@ -152,10 +152,10 @@ const SimpleWorkflow = () => {
 
 const PersonalizedTherapyExperience = () => {
   return (
-    <div className="container mt-100">
+    <div className="container bg-half-170 overflow-hidden">
         <div className="row align-items-center">
           <div className="offset-lg-1 col-lg-6 col-md-5">
-            <div className="app-feature-shape-left position-relative">
+            <div className="app-feature-shape-right position-relative">
               <div className="text-center text-md-left">
               <Image
                 className="img-fluid "
@@ -188,12 +188,12 @@ const PersonalizedTherapyExperience = () => {
 
 const CollabMoodTracking = () => {
   return (
-    <section className="bg-half-170" style={{paddingBottom: 0}}>
+    <section className="bg-half-260 overflow-hidden" >
       <div className="container mt-100">
         <div className="row align-items-center">
-          <div className="offset-lg-2  col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
+          <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
             <div className="org-benefits">
-              <h3 className="display-6">Collaborative Mood Tracking</h3>
+              <h2 className="display-6">Collaborative Mood Tracking</h2>
               <ul className="list-unstyled">
                 <li>
                   <span>
@@ -205,7 +205,7 @@ const CollabMoodTracking = () => {
           </div>
 
           <div className="col-lg-4 col-md-5 order-1 order-md-2">
-            <div className="app-feature-shape-righposition-relative">
+             <div>
               <div className="text-center text-md-right">
               <Image
                   className="img-fluid"
@@ -354,7 +354,7 @@ function Benefits() {
 
 const Stats = () => {
   return (
-    <section  className="section bg-half-260" style={{borderBottom: "1px solid #00000010"}}>
+    <section  className="section bg-half-170" style={{borderBottom: "1px solid #00000010", background: "#ffa533"}}>
       <div className="container">
         <h5 className="sub-heading ml-10 mb-4 offset-md-1">By the numbers</h5>
         <div className="row align-items-center pt-4 ">
@@ -413,15 +413,15 @@ const Stats = () => {
  */
 const Hero = () => {
   return (
-    <section className="bg-half-170 d-table w-100 overflow-hidden" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010' }}>
+    <section className="bg-half-260 d-table w-100 overflow-hidden" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010' }}>
       <div className="container">
         <div className="row mt-5 align-items-center">
           <div className="col-md-6 col-12 order-2 order-lg-1">
             <div className="title-heading">
-              <h1 className="my-3 display-2" style={{ lineHeight: '0.9' }}>
+              <h1 className="my-3 display-2 mt-6" style={{ lineHeight: '1.0 !important' }}>
                 Transform your therapy practice with ZenSpace.
               </h1>
-              <div className="lead subheading mt-5">
+              <div className="lead subheading mt-3">
                 Discover a simpler, more integrated way to manage your practice with telehealth,
                 ChatGPT-powered therapy notes, streamlined scheduling, and seamless
                 patient communication. Explore what&apos;s possible with ZenSpaceApp.
