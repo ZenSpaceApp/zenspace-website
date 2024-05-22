@@ -14,7 +14,7 @@ const Layout = ({children } : { children: ReactNode} ) => {
       {children}
       <CTA />
       <footer>
-        <Footer></Footer>
+        <Footer />
       </footer>
     </div>
   </>
