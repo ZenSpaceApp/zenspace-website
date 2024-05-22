@@ -39,14 +39,14 @@ export default function Navbar({ home }: { home: string} ) {
 
   function renderLogo() {
     return (
-      <a className="logo-center" href="/" style={{ paddingRight: '15px', zIndex: '9999'  }}>
+      <Link className="logo-center" href="/" style={{ paddingRight: '15px', zIndex: '9999'  }}>
         <Image
           alt="ZenSpaceApp logo"
           src={ZenSpaceAppLogo}
           height={32}
           width={0}
         />
-      </a>
+      </Link>
     )
   }
 
@@ -113,7 +113,7 @@ export default function Navbar({ home }: { home: string} ) {
               className="btn btn-outline-secondary"
               
               >
-                Login
+                Sign In
               </Link>
               </div>  
         </div>
