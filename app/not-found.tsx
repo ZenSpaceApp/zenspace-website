@@ -20,8 +20,6 @@ export default function Show404() {
         style={{
           marginBottom: "2rem"
         }}
-        
-        
     />
       <h2>We&apos;re sorry, this page isn&apos;t ready yet.</h2>
       <p>Our team is working behind the scenes to bring ZenSpaceApp
@@ -32,7 +30,7 @@ export default function Show404() {
           fontWeight: "700",
           borderBottom: "2px solid"
         }}>Sign up</Link> for early access to be notified when we launch!</p>
-      
+
       <Link
         href="./"
         style={{
@@ -40,7 +38,7 @@ export default function Show404() {
           color: "white !important",
           fontWeight: "500",
         }}>
-        Back home ...
+        Back home ... 
       </Link>
     </div>
   </div>
