@@ -24,7 +24,7 @@ import SecurityIcon from '../public/images/icons/security.svg';
 
   
 export const metadata: Metadata = {
-  title: "ZenSpaceApp",
+  title: "Telehealth app built for mental health therapy.",
   description: "Empowering mental wellness with a touch of Zen.",
 };
 
@@ -408,58 +408,73 @@ const Stats = () => {
   )
 }
 
-/**
- * Hero - above the fold
- */
 const Hero = () => {
+
+  const Heading = () => {
+    return (
+      <div className="heading title-heading">
+        <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important' }}>
+          Transform Your Therapy Practice with ZenSpace.
+        </h1>
+      </div>
+    )
+  }
+
+  const Subhead = () => {
+    return (
+      <div className="subhead">
+        Discover a simpler, more integrated way to manage your practice with telehealth,
+        ChatGPT-powered therapy notes, streamlined scheduling, and seamless
+        patient communication. Explore what&apos;s possible with ZenSpaceApp.
+      </div>
+    )
+  }
+
+  const HeroImage = () => {
+    return (
+      <div className="heroImg classic-saas-image saas-feature-shape-right position-relative">
+        <Image
+          src={ZenNotesImg}
+          alt='ZenNotes'
+          height={590}
+          width={0}
+          style={{
+            display: "flex",
+            maxWidth: "100%",
+            height: "auto",
+            margin: "auto",
+          }}
+        />
+      </div>
+    )
+  }
+
+  const CtaButtons = () => {
+    return (
+      <div className="ctaButtons mt-2">
+        <Link
+          className="btn btn-primary-dark-border  mt-2"
+          href="/pricing">
+          Start 30-day free trial
+        </Link>
+        <Link
+          className="btn btn-outline-dark ml-md-4 mt-2"
+          href="/">
+          Schedule a demo
+        </Link>
+      </div>
+    )
+  }
+
   return (
-    <section className="bg-half-170 d-table w-100 overflow-hidden show fade" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010', paddingTop: "16rem",  paddingBottom: "20rem" }}>
+    <section  id="hero-cover--main" className="d-table w-100 overflow-hidden show fade">
       <div className="container">
-        <div className="row mt-5 align-items-center">
-          <div className="col-md-6 col-12 order-2 order-lg-1">
-            <div className="title-heading">
-              <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important' }}>
-                Transform Your Therapy Practice with ZenSpace.
-              </h1>
-              <div className="lead subheading mt-3">
-                Discover a simpler, more integrated way to manage your practice with telehealth,
-                ChatGPT-powered therapy notes, streamlined scheduling, and seamless
-                patient communication. Explore what&apos;s possible with ZenSpaceApp.
-              </div>
-              <div className="mt-4 pt-2">
-                <Link
-                  className="btn btn-primary-dark-border  mt-2"
-                  href="/pricing">
-                  Start 30-day free trial
-                </Link>
-                <Link
-                  className="btn btn-outline-dark ml-md-4 mt-2"
-                  href="/">
-                  Schedule a demo
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0 col-12 order-1 " >
-            <div className="classic-saas-image saas-feature-shape-right position-relative">
-              <Image
-                src={ZenNotesImg}
-                alt='ZenNotes'
-                height={590}
-                width={0}
-                style={{
-                  display: "flex",
-                  maxWidth: "100%",
-                  height: "auto",
-                  margin: "auto",
-                }}
-              />
-            </div>
-          </div>
+        <div className='grid-container'>
+          <Heading />
+          <HeroImage />
+          <Subhead />
+          <CtaButtons />
         </div>
-        
-
       </div>
     </section>
   )
