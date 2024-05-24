@@ -1,10 +1,6 @@
 import Footer from '@/components/Footer';
-import Layout from '@/components/Layout';
 import Navbar from '@/components/Navbar';
-import Head from 'next/head';
-// import Layout from '../components/Layout';
-import Image from 'next/image';
-import Link from 'next/link';
+
 
 
 function renderBreachCompliance() {
@@ -650,10 +646,10 @@ function renderPrivacyCompliance() {
 
 function renderIntro() {
   return (
-    <section className="pb-8 pt-8" style={{paddingTop: "16rem", paddingBottom: "4rem"}}>
+    <section className="pb-8 pt-8 show fade bg-half-170" >
       <div className="container ">
         <h1 className="display-5 mt-4">ZenSpaceApp HIPAA Compliance.</h1>
-        <p className="lead">
+        <p className="lead" style={{maxWidth: "760px"}}>
           The accompanying sections describe in detail how we maintain
           compliance with the Health Insurance Portability and Accountability Act (HIPAA) 
           Privacy, Security and Breach Notification Rules.

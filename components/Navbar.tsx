@@ -134,7 +134,7 @@ export default function Navbar({ home }: { home: string} ) {
             <ul className="list-unstyled">
               <Link href="/"><li>Platform</li></Link> 
               <li>Apps</li>
-              <Link href='/insta-security'><li>Privacy and Data security</li></Link>
+              <Link href='/security'><li>Privacy and Data security</li></Link>
             </ul>
           </div>
           <div>

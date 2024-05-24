@@ -51,7 +51,7 @@ export default function Footer() {
               <h6 className="text-dark  mb-4"><b>Resources</b></h6>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
-                <li><a href="/insta-security" className="text-muted">Security</a></li>
+                <li><a href="/security" className="text-muted">Security</a></li>
                 <li><a href="/hipaa-compliance" className="text-muted">HIPAA Compliance</a></li>
                 {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
               </ul>

@@ -48,7 +48,7 @@ const PayAsYouGo = () => {
     <div>
       <h3 className="display-6">Pay-as-you-go</h3>
       <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
-      <h2 className="display-4">$79/mo</h2>
+      <h2 className="display-4">$79 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
       <div>
         Perfect for therapists with a flexible workload or those just starting out.
       </div>
@@ -57,7 +57,7 @@ const PayAsYouGo = () => {
       <h6 className="mt-4">What&apos;s included</h6>
       <ul className="list-unstyled mb-0 pl-0">
         <li>$5/month per active client (up to 50 clients included).</li>
-        <li>$5/month for each additional client.</li>
+        {/* <li>$5/month for each additional client.</li> */}
         <li>HIPPA-compliant video calls and messaging</li>
         <li>Therapy notes (ChatGPT-powered and Standard)</li>
         <li>4% payment processing fee applies</li>
@@ -79,13 +79,13 @@ const PayAsYouGo = () => {
 const Yearly = () => {
 
   return <div className="price-option styling-yearly">
+    <div className="savings-banner">Save 30%</div>
     <div>
       <h3><b>Yearly</b></h3>
       <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: '800' }} className="mt-4">Single sign-on</span>
-      <h2 className="display-4">$1740/yr </h2>
+      <h2 className="display-4">$1740 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
       <div>
         Ideal for therapists committed to ZenSpaceApp for the long term.
-        <b className="text-primary"> (Save 30%)</b>
       </div>
     </div>
     <div>
@@ -115,7 +115,7 @@ const Monthly = () => {
   <div>
     <h3 className="display-6">Monthly</h3>
     <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
-    <h2 className="display-4">$207/mo</h2>
+    <h2 className="display-4">$207 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
     <div>
       Well-suited for therapists with a consistent client base who prefer predictable monthly costs.
     </div>

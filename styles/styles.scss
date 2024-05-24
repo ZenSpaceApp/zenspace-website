@@ -4211,21 +4211,15 @@ input::-webkit-inner-spin-button {
     }
 
     .expandable-bottom {
-      height: 0px; 
-      // transform: translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+      max-height: 0px; 
       transform-style: preserve-3d; 
       opacity: 0;
-
+      overflow: hidden;
 
       &.open {
-        height: 100%;
+        max-height: 1000px;
         opacity: 1;
-        // transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-        
-        // animation-name: fade;
-        // -webkit-animation-name: fade;
-        // animation-duration: 1s;
-        transition:all 1s;
+        transition: max-height 1000ms;
       }
 
       .faq-paragraph {

@@ -52,7 +52,7 @@ $value in $colors {
     }
 
     .btn-outline-#{$name} {
-        border: 1px solid #{$value};
+        border: 2px solid #{$value};
         color: #{$value};
         background-color: transparent;    
         &:hover, &:focus, &:active, &.active, &.focus, &:not(:disabled):not(.disabled):active{

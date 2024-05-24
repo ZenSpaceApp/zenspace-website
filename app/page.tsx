@@ -413,13 +413,13 @@ const Stats = () => {
  */
 const Hero = () => {
   return (
-    <section className="bg-half-170 d-table w-100 overflow-hidden" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010', paddingTop: "16rem",  paddingBottom: "20rem" }}>
+    <section className="bg-half-170 d-table w-100 overflow-hidden show fade" id="hero-cover-main" style={{ borderBottom: '1px solid #00000010', paddingTop: "16rem",  paddingBottom: "20rem" }}>
       <div className="container">
         <div className="row mt-5 align-items-center">
           <div className="col-md-6 col-12 order-2 order-lg-1">
             <div className="title-heading">
-              <h1 className="my-3 display-2 mt-6" style={{ lineHeight: '1.0 !important' }}>
-                Transform your therapy practice with ZenSpace.
+              <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important' }}>
+                Transform Your Therapy Practice with ZenSpace.
               </h1>
               <div className="lead subheading mt-3">
                 Discover a simpler, more integrated way to manage your practice with telehealth,
