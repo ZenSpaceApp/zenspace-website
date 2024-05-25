@@ -84,7 +84,7 @@ export default function Navbar({ home }: { home: string} ) {
           justifyContent: "space-between"
         }}>
           
-        {renderLogo()}   
+        <span>{renderLogo()}   </span>
         {/* {renderToggleMenu()} */}
         <div className="nav-submenu" id="nav" >   
           <ul className="list-unstyled">

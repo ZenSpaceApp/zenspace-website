@@ -1,10 +1,29 @@
 import Image from "next/image";
-
-import YinYangIcon from '../public/images/icons/yin-yang.svg';
 import Link from "next/link";
 
+import ZenspaceLogo from '../public/images/logo/zenspace-logo@2x.png';
+import YinYangIcon from '../public/images/icons/yin-yang.svg';
+
 export default function Show404() {
-  return <div className="show fade"
+  return <div className="show fade" style={{position: "relative", height: "100vh"}}>
+    <div>
+      <Link
+        href="./"
+        style={{fontWeight: "500", position: "absolute", marginTop: "20px", marginLeft: "25px", color: "white !important"}}
+      >
+        <Image
+          alt="ZenSpaceApp logo"
+          src={ZenspaceLogo}
+          height={22}
+          width={22}
+          style={{
+            marginRight: "10px"
+          }}
+        />
+        ZenSpaceApp
+      </Link>
+    </div>
+    <div
     style={{
       display: "grid",
       background: "#222",
@@ -22,24 +41,16 @@ export default function Show404() {
         }}
     />
       <h2>We&apos;re sorry, this page isn&apos;t ready yet.</h2>
-      <p>Our team is working behind the scenes to bring ZenSpaceApp
+      <p style={{marginTop: "1rem", lineHeight: 1.6}}>Our team is working behind the scenes to bring ZenSpaceApp
         to life. <Link
-        href="./"
+        href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
         style={{
           color: "wheat !important",
           fontWeight: "700",
           borderBottom: "2px solid"
-        }}>Sign up</Link> for early access to be notified when we launch!</p>
-
-      <Link
-        href="./"
-        style={{
-          paddingTop: "3rem !important",
-          color: "white !important",
-          fontWeight: "500",
-        }}>
-        Back home ... 
-      </Link>
+          }}>Sign up</Link> for early access and a special offer!
+      </p>
+    </div>
     </div>
   </div>
 }

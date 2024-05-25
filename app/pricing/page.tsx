@@ -38,7 +38,6 @@ const PatientPlans = () => {
           </div>
         </div>
       </div>
-      {/* <hr></hr> */}
     </div>
   )
 }
@@ -68,9 +67,9 @@ const PayAsYouGo = () => {
     </div>
     <div className="pt-4">
       <Link
-        href=""
+        href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
         className="btn btn-primary-dark-border  mt-2">
-        Sign Up
+        Sign up for early access
       </Link>
     </div>
   </div>
@@ -101,9 +100,9 @@ const Yearly = () => {
     </div>
     <div className="pt-4">
       <Link
-        href=""
+        href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
         className="btn btn-primary-dark-border  mt-2">
-        Sign Up
+        Sign up for early access
       </Link>
     </div>
   </div>
@@ -133,11 +132,11 @@ const Monthly = () => {
     </ul>
   </div>
   <div className="pt-4">
-    <Link
-      href=""
-      className="btn btn-primary-dark-border  mt-2">
-      Sign Up
-    </Link>
+  <Link
+        href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
+        className="btn btn-primary-dark-border  mt-2">
+        Sign up for early access
+      </Link>
   </div>
 </div>
 }

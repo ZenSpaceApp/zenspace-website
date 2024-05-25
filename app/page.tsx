@@ -74,7 +74,7 @@ const CrossDeviceSync = () => {
 
 const SimpleWorkflow = () => {
   return (
-    <section id="med-group--dashboard" className="bg-half-170" style={{color: "#fafafa"}}>
+    <section id="med-group--dashboard" className="bg-half-170">
       <div
         className="text-center"
         style={{ padding: "4rem 0rem", width:"90%", maxWidth: "1800px", margin:"auto", background: "#373836", borderRadius: "20px", color: "white !important"}}
@@ -93,7 +93,7 @@ const SimpleWorkflow = () => {
                 height={0}
                 width={0}
                 style={{
-                  maxWidth: "95%",
+                  maxWidth: "90%",
                   margin: "auto",
                   display: "block"
                 }}
@@ -413,8 +413,8 @@ const Hero = () => {
   const Heading = () => {
     return (
       <div className="heading title-heading">
-        <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important' }}>
-          Transform Your Therapy Practice with ZenSpace.
+        <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
+          Transform Your Therapy Practice with ZenSpaceApp.
         </h1>
       </div>
     )
@@ -453,14 +453,15 @@ const Hero = () => {
     return (
       <div className="ctaButtons mt-2">
         <Link
+          href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
           className="btn btn-primary-dark-border  mt-2"
-          href="/pricing">
-          Start 30-day free trial
+          >
+          Sign up for early access
         </Link>
         <Link
           className="btn btn-outline-dark ml-md-4 mt-2"
           href="/">
-          Schedule a demo
+          Book a demo
         </Link>
       </div>
     )

@@ -153,6 +153,10 @@ code {
   border-bottom: 1px solid $border-color;
 }
 
+.underline {
+  border-bottom: 2px solid;
+}
+
 .translucent-veneer {
   position: absolute;
   top: 0;
@@ -329,7 +333,7 @@ section.route-section {
     }
 
     @media screen and #{$mq-large} {
-      
+      padding: 0 4rem;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
       'heading heroImg'
@@ -342,6 +346,7 @@ section.route-section {
       
       .heroImg {
         grid-area: heroImg;
+        margin-left: auto;
       }
       
       .subhead {
@@ -4092,7 +4097,7 @@ input::-webkit-inner-spin-button {
     padding: 12px; 
     padding-left: 16px;
     // background: #d8d8d850;
-    opacity: 0.7; 
+    // opacity: 0.7; 
     margin-top: 15px;
     margin-bottom: 25px;
     font-weight: 400;
@@ -4135,7 +4140,7 @@ input::-webkit-inner-spin-button {
       margin-bottom: 0;
       padding-right: 20px;
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 160%;
       font-family: "Syne";
     }
