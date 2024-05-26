@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 
 import Link from 'next/link';
 
-import ZenNotesImg from '../public/images/zen-notes@2x.png';
+import ZenNotesImg from '../public/images/zen-notes.jpg';
 import StatsImg from '../public/images/stats.jpg';
 import TherapistDashImg from '../public/images/home/web-app.gif';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';

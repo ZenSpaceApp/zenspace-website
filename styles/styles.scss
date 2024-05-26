@@ -578,12 +578,14 @@ section.route-section {
   .cta-container {
     margin: auto;
     border: 3px solid;
-    padding: 6rem 40px;
+    padding: 6rem 24px;
     border-radius: 20px;
     max-width: 1600px;
+
+    h3 { line-height: 1.3; margin-bottom: 1rem; margin-top: 1rem;}
     
     .content {
-      max-width: 640px;
+      max-width: 760px;
       text-align: center;
       margin: auto;  
       font-size: 2.5rem;

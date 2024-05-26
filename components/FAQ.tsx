@@ -115,7 +115,7 @@ export default function FAQ() {
         <span>
           <Link
             style={{marginLeft: "4px"}}
-            href="https://reflective-waterlily-ec4.notion.site/FAQs-ab76283d23394fe3be19624835214574">
+            href="https://zenspaceapp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
             FAQs.
           </Link>
         </span>  
