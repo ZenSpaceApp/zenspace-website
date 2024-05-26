@@ -114,7 +114,7 @@ export default function FAQ() {
         Read a detailed version of our 
         <span>
           <Link
-            style={{marginLeft: "4px"}}
+            style={{marginLeft: "4px", borderBottom: "2px solid"}}
             href="https://zenspaceapp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
             FAQs.
           </Link>

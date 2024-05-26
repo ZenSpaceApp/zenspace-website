@@ -143,7 +143,10 @@ export default function Login() {
             <div
               className="acct-mgmt">
                 <div>Forgot your password?</div>
-                <div>Need an Account?</div>
+              <Link
+                href="/pricing">
+                Need an Account?
+              </Link>
               </div>
               <button
                 className="btn btn-outline-dark"

@@ -67,10 +67,10 @@ export default function Footer() {
           <div className="copyright">
             <div> © 2024 ZenSpaceApp Inc. All Rights Reserved.</div>
             <ul>
-            <li><a href="/privacy" className="text-muted">Cookies</a></li>
+              <li>
+                <a href="/privacy" className="text-muted">Cookies</a></li> 
               <li><a href="/privacy" className="text-muted">Privacy Policy</a></li>
-              <li><a href="/service-terms" className="text-muted">Service Terms</a></li>
-                
+              <li><a href="/service-terms" className="text-muted">Service Terms</a></li>    
             </ul>
           </div>
         </div>

@@ -74,34 +74,28 @@ const CrossDeviceSync = () => {
 
 const SimpleWorkflow = () => {
   return (
-    <section id="med-group--dashboard" className="bg-half-170">
-      <div
-        className="text-center"
-        style={{ padding: "4rem 0rem", width:"90%", maxWidth: "1800px", margin:"auto", background: "#373836", borderRadius: "20px", color: "white !important"}}
-      >
-      <h2 className="display-6">Simple workflow. Built for scale.</h2>
-        <div className="subheading mb-5 narrow" style={{maxWidth: "640px", margin: "auto"}}>Secure multi-cloud architecture, integrated full-service solution
-        to keep therapists and clients connected.</div>
+    <section id="tele-workflow" className="bg-half-170">
+      <div className="container">
+      <h2 className="display-6">Simple workflow.<br/>Built for scale.</h2>
+        <div className="subheading mb-5 narrow">
+          Secure multi-cloud architecture, integrated full-service solution
+          to keep therapists and clients connected.
+        </div>
         
-        <div className="row text-left pb-5">
-          <div className=" col-lg-6 col-12 order-1 pt-4 order-lg-2" style={{display: 'flex', alignItems: 'center'}}>
+        <div className="row text-left pb5">
+          <div className="col-lg-8 col-12 order-1 pt-4 order-lg-2 offset-md-2">
             <div>
               <Image
-                className="img-fluid "
+                className="img-fluid workflow "
                 alt="Therapist workflow and dashboard"
                 src={TherapistDashImg}
                 height={0}
                 width={0}
-                style={{
-                  maxWidth: "90%",
-                  margin: "auto",
-                  display: "block"
-                }}
               />
             </div>
           </div>
           
-          <div className="offset-lg-1 col-lg-4 col-12 order-1 mt-4 pt-2 mt-lg-0 pt-lg-0">
+          <div className="offset-lg-1 col-lg-4 col-12 order-1 mt-4 pt-2 mt-lg-0 pt-lg-0" style={{display: "none"}}>
             <div className="section-title mr-lg-4">
               <div className="row pt-4">
                 <div className="col-12">
