@@ -413,7 +413,7 @@ const Hero = () => {
   const Heading = () => {
     return (
       <div className="heading title-heading">
-        <h1 className="my-3 display-3 mt-6" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
+        <h1 className="display-3 pt-3 pr-3" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
           Transform Your Therapy Practice with ZenSpaceApp.
         </h1>
       </div>
@@ -468,7 +468,7 @@ const Hero = () => {
   }
 
   return (
-    <section  id="hero-cover--main" className="d-table w-100 overflow-hidden show fade">
+    <section id="hero-cover--main" className="d-table w-100 overflow-hidden show fade">
       <div className="container">
         <div className='grid-container'>
           <Heading />

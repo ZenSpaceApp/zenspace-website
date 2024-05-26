@@ -323,18 +323,40 @@ section.route-section {
     'heroImg'
     'subhead'
     'ctaButtons';
-  
+    
+    .heroImg {
+      max-width: 95%;
+      margin-top: 20px;
+    }
+
     .subhead {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 500;
-      color: #676767;
+      color: #474747;
     }
 
-    @media screen and #{$mq-large} {
-      padding: 0 4rem;
-      grid-template-columns: 1fr 1fr;
+    @media screen and #{$mq-small} {
+
+      .heading {
+        max-width: 90%;
+      }
+
+      .heroImg {
+        margin-right: auto; // left-aligned
+        margin-top: 40px; 
+        margin-bottom: 40px;
+      }
+
+      .subhead {
+        grid-area: subhead;
+        max-width: 80%;
+      }
+    }
+
+    @media screen and #{$mq-medium} {
+      grid-template-columns: 1fr 2fr;
       grid-template-areas:
       'heading heroImg'
       'subhead heroImg'
@@ -342,21 +364,39 @@ section.route-section {
 
       .heading {
         grid-area: heading;
+        max-width: 100%;
       }
       
       .heroImg {
         grid-area: heroImg;
-        margin-left: auto;
+        margin-left: auto; // right-aligned
+        max-width: 100%;
       }
       
       .subhead {
         grid-area: subhead;
-        margin-top: 1rem;
-        font-size: 1.3rem !important;
+        font-size: 1.1rem !important;
+        max-width: 100%;
       }
       
       .ctaButtons {
         grid-area: ctaButtons;
+      }
+    
+    }
+
+    @media screen and #{$mq-large} {
+      padding: 0 4rem;
+      grid-template-columns: 1fr 1fr;
+      
+      .heroImg {
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .subhead {
+        margin-top: 1rem;
+        font-size: 1.3rem !important;
       }
     }   
   }

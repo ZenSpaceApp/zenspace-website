@@ -111,7 +111,10 @@ export default function Navbar({ home }: { home: string} ) {
               <Link
                 href="/login"
               className="btn btn-outline-secondary"
-              
+              style={{
+                padding: "12px 2rem !important",
+                lineHeight: "1.2 !important"
+              }}
               >
                 Sign In
               </Link>
