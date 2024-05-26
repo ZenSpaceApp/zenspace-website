@@ -106,7 +106,7 @@ export default function PricingFAQ() {
             >
               <div className="expandable-top">
                 <div className="heading-expandable">
-                  <b>{faq[0]}</b>
+                  {faq[0]}
                 </div>
                 <div className="expandable-icon">
                   {selIdx === idx ? "-" : "+"}
