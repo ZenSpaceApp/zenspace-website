@@ -347,7 +347,7 @@ function Benefits() {
 const Stats = () => {
   return <section id="stats">
     <div className='container'> 
-    <h5 className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</h5>
+    <h4 className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</h4>
       <div className='grid-container'>
         <div className="p-4 pr-2 pl-2 p-lg-5 grid-item">
           <h5>Costs</h5>
