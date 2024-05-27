@@ -359,7 +359,7 @@ const Stats = () => {
         <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
           <h5>Impact and satisfaction</h5>
           <div>
-            Higher patient satisfaction rates than in-person therapy. Reduced wait times for mental
+            Higher patient satisfaction rates than in-person therapy. <span className="underline">Reduced wait times</span> for mental
             health services, especially in areas with limited access.</div>
         </div>
         <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
