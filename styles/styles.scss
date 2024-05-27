@@ -506,8 +506,13 @@ section.route-section {
     row-gap: 25px;
 
     @media screen and #{$mq-small} {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 40px;
+    }
+
+    .grid-item {
+      border-radius: 16px;
+      border: 2px solid;
     }
   }
 }

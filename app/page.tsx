@@ -349,20 +349,27 @@ const Stats = () => {
     <div className='container'> 
     <h5 className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</h5>
       <div className='grid-container'>
-      <div className="p-4 pr-2  pl-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
-        <h5>Costs</h5>
-        <p className="">
-          <span className="">Virtual visits saved patients</span> a median of <b>88 minutes</b> and <b>33 miles</b> compared to usual care, this according to a random trial
-          done on Parkinson&apos;s patients.</p>
+        <div className="p-4 pr-2 pl-2 p-lg-5 grid-item">
+          <h5>Costs</h5>
+          <div className="">
+            <span className="">Virtual visits saved patients</span> a median of <b>88 minutes</b> and <b>33 miles</b> compared to usual care, this according to a random trial
+            done on Parkinson&apos;s patients.
+          </div>
+        </div>
+        <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
+          <h5>Impact and satisfaction</h5>
+          <div>
+            Higher patient satisfaction rates than in-person therapy. Reduced wait times for mental
+            health services, especially in areas with limited access.</div>
+        </div>
+        <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
+          <h5>No-show</h5>
+          <div className="">
+            Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
+            <em> Increasing the burden of care and healthcare costs.</em> Medicaid missed appts (28%). Medicare missed appts (15.3%).
+          </div>
+        </div>
       </div>
-      <div className="p-4 pr-2  pl-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
-        <h5>No-show</h5>
-        <p className="">
-          Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
-          <em> Increasing the burden of care and healthcare costs.</em> Medicaid missed appts (28%). Medicare missed appts (15.3%).
-        </p>
-      </div>
-    </div>
     </div>
   </section>
 }
