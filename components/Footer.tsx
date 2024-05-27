@@ -8,7 +8,7 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="container">
-          <div className="row" style={{borderTop: '0px solid #d8d8d8', borderBottom: '1px solid #d8d8d850', padding: '100px 0'}}>
+          <div className="row" style={{ borderTop: '0px solid #d8d8d8', borderBottom: '1px solid #d8d8d850', padding: '100px 0' }}>
             <div className="col-lg-3 col-md-12 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                 <div>
                 <Link
@@ -64,8 +64,8 @@ export default function Footer() {
                 </ul>
             </div>
           </div>
-          <div className="copyright">
-            <div> © 2024 ZenSpaceApp Inc. All Rights Reserved.</div>
+          <div className="subfooter">
+            <div>©2024 ZenSpaceApp Inc. All Rights Reserved.</div>
             <ul>
               <li>
                 <a href="/privacy" className="text-muted">Cookies</a></li> 
