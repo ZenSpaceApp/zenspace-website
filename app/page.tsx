@@ -344,62 +344,27 @@ function Benefits() {
   )
 }
 
-
-
 const Stats = () => {
-  return (
-    <section  className="section bg-half-170" style={{borderBottom: "1px solid #00000010", background: "#ffa533"}}>
-      <div className="container">
-        <h5 className="sub-heading ml-10 mb-4 offset-md-1">By the numbers</h5>
-        <div className="row align-items-center pt-4 ">
-          <div className="col-12 col-md-5 offset-md-1 order-2 order-lg-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
-            <div className="section-title mr-lg-4">
-              <div className="row">
-                <div className="col-12">
-                  <div className="d-flex feature-card align-items-center pt-4 ">
-                    <div className="ml-3">
-                      <h5>Costs</h5>
-                      <p className="">
-                        <span className="">Virtual visits saved patients</span> a median of <b>88 minutes</b> and <b>33 miles</b> compared to usual care, this according to a random trial
-                        done on Parkinson&apos;s patients.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-12 mt-5 ">
-                <div className="d-flex feature-card align-items-center pt-4 ">
-                    <div className="ml-3">
-                      <h5>No-show</h5>
-                      <p className="">
-                        Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
-                        <em> Increasing the burden of care and healthcare costs.</em> Medicaid missed appts (28%). Medicare missed appts (15.3%).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 offset-md1 order-lg-2 " style={{ padding: 0}}>
-            <Image 
-              alt='telehealth benefits by number'
-              src={StatsImg}
-              style={{
-                borderRadius: '20px',
-                maxWidth: "510px",
-                width: "100%",
-                height: "auto",
-                display: "block",
-                margin: "auto",
-                marginBottom: "20px"
-              }}
-            />
-            {/* <img src="/images/stats.jpg" style={{borderRadius: '12px'}} className="img-fluid bordered-img" alt="" /> */}
-          </div>
-        </div>
+  return <section id="stats">
+    <div className='container'> 
+    <h5 className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</h5>
+      <div className='grid-container'>
+      <div className="p-4 pr-2  pl-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
+        <h5>Costs</h5>
+        <p className="">
+          <span className="">Virtual visits saved patients</span> a median of <b>88 minutes</b> and <b>33 miles</b> compared to usual care, this according to a random trial
+          done on Parkinson&apos;s patients.</p>
       </div>
-    </section>
-  )
+      <div className="p-4 pr-2  pl-2 p-lg-5"  style={{ borderRadius: "20px", border: "2px solid"}}>
+        <h5>No-show</h5>
+        <p className="">
+          Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
+          <em> Increasing the burden of care and healthcare costs.</em> Medicaid missed appts (28%). Medicare missed appts (15.3%).
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
 }
 
 const Hero = () => {

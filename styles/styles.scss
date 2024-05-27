@@ -324,6 +324,12 @@ section.route-section {
     'subhead'
     'ctaButtons';
     
+    .ctaButtons {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+    }
+
     .heroImg {
       max-width: 95%;
       margin-top: 20px;
@@ -338,6 +344,9 @@ section.route-section {
     }
 
     @media screen and #{$mq-small} {
+      .ctaButtons {
+        display: block;
+      }
 
       .heading {
         max-width: 90%;
@@ -485,6 +494,23 @@ section.route-section {
   }
 }
 
+#stats {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: #ffa533;
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+
+    @media screen and #{$mq-small} {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+    }
+  }
+}
 
 #stats-bg {
   // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
