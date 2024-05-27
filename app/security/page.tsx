@@ -4,6 +4,9 @@ import { bottom } from '@popperjs/core';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import SecureArchIcon from '../../public/images/icons/secure-cloud-blue.svg';
+import DataPrivacyIcon from '../../public/images/icons/data_privacy.svg';
+import EndToEndIcon from '../../public/images/icons/end_to_end_encryption.svg';
 
 function renderSectionHero() {
   return (
@@ -36,7 +39,12 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-                <img src="/images/end_to_end_encryption.svg" height="25px" />
+              <Image
+                  alt="Secure architectur"
+                  src={EndToEndIcon}
+                  height={40}
+                  width={40}
+                />
               </div>
 
               <div className="content mt-4">
@@ -50,7 +58,12 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 mt-5 mt-sm-0 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-                <img src="/images/secure-cloud-blue.svg" height="25px" />
+                <Image
+                  alt="Secure architectur"
+                  src={SecureArchIcon}
+                  height={40}
+                  width={40}
+                />
               </div>
 
               <div className="content mt-4">
@@ -64,7 +77,12 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 mt-5 mt-sm-0 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-                <img src="/images/data_privacy.svg" height="25px" />
+              <Image
+                  alt="Secure architectur"
+                  src={DataPrivacyIcon}
+                  height={40}
+                  width={40}
+                />
               </div>
 
               <div className="content mt-4">
