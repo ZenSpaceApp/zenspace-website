@@ -453,6 +453,7 @@ export default function HomePage() {
       <Hero />
       <Stats/>
       <Benefits />
+      <h3 style={{fontSize: "2rem"}}  className='u-textcenter mb-5'>Explore the App and Features</h3>
       <CrossDeviceSync />
       <SimpleWorkflow />
       <PersonalizedTherapyExperience />
