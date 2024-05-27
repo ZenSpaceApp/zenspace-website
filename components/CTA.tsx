@@ -14,10 +14,10 @@ export const CTA = () => {
       <Image 
         alt="cta icons"
         src={CTAIconsGroup}
-        height={44}
+        height={35}
           width={0}
           style={{
-            marginTop: "-120px",
+            marginTop: "-115px",
           }}
       />
 
