@@ -13,16 +13,26 @@ function renderSectionHero() {
     <section className="bg-half-170 bg-teal show fade" style={{borderBottom: '1px solid #00000010'}}>
       <div className="container">
         <div className="row align-items-center pt-5">
-          <div className="col-lg-7 col-md-6 order-2 order-md-1">
+          <div className="col-lg-6 col-md-6 order-2 order-md-1">
             <div className="title-heading">
               <h1 className="display-4" style={{ lineHeight: 1.0 }}>
-                Your Trustworthy Partner in <span className="text-primary">Safeguarding</span> Your Health Information.</h1>
+                Your Trustworthy Partner in <span className="text-danger">Safeguarding</span> Your Health Information.</h1>
               <p className="lead mt-5">We are a <Link href="/hipaa-compliance" style={{color:"#474747 !important", borderBottom: "2px solid"}}>HIPAA-compliant</Link> company.</p>
             </div>
           </div>
           <div className="col-lg-5 col-md-6 mt-4 pt-2 order-1 order-md-2 mt-sm-0 pt-sm-0 mb-5">
             <div className="classic-saas-image position-relative">  
-              {/* <img src="/images/secure-cloud-blue.svg" style={{ width: '80%' }} className="img-fluid d-block=" alt="" /> */}
+              <Image
+                className="img-fluid d-block"
+                alt=""
+                src={SecureArchIcon}
+                height={0}
+                width={0}
+                style={{
+                  width: '80%',
+                  margin: "auto",
+                  display: "flex"
+                }}  />
             </div>
           </div>
         </div>
@@ -42,13 +52,13 @@ function renderSectionFeatures() {
               <Image
                   alt="Secure architectur"
                   src={EndToEndIcon}
-                  height={40}
-                  width={40}
+                  height={32}
+                  width={32}
                 />
               </div>
 
               <div className="content mt-4">
-                <h4 className="title">Industry-standards</h4>
+                <h4 className="title"><b>Industry-standards</b></h4>
                 <p className=" mb-0">All sensitive information is encrypted while in transit [TLS] or at
                 rest using 256-bit encryption.</p>
               </div>
@@ -61,13 +71,13 @@ function renderSectionFeatures() {
                 <Image
                   alt="Secure architectur"
                   src={SecureArchIcon}
-                  height={40}
-                  width={40}
+                  height={32}
+                  width={32}
                 />
               </div>
 
               <div className="content mt-4">
-                <h4 className="title">Secure architecture</h4>
+                <h4 className="title"><b>Secure architecture</b></h4>
                 <p className=" mb-0">Protected health information (ePHI), and all communications 
                 are stored on HIPAA-compliant cloud and servers.</p>
               </div>
@@ -78,15 +88,15 @@ function renderSectionFeatures() {
             <div className="feature-card text-left">
               <div className="d-inline-block">
               <Image
-                  alt="Secure architectur"
+                  alt="Secure architecture"
                   src={DataPrivacyIcon}
-                  height={40}
-                  width={40}
+                  height={32}
+                  width={32}
                 />
               </div>
 
               <div className="content mt-4">
-                <h4 className="title">For your eyes only</h4>
+                <h4 className="title"><b>For your eyes only</b></h4>
                 <p className=" mb-0">Employees or personnel at ZenSpaceApp cannot access or read any identifiable personal health information.</p>
               </div>
             </div>
