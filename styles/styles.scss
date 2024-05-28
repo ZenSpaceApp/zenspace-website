@@ -306,7 +306,7 @@ section.route-section {
 }
 
 
-#hero-cover--main {
+#hero-main {
   border-bottom: 1px solud #00000010;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -318,6 +318,9 @@ section.route-section {
 
   .grid-container {
     display: grid;
+    column-gap: 25px;
+    row-gap: 1rem;
+    
     grid-template-areas:
     'heading'
     'heroImg'
@@ -332,12 +335,9 @@ section.route-section {
 
     .heroImg {
       max-width: 95%;
-      margin-top: 20px;
     }
 
     .subhead {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
       font-size: 1rem;
       font-weight: 500;
       color: #474747;
@@ -354,8 +354,6 @@ section.route-section {
 
       .heroImg {
         margin-right: auto; // left-aligned
-        margin-top: 40px; 
-        margin-bottom: 40px;
       }
 
       .subhead {
@@ -366,6 +364,7 @@ section.route-section {
 
     @media screen and #{$mq-medium} {
       grid-template-columns: 1fr 2fr;
+      row-gap: 0px;
       grid-template-areas:
       'heading heroImg'
       'subhead heroImg'
@@ -384,7 +383,7 @@ section.route-section {
       
       .subhead {
         grid-area: subhead;
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
         max-width: 100%;
       }
       
@@ -404,8 +403,7 @@ section.route-section {
         margin-bottom: 0;
       }
       .subhead {
-        margin-top: 1rem;
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
       }
     }   
   }

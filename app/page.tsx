@@ -417,7 +417,7 @@ const Hero = () => {
 
   const CtaButtons = () => {
     return (
-      <div className="ctaButtons mt-2">
+      <div className="ctaButtons">
         <Link
           href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
           className="btn btn-primary-dark-border  mt-2"
@@ -434,7 +434,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="hero-cover--main" className="d-table w-100 overflow-hidden show fade">
+    <section id="hero-main" className="d-table w-100 overflow-hidden show fade">
       <div className="container">
         <div className='grid-container'>
           <Heading />
