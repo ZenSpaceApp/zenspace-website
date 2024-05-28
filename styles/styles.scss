@@ -4083,19 +4083,34 @@ input::-webkit-inner-spin-button {
   background-color: #D3DEFF25 !important;
 }
 
-#tele-workflow {
+#zen-workflow {
   // border-bottom: 1px solid #00000010;
 
   .container {
     background: #373836;
-    max-width: 1800px !important;
-    width: 100%;
+    max-width: 95vw !important;
+    width: 100% !important;
     padding: 4rem 20px;
     margin: auto;
     border-radius: 20px;
     text-align: center;
   }
-
+  
+  .tab-shape-2 {
+    display: none;
+    @media screen and #{$mq-large} {
+      display: block;
+      position: absolute;
+      bottom: 170px;
+      width: 16%;
+      left: 110px;
+      border-radius: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
   h2 { color: #c4ddac !important; }
 
   .subheading {

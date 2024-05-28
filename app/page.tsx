@@ -7,7 +7,7 @@ import FAQ from '@/components/FAQ';
 import Link from 'next/link';
 
 import ZenNotesImg from '../public/images/zen-notes.jpg';
-import StatsImg from '../public/images/stats.jpg';
+import WorkflowShape from '../public/images/tab-shape-2.svg';
 import TherapistDashImg from '../public/images/home/web-app.gif';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
@@ -74,7 +74,21 @@ const CrossDeviceSync = () => {
 
 const SimpleWorkflow = () => {
   return (
-    <section id="tele-workflow" className="bg-half-170">
+    <section id="zen-workflow" className="bg-half-170" style={{position: "relative"}}>
+      <div className="tab-shape-2">
+      <Image
+                className="img-fluid"
+                alt="Cross device sync"
+                src={WorkflowShape}
+                height={0}
+                width={0}
+                style={{
+                  maxWidth: "80%"
+                }}
+              />
+
+        </div>
+
       <div className="container">
       <h2 className="display-6">Simple workflow.<br/>Built for scale.</h2>
         <div className="subheading mb-5 narrow">
