@@ -67,6 +67,7 @@ const PayAsYouGo = () => {
     </div>
     <div className="pt-4">
       <Link
+        style={{display: "flex", justifyContent: "center"}}
         href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
         className="btn btn-primary-dark-border  mt-2">
         Sign up for early access
@@ -100,8 +101,9 @@ const Yearly = () => {
     </div>
     <div className="pt-4">
       <Link
+        style={{display: "flex", justifyContent: "center"}}
         href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
-        className="btn btn-primary-dark-border  mt-2">
+        className="btn btn-primary-dark-border mt-2">
         Sign up for early access
       </Link>
     </div>
@@ -132,7 +134,8 @@ const Monthly = () => {
     </ul>
   </div>
   <div className="pt-4">
-  <Link
+      <Link
+        style={{display: "flex", justifyContent: "center"}}
         href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
         className="btn btn-primary-dark-border  mt-2">
         Sign up for early access
