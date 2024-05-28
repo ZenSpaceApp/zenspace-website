@@ -74,24 +74,23 @@ const CrossDeviceSync = () => {
 
 const SimpleWorkflow = () => {
   return (
-    <section id="zen-workflow" className="bg-half-170" style={{position: "relative"}}>
+    <section id="zen-workflow">
       <div className="tab-shape-2">
-      <Image
-                className="img-fluid"
-                alt="Cross device sync"
-                src={WorkflowShape}
-                height={0}
-                width={0}
-                style={{
-                  maxWidth: "80%"
-                }}
-              />
-
-        </div>
+        <Image
+          className="img-fluid"
+          alt="Cross device sync"
+          src={WorkflowShape}
+          height={0}
+          width={0}
+          style={{
+            maxWidth: "80%"
+          }}
+        />
+      </div>
 
       <div className="container">
-      <h2 className="display-6">Simple workflow.<br/>Built for scale.</h2>
-        <div className="subheading mb-5 narrow">
+        <h2 className="display-6">Simple workflow.<br/>Built for scale.</h2>
+        <div className="subheading mb-5 ">
           Secure multi-cloud architecture, integrated full-service solution
           to keep therapists and clients connected.
         </div>
@@ -106,50 +105,6 @@ const SimpleWorkflow = () => {
                 height={0}
                 width={0}
               />
-            </div>
-          </div>
-          
-          <div className="offset-lg-1 col-lg-4 col-12 order-1 mt-4 pt-2 mt-lg-0 pt-lg-0" style={{display: "none"}}>
-            <div className="section-title mr-lg-4">
-              <div className="row pt-4">
-                <div className="col-12">
-                    <div className="d-flex align-items-center pt-4">
-                      <h2><i className="uil uil-video align-middle text-primary"></i></h2>
-                      <div className="ml-3">
-                        <h6><b>Integrated video-calling</b></h6>
-                        <p className=" mb-0">Built from scratch as a video-first tool. End-to-end encryption and HIPAA-compliance baked-in.</p>
-                      </div>
-                    </div>
-                </div>
-                <div className="col-12">
-                  <div className="d-flex d-flex feature-card align-items-center pt-4">
-                    <h2><i className="uil uil-user-plus align-middle text-primary"></i></h2>
-                    <div className="ml-3">
-                      <h6><b>BYOP (bring your own patients)</b></h6>
-                      <p className="para mb-0">Extend virtual care to your existing patients.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <div className="d-flex align-items-center pt-4">
-                    <h5><i className="uil uil-user-arrows align-middle h2 text-primary"></i></h5>
-                    <div className="ml-3">
-                      <h6><b>In-app messaging</b></h6>
-                      <p className="para mb-0">Answer questions. Share tips and articles. Engage patients
-                      in their care.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <div className="d-flex align-items-center pt-4">
-                    <h2><i className="uil uil-shield-check align-middle text-primary"></i></h2>
-                      <div className="ml-3">
-                        <h6><b>Robust security</b></h6>
-                        <p className="para mb-0">Encrypted health information and communications, stored on HIPAA-compliant cloud and servers.</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
