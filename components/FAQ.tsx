@@ -81,7 +81,7 @@ export default function FAQ() {
           <div className='Grid-cell' >
             <h2 className="u-textcenter display-4">FAQs</h2>
             <div className='psa'>
-            Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor" href="mailto:rupesh@zenspaceapp.com" target="_blank">
+            Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:rupesh@zenspaceapp.com" target="_blank">
             email 
           </a> us if you have a question)
             </div>
