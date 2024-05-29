@@ -1494,10 +1494,18 @@ footer {
       }
 
       .form-fields {
-        padding: 0 20px;
+        
+        padding: 60px 15px;
         margin: auto;
-        width: 100%;
-        max-width: 370px;
+        width: calc(100vw - 30px);
+       
+        max-width: 525px;
+        border: 2px solid;
+        border-radius: 20px;
+
+        @media screen  and #{$mq-small} {
+          padding: 60px 40px;
+        }
 
         .input-group {
           display: flex;
@@ -1505,7 +1513,7 @@ footer {
           row-gap: 1rem;
 
           .label {
-            // opacity: 0.5;
+            opacity: 0.7;
             font-size: 0.8rem !important;
             font-weight: 500;
             font-stretch: normal;
