@@ -10,7 +10,7 @@ import EndToEndIcon from '../../public/images/icons/end_to_end_encryption.svg';
 
 function renderSectionHero() {
   return (
-    <section className="bg-half-170 bg-teal show fade" style={{borderBottom: '1px solid #00000010'}}>
+    <section className="bg-half-170 bg-teal show fade">
       <div className="container">
         <div className="row align-items-center pt-5">
           <div className="col-lg-6 col-md-6 order-2 order-md-1">
