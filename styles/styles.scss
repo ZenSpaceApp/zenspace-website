@@ -38,7 +38,7 @@ $color-background-secondary: #00000005;
 $color-background-dark: #d8d8d8;
 
 $color-main: #474747 !important;
-$color-background: #F4F3EA;
+$color-background: var(--bg--body--main);
 $color-dominant: #0080ff;
 $color-active: #3e566e;
 $color-link: #ffffff;
@@ -599,7 +599,8 @@ section.route-section {
 }
 
 #cta {
-  background: #FFA634;
+  background: var(--primary);
+
   padding: 60px 20px;
   font-size: 1.5rem;
   @media screen and #{$mq-large} {
@@ -4156,7 +4157,7 @@ input::-webkit-inner-spin-button {
 
 #faqs {
   padding: 160px 0;
-  background: #E3DCCC;
+  background: var(--bg--alt--1);
   
   
   .psa {
@@ -4262,7 +4263,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-
+@import './root.scss';
 @import './bootstrap-custom-overrides';
 @import "~bootstrap/scss/bootstrap";
 @import './_variables';

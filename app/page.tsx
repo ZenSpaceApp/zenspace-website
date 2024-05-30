@@ -96,7 +96,7 @@ const SimpleWorkflow = () => {
         </div>
         
         <div className="row text-left pb5">
-          <div className="col-lg-8 col-12 order-1 pt-4 order-lg-2 offset-md-2">
+          <div className="col-lg-8 col-12 order-1 pt-4 order-lg-2 offset-lg-2">
             <div>
               <Image
                 className="img-fluid workflow "

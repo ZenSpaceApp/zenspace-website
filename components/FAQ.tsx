@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
-import { block } from "sharp";
+
 const faqs = [
   [
     "What is ZenSpaceApp and how does it work?",

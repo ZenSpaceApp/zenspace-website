@@ -17,7 +17,7 @@ const PatientPlans = () => {
           Pricing and Plans
         </h1>
       <div className="row mb-5 mt-5">
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-lg-4">
           <div className="price-option border-gray">
             <div className="price-card">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}><h3 className="display-6">Video consultation</h3><h3 style={{ color: '#0080ff', fontWeight: 'bold' }}>$79</h3> </div>
@@ -154,13 +154,13 @@ const TherapistPlans = () => {
     <section className="bg-half-170">
       <div className="container" style={{ paddingBottom: '170px' }}>
         <div className="row mb-5 mt-4">
-          <div className="col-12 col-md-4 pb-4 pt-2">
+          <div className="col-12 col-lg-4 pb-4 pt-2">
             <PayAsYouGo />
           </div>
-          <div className="col-12 col-md-4 pb-4 pt-2">
+          <div className="col-12 col-lg-4 pb-4 pt-2">
             <Yearly />
           </div>
-          <div className="col-12 col-md-4 pb-4 pt-2">
+          <div className="col-12 col-lg-4 pb-4 pt-2">
             <Monthly />
           </div>
         </div>

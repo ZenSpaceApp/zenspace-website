@@ -125,7 +125,7 @@ $value in $colors {
         }
     }    
     &.btn-outline-dark {
-        border: 3px solid $grey-1 !important;
+        border: 3px solid var(--secondary) !important;
         color: $dark !important;
         background-color: transparent;    
         &:hover, &:focus, &:active, &.active, &.focus{
