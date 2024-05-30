@@ -89,7 +89,7 @@ const SimpleWorkflow = () => {
       </div>
 
       <div className="container">
-        <h2 className="display-6">Simple workflow.<br/>Built for scale.</h2>
+        <h2 className="display-6">Simple Workflow.<br/>Built for Scale.</h2>
         <div className="subheading mb-5 ">
           Secure multi-cloud architecture, integrated full-service solution
           to keep therapists and clients connected.
@@ -136,7 +136,7 @@ const PersonalizedTherapyExperience = () => {
 
           <div className="col-lg-5 col-md-7 mt-5 mt-sm-0">
             <div className="org-benefits">
-              <h2 className="display-6">Personalized Therapy Experience</h2>
+              <h2 className="display-6">Personalized Therapy Experience.</h2>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
               <li>ZenSpaceApp&apos;s dedicated mobile apps for patients allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
@@ -156,7 +156,7 @@ const CollabMoodTracking = () => {
         <div className="row align-items-center">
           <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
             <div className="org-benefits">
-              <h2 className="display-6">Collaborative Mood Tracking</h2>
+              <h2 className="display-6">Collaborative Mood Tracking.</h2>
               <ul className="list-unstyled">
                 <li>
                   <span>

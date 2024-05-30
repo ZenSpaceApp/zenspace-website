@@ -3938,18 +3938,26 @@ input::-webkit-inner-spin-button {
 
 
     li {
-      // padding: 5px 0;
+      padding: 10px 0;
       // margin-right: 20px;
       // border-bottom: 1px dotted $border-color;
       // font-size: 1.2em;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      column-gap: 10px;
       // margin: px 0;
-      // &::before {
-      //   content: "\25a0";
-      //   color: #22222225;
-      // }
+      &::before {
+        content: "\25a0";
+        // font-size: 12px;
+        margin-top: 4px;
+        // color: #22222225;
+      }
       //   margin-right: 15px;
+
+      &:before {
+        content: '-';
+        font-weight: 800;
+      }
 
       i {
         margin-right: 20px;
