@@ -37,7 +37,7 @@ $color-background-light: #e5f5f5;
 $color-background-secondary: #00000005;
 $color-background-dark: #d8d8d8;
 
-$color-main: #474747 !important;
+$color-main: var(--bg--alt--2) !important;
 $color-background: var(--bg--body--main);
 $color-dominant: #0080ff;
 $color-active: #3e566e;
@@ -1531,7 +1531,9 @@ footer {
             margin-bottom: 4px;
           }
         }
-        
+        a {
+          color: var(--secondary) !important;
+        }
         .acct-mgmt {
           display: flex;
           justify-content: space-between;
@@ -1543,6 +1545,12 @@ footer {
         .btn {
           width: 100% !important;
           line-height: 1.0;
+          background: var(--secondary);
+          color: white !important;
+
+          &:hover {
+            background: var(--bg--alt--2) !important;
+          }
         }
       }
 
