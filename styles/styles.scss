@@ -364,7 +364,6 @@ section.route-section {
 
     @media screen and #{$mq-medium} {
       grid-template-columns: 1fr 2fr;
-      row-gap: 0px;
       grid-template-areas:
       'heading heroImg'
       'subhead heroImg'
