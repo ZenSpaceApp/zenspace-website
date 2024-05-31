@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 import ZenNotesImg from '../public/images/zen-notes.jpg';
 import WorkflowShape from '../public/images/tab-shape-2.svg';
-import TherapistDashImg from '../public/images/home/web-app.gif';
+import TherapistDashImg from '../public/images/home/workflow@2x.png';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
 import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
@@ -83,7 +83,7 @@ const SimpleWorkflow = () => {
           height={0}
           width={0}
           style={{
-            maxWidth: "80%"
+            maxWidth: "80%",
           }}
         />
       </div>
@@ -104,6 +104,12 @@ const SimpleWorkflow = () => {
                 src={TherapistDashImg}
                 height={0}
                 width={0}
+                style={{
+                  border: "3px solid #efefef",
+                  borderRadius: "12px",
+                  width: "100%",
+                  maxWidth: "1340px"
+                }}
               />
             </div>
           </div>
