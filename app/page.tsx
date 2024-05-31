@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 import ZenNotesImg from '../public/images/zen-notes.jpg';
 import WorkflowShape from '../public/images/tab-shape-2.svg';
-import TherapistDashImg from '../public/images/home/workflow@2x.png';
+import TherapistDashImg from '../public/images/home/workflow.jpg';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
 import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
@@ -99,19 +99,11 @@ const SimpleWorkflow = () => {
           <div className="col-lg-8 col-12 order-1 pt-4 order-lg-2 offset-lg-2">
             <div>
               <Image
-                className="img-fluid workflow "
+                className="img-fluid workflow"
                 alt="Therapist workflow and dashboard"
                 src={TherapistDashImg}
                 height={0}
                 width={0}
-                style={{
-                  border: "3px solid #efefef",
-                  borderRadius: "12px",
-                  width: "100%",
-                  maxWidth: "1340px",
-                  margin: "auto",
-                  display: "block"
-                }}
               />
             </div>
           </div>

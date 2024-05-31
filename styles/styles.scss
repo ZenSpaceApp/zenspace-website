@@ -4155,12 +4155,25 @@ input::-webkit-inner-spin-button {
     margin: auto;
   }
 
+  // border: "3px solid #fff",
+  //                 borderRadius: "12px",
+  //                 width: "100%",
+  //                 maxWidth: "1340px",
+  //                 margin: "auto",
+  //                 display: "block"
   img {
     &.workflow {
       display: block;
-      max-width: 100%;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 1440px;
       margin: auto;
       margin-bottom: 4rem;
+      border: 3px solid #fff;
+
+      @media screen and #{$mq-large} {
+        border-radius: 12px;
+      }
     }
   }
 }
