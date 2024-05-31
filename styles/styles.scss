@@ -1452,7 +1452,7 @@ footer {
   .main {
     display: flex;
     height: 100vh;
-    background-color: #fafafa !important;
+    background-color: #fff !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -1478,14 +1478,12 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
-      height: 100%;
+      align-items: center;
       width: 100%;
 
       @media #{$mq-large} {
-        width: calc(100vw - 640px);
+        width: 70vw;
         margin: auto;
-        // margin-right: 15%;
         padding: 40px;  
       }
 
@@ -1496,19 +1494,18 @@ footer {
       }
 
       .form-fields {
-        
         padding-left: 15px;
         padding-right: 15px;
         margin: auto;
         width: calc(100vw - 30px);
         background: #f8f8f8;
        
-        max-width: 525px;
+        max-width: 425px;
         
         @media screen  and #{$mq-small} {
           border: 2px solid;
           border-radius: 20px;
-          padding: 60px 40px;
+          padding: 70px 35px;
         }
 
         .input-group {
@@ -1517,7 +1514,8 @@ footer {
           row-gap: 1rem;
 
           .form-control {
-            border: 1px solid !important;
+            border: 2px solid  #00000010 !important;
+            border-radius: 6px;
           }
 
           .label {
@@ -4284,6 +4282,20 @@ input::-webkit-inner-spin-button {
   }
 }
 
+#app-security {
+
+  .list-unstyled {
+    li {
+      // padding: 10px 0;
+      display: flex;
+      &::before {
+        content: "-";
+        font-weight: 800;
+
+      }
+    }
+  }
+}
 
 .media {
   display: flex !important;

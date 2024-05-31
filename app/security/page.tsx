@@ -1,12 +1,13 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import { bottom } from '@popperjs/core';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 import SecureArchIcon from '../../public/images/icons/secure-cloud-blue.svg';
 import DataPrivacyIcon from '../../public/images/icons/data_privacy.svg';
 import EndToEndIcon from '../../public/images/icons/end_to_end_encryption.svg';
+import AppSecurityImg from '../../public/images/app-data-security.svg';
 
 function renderSectionHero() {
   return (
@@ -109,7 +110,7 @@ function renderSectionFeatures() {
 
 function renderSectionAppSecurity() {
   return (
-    <section className="section bg-half-170" style={{borderBottom: '1px solid #00000010'}}>
+    <section id="app-security" className="section bg-half-170" style={{borderBottom: '1px solid #00000010'}}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6 mt-4 pt-2 mt-lg-0 pt-lg-0">
@@ -129,7 +130,7 @@ function renderSectionAppSecurity() {
                 
                 <li style={{ display: 'flex' }} className="mb-0"><h5 className="mr-2"><i className="uil uil-shield-plus align-middle text-primary"></i></h5>
                   <p>We fully adhere to and compliant with <mark>HIPAA Security and Privacy rules</mark> specifications as per
-                   <Link href='https://www.law.cornell.edu/cfr/text/45/164.306'> HIPAA by-laws.</Link></p>
+                   <Link className="underline" href='https://www.law.cornell.edu/cfr/text/45/164.306'> HIPAA by-laws.</Link></p>
                 </li>
               </ul>
             </div>
@@ -137,7 +138,18 @@ function renderSectionAppSecurity() {
           <div className="col-lg-5  col-md-6  col-md-5 order-1 order-md-2">
             <div className="app-fature-shape-right position-relative">
               <div className="text-center text-md-right">
-                <img src="images/app-data-security.svg" style={{ width: '75%' }} className="img-fluid" alt="" />
+              <Image
+                className="img-fluid d-block"
+                alt="App security"
+                src={AppSecurityImg}
+                height={0}
+                width={0}
+                style={{
+                  width: '60%',
+                  margin: "auto",
+                  display: "flex"
+                  }}
+                />
               </div>
             </div>
           </div>
