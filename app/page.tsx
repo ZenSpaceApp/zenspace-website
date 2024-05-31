@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 import ZenNotesImg from '../public/images/zen-notes.jpg';
 import WorkflowShape from '../public/images/tab-shape-2.svg';
-import TherapistDashImg from '../public/images/home/appt-workflow.jpg';
+import TherapistDashImg from '../public/images/home/zennotes-view.jpg';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
 import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
