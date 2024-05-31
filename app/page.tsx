@@ -108,7 +108,9 @@ const SimpleWorkflow = () => {
                   border: "3px solid #efefef",
                   borderRadius: "12px",
                   width: "100%",
-                  maxWidth: "1340px"
+                  maxWidth: "1340px",
+                  margin: "auto",
+                  display: "block"
                 }}
               />
             </div>
