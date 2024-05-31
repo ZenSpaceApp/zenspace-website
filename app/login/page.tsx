@@ -37,7 +37,7 @@ const ResponsiveImage = () => (
       width={350}
       style={{
         height: "auto",
-        maxWidth: "350px",
+        maxWidth: "80%",
       }}
     />
   </div>

@@ -1464,7 +1464,8 @@ footer {
       @media screen and #{$mq-large} {
         display: flex;
         // height: 100vh;
-        width: 640px;
+        max-width: 640px;
+        width: 30vw;
         justify-content: center; 
         align-items: center;
         background: #F7E3D9;
@@ -1499,6 +1500,7 @@ footer {
         padding-right: 15px;
         margin: auto;
         width: calc(100vw - 30px);
+        background: #f8f8f8;
        
         max-width: 525px;
         
