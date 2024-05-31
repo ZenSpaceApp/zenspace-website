@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ZenSpaceAppLogo from '../public/images/logo/zenspace-logo@2x.png';
+import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp-light.svg';
 import Image
   from "next/image";
 export default function Footer() {
@@ -19,10 +19,10 @@ export default function Footer() {
                     className="logo-only"
                     alt="ZenSpaceApp logo"
                     src={ZenSpaceAppLogo}
-                    height={32}
+                    height={36}
                     width={0}
                   />
-                  <div>ZenSpaceApp</div>
+                  
                   </Link>
                 <div
                   className="slogan">
