@@ -1,5 +1,7 @@
 'use client';
 import { useState } from "react";
+import Link from "next/link";
+
 const faqs = [
   [
     "Is there a free trial available?",
@@ -121,6 +123,16 @@ export default function PricingFAQ() {
           ))}
           </div>
         </div>
+        <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem", fontFamily: "Syne"}}>
+        Read a detailed version of our 
+        <span>
+          <Link
+            style={{marginLeft: "4px", borderBottom: "2px solid"}}
+            href="https://zenspaceapp.notion.site/Pricing-FAQs-e502ea568b43406888e25fabe94450c3?pvs=4">
+            Pricing FAQs.
+          </Link>
+        </span>  
+      </div>
       </div>
     </section>
 }
