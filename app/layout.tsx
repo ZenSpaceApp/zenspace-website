@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Syne } from "next/font/google";
 const inter = Inter({
@@ -9,7 +9,8 @@ const syne = Syne({
 });
 
 import '../styles/styles.scss';
-
+{/* <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css" /> */}
+        
 
 function RootLayout({
   children,
@@ -22,4 +23,4 @@ function RootLayout({
     </html>
   );
 }
-export default RootLayout;``
+export default RootLayout;

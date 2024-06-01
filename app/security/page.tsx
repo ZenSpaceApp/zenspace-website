@@ -1,13 +1,28 @@
+'use client';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SecureArchIcon from '../../public/images/icons/secure-cloud-blue.svg';
-import DataPrivacyIcon from '../../public/images/icons/data_privacy.svg';
-import EndToEndIcon from '../../public/images/icons/end_to_end_encryption.svg';
-import AppSecurityImg from '../../public/images/app-data-security.svg';
+import SecureArchIcon from '@/public/images/icons/secure-cloud-blue.svg';
+
+import AppSecurityImg from '@/public/images/app-data-security.svg';
+
+import {
+  UilLockAccess,
+  UilCloudDatabaseTree,
+  UilCloudShield,
+  UilCloudLock,
+  UilCommentLock,
+  UilFolderLock,
+  UilShieldCheck,
+  UilFileLockAlt,
+  UilDataSharing,
+  UilCloudDataConnection,
+  UilCloudBlock,
+  UilUserCheck
+} from '@iconscout/react-unicons';
 
 function renderSectionHero() {
   return (
@@ -33,7 +48,7 @@ function renderSectionHero() {
                   width: '80%',
                   margin: "auto",
                   display: "flex"
-                }}  />
+                }} />
             </div>
           </div>
         </div>
@@ -42,6 +57,10 @@ function renderSectionHero() {
   )
 }
 
+/**
+ * Main features
+ * @returns 
+ */
 function renderSectionFeatures() {
   return (
     <section className="bg-half-170" style={{borderBottom: '1px solid #00000010'}}>
@@ -50,12 +69,7 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-              <Image
-                  alt="Secure architectur"
-                  src={EndToEndIcon}
-                  height={32}
-                  width={32}
-                />
+                <UilCloudLock className="uilIcon" />
               </div>
 
               <div className="content mt-4">
@@ -69,12 +83,7 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 mt-5 mt-sm-0 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-                <Image
-                  alt="Secure architectur"
-                  src={SecureArchIcon}
-                  height={32}
-                  width={32}
-                />
+                <UilCloudShield  className="uilIcon" />
               </div>
 
               <div className="content mt-4">
@@ -88,12 +97,7 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 mt-5 mt-sm-0 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-              <Image
-                  alt="Secure architecture"
-                  src={DataPrivacyIcon}
-                  height={32}
-                  width={32}
-                />
+                <UilFileLockAlt className="uilIcon" />
               </div>
 
               <div className="content mt-4">
@@ -173,8 +177,8 @@ function renderPlatformSecurity() {
 
               <div className="row">
                 <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
-                  <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                    <h2><i className="uil uil-shield-check d-block rounded h2 text-primary mb-0"></i></h2>
+                  <div className="d-flex feature-card align-itemscenter pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <h2><UilShieldCheck /></h2>
                     <div className="ml-3">
                       <h5>Full HIPAA compliance</h5>
                       <p className="mb-0">ePHI and communications is stored on HIPAA-compliant cloud and servers.</p>
@@ -184,7 +188,7 @@ function renderPlatformSecurity() {
 
                 <div className="col-lg-6 col-12 p-3" style={{borderBottom: '1px solid #00000010'}}>
                   <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                    <h2><i className="uil uil-cloud-shield d-block rounded h2 text-primary mb-0"></i></h2>
+                    <h2><UilFolderLock /></h2>
                     <div className="ml-3">
                       <h5>Database security</h5>
                       <p className="mb-0">Any stored ePHI or communications is first encrypted using multiple layers of
@@ -196,7 +200,7 @@ function renderPlatformSecurity() {
               
                 <div className="col-lg-6  col-12 p-3" style={{borderRight: '1px solid #00000010'}}>
                   <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                    <h2><i className="uil uil-database-alt d-block rounded h2 text-primary mb-0"></i></h2>
+                    <h2><UilDataSharing /></h2>
                     <div className="ml-3">
                       <h5>De-centralized storage</h5>
                       <p className="mb-0">NO <mark>single-source-of-truth</mark>. Any ePHI, appointments and communications are stored on different
@@ -207,10 +211,10 @@ function renderPlatformSecurity() {
 
                 <div className="col-lg-6 col-12 p-3">
                   <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                    <h2><i className="uil uil-server-network-alt d-block rounded h2 text-primary mb-0"></i></h2>
+                    <h2><UilCommentLock /></h2>
                     <div className="ml-3">
                       <h5>Secure communications</h5>
-                      <p className="mb-0">[256-bit] end-to-end encryption for video calling.</p>
+                      <p className="mb-0">[256-bit] end-to-end encryption for video, chat and all forms of communication.</p>
                     </div>
                   </div>
                 </div>
@@ -242,7 +246,7 @@ function renderHipaaCompliance() {
                 <div className="row mb-4">
                   <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                      <h2><i className="uil uil-cloud-data-connection d-block rounded h2 text-primary mb-0"></i></h2>
+                      <h2><UilFileLockAlt /></h2>
                       <div className="ml-3">
                         <h5>Transport Encryption</h5>
                         <p className="mb-0">Data is encrypted before it is transmitted using 256-bit encryption.</p>
@@ -252,7 +256,7 @@ function renderHipaaCompliance() {
   
                   <div className="col-lg-6 col-12 p-3"  style={{borderBottom: '1px solid #00000010'}}>
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                      <h2><i className="uil uil-cloud-lock text-primary mb-0"></i></h2>
+                      <h2><UilCloudDatabaseTree /></h2>
                       <div className="ml-3">
                         <h5>Backup</h5>
                         <p className="mb-0">Data is backed up daily and retrieveable.</p>
@@ -262,7 +266,7 @@ function renderHipaaCompliance() {
                
                   <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                      <h2><i className="uil uil-padlock text-primary mb-0"></i></h2>
+                      <h2><UilUserCheck /></h2>
                       <div className="ml-3">
                         <h5>Authorization</h5>
                         <p className="mb-0">Data can only ever be accessed by authorized personnel. </p>
@@ -272,7 +276,7 @@ function renderHipaaCompliance() {
   
                   <div className="col-lg-6 col-12 p-3"  style={{borderBottom: '1px solid #00000010'}}>
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                      <h2><i className="uil uil-cloud-data-connection d-block rounded h2 text-primary mb-0"></i></h2>
+                      <h2><UilCloudDataConnection/></h2>
                       <div className="ml-3">
                         <h5>Integrity</h5>
                         <p className="mb-0">Data is transmitted using TLS and 256-bit End-to-End Encryption and cannot me tampered with in-flight.</p>
@@ -282,7 +286,7 @@ function renderHipaaCompliance() {
                
                   <div className="col-lg-6  col-12 p-3" style={{borderRight: '1px solid #00000010'}}>
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                      <h2><i className="uil uil-database text-primary mb-0"></i></h2>
+                      <h2><UilCloudShield /></h2>
                       <div className="ml-3">
                         <h5>Storage Encryption</h5>
                         <p className="mb-0">Data (ePHI and communications) is first encrypted and then stored.</p>
@@ -292,7 +296,7 @@ function renderHipaaCompliance() {
   
                   <div className="col-lg-6 col-12 p-3">
                     <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
-                    <h2><i className="uil uil-cloud-download d-block rounded h2 text-primary mb-0"></i></h2>
+                    <h2><UilCloudBlock /></h2>
                       <div className="ml-3">
                         <h5>Sharing</h5>
                         <p className="mb-0">Data is stored on HIPAA-compliant cloud/servers. We have signed

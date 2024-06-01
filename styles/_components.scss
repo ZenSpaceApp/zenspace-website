@@ -72,6 +72,9 @@ $value in $colors {
     transition: all 0.3s;
     font-weight: normal;
     border-radius: 6px;
+    line-height: 1.0 !important;
+    height: 46px;
+
     &:focus {
         box-shadow: none !important;
     }
