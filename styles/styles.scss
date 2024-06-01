@@ -1498,14 +1498,14 @@ footer {
         padding-right: 15px;
         margin: auto;
         width: calc(100vw - 30px);
-        background: #f8f8f8;
-       
+        
         max-width: 425px;
         
         @media screen  and #{$mq-small} {
           border: 2px solid;
           border-radius: 20px;
           padding: 70px 35px;
+          background: #f8f8f8;
         }
 
         .input-group {
