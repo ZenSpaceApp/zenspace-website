@@ -15,6 +15,10 @@ import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2
 
 
 //import icons 
+import CostsIcon from '../public/images/icons/costs.svg';
+import ImpactIcon from '../public/images/icons/impact.svg';
+import NoShowIcon from '../public/images/icons/no-show.svg';
+
 import ZenNotesIcon from '../public/images/icons/therapy-notes.svg';
 import VideoIcon from '../public/images/icons/video-calling.svg';
 import ChatIcon from '../public/images/icons/chat-bubble.svg';
@@ -318,20 +322,41 @@ const Stats = () => {
     <div className='container'> 
     <h4 className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</h4>
       <div className='grid-container'>
-        <div className="p-4 pr-2 pl-2 p-lg-5 grid-item">
+        <div className="grid-item">
+          <Image 
+            alt='ChatGPT-powered Therapy Notes'
+            src={CostsIcon}
+            height={32}
+            width={0}
+            style={{marginBottom: "2rem"}}
+          />
           <h5>Costs</h5>
           <div className="">
             <span className="">Virtual visits saved patients</span> a median of <b>88 minutes</b> and <b>33 miles</b> compared to usual care, this according to a random trial
             done on Parkinson&apos;s patients.
           </div>
         </div>
-        <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
-          <h5>Impact and satisfaction</h5>
+        <div className="grid-item">
+          <Image 
+            alt='ChatGPT-powered Therapy Notes'
+            src={ImpactIcon}
+            height={32}
+            width={0}
+            style={{marginBottom: "2rem"}}
+          />
+          <h5>Impact</h5>
           <div>
             Higher patient satisfaction rates than in-person therapy. <span className="underline">Reduced wait times</span> for mental
             health services, especially in areas with limited access.</div>
         </div>
-        <div className="p-4 pr-2  pl-2 p-lg-5 grid-item">
+        <div className="grid-item">
+          <Image 
+            alt='ChatGPT-powered Therapy Notes'
+            src={NoShowIcon}
+            height={32}
+            width={0}
+            style={{marginBottom: "2rem"}}
+          />
           <h5>No-show</h5>
           <div className="">
             Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
