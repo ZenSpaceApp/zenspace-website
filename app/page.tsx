@@ -10,7 +10,7 @@ import ZenNotesImg from '../public/images/zen-notes.jpg';
 import WorkflowShape from '../public/images/tab-shape-2.svg';
 import TherapistDashImg from '../public/images/home/zennotes-view.jpg';
 import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
-import PersonalizedTherapyImg from '../public/images/home/personsalized-therapy@2x.png';
+import PersonalizedTherapyImg from '../public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
 
 
@@ -61,10 +61,12 @@ const CrossDeviceSync = () => {
                 className="img-fluid"
                 alt="Cross device sync"
                 src={CrossDevSyncImg}
-                height={0}
+                height={640}
                 width={0}
                 style={{
-                  maxWidth: "80%"
+                  maxWidth: "70%",
+                  display: "block",
+                  margin: "auto"
                 }}
               />
             </div>
@@ -84,10 +86,12 @@ const SimpleWorkflow = () => {
           className="img-fluid"
           alt="Cross device sync"
           src={WorkflowShape}
-          height={0}
+          height={640}
           width={0}
           style={{
             maxWidth: "80%",
+            display: "block",
+            margin: "auto"
           }}
         />
       </div>
@@ -128,10 +132,13 @@ const PersonalizedTherapyExperience = () => {
                 className="img-fluid "
                 alt="Personalized Therapy"
                 src={PersonalizedTherapyImg}
-                height={0}
+                height={640}
                 width={0}
                 style={{
-                  maxWidth: "80%"
+                  maxWidth: "70%",
+                  // height: "auto",
+                  display: "block",
+                  margin: "auto"
                 }}
               />
               </div>
@@ -143,7 +150,7 @@ const PersonalizedTherapyExperience = () => {
               <h2 className="display-6">Personalized Therapy Experience.</h2>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
-              <li>ZenSpaceApp&apos;s dedicated mobile apps for patients allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
+              <li>ZenSpaceApp&apos;s dedicated mobile apps for client allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
               </ul>
             </div>
           </div>
@@ -164,7 +171,7 @@ const CollabMoodTracking = () => {
               <ul className="list-unstyled">
                 <li>
                   <span>
-                    Empower patients to actively engage in their therapy by tracking and sharing their mood levels.
+                    Empower clients to actively engage in their therapy by tracking and sharing their mood levels.
                   </span>
                 </li>
               </ul>
@@ -181,7 +188,7 @@ const CollabMoodTracking = () => {
                   height={0}
                   width={0}
                   style={{
-                    maxWidth: "80%"
+                    maxWidth: "70%"
                   }}
                 />
               </div>
@@ -198,7 +205,7 @@ const CollabMoodTracking = () => {
  */
 function Benefits() {
   return (
-    <section className="bg-half-260">
+    <section id="benefits" className="bg-half-260">
       <div className="container">
         <div className="mb-4 mt-4" style={{maxWidth: "740px"}}>
           <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>
@@ -208,8 +215,8 @@ function Benefits() {
         </div>
 
     <div className="row justify-content-center align-items-center" style={{padding: "0 16px"}}>
-        <div className="row mt-4 pt-2">
-          <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
+        <div className="row mt-4 pt-2" >
+          <div className="benefit col-md-4 col-12">
             <div className="media pt-4 pb-4 p-lg-4" >
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -225,7 +232,7 @@ function Benefits() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
+          <div className="benefit col-md-4 col-12">
               <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -238,12 +245,12 @@ function Benefits() {
                   <div className="media-body">
                     <h5 className="title">Convenience</h5>
                 <p className=" mb-0">
-                Offer remote sessions and streamline scheduling to make therapy more accessible for patients and more efficient for providers.</p>
+                Offer remote sessions and streamline scheduling to make therapy more accessible for clients and more efficient for therapists.</p>
                   </div>
               </div>
           </div>
    
-          <div className="col-md-4 col-12" style={{borderBottom: '1px solid #00000010'}}>
+          <div className="benefit col-md-4 col-12">
               <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -255,12 +262,12 @@ function Benefits() {
               </div>
                   <div className="media-body">
                     <h5 className="title">Communication</h5>
-                    <p className="mb-0">Secure messaging and document sharing help keep everyone on the same page and facilitate better collaboration between therapists and patients.</p>
+                    <p className="mb-0">Secure messaging and document sharing help keep everyone on the same page and facilitate better collaboration between therapists and their clients.</p>
                   </div>
               </div>
           </div>
           
-          <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
+          <div className="benefit col-md-4 col-12">
               <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -277,7 +284,7 @@ function Benefits() {
               </div>
           </div>
           
-          <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
+          <div className="benefit col-md-4 col-12">
               <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -294,7 +301,7 @@ function Benefits() {
               </div>
           </div>
 
-          <div className="col-md-4 col-12">
+          <div className="benefit col-md-4 col-12">
               <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
@@ -413,14 +420,14 @@ const Hero = () => {
     return (
       <div className="ctaButtons">
         <Link
-          href="https://3txnldgujdh.typeform.com/to/RXZdaaEP"
+          href="https://form.typeform.com/to/RXZdaaEP"
           className="btn btn-primary-dark-border  mt-2"
           >
           Sign up for early access
         </Link>
         <Link
           className="btn btn-outline-dark ml-md-4 mt-2"
-          href="/">
+          href="https://calendly.com/rupesh-zenspaceapp/zenspaceapp-demo">
           Book a demo
         </Link>
       </div>

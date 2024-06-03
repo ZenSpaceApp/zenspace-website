@@ -145,7 +145,7 @@ code {
   }
 }
 
-// iconscout icon sizing
+// iconscout icon styling
 svg {
   height: 2.2rem;
   width: auto;    
@@ -418,87 +418,6 @@ section.route-section {
 }
 
 
-#cover-med-group {
-  // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
-  // height: 75vh;
-  // padding-bottom: 80%;
-  margin: 0 4% 4%;
-  height: auto;
-  display: block;
-  // width: 90vw;
-  background-image: url('/images/med-group-cover.jpg');
-  background-position: top bottom;
-  background-repeat: no-repeat;
-  // object-fit: cover;
-
-  @media #{$mq-medium} {
-    background-image: url('/images/med-group-cover.jpg');
-  }
-
-  @media #{$mq-large} {
-    background-image: url('/images/med-group-cover.jpg');
-  }
-
-  @media #{$mq-xlarge} {
-    background-image: url('/images/med-group-cover.jpg');
-  }
-}
-
-#cover-about-us {
-  // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
-  // height: 75vh;
-  // padding-bottom: 80%;
-  margin: 0 4% 4%;
-  height: auto;
-  display: block;
-  // width: 90vw;
-  background: #222 url('/images/better-life.jpg');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white !important;
-  
-
-  // @media #{$mq-medium} {
-  //   background: #222 url('/images/better-life.jpg');
-  // }
-
-  // @media #{$mq-large} {
-  //   background: #222 url('/images/better-life.jpg');
-  // }
-
-  // @media #{$mq-xlarge} {
-  //   background: #222 url('/images/better-life.jpg');
-  // }
-}
-
-#cover-security {
-  // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
-  // height: 75vh;
-  // padding-bottom: 80%;
-  margin: 4%;
-  height: auto;
-  display: block;
-  // width: 90vw;
-  background-image: url('/images/cloud-security.jpg');
-  background-position: top bottom;
-  background-repeat: no-repeat;
-  // object-fit: cover;
-  color: #302879 !important;
-  // color: azure !important;
-
-  @media #{$mq-medium} {
-    background-image: url('/images/cloud-security.jpg');
-  }
-
-  @media #{$mq-large} {
-    background-image: url('/images/cloud-security.jpg');
-  }
-
-  @media #{$mq-xlarge} {
-    background-image: url('/images/cloud-security.jpg');
-  }
-}
 
 #stats {
   padding-top: 8rem;
@@ -527,66 +446,14 @@ section.route-section {
   }
 }
 
-#stats-bg {
-  // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
-  // height: 75vh;
-  // padding-bottom: 80%;
-  margin: 0 4% 4%;
-  height: auto;
-  display: block;
-  // width: 90vw;
-  background-image: url('/images/stats-bg.jpg');
-  opacity: 0.6;
-  background-position: top bottom;
-  background-repeat: no-repeat;
-  // object-fit: cover;
-  color: white !important;
 
-  @media #{$mq-medium} {
-    background-image: url('/images/stats-bg.jpg');
-  }
 
-  @media #{$mq-large} {
-    background-image: url('/images/stats-bg.jpg');
-  }
+#benefits {
 
-  @media #{$mq-xlarge} {
-    background-image: url('/images/stats-bg.jpg');
+  .benefit {
+    // border-bottom: 1px solid #00000020;
   }
 }
-
-
-
-
-#faces-bg {
-  // @include background('./images/cover-bg.jpg', bottom , no-repeat, #f4f5fa);
-  // height: 75vh;
-  // padding-bottom: 80%;
-  // margin: 0 4% 4%;
-  max-height: auto;
-  max-width: 100%;
-  display: block;
-  // width: 90vw;
-  background-image: url('/images/faces.jpg');
-  // background-position: top bottom;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: contain;
-  padding: 24em;
-
-  @media #{$mq-medium} {
-    background-image: url('/images/faces.jpg');
-  }
-
-  @media #{$mq-large} {
-    background-image: url('/images/faces.jpg');
-  }
-
-  @media #{$mq-xlarge} {
-    background-image: url('/images/faces.jpg');
-  }
-}
-
 
 .translucent-bg {
   position: absolute;
@@ -4145,7 +4012,7 @@ input::-webkit-inner-spin-button {
     display: none;
 
     @media screen and #{$mq-large} {
-      display: block;
+      display: none;
       position: absolute;
       bottom: 0px;
       width: 18%;

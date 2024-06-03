@@ -107,7 +107,7 @@ function renderZenSpaceAppSecurityCompliance() {
               granted authorization to access or amend ePHI commensurate with their position. <br />
               <span className="hipaa-answer">
                 No individual/employee at ZenSpaceApp has access or can amend any ePHI due to its encrypted nature. ePHI can only
-                be amended by patients using our mobile apps.</span>
+                be amended by clients using our mobile apps.</span>
             </li>
             <li>Workforce Clearance Procedure (Addressable): A clearance procedure must exist that assesses whether the level of access to ePHI
               an individual workforce member needs to perform his or her duties is appropriate.
@@ -624,7 +624,7 @@ function renderHIPAAPrivacyRule() {
       <h5 className="mt-4">HIPAA privacy rule</h5>
       <em>The Rule requires appropriate safeguards to protect the privacy of personal health
       information, and sets limits and conditions on the uses and disclosures that may be made of
-      such information without patient authorization. The Rule also gives patients rights over their
+      such information without patient authorization. The Rule also gives clients rights over their
       health information, including rights to examine and obtain a copy of their health records and to
       request corrections</em>
     </>

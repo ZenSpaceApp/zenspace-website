@@ -33,18 +33,18 @@ export default function Footer() {
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h6 className="text-dark  mb-4"><b>Solutions</b></h6>
               <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/insta-patients" className="text-muted">Patients</a></li>
-                <li><a href="/insta-physicians" className="text-muted">Therapists</a></li>
-                <li><a href="/insta-physicians" className="text-muted">ZenNotes</a></li>
-                <li><a href="/insta-physicians" className="text-muted">Download Apps</a></li>
+                <li><a href="" className="text-muted">Clients</a></li>
+                <li><a href="" className="text-muted">Therapists</a></li>
+                <li><a href="" className="text-muted">ZenNotes</a></li>
+                <li><a href="" className="text-muted">Download Apps</a></li>
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <h6 className="text-dark  mb-4"><b>Company</b></h6>
               <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/about-us" className="text-muted">About Us</a></li>
-                <li><a href="/careers" className="text-muted">Careers</a></li>
-                <li><a href="/planet-health" className="text-muted">Healthy Planet</a></li>
+                <li><a href="" className="text-muted">About Us</a></li>
+                <li><a href="" className="text-muted">Careers</a></li>
+                <li><a href="planet-health" className="text-muted">Healthy Planet</a></li>
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">

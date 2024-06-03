@@ -96,7 +96,7 @@ export default function Navbar({ home }: { home: string} ) {
             </li>
             <li>
               {/* onMouseOver={() => handleMouseOver('resources')}> */}
-              <a>Patients</a>
+              <a>Clients</a>
               {renderResources()}
             </li>
             <li>
@@ -143,8 +143,8 @@ export default function Navbar({ home }: { home: string} ) {
           <div>
             <h5>SOLUTIONS</h5>
             <ul className="list-unstyled">
-              <Link href='/insta-patients'>
-                <li>Patients</li>
+              <Link href=''>
+                <li>Clients</li>
               </Link>
               <Link href='/insta-physicians'><li>Physicians</li></Link>
               <Link href="/medical-groups"><li>Medical groups & Organizations</li></Link>
