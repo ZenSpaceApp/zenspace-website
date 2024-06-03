@@ -73,7 +73,7 @@ function renderSectionFeatures() {
               </div>
 
               <div className="content mt-4">
-                <h4 className="title"><b>Industry-standards</b></h4>
+                <h4 className="title"><b>End-to-end Encryption</b></h4>
                 <p className=" mb-0">All sensitive information is encrypted while in transit [TLS] or at
                 rest using 256-bit encryption.</p>
               </div>
@@ -87,7 +87,7 @@ function renderSectionFeatures() {
               </div>
 
               <div className="content mt-4">
-                <h4 className="title"><b>Secure architecture</b></h4>
+                <h4 className="title"><b>Secure Architecture</b></h4>
                 <p className=" mb-0">Protected health information (ePHI), and all communications 
                 are stored on HIPAA-compliant cloud and servers.</p>
               </div>
@@ -177,7 +177,7 @@ function renderPlatformSecurity() {
 
               <div className="row">
                 <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
-                  <div className="d-flex feature-card align-itemscenter pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                  <div className="d-flex feature-card pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                     <h2><UilShieldCheck /></h2>
                     <div className="ml-3">
                       <h5>Full HIPAA compliance</h5>
@@ -187,7 +187,7 @@ function renderPlatformSecurity() {
                 </div>
 
                 <div className="col-lg-6 col-12 p-3" style={{borderBottom: '1px solid #00000010'}}>
-                  <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                  <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                     <h2><UilFolderLock /></h2>
                     <div className="ml-3">
                       <h5>Database security</h5>
@@ -199,7 +199,7 @@ function renderPlatformSecurity() {
               
               
                 <div className="col-lg-6  col-12 p-3" style={{borderRight: '1px solid #00000010'}}>
-                  <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                  <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                     <h2><UilDataSharing /></h2>
                     <div className="ml-3">
                       <h5>De-centralized storage</h5>
@@ -210,7 +210,7 @@ function renderPlatformSecurity() {
                 </div>
 
                 <div className="col-lg-6 col-12 p-3">
-                  <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                  <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                     <h2><UilCommentLock /></h2>
                     <div className="ml-3">
                       <h5>Secure communications</h5>
@@ -245,7 +245,7 @@ function renderHipaaCompliance() {
                 </p>
                 <div className="row mb-4">
                   <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                       <h2><UilFileLockAlt /></h2>
                       <div className="ml-3">
                         <h5>Transport Encryption</h5>
@@ -255,7 +255,7 @@ function renderHipaaCompliance() {
                   </div>
   
                   <div className="col-lg-6 col-12 p-3"  style={{borderBottom: '1px solid #00000010'}}>
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                       <h2><UilCloudDatabaseTree /></h2>
                       <div className="ml-3">
                         <h5>Backup</h5>
@@ -265,7 +265,7 @@ function renderHipaaCompliance() {
                   </div>
                
                   <div className="col-lg-6  col-12 p-3"  style={{borderBottom: '1px solid #00000010', borderRight: '1px solid #00000010'}}>
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                       <h2><UilUserCheck /></h2>
                       <div className="ml-3">
                         <h5>Authorization</h5>
@@ -275,7 +275,7 @@ function renderHipaaCompliance() {
                   </div>
   
                   <div className="col-lg-6 col-12 p-3"  style={{borderBottom: '1px solid #00000010'}}>
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                       <h2><UilCloudDataConnection/></h2>
                       <div className="ml-3">
                         <h5>Integrity</h5>
@@ -285,7 +285,7 @@ function renderHipaaCompliance() {
                   </div>
                
                   <div className="col-lg-6  col-12 p-3" style={{borderRight: '1px solid #00000010'}}>
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                       <h2><UilCloudShield /></h2>
                       <div className="ml-3">
                         <h5>Storage Encryption</h5>
@@ -295,7 +295,7 @@ function renderHipaaCompliance() {
                   </div>
   
                   <div className="col-lg-6 col-12 p-3">
-                    <div className="d-flex feature-card align-items-center pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
+                    <div className="d-flex feature-card  pt-4" style={{ boxShadow: 'none !important', border: 'none !important' }}>
                     <h2><UilCloudBlock /></h2>
                       <div className="ml-3">
                         <h5>Sharing</h5>

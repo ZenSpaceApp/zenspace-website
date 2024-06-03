@@ -200,7 +200,7 @@ function Benefits() {
   return (
     <section className="bg-half-260">
       <div className="container">
-        <div className="mb-4 mt-4" style={{maxWidth: "760px"}}>
+        <div className="mb-4 mt-4" style={{maxWidth: "740px"}}>
           <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>
           <div className="lead subheading mb-4 ">
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
@@ -210,7 +210,7 @@ function Benefits() {
     <div className="row justify-content-center align-items-center" style={{padding: "0 16px"}}>
         <div className="row mt-4 pt-2">
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
-            <div className="media pt-4 pb-4" >
+            <div className="media pt-4 pb-4 p-lg-4" >
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -226,7 +226,7 @@ function Benefits() {
             </div>
           </div>
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010', borderBottom: '1px solid #00000010'}}>
-              <div className="media  pt-4 pb-4">
+              <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -244,12 +244,12 @@ function Benefits() {
           </div>
    
           <div className="col-md-4 col-12" style={{borderBottom: '1px solid #00000010'}}>
-              <div className="media pt-4 pb-4">
+              <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={ChatIcon}
-                  height={0}
+                  height={28}
                   width={0}
                   />
               </div>
@@ -261,7 +261,7 @@ function Benefits() {
           </div>
           
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
-              <div className="media pt-4 pb-4">
+              <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -278,7 +278,7 @@ function Benefits() {
           </div>
           
           <div className="col-md-4 col-12" style={{borderRight: '1px solid #00000010'}}>
-              <div className="media  pt-4 pb-4">
+              <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -295,12 +295,12 @@ function Benefits() {
           </div>
 
           <div className="col-md-4 col-12">
-              <div className="media pt-4 pb-4">
+              <div className="media pt-4 pb-4 p-lg-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={SecurityIcon}
-                  height={0}
+                  height={28}
                   width={0}
                   />
               </div>
