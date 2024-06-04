@@ -49,7 +49,7 @@ export default function Contact({}) {
       <div className="email visible-lg">
         <div className="item">
           <a href="https://calendly.com/rupesh-zenspaceapp/zenspaceapp-demo">
-            Book a call.
+            Book a call
           </a>
         </div>
         <div className="item">
@@ -66,14 +66,16 @@ export default function Contact({}) {
       <section  id="contact" className="bg-half-260">
         <div className="container show fade">    
           <div className="grid">
-            <div className="grid-item contact-desc">
-              <h1 className="display-4">
-                Get in Touch.
-              </h1>
-              <div className="subhead left-aligned">
-                At ZenSpaceApp, we believe in the power of connection and communication.
-                We&apos;re here to support you every step of the way, ensuring that you have
-                everything you need to transform your therapy practice. Drop us a message, and let&apos;s chat!
+            <div className="grid-item contact-desc" style={{justifyContent: "space-between"}}>
+              <div>
+                <h1 className="display-4">
+                  Get in Touch.
+                </h1>
+                <div className="subhead left-aligned">
+                  At ZenSpaceApp, we believe in the power of connection and communication.
+                  We&apos;re here to support you every step of the way, ensuring that you have
+                  everything you need to transform your therapy practice. Drop us a message, and let&apos;s chat!
+                </div>
               </div>
               <Demo />
             </div>       
