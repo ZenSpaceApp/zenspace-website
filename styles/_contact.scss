@@ -1,74 +1,124 @@
-//
-// contact.scss
-//
-.form-group {
-    .icons {
-        position: absolute;
-        top: 13px;
-        left: 18px;
-    } 
-}
 
-.map {
-    line-height: 0;
-    iframe {
-        width: 100%;
-        height: 400px;
+
+#contact {  
+		background-image: url('../public/images/zenspaceapp-bg.jpg'); /* Replace with the path to your image */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: top center;
+
+    .grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			background: transparent;
+
+			@media screen and #{$mq-large} {
+				grid-template-columns: 1fr 1.5fr;
+			}
     }
-}
 
-.error {
-    margin: 8px 0px;
-    display: none;
-    color: $danger;
-}
+    .subhead {
+      color: var(--color--grey1);
+			font-weight: 500;
+      max-width: 640px;
+      margin: auto;
+		}
   
-#ajaxsuccess {
-    font-size: 16px;
-    width: 100%;
-    display: none;
-    clear: both;
-    margin: 8px 0px;
-}
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+			row-gap: 2rem;
+			padding: 2rem 1rem;
+      background: #f8bd6c;
+			border-radius: 16px;
+			border: 1.5px solid #00000010;
+			margin: 0 -1rem 0 -1rem;
 
-.error_message {
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    border: 2px solid $danger;
-    color: $danger;
-    border-radius: 6px;
-    font-size: 14px;
-}
+			@media screen and #{$mq-large} {
+				padding: 40px;
+				column-gap: 3rem;
+			}
 
-.contact-loader {
-    display: none;
-}
+      .input-lg {
+        font-size: 1.25rem;
+        font-family: 'Inter', sans-serif;
+				background: transparent;
+				color: var(--color--grey1);
+				border: 2px solid !important;
+				margin-bottom: 16px;
+      }
+			
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        // row-gap: 2rem;
+        // margin-bottom: 3rem;
+      }
+      
+      .submit-button {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
   
-#success_page {
-    text-align: center;
-    margin-bottom: 50px;
-    h3 {
-        color: $success;
-        font-size: 22px;
+        @media #{$mq-large} {
+          justify-content: flex-end;
+        }      
+      }
     }
-}
 
-//Flatpicker 
-.flatpickr-day {
-    &.selected,  
-    &.selected:hover {
-        background: $primary;
-        border-color: $primary;
-    }
-}
+  
+  
+  
+    .email {
+      text-decoration: underline;
+      margin: 30px 0;
+			
+      &.visible-xs {
+				display: flex;
+      }
+      &.visible-lg {
+				display: flex;
+      }
 
-@media (min-width: 768px) {
-    .map {
-        &.map-height-two {
-            iframe {
-                height: 551px;
-            }
+			flex-direction: column;
+
+      
+      .item {
+				margin-bottom: 4px;
+        padding-bottom: 4px;      
+				// border-bottom: 2px solid;
+				flex: 1 1 0;
+				display: flex;
+      }
+      
+      @media #{$mq-large} {
+        font-weight: 200;
+        font-size: 1.5rem;
+        padding-top: 10rem;
+  
+        .visible-xs {
+          display: none;
         }
+  
+        .visible-lg {
+          display: block;
+          padding: 20%;
+        }
+      }
+  
+      a {
+        color: var(--color--grey1);
+      }
     }
-}
+
+  }
+
+  #book-demo {
+    .subhead {
+      max-width: 640px;
+      display: block;
+      margin: 2rem auto;
+      font-weight: 500;
+    }
+  }

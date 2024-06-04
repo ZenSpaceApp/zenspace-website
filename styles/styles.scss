@@ -1609,23 +1609,6 @@ footer {
 
 // Contact form
 
-.contact-form {
-  // width: 95%;
-  margin: auto;
-  padding: 30px 15px;
-  background-color: white;
-  border: 1px solid transparent;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
-
-  @media #{$mq-large} {
-    padding: 40px;
-    width: 80%;
-  }
-
-  label {
-    margin-top: 15px;
-  }
-}
 
 
 // Loader
@@ -4195,3 +4178,4 @@ input::-webkit-inner-spin-button {
 @import './_home';
 @import './_components';
 @import './_price';
+@import './contact';
