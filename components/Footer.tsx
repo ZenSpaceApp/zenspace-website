@@ -8,35 +8,36 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="container">
-          <div className="row" style={{ borderTop: '0px solid #d8d8d8', borderBottom: '1px solid #d8d8d850', padding: '100px 0' }}>
+          <div className="row" style={{   padding: '100px 0' }}>
             <div className="col-lg-3 col-md-12 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                <div>
-                <Link
-                  href="/"
-                  className="logo-footer"
-                >
-                  <Image
-                    className="logo-only"
-                    alt="ZenSpaceApp logo"
-                    src={ZenSpaceAppLogo}
-                    height={36}
-                    width={0}
-                  />
-                  
-                  </Link>
-                <div
-                  className="slogan">
-                Empowering mental wellness with a touch of Zen.
-                </div>
-                </div>
+              <div>
+              <Link
+                href="/"
+                className="logo-footer"
+              >
+                <Image
+                  className="logo-only"
+                  alt="ZenSpaceApp logo"
+                  src={ZenSpaceAppLogo}
+                  height={36}
+                  width={0}
+                />
+                
+                </Link>
+              <div
+                className="slogan">
+              Empowering mental wellness with a touch of Zen.
+              </div>
+              </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            
+            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 offset-lg-1">
               <h6 className="text-dark  mb-4"><b>Solutions</b></h6>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="" className="text-muted">Clients</a></li>
                 <li><a href="" className="text-muted">Therapists</a></li>
                 <li><a href="" className="text-muted">ZenNotes</a></li>
-                <li><a href="" className="text-muted">Download Apps</a></li>
+                <li><a href="" className="text-muted">ZenMatch</a></li>
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -44,7 +45,7 @@ export default function Footer() {
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="" className="text-muted">About Us</a></li>
                 <li><a href="" className="text-muted">Careers</a></li>
-                <li><a href="planet-health" className="text-muted">Healthy Planet</a></li>
+                <li><a href="" className="text-muted">Healthy Planet</a></li>
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -56,15 +57,16 @@ export default function Footer() {
                 {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
               </ul>
             </div>
-            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h6 className="text-dark mb-4"><b>Support</b></h6>
                 <ul className="list-unstyled footer-list mt-2">
                   <li><a href="/help" className="text-muted">Help</a></li>
-                  <li><a href="/contact" className="text-muted">Contact Us</a></li>
+                <li><a href="/contact" className="text-muted">Contact Us</a></li>
+                <li><a href="./#faqs" className="text-muted">FAQs</a></li>
                 </ul>
             </div>
           </div>
-          <div className="subfooter">
+          <div className="subfooter" style={{ borderTop: '1px solid #d8d8d850' }}>
             <div>©2024 ZenSpaceApp Inc. All Rights Reserved.</div>
             <ul>
               <li>

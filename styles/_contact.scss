@@ -15,6 +15,7 @@
 
 			@media screen and #{$mq-large} {
 				grid-template-columns: 1fr 1.5fr;
+        column-gap: 3rem;
 			}
     }
 
@@ -22,6 +23,7 @@
       display: flex;
       flex-direction: column;
       padding: 12px 0;
+      justify-content: space-between;
     }
 
     .subhead {
@@ -66,15 +68,18 @@
         display: flex;
         justify-content: center;
         padding: 20px 0;
-  
+
+        button {
+          border: 2px solid;
+          font-size: 1.1rem;
+        }
+
+        justify-content: flex-start;
         @media #{$mq-large} {
           justify-content: flex-end;
         }      
       }
     }
-
-  
-  
   
     .email {
       // text-decoration: underline;

@@ -4166,6 +4166,36 @@ input::-webkit-inner-spin-button {
   }
 }
 
+/* styles/globals.css */
+.banner {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #333;
+  height: 80px;
+  color: #fff;
+  padding: 1rem;
+  animation: slide-down 0.8s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } 
+}
+
+
 @import './root.scss';
 @import './bootstrap-custom-overrides';
 @import "~bootstrap/scss/bootstrap";

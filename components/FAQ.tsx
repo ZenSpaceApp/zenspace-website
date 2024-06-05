@@ -79,7 +79,7 @@ export default function FAQ() {
       <div className='container'>
         <div className='Grid Grid--full small-Grid--1of2' >
           <div className='Grid-cell' >
-            <h2 className="u-textcenter display-4">FAQs</h2>
+            <h2 className="u-textcenter display-4">FAQs.</h2>
             <div className='psa'>
             Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@zenspaceapp.com" target="_blank">
             email 
