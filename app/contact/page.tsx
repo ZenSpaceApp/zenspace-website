@@ -3,7 +3,7 @@ import FAQ from "@/components/FAQ"
 import Layout from "@/components/Layout"
 import { InlineWidget } from "react-calendly";
 import { FormEvent, ChangeEvent, useState } from "react";
-import Banner from "@/components/Banner";
+import NotifBanner from "@/components/NotifBanner";
 
 
 interface FormData {
@@ -211,7 +211,7 @@ export default function Contact({ }) {
   const [showBanner, setShowBanner] = useState(false);
 
   return <Layout >
-    {showBanner && <Banner /> }
+    {showBanner && <NotifBanner/> }
     <ContactForm setShowBanner={setShowBanner}  />
     <BookDemo />
     <FAQ />
