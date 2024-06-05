@@ -427,7 +427,7 @@ const Hero = () => {
         </Link>
         <Link
           className="btn btn-outline-dark ml-md-4 mt-2"
-          href="https://calendly.com/rupesh-zenspaceapp/zenspaceapp-demo">
+          href="/contact/#book-demo">
           Book a demo
         </Link>
       </div>
@@ -451,7 +451,7 @@ const Hero = () => {
 export default function HomePage() {
   return (
     <Layout>
-      <Hero />
+      <Hero/>
       <Stats/>
       <Benefits />
       <h3 style={{fontSize: "2rem"}}  className='u-textcenter mb-5'>Explore the App and Features</h3>

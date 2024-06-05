@@ -175,8 +175,8 @@ const ContactForm = ({ setShowBanner }: { setShowBanner: (value: boolean) => voi
     return (
       <div className="email visible-lg">
         <div className="item">
-          <a href="https://calendly.com/rupesh-zenspaceapp/zenspaceapp-demo">
-            Book a call
+          <a href="#book-demo">
+            Book a demo
           </a>
         </div>
         <div className="item">
