@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CTAIconsGroup from '../public/images/cta-icons@2x.png';
 import { left } from "@popperjs/core";
+import Link from "next/link";
 
 
 export const CTA = () => {
@@ -27,8 +28,13 @@ export const CTA = () => {
           Reclaim your time and streamline your practice.
           Try ZenSpaceApp <span className="underline">free for 30-days</span> - no commitment, no risk.</h3>
         <div className="text-center">
-          <a className="btn btn-outline-dark mt-2" href="/pricing">
-            Start free trial</a>
+          <Link
+            href="/pricing"
+            className="btn btn-outline-dark mt-2"
+            style={{borderColor: "var(--bg--alt--2)"}}
+          >
+              Start free trial
+          </Link>
         </div>
       </div>
     </div>
