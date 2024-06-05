@@ -80,6 +80,7 @@ body {
   font-family: 'Inter', 'Open Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   color: $color-main;
 
   font-size: $base-font-size;
@@ -1335,7 +1336,7 @@ footer {
     right: 0;
     bottom: 0;
 
-    .banner {
+    .responsive-image {
       display: none; // hidden for small devices
 
       @media screen and #{$mq-large} {
@@ -4167,22 +4168,25 @@ input::-webkit-inner-spin-button {
 }
 
 /* styles/globals.css */
-.banner {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  right: 0;
-  background: #333;
-  height: 80px;
-  color: #fff;
-  padding: 1rem;
-  animation: slide-down 0.8s ease-in-out;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+
+
+  .notif-banner {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background: #333;
+    height: 80px;
+    color: #fff;
+    padding: 1rem;
+    animation: slide-down 0.8s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 
 @keyframes slide-down {
   0% {

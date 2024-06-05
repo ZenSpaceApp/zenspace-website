@@ -97,7 +97,7 @@ export default function PricingFAQ() {
       <div className='container'>
         <div className='Grid Grid--full small-Grid--1of2' >
           <div className='Grid-cell' >
-            <h2 className="u-textcenter display-4">FAQs</h2>
+            <h2 className="u-textcenter display-4" style={{marginBottom: "64px"}}>Pricing Questions?</h2>
           </div>
           <div className='Grid-cell content'>    
           {faqs.map((faq, idx) => (
@@ -129,7 +129,7 @@ export default function PricingFAQ() {
           <Link
             style={{marginLeft: "4px", borderBottom: "2px solid"}}
             href="https://zenspaceapp.notion.site/Pricing-FAQs-e502ea568b43406888e25fabe94450c3?pvs=4">
-            Pricing FAQs.
+            Pricing and Plans.
           </Link>
         </span>  
       </div>
