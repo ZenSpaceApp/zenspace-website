@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { auto } from '@popperjs/core';
 
-const small = '/images/left-banner-sm-330w.jpg';
-const medium = '/images/left-banner-md-768w.jpg';
+// const small = '/images/left-banner-sm-330w.jpg';
+// const medium = '/images/left-banner-md-768w.jpg';
 const large = '/images/right-banner.jpg';
 
 import ZenSpaceAppLogo from '../../public/images/logo/zenspaceapp@2x.png';
@@ -28,7 +28,7 @@ const ZenSpaceLogo = () => {
 }
 
 const ResponsiveImage = () => (
-  <div className="banner">
+  <div className="responsive-image">
     <Image
       alt="login"
       src={large}
