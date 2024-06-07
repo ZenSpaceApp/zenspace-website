@@ -57,7 +57,7 @@ const PayAsYouGo = () => {
       <ul className="list-unstyled mb-0 pl-0">
         <li>$5/month per active client (up to 50 clients included).</li>
         {/* <li>$5/month for each additional client.</li> */}
-        <li>HIPPA-compliant video calls and messaging</li>
+        <li>HIPAA-compliant video calls and messaging</li>
         <li>Therapy notes (ChatGPT-powered and Standard)</li>
         <li>4% payment processing fee applies</li>
         <li>Document uploads and patient intake forms</li>
@@ -83,7 +83,7 @@ const Yearly = () => {
     <div>
       <h3><b>Yearly</b></h3>
       <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: '800' }} className="mt-4">Single sign-on</span>
-      <h2 className="display-4">$1740 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
+      <h2 className="display-4">$1325 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
       <div>
         Ideal for therapists committed to ZenSpaceApp for the long term.
       </div>
@@ -91,8 +91,8 @@ const Yearly = () => {
     <div>
       <h6 className="mt-4">What&apos;s included</h6>
       <ul className="list-unstyled mb-0 pl-0">
-        <li>HIPPA-compliant HD-video calling</li>
-        <li>HIPPA-compliant messaging</li>
+        <li>Unlimited HIPAA-compliant HD-video calling</li>
+        <li>Unlimited HIPAA-compliant messaging</li>
         <li>Therapy notes (ChatGPT-powered and Standard)</li>
         <li>Document uploads and patient intake forms</li>
         <li>Payment processing fee included</li> 
@@ -116,7 +116,7 @@ const Monthly = () => {
   <div>
     <h3 className="display-6">Monthly</h3>
     <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
-    <h2 className="display-4">$207 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
+    <h2 className="display-4">$158 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
     <div>
       Well-suited for therapists with a consistent client base who prefer predictable monthly costs.
     </div>
@@ -124,8 +124,8 @@ const Monthly = () => {
   <div>
     <h6 className="mt-4">What&apos;s included</h6>
     <ul className="list-unstyled mb-0 pl-0">
-      <li>HIPPA-compliant HD-video calling</li>
-      <li>HIPPA-compliant messaging</li>
+      <li>Unlimited HIPAA-compliant HD-video calling</li>
+      <li>Unlimited HIPAA-compliant messaging</li>
       <li>Therapy notes (ChatGPT-powered and Standard)</li>
       <li>Document uploads and patient intake forms</li>
       <li>Payment processing fee included</li> 
