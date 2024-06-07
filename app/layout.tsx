@@ -1,4 +1,4 @@
-// import type { Metadata } from "next";
+import { Metadata } from 'next'
 import { Inter } from "next/font/google";
 import { Syne } from "next/font/google";
 const inter = Inter({
@@ -9,8 +9,12 @@ const syne = Syne({
 });
 
 import '../styles/styles.scss';
-{/* <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css" /> */}
-        
+
+export const metadata: Metadata = {
+  title: "One App to Streamline Your Therapy Practice.",
+  description: "Empowering mental wellness with a touch of Zen.",
+};
+
 
 function RootLayout({
   children,
