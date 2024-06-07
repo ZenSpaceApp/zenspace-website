@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 
 import Link from 'next/link';
 
-import ZenNotesImg from '@/public/images/zen-notes@2x.png';
+import ZenNotesImg from '@/public/images/zen-notes-ipad@2x.png';
 import WorkflowShape from '@/public/images/tab-shape-2.svg';
 import TherapistDashImg from '@/public/images/home/zennotes-view.jpg';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
@@ -389,7 +389,7 @@ const Hero = () => {
   const Subhead = () => {
     return (
       <div className="subhead griditem">
-        Discover a simpler, more integrated way to manage your practice
+        Discover a simpler, more integrated way to manage your practice:
         <div>
           <ul>
             <li>
@@ -464,9 +464,12 @@ const Hero = () => {
           width={0}
           style={{
             display: "flex",
-            maxWidth: "100%",
+            maxWidth: "90%",
             height: "auto",
-            marginLeft: "auto",
+            margin: "auto",
+            boxShadow: "10px 10px rgba(71, 71, 71, 1.0)",
+            borderRadius: "1rem",
+            border: "3px solid #474747" 
           }}
         />
       </div>
