@@ -1,30 +1,30 @@
 
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import FAQ from '@/components/FAQ';
 
 import Link from 'next/link';
 
-import ZenNotesImg from '../public/images/zen-notes.jpg';
-import WorkflowShape from '../public/images/tab-shape-2.svg';
-import TherapistDashImg from '../public/images/home/zennotes-view.jpg';
-import CrossDevSyncImg from '../public/images/home/cross-device-sync@2x.png';
-import PersonalizedTherapyImg from '../public/images/home/therapist-invites@2x.png';
-import CollabMoodTrackingImg from '../public/images/home/mood-tracking-cropped@2x.png';
+import ZenNotesImg from '@/public/images/zen-notes@2x.png';
+import WorkflowShape from '@/public/images/tab-shape-2.svg';
+import TherapistDashImg from '@/public/images/home/zennotes-view.jpg';
+import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
+import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
+import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 
 
 //import icons 
-import CostsIcon from '../public/images/icons/costs.svg';
-import ImpactIcon from '../public/images/icons/impact.svg';
-import NoShowIcon from '../public/images/icons/no-show.svg';
+import CostsIcon from '@/public/images/icons/costs.svg';
+import ImpactIcon from '@/public/images/icons/impact.svg';
+import NoShowIcon from '@/public/images/icons/no-show.svg';
 
-import ZenNotesIcon from '../public/images/icons/therapy-notes.svg';
-import VideoIcon from '../public/images/icons/video-calling.svg';
-import ChatIcon from '../public/images/icons/chat-bubble.svg';
-import CreditCardIcon from '../public/images/icons/credit-card.svg';
-import CalendarIcon from '../public/images/icons/calendar.svg';
-import SecurityIcon from '../public/images/icons/security.svg';
+import ZenNotesIcon from '@/public/images/icons/therapy-notes.svg';
+import VideoIcon from '@/public/images/icons/video-calling.svg';
+import ChatIcon from '@/public/images/icons/chat-bubble.svg';
+import CreditCardIcon from '@/public/images/icons/credit-card.svg';
+import CalendarIcon from '@/public/images/icons/calendar.svg';
+import SecurityIcon from '@/public/images/icons/security.svg';
 
   
 export const metadata: Metadata = {
@@ -379,9 +379,9 @@ const Hero = () => {
 
   const Heading = () => {
     return (
-      <div className="heading title-heading">
-        <h1 className="display-3 pt-3 pr-3" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
-          Transform Your Therapy Practice with ZenSpaceApp.
+      <div className="headline title-heading grid-item">
+        <h1 className="pt-3 pr-3" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
+          One App to Streamline Your Therapy Practice.
         </h1>
       </div>
     )
@@ -389,7 +389,7 @@ const Hero = () => {
 
   const Subhead = () => {
     return (
-      <div className="subhead">
+      <div className="subhead grid-item">
         Discover a simpler, more integrated way to manage your practice with telehealth,
         ChatGPT-powered therapy notes, streamlined scheduling, and seamless
         patient communication. Explore what&apos;s possible with ZenSpaceApp.
@@ -403,13 +403,13 @@ const Hero = () => {
         <Image
           src={ZenNotesImg}
           alt='ZenNotes'
-          height={590}
+          height={860}
           width={0}
           style={{
             display: "flex",
             maxWidth: "100%",
             height: "auto",
-            margin: "auto",
+            marginLeft: "auto",
           }}
         />
       </div>
@@ -418,7 +418,7 @@ const Hero = () => {
 
   const CtaButtons = () => {
     return (
-      <div className="ctaButtons">
+      <div className="ctaButtons grid-item">
         <Link
           href="https://form.typeform.com/to/RXZdaaEP"
           className="btn btn-primary-dark-border  mt-2"
@@ -438,10 +438,12 @@ const Hero = () => {
     <section id="hero-main" className="d-table w-100 overflow-hidden show fade">
       <div className="container">
         <div className='grid-container'>
+          
           <Heading />
-          <HeroImage />
           <Subhead />
           <CtaButtons />
+          
+          <HeroImage />
         </div>
       </div>
     </section>
