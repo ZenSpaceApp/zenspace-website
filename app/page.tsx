@@ -42,7 +42,7 @@ const CrossDeviceSync = () => {
             <h2 className="display-6">Cross-device Syncing.</h2>
             <ul className="list-unstyled">
               <li>  
-                ZenSpaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
+                  ZenSpaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
               </li>
               <li>
                 Access your practice data from your iPad, iPhone, or web browser, anytime, anywhere.
@@ -376,7 +376,6 @@ const Stats = () => {
 }
 
 const Hero = () => {
-
   const Heading = () => {
     return (
       <div className="headline title-heading grid-item">
@@ -389,10 +388,68 @@ const Hero = () => {
 
   const Subhead = () => {
     return (
-      <div className="subhead grid-item">
-        Discover a simpler, more integrated way to manage your practice with telehealth,
-        ChatGPT-powered therapy notes, streamlined scheduling, and seamless
-        patient communication. Explore what&apos;s possible with ZenSpaceApp.
+      <div className="subhead griditem">
+        Discover a simpler, more integrated way to manage your practice
+        <div>
+          <ul>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={ZenNotesIcon}
+                height={14}
+                width={0}
+                />
+              AI-Powered Therapy Notes
+            </li>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={VideoIcon}
+                height={14}
+                width={0}
+                />
+              <div>
+                HD-Video
+              </div>
+            </li>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={ChatIcon}
+                height={18}
+                width={0}
+                />
+              Messaging
+            </li>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={SecurityIcon}
+                height={14}
+                width={0}
+                />
+              HIPAA
+            </li>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={CreditCardIcon}
+                height={14}
+                width={0}
+                />
+              Payments
+            </li>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={CalendarIcon}
+                height={14}
+                width={0}
+                />
+              Seamless Scheduling
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }
