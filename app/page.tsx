@@ -1,18 +1,28 @@
-
+'use client'
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import { Metadata } from 'next';
 import FAQ from '@/components/FAQ';
-
+import { useState } from 'react';
 import Link from 'next/link';
 
-import ZenNotesImg from '@/public/images/zen-notes-ipad@2x.png';
-import WorkflowShape from '@/public/images/tab-shape-2.svg';
-import TherapistDashImg from '@/public/images/home/zennotes-view.jpg';
+import ZenNotesImg from '@/public/images/home/zen-notes-ipad.jpg';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 
+import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
+import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
+import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
+import WorkflowScheduleImg from '@/public/images/home/schedule-view.jpg';
+import WorkflowClientsImg from '@/public/images/home/clients-view.jpg';
+
+const WORKFLOW_IMAGES = [
+  WorkflowDashImg,
+  WorkflowNotesImg,
+  WorkflowHDVideoImg,
+  WorkflowScheduleImg,
+  WorkflowClientsImg
+]
 
 //import icons 
 import CostsIcon from '@/public/images/icons/costs.svg';
@@ -25,18 +35,17 @@ import ChatIcon from '@/public/images/icons/chat-bubble.svg';
 import CreditCardIcon from '@/public/images/icons/credit-card.svg';
 import CalendarIcon from '@/public/images/icons/calendar.svg';
 import SecurityIcon from '@/public/images/icons/security.svg';
-
-  
-export const metadata: Metadata = {
-  title: "Telehealth app built for mental health therapy.",
-  description: "Empowering mental wellness with a touch of Zen.",
-};
+import ClientsIcon from '@/public/images/icons/clients.svg';
+import DashIcon from '@/public/images/icons/dashboard.svg';
 
 
 const CrossDeviceSync = () => {
-  return (
+  return (<>
+    <h2 className='display-4 u-textcenter mb-4'>
+      Explore the App.
+    </h2>
     <div className="container bg-half-170 overflow-hidden">
-      <div className="row align-items-center">
+      <div className="row align-items-center ">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
           <div className="org-benefits">
             <h2 className="display-6">Cross-device Syncing.</h2>
@@ -74,52 +83,11 @@ const CrossDeviceSync = () => {
       </div>
     </div>
   </div>
-
+  </>
   )
 }
 
-const SimpleWorkflow = () => {
-  return (
-    <section id="zen-workflow">
-      <div className="tab-shape-2">
-        <Image
-          className="img-fluid"
-          alt="Cross device sync"
-          src={WorkflowShape}
-          height={640}
-          width={0}
-          style={{
-            maxWidth: "80%",
-            display: "block",
-            margin: "auto"
-          }}
-        />
-      </div>
 
-      <div className="container">
-        <h2 className="display-6">Simple Workflow.<br/>Built for Scale.</h2>
-        <div className="subheading mb-5 ">
-          Secure multi-cloud architecture, integrated full-service solution
-          to keep therapists and clients connected.
-        </div>
-        
-        <div className="row text-left pb5">
-          <div className="col-lg-8 col-12 order-1 pt-4 order-lg-2 offset-lg-2">
-            <div>
-              <Image
-                className="img-fluid workflow"
-                alt="Therapist workflow and dashboard"
-                src={TherapistDashImg}
-                height={0}
-                width={0}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
 
 const PersonalizedTherapyExperience = () => {
   return (
@@ -196,25 +164,162 @@ const CollabMoodTracking = () => {
         </div>
       </div>
     </div>
-    </section>
+  </section>
 
   )
 }
+
+
+function WorkflowCarousel() {
+  const [currIdx, setIndex] = useState<number>(0);
+  let imgSrc;
+
+  function showView(atIdx : number) {
+    setIndex(atIdx);
+  }
+  
+  const Pills = () => {
+    return (
+      <div className="pills">
+        <ul>
+          <li
+            key={0}
+            className={(currIdx === 0) ? "active" : "disabled"}
+            onClick={() => showView(0)}
+          > 
+            <div className='pill'>
+              <Image 
+                alt='Integrated Dashboard'
+                src={DashIcon}
+                height={0}
+                width={0}
+              />
+            </div>
+            <p>Dashboard</p>  
+          </li>
+          
+          <li
+            key={1}
+            className={(currIdx === 1) ? "active" : "disabled"}
+            onClick={() => showView(1)}
+          >
+            <div className='pill'>
+              <Image 
+              alt='ChatGPT-powered Therapy Notes'
+              src={ZenNotesIcon}
+              height={0}
+              width={0}
+            />
+            </div>
+            <p>AI</p>  
+          </li>
+          <li
+            key={2}
+            className={(currIdx === 2) ? "active" : "disabled"}
+            onClick={() => showView(2)}
+          >
+          <div className='pill'>
+            <Image 
+              alt='HD-Video Calling'
+              src={VideoIcon}
+              height={0}
+              width={0}
+            />
+          </div>
+          <p>Video</p>  
+          </li>
+        <li
+          key={3}
+          className={(currIdx === 3) ? "active" : "disabled"}
+          onClick={() => showView(3)}
+        > 
+          <div className='pill'>
+            <Image 
+              alt='Seamless schdeuling'
+              src={CalendarIcon}
+              height={0}
+              width={0}
+            />
+          </div>
+          <p>Scheduler</p>  
+        </li>
+        <li
+          key="4"
+          className={(currIdx === 4) ? "active" : "disabled"}
+          onClick={() => showView(4)}
+        >
+          <div className='pill'>
+            <Image 
+              alt='Clients View'
+              src={ClientsIcon}
+              height={0}
+              width={0}
+            />
+          </div>
+          <p>Clients</p>  
+        </li>
+      </ul>
+    </div>
+    )
+  }
+  
+  switch (currIdx) {
+    case 0: imgSrc = WORKFLOW_IMAGES[0]; break;
+    case 1: imgSrc = WORKFLOW_IMAGES[1]; break;
+    case 2: imgSrc = WORKFLOW_IMAGES[2]; break;
+    case 3: imgSrc = WORKFLOW_IMAGES[3]; break;
+    case 4: imgSrc = WORKFLOW_IMAGES[4]; break;
+  }
+  
+  return (
+
+    <div className="workflow-container">
+      <Pills />
+      <Image
+        alt="Workflow images"
+        key={currIdx}
+        src={WORKFLOW_IMAGES[currIdx]}
+        className="show fade images"
+        width={0}
+        height={0}
+      />
+    </div>
+  )
+}
+
+const SimpleWorkflow = () => {
+  return (
+    <section id="zen-workflow">
+      <h2 className="display-6">
+        Simple Workflow.<br />
+        Powerful Capabilities.
+      </h2>
+      <div className="subhead">
+        Secure, AI-powered platform connecting therapists and clients for seamless
+        practice management and care.
+      </div>
+      <WorkflowCarousel />
+    </section>
+  )
+}
+
 /**
  * 
  */
 function Benefits() {
   return (
-    <section id="benefits" className="bg-half-260">
+    <section id="unlock-practice" className="bg-half-260">
       <div className="container">
-        <div className="mb-4 mt-4" style={{maxWidth: "740px"}}>
-          <h2 className="display-4">Unlock the potential of your practice with our all-in-one solution.</h2>
-          <div className="lead subheading mb-4 ">
+        <div className="mb-4 mt-4" style={{maxWidth: "640px"}}>
+          <h2 className="display-4">
+            Unlock the potential of your practice with our all-in-one solution.
+          </h2>
+          <div className="subhead mb-4">
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
           </div>
         </div>
 
-    <div className="row justify-content-center align-items-center" style={{padding: "0 16px"}}>
+    <div className="row justify-content-center align-items-center benefits" style={{padding: "0 16px"}}>
         <div className="row mt-4 pt-2" >
           <div className="benefit col-md-4 col-12">
             <div className="media pt-4 pb-4 p-lg-4" >
@@ -222,7 +327,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={ZenNotesIcon}
-                  height={0}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -238,7 +343,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={VideoIcon}
-                  height={0}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -256,7 +361,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={ChatIcon}
-                  height={28}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -273,7 +378,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={CreditCardIcon}
-                  height={0}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -290,7 +395,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={CalendarIcon}
-                  height={0}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -307,7 +412,7 @@ function Benefits() {
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
                   src={SecurityIcon}
-                  height={28}
+                  height={24}
                   width={0}
                   />
               </div>
@@ -388,15 +493,13 @@ const Hero = () => {
 
   const Subhead = () => {
     return (
-      <div className="subhead griditem">
-        Discover a simpler, more integrated way to manage your practice:
-        <div>
+      <div className="feature-pills">
           <ul>
             <li>
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={ZenNotesIcon}
-                height={14}
+                height={16}
                 width={0}
                 />
               AI-Powered Therapy Notes
@@ -405,7 +508,7 @@ const Hero = () => {
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={VideoIcon}
-                height={14}
+                height={16}
                 width={0}
                 />
               <div>
@@ -425,7 +528,7 @@ const Hero = () => {
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={SecurityIcon}
-                height={14}
+                height={18}
                 width={0}
                 />
               HIPAA
@@ -434,7 +537,7 @@ const Hero = () => {
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={CreditCardIcon}
-                height={14}
+                height={16}
                 width={0}
                 />
               Payments
@@ -443,14 +546,13 @@ const Hero = () => {
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={CalendarIcon}
-                height={14}
+                height={16}
                 width={0}
                 />
               Seamless Scheduling
             </li>
           </ul>
         </div>
-      </div>
     )
   }
 
@@ -459,12 +561,14 @@ const Hero = () => {
       <div className="heroImg classic-saas-image saas-feature-shape-right position-relative">
         <Image
           src={ZenNotesImg}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt='ZenNotes'
           height={860}
           width={0}
+          loading='eager'
           style={{
             display: "flex",
-            maxWidth: "90%",
+            maxWidth: "95%",
             height: "auto",
             margin: "auto",
             boxShadow: "10px 10px rgba(71, 71, 71, 1.0)",
@@ -498,11 +602,9 @@ const Hero = () => {
     <section id="hero-main" className="d-table w-100 overflow-hidden show fade">
       <div className="container">
         <div className='grid-container'>
-          
           <Heading />
           <Subhead />
           <CtaButtons />
-          
           <HeroImage />
         </div>
       </div>
@@ -514,11 +616,10 @@ export default function HomePage() {
   return (
     <Layout>
       <Hero/>
-      <Stats/>
+      <Stats />
       <Benefits />
-      <h3 style={{fontSize: "2rem"}}  className='u-textcenter mb-5'>Explore the App and Features</h3>
       <CrossDeviceSync />
-      <SimpleWorkflow />
+      <SimpleWorkflow/>
       <PersonalizedTherapyExperience />
       <CollabMoodTracking />
       <FAQ />
