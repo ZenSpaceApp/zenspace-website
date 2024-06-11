@@ -47,7 +47,7 @@ const CrossDeviceSync = () => {
     <div className="container bg-half-170 overflow-hidden">
       <div className="row align-items-center ">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
-          <div className="org-benefits">
+          <div className="explore-app">
             <h2 className="display-6">Cross-device Syncing.</h2>
             <ul className="list-unstyled">
               <li>  
@@ -70,10 +70,10 @@ const CrossDeviceSync = () => {
                 className="img-fluid"
                 alt="Cross device sync"
                 src={CrossDevSyncImg}
-                height={640}
+                height={0}
                 width={0}
                 style={{
-                  maxWidth: "70%",
+                  maxWidth: "80%",
                   display: "block",
                   margin: "auto"
                 }}
@@ -100,10 +100,10 @@ const PersonalizedTherapyExperience = () => {
                 className="img-fluid "
                 alt="Personalized Therapy"
                 src={PersonalizedTherapyImg}
-                height={640}
+                height={0}
                 width={0}
                 style={{
-                  maxWidth: "70%",
+                  maxWidth: "80%",
                   // height: "auto",
                   display: "block",
                   margin: "auto"
@@ -114,7 +114,7 @@ const PersonalizedTherapyExperience = () => {
           </div>
 
           <div className="col-lg-5 col-md-7 mt-5 mt-sm-0">
-            <div className="org-benefits">
+            <div className="explore-app">
               <h2 className="display-6">Personalized Therapy Experience.</h2>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
@@ -134,7 +134,7 @@ const CollabMoodTracking = () => {
       <div className="container mt-100">
         <div className="row align-items-center">
           <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
-            <div className="org-benefits">
+            <div className="explore-app">
               <h2 className="display-6">Collaborative Mood Tracking.</h2>
               <ul className="list-unstyled">
                 <li>
