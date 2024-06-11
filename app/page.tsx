@@ -373,7 +373,7 @@ function Benefits() {
     <div className="row justify-content-center align-items-center benefits" style={{padding: "0 16px"}}>
         <div className="row mt-4 pt-2" >
           <div className="benefit col-md-4 col-12">
-            <div className="media pt-4 pb-4 p-lg-4" >
+            <div className="media pt-4 pb-4" >
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -389,7 +389,7 @@ function Benefits() {
             </div>
           </div>
           <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4 p-lg-4">
+              <div className="media pt-4 pb-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -407,7 +407,7 @@ function Benefits() {
           </div>
    
           <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4 p-lg-4">
+              <div className="media pt-4 pb-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -424,7 +424,7 @@ function Benefits() {
           </div>
           
           <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4 p-lg-4">
+              <div className="media pt-4 pb-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -441,7 +441,7 @@ function Benefits() {
           </div>
           
           <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4 p-lg-4">
+              <div className="media pt-4 pb-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'
@@ -458,7 +458,7 @@ function Benefits() {
           </div>
 
           <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4 p-lg-4">
+              <div className="media pt-4 pb-4">
               <div className="text-center icon text-primary mr-3 mt-2 mb-4">
                 <Image 
                   alt='ChatGPT-powered Therapy Notes'

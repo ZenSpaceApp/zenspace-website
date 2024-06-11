@@ -7,7 +7,7 @@ import { auto } from '@popperjs/core';
 
 // const small = '/images/left-banner-sm-330w.jpg';
 // const medium = '/images/left-banner-md-768w.jpg';
-const large = '/images/right-banner.jpg';
+const large = '/images/right-banner.png';
 
 import ZenSpaceAppLogo from '../../public/images/logo/zenspaceapp@2x.png';
 
@@ -34,7 +34,7 @@ const ResponsiveImage = () => (
       src={large}
       // srcSet={`${small} 300w, ${medium} 768w, ${large} 1280w`}
       height={0}
-      width={350}
+      width={500}
       style={{
         height: "auto",
         maxWidth: "80%",
