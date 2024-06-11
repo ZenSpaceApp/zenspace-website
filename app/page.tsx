@@ -296,8 +296,8 @@ function WorkflowCarousel() {
       ]
     ]
 
-    return <div className="zen-notes">
-      <div className='feature'>
+    return <div className="zen-notes" style={{padding: "2rem 0 3rem"}}>
+      <div className='feature' style={{padding: "0 1rem 0 2rem"}}>
         <h3 className='display-6 pt-3'>Introducing <span className='bold-accent'>ZenNotes</span>, ChatGPT-powered therapy notes.</h3>
         {notesHighLights.map((feature, idx) => (
           <div key={idx}>
@@ -307,7 +307,11 @@ function WorkflowCarousel() {
         ))}
       </div>
       <div
-        className='image-container'>
+        className='image-container'
+        style={{
+          paddingRight: 0,
+          marginRight: 0
+        }}>
         <Image
           alt="Workflow images"
           key={currIdx}
@@ -315,10 +319,17 @@ function WorkflowCarousel() {
           className="show fade images"
           width={0}
           height={0}
+          style={{
+            borderRadius: 0,
+            maxWidth: "100%",
+            width: "100%"
+          }}
           />
       </div>
     </div>
   }
+
+
 
   return (
 

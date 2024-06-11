@@ -498,6 +498,7 @@ section.route-section {
 #zen-workflow {
   padding: 4rem 15px;
   margin: auto;
+  padding: 8rem 0;
 
   h2 {text-align: center; }
   
@@ -514,17 +515,16 @@ section.route-section {
     width:100%;
     max-width: 1440px;
     margin: auto;
-    
     .images {
       height: auto;
       margin: auto;
       width: 90%;
       max-width: inherit;
-      border: 2px solid var(--color--grey1);
-      border-radius: 8px;
+      // border: 2px solid var(--color--grey1);
+      // border-radius: 8px;
 
       @media screen and #{$mq-large} {
-        border-radius: 24px;
+        // border-radius: 24px;
       }
       
     }
