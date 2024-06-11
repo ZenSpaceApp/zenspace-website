@@ -271,18 +271,69 @@ function WorkflowCarousel() {
     case 4: imgSrc = WORKFLOW_IMAGES[4]; break;
   }
   
+  const ZenNotes = () => {
+
+    const notesHighLights = [
+      [
+        "No ChatGPT account required",
+        "Leveraging the power of AI without requiring a separate ChatGPT account makes it easy for therapists to reap the benefits of advanced technology."
+      ],
+      [
+        "Seamless organization",
+        "Effective organization of notes is crucial for therapy sessions, and ZenNotes makes this process effortless."
+      ],
+      [
+        "Self-reflection tools",
+        "Encouraging self-reflection is essential for personal growth, and having built-in tools to support this is a valuable addition."
+      ],
+      [
+        "User-friendly design",
+        "Ensuring that the app is easy to navigate and use is key for both therapists and clients."
+      ],
+      [
+        "Making the most of notes",
+        "ZenNotes helps therapists and clients get the most out of their therapy sessions by providing an optimized note-taking experience."
+      ]
+    ]
+
+    return <div className="zen-notes">
+      <div className='feature'>
+        <h3 className='display-6 pt-3'>Introducing <span className='bold-accent'>ZenNotes</span>, ChatGPT-powered therapy notes.</h3>
+        {notesHighLights.map((feature, idx) => (
+          <div key={idx}>
+            <div className="heading">{feature[0]}</div>
+            <div>{feature[1]}</div>
+          </div>
+        ))}
+      </div>
+      <div
+        className='image-container'>
+        <Image
+          alt="Workflow images"
+          key={currIdx}
+          src={WORKFLOW_IMAGES[currIdx]}
+          className="show fade images"
+          width={0}
+          height={0}
+          />
+      </div>
+    </div>
+  }
+
   return (
 
     <div className="workflow-container">
       <Pills />
-      <Image
-        alt="Workflow images"
-        key={currIdx}
-        src={WORKFLOW_IMAGES[currIdx]}
-        className="show fade images"
-        width={0}
-        height={0}
-      />
+      {currIdx === 1 ? <ZenNotes /> : (
+        <Image
+          alt="Workflow images"
+          key={currIdx}
+          src={WORKFLOW_IMAGES[currIdx]}
+          className="show fade images"
+          width={0}
+          height={0}
+        />
+      )}
     </div>
   )
 }
