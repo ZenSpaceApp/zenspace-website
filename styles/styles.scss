@@ -1608,7 +1608,7 @@ footer {
         width: 30vw;
         justify-content: center; 
         align-items: center;
-        background: #F7E3D9;
+        background: var(--bg--body--main);
       }
     }
 
@@ -1638,13 +1638,13 @@ footer {
         margin: auto;
         width: calc(100vw - 30px);
         
-        max-width: 425px;
+        max-width: 450px;
         
         @media screen  and #{$mq-small} {
-          border: 2px solid;
+          border: 3px solid;
           border-radius: 20px;
-          padding: 70px 35px;
-          background: #f8f8f8;
+          padding: 70px 40px;
+          background: var(--color--complimentary);
         }
 
         .input-group {
