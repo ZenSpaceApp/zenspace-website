@@ -595,7 +595,8 @@ section.route-section {
 
       @media screen and #{$mq-large} {
         border-radius: 30px;
-        padding: 3rem;
+        padding: 4rem;
+        margin: 0 5%;
       }
     }
 
@@ -617,7 +618,7 @@ section.route-section {
 
       @media screen and #{$mq-large} {
         grid-template-columns: 1fr 2fr;
-        padding: 3rem;
+        padding: 4rem;
         padding-right: 0;
       }
         
