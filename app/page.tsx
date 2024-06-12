@@ -500,7 +500,7 @@ const Stats = () => {
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={CostsIcon}
-            height={32}
+            height={24}
             width={0}
             style={{marginBottom: "rem"}}
           />
@@ -514,7 +514,7 @@ const Stats = () => {
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={ImpactIcon}
-            height={32}
+            height={24}
             width={0}
             style={{marginBottom: "rem"}}
           />
@@ -527,7 +527,7 @@ const Stats = () => {
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={NoShowIcon}
-            height={32}
+            height={24}
             width={0}
             style={{marginBottom: "rem"}}
           />
@@ -553,7 +553,7 @@ const Hero = () => {
     )
   }
 
-  const Subhead = () => {
+  const Features = () => {
     return (
       <div className="feature-pills">
           <ul>
@@ -625,15 +625,12 @@ const Hero = () => {
           src={ZenNotesImg}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt='ZenNotes'
-          height={860}
-          width={0}
-          loading='eager'
+          priority
           style={{
-            display: "flex",
             maxWidth: "95%",
             height: "auto",
             margin: "auto",
-            boxShadow: "10px 10px rgba(71, 71, 71, 1.0)",
+            boxShadow: "10px 10px rgba(71, 71, 71, 1)",
             borderRadius: "1rem",
             border: "3px solid #474747" 
           }}
@@ -665,7 +662,7 @@ const Hero = () => {
       <div className="container">
         <div className='grid-container'>
           <Heading />
-          <Subhead />
+          <Features />
           <CtaButtons />
           <HeroImage />
         </div>

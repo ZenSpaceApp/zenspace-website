@@ -655,6 +655,7 @@ section.route-section {
       &::before {
         content: '-';
         font-weight: 800;
+        color: var(--secondary);
       }
     }
   }  
@@ -678,7 +679,8 @@ section.route-section {
     font-family: Inter;
     margin-top: 10px;
     margin-bottom: 1rem;
-    font-weight: 800;
+    font-weight: 600;
+    color: var(--color--grey3);
   }
 
   .grid-container {
