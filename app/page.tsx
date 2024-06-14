@@ -275,23 +275,23 @@ function WorkflowCarousel() {
 
     const notesHighLights = [
       [
-        "No ChatGPT account required",
+        "No ChatGPT Account Required",
         "Leveraging the power of AI without requiring a separate ChatGPT account makes it easy for therapists to reap the benefits of advanced technology."
       ],
       [
-        "Seamless organization",
+        "Seamless Organization",
         "Effective organization of notes is crucial for therapy sessions, and ZenNotes makes this process effortless."
       ],
       [
-        "Self-reflection tools",
+        "Self-Reflection Tools",
         "Encouraging self-reflection is essential for personal growth, and having built-in tools to support this is a valuable addition."
       ],
       [
-        "User-friendly design",
+        "User-Friendly Design",
         "Ensuring that the app is easy to navigate and use is key for both therapists and clients."
       ],
       [
-        "Making the most of notes",
+        "Making the Most of Notes",
         "ZenNotes helps therapists and clients get the most out of their therapy sessions by providing an optimized note-taking experience."
       ]
     ]
@@ -305,12 +305,17 @@ function WorkflowCarousel() {
           Introducing <span className='bold-accent'>
             ZenNotes</span>, ChatGPT-powered therapy notes.
         </h3>
-        {notesHighLights.map((feature, idx) => (
-          <div key={idx}>
-            <div className="heading">{feature[0]}</div>
-            <div>{feature[1]}</div>
-          </div>
-        ))}
+        <ul>
+          {notesHighLights.map((feature, idx) => (
+            <li key={idx}>
+              <div>
+
+              <h5 className="heading">{feature[0]}</h5>
+              <div>{feature[1]}</div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
       <div
         className=''
