@@ -557,7 +557,9 @@ const Hero = () => {
   const Heading = () => {
     return (
       <div className="headline title-heading grid-item">
-        <h1 className="pt-3 pr-3" style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
+        <h1
+          className="pt-3 pr-3"
+          style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
           One App to Streamline Your Therapy Practice.
         </h1>
       </div>
@@ -638,12 +640,12 @@ const Hero = () => {
           alt='ZenNotes'
           priority
           style={{
-            maxWidth: "95%",
+            maxWidth: "100%",
             height: "auto",
             margin: "auto",
-            boxShadow: "10px 10px rgba(71, 71, 71, 1)",
-            borderRadius: "1rem",
-            border: "3px solid #474747" 
+            // boxShadow: "10px 10px rgba(71, 71, 71, 1)",
+            // borderRadius: "1rem",
+            // border: "3px solid #474747" 
           }}
         />
       </div>
