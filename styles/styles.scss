@@ -335,7 +335,7 @@ section.route-section {
 
   @media screen and #{$mq-large} {
     padding-top: 16rem;
-    padding-bottom: 20rem;
+    padding-bottom: 16rem;
   }
 
   .grid-container {
@@ -356,9 +356,6 @@ section.route-section {
 
     .heroImg {
       max-width: 100%;
-      @media screen and #{$mq-medium} {
-        max-width: 88%;
-      }
       grid-row: 2 / span 1;
       margin-right: auto;
     }
@@ -400,62 +397,100 @@ section.route-section {
       grid-row:  4 / span 1;
     }
 
-    @media screen and #{$mq-medium} {
-      grid-template-columns: 1fr 1fr;
 
-      row-gap: 0;
-      align-content: start; /* Prevent extra space distribution */
+    @media screen and #{$mq-small} {
+      
+      background: #efece7;
+      padding: 40px;
+      padding-right: 0;
+      border-radius: 24px;
+      clip-path: border-box;
+      padding-bottom: 0;
 
       .headline {
-        grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 1 / 2; /* First row, span 1 row */
-        
+        padding-top: 0 ;
       }
-      
-      .subhead {
-        grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 2 / 3; /* Second row, span 1 row */
-      }
-      
+
       .ctaButtons {
-        grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 3 / span 4; /* Third row, span 1 row */
-        flex-direction: row;
-      }
-      
-      .heroImg {
-        grid-column: 2 / span 1; /* Second column, span 1 column */
-        grid-row: 1 / span 4; /* First row, span 3 rows */
-        margin-left: auto;
-        margin-top: 0;
-        margin-bottom: 0;
+        display: block;
       }
     }
 
+
+    @media screen and #{$mq-medium} {
+      // grid-template-columns: 1fr;
+      // grid-template-rows: repeat(4, minmax(100px, auto));
+      // row-gap: 0;
+      // align-content: start; /* Prevent extra space distribution */
+
+      // .headline {
+      //   grid-column: 1 / span 1; /* First column, span 1 column */
+      //   grid-row: 1 / 4; /* First row, span 1 row */
+        
+      // }
+      
+      // .feature-pills {
+      //   grid-column: 1 / span 1; /* First column, span 1 column */
+      //   grid-row: 3 / 4; /* Second row, span 1 row */
+      // }
+      
+      // .ctaButtons {
+      //   grid-column: 1 / span 1; /* First column, span 1 column */
+      //   grid-row: 4 / span 4; /* Third row, span 1 row */
+      //   flex-direction: row;
+      //   display: flex;
+      //   align-items: stretch;
+      // }
+      
+      // .heroImg {
+      //   grid-column: 1 / span 1; /* Second column, span 1 column */
+      //   grid-row: 2 / span 4; /* First row, span 3 rows */
+      //   margin-left: auto;
+      //   margin-top: 0;
+      //   margin-bottom: 0;
+      // }
+    }
+
     @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, minmax(50px, auto));
+      row-gap: 0;
+      align-content: flex-start; /* Prevent extra space distribution */
+      align-items: flex-start;
+      background: #efece7;
+      padding: 40px;
+      padding-right: 0;
+      padding-bottom: 60px;
+
+      border-radius: 24px;
+      clip-path: border-box;
+
       .headline {
         grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 1 / 2; /* First row, span 1 row */
+        grid-row: 1 /span 1; /* First row, span 1 row */
         font-size: 4rem;
       }
       
-      .subhead {
+      .feature-pills {
         grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 2 / 3; /* Second row, span 1 row */
+        grid-row: 2 /span 1 ; /* Second row, span 1 row */
       }
       
       .ctaButtons {
         grid-column: 1 / span 1; /* First column, span 1 column */
-        grid-row: 3 / span 4; /* Third row, span 1 row */
+        grid-row: 3 /span 1; /* Third row, span 1 row */
         flex-direction: row;
       }
       
       .heroImg {
         grid-column: 2 / span 1; /* Second column, span 1 column */
-        grid-row: 1 / span 4; /* First row, span 3 rows */
+        grid-row: 1 / span 3; /* First row, span 3 rows */
         margin-left: auto;
         margin-top: 0;
         margin-bottom: 0;
+        margin-top: 40px;
+        margin-right: 0;
+        max-width: 90%;
       }
     }   
   }
@@ -464,6 +499,7 @@ section.route-section {
 #unlock-practice {
   .benefits {
 
+    // create borders for the grid.
     @media (max-width: 768px) {
       .benefit:nth-child(-n + 5) {
         border-bottom: 1px solid var(--color--border--1);
@@ -485,9 +521,6 @@ section.route-section {
           }
         }
     }
-
-
-    
   }
 }
 

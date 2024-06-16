@@ -558,8 +558,8 @@ const Hero = () => {
     return (
       <div className="headline title-heading grid-item">
         <h1
-          className="pt-3 pr-3"
-          style={{ lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
+          
+          style={{ paddingTop: "20px" ,lineHeight: '1.0 !important', letterSpacing: "-1px" }}>
           One App to Streamline Your Therapy Practice.
         </h1>
       </div>
