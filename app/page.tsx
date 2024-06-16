@@ -41,7 +41,7 @@ import DashIcon from '@/public/images/icons/dashboard.svg';
 
 const CrossDeviceSync = () => {
   return (<>
-    <h2 className='display-4 u-textcenter mb-4'>
+    <h2 className='display-5 u-textcenter mb-4'>
       Explore the App.
     </h2>
     <div className="container bg-half-170 overflow-hidden">
@@ -383,11 +383,11 @@ function Benefits() {
   return (
     <section id="unlock-practice" className="bg-half-260">
       <div className="container">
-        <div className="mb-4 mt-4" style={{maxWidth: "640px"}}>
-          <h2 className="display-4">
-            Unlock the potential of your practice with our all-in-one solution.
+        <div className="mb-4 mt-4 u-textcenter"  >
+          <h2 className="display-4" style={{width: "100%", maxWidth: "860px", display: 'block', margin: "auto"}}>
+          Unlock your practice with our all-in-one solution.
           </h2>
-          <div className="subhead mb-4">
+          <div className="subhead mb-4" style={{width: "100%", maxWidth: "640px", display: 'block', margin: "auto", marginTop: "18px", marginBottom: "32px" }}>
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
           </div>
         </div>
