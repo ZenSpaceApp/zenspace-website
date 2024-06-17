@@ -53,7 +53,7 @@ const CrossDeviceSync = () => {
       <div className="row align-items-center ">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
           <div className="explore-app">
-            <h2 className="display-6">Cross-device Syncing.</h2>
+            <h3 className="display-6">Cross-device Syncing.</h3>
             <ul className="list-unstyled">
               <li>  
                   ZenSpaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
@@ -120,7 +120,7 @@ const PersonalizedTherapyExperience = () => {
 
           <div className="col-lg-5 col-md-7 mt-5 mt-sm-0">
             <div className="explore-app">
-              <h2 className="display-6">Personalized Therapy Experience.</h2>
+              <h3 className="display-1">Personalized Therapy Experience.</h3>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
               <li>ZenSpaceApp&apos;s dedicated mobile apps for client allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
@@ -140,7 +140,7 @@ const CollabMoodTracking = () => {
         <div className="row align-items-center">
           <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
             <div className="explore-app">
-              <h2 className="display-6">Collaborative Mood Tracking.</h2>
+              <h3 className="display-6">Collaborative Mood Tracking.</h3>
               <ul className="list-unstyled">
                 <li>
                   <span>
@@ -368,10 +368,10 @@ function WorkflowCarousel() {
 const SimpleWorkflow = () => {
   return (
     <section id="zen-workflow">
-      <h2 className="display-6">
+      <h3 className="display-6 u-textcenter">
         Simple Workflow.<br />
         Powerful Capabilities.
-      </h2>
+      </h3>
       <div className="subhead">
         Secure, AI-powered platform connecting therapists and clients for seamless
         practice management and care.
@@ -390,7 +390,7 @@ function Benefits() {
       <div className="container">
         <div className="mb-4 mt-4 u-textcenter"  >
           <h2 className="display-4" style={{width: "100%", maxWidth: "860px", display: 'block', margin: "auto"}}>
-          Unlock your practice with our all-in-one solution.
+          Unlock Your Practice with Our All-in-One Solution.
           </h2>
           <div className="subhead mb-4" style={{width: "100%", maxWidth: "640px", display: 'block', margin: "auto", marginTop: "18px", marginBottom: "32px" }}>
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
@@ -410,7 +410,7 @@ function Benefits() {
                   />
               </div>
               <div className="media-body">
-                <h5>ChatGPT-powered Therapy Notes</h5>
+                <h5>ChatGPT-Powered Notes</h5>
                 <p className="mb-0">Experience the power of AI in your practice, making documentation a breeze so you can focus on your clients&apos; needs. </p>
               </div>
             </div>
@@ -495,7 +495,7 @@ function Benefits() {
                   />
               </div>
                   <div className="media-body">
-                    <h5 className="title">Built-in Security for Peace of Mind</h5>
+                    <h5 className="title">Built-in Security</h5>
                     <p className="mb-0">All sensitive information is encrypted while in transit [TLS] or at rest using 256-bit encryption. </p>
                   </div>
               </div>
@@ -510,17 +510,13 @@ function Benefits() {
 const Stats = () => {
   return <section id="stats">
     <div className='container'> 
-      <UilChartBar
-        className="mb-1"
-        style={{ fill: "#474747 !important", height: "48px" }}
-      />
-      <div className="sub-heading pt-5 pb-4">By the numbers</div>
+      <div className="sub-heading pt-1 mb-5">By the numbers</div>
       <div className='grid-container'>
         <div className="grid-item">
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={CostsIcon}
-            height={24}
+            height={32}
             width={0}
             style={{marginBottom: "rem"}}
           />
@@ -534,7 +530,7 @@ const Stats = () => {
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={ImpactIcon}
-            height={24}
+            height={32}
             width={0}
             style={{marginBottom: "rem"}}
           />
@@ -547,7 +543,7 @@ const Stats = () => {
           <Image 
             alt='ChatGPT-powered Therapy Notes'
             src={NoShowIcon}
-            height={24}
+            height={32}
             width={0}
             style={{marginBottom: "rem"}}
           />

@@ -100,15 +100,8 @@ body {
   @media #{$mq-large} {
     font-size: $base-font-size*1.1 !important;
   }
-
-  @media #{$mq-xlarge} {
-    // font-size: $base-font-size*1.2 !important;
-  }
-
-  @media #{$mq-xxlarge} {
-    // font-size: $base-font-size*0.9 !important;
-  }
 }
+
 * {
   box-sizing: border-box;
 }
@@ -217,20 +210,22 @@ a {
   }
 }
 
+h1, h2, h3   {
+  font-weight: 700 !important;
+  font-family: Syne, sans-serif;
+  line-height: 1.1 !important;
+}
+
 h1 {
   font-size: var(--type--h1) !important;
 }
 
-h1, h2   {
-  font-weight: 700 !important;
-  font-family: Syne, sans-serif;
-  line-height: 1.1 !important;
-
+h2 {
+  font-size: var(--type--h2) !important;
 }
 
 h3 {
-  font-weight: 700;
-  font-family: Syne, sans-serif;
+  font-size: var(--type--h3) !important;
 }
 
 h5 {
@@ -747,10 +742,11 @@ section.route-section {
 
   h3 {
     font-family: Inter;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin-top: 24px;
+    margin-bottom: 4px;
     font-weight: 600;
-    color: var(--color--grey3);
+    color: var(--color--grey1);
+
   }
 
   .grid-container {
@@ -766,8 +762,8 @@ section.route-section {
       font-weight: 500;  
       padding-bottom: 24px;
       color: #575757;
-
       border-bottom: 1px solid #00000025;
+
       &:nth-child(3) {
         border-bottom: none;
       }
