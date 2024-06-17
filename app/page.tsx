@@ -510,7 +510,7 @@ function Benefits() {
 const Stats = () => {
   return <section id="stats">
     <div className='container'> 
-      <div className="sub-heading pt-1 mb-5">By the numbers</div>
+      <div className="sub-heading">Telehealth By the numbers</div>
       <div className='grid-container'>
         <div className="grid-item">
           <Image 
