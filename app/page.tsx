@@ -120,7 +120,7 @@ const PersonalizedTherapyExperience = () => {
 
           <div className="col-lg-5 col-md-7 mt-5 mt-sm-0">
             <div className="explore-app">
-              <h3 className="display-1">Personalized Therapy Experience.</h3>
+              <h3>Personalized Therapy Experience.</h3>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
               <li>ZenSpaceApp&apos;s dedicated mobile apps for client allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
