@@ -37,7 +37,12 @@ import CalendarIcon from '@/public/images/icons/calendar.svg';
 import SecurityIcon from '@/public/images/icons/security.svg';
 import ClientsIcon from '@/public/images/icons/clients.svg';
 import DashIcon from '@/public/images/icons/dashboard.svg';
+import ChartBarIcon from '@/public/icons/chart-bar.svg';
 
+import {
+  UilChartBar,
+  UilUsdCircle
+} from '@iconscout/react-unicons';
 
 const CrossDeviceSync = () => {
   return (<>
@@ -505,7 +510,11 @@ function Benefits() {
 const Stats = () => {
   return <section id="stats">
     <div className='container'> 
-      <div className="sub-heading pl-3 ml-10 mb-4 p-lg-5">By the numbers</div>
+      <UilChartBar
+        className="mb-1"
+        style={{ fill: "#474747 !important", height: "48px" }}
+      />
+      <div className="sub-heading pt-5 pb-4">By the numbers</div>
       <div className='grid-container'>
         <div className="grid-item">
           <Image 
@@ -545,7 +554,7 @@ const Stats = () => {
           <h3>No-show</h3>
           <div className="">
             Of the ~23k scheduled visits <span className="underline">20% of patients</span> missed their appointments.
-            <em> Increasing the burden of care and healthcare costs.</em> Medicaid missed appts (28%). Medicare missed appts (15.3%).
+            <em> Increasing the burden of care and healthcare costs.</em>.
           </div>
         </div>
       </div>
