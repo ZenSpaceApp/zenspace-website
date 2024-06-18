@@ -385,6 +385,49 @@ const SimpleWorkflow = () => {
  * 
  */
 function Benefits() {
+  const iconsAlt = [
+    [ZenNotesIcon, "ZenNotes app icon for AI-Powered therapy notes"],
+    [VideoIcon, "Video call icon for telehealth consultations"],
+    [ChatIcon, "Chat message icon for therapist-client communication"],
+    [CreditCardIcon, "Credit card icon for secure online payments" ],
+    [CalendarIcon, "Calendar icon for appointment scheduling"],
+    [SecurityIcon, "Shield icon representing secure and confidential telehealth services"]
+  ]
+
+  const benefits: Array<[string, string]> = [
+    [
+      "ChatGPT-Powered Therapy Notes",
+      "Experience the power of AI in your practice, makes taking notes and creating summaries\
+       a breeze so you can focus on your clients' needs."
+    ],
+    [
+      "Convenience",
+      "Remote sessions and streamlined scheduling make therapy more accessible\
+       for clients and boost efficiency for therapists."
+    ],
+    [
+      "Seamless Communication",
+      "Secure messaging and document sharing help keep everyone on the same page and\
+      facilitate better collaboration between therapists and their clients."
+    ],
+    [
+      "Grow Your Therapy Business", 
+      "Create and manage your own customizable subscription service on ZenSpaceApp,\
+       allowing you to earn predictable, recurring income."
+    ],
+    [
+      "On-the-go Access",
+      "Access ZenSpaceApp from anywhere and at any time,\
+       ensuring that you can manage and book therapy sessions even when\
+        you're on the move."
+    ],
+    [
+      "Built-in Security",
+      "All personal information is always protected with industry-leading encryption,\
+       ensuring secure data transmission and storage."
+    ]
+  ]
+
   return (
     <section id="unlock-practice" className="bg-half-260">
       <div className="container">
@@ -397,113 +440,22 @@ function Benefits() {
           </div>
         </div>
 
-    <div className="row justify-content-center align-items-center benefits" style={{padding: "0 16px"}}>
-        <div className="row mt-4 pt-2" >
-          <div className="benefit col-md-4 col-12">
-            <div className="media pt-4 pb-4" >
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={ZenNotesIcon}
-                  height={24}
+        <div className='grid-container'>
+          {benefits.map((benefit, idx) => (
+            <div key={idx} className='benefit'>
+              <Image 
+                  src={iconsAlt[idx][0]}
+                  alt={iconsAlt[idx][1]}
+                  height={28}
                   width={0}
-                  />
-              </div>
-              <div className="media-body">
-                <h5>ChatGPT-Powered Notes</h5>
-                <p className="mb-0">Experience the power of AI in your practice, making documentation a breeze so you can focus on your clients&apos; needs. </p>
-              </div>
+              />
+              <h3 className='heading'>{benefit[0]}</h3>
+              <div>{benefit[1]}</div>
             </div>
-          </div>
-          <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4">
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={VideoIcon}
-                  height={24}
-                  width={0}
-                  />
-              </div>
-                  <div className="media-body">
-                    <h5 className="title">Convenience</h5>
-                <p className=" mb-0">
-                Offer remote sessions and streamline scheduling to make therapy more accessible for clients and more efficient for therapists.</p>
-                  </div>
-              </div>
-          </div>
-   
-          <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4">
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={ChatIcon}
-                  height={24}
-                  width={0}
-                  />
-              </div>
-                  <div className="media-body">
-                    <h5 className="title">Communication</h5>
-                    <p className="mb-0">Secure messaging and document sharing help keep everyone on the same page and facilitate better collaboration between therapists and their clients.</p>
-                  </div>
-              </div>
-          </div>
-          
-          <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4">
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={CreditCardIcon}
-                  height={24}
-                  width={0}
-                  />
-              </div>
-                  <div className="media-body">
-                    <h5 className="title">Financial Management</h5>
-                    <p className="mb-0">Payments to help therapists get paid faster and with less hassle, so they can focus on what they do best.</p>
-                  </div>
-              </div>
-          </div>
-          
-          <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4">
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={CalendarIcon}
-                  height={24}
-                  width={0}
-                  />
-              </div>
-                  <div className="media-body">
-                    <h5 className="title">Streamlined Scheduling</h5>
-                    <p className="mb-0">Video consult on a myriad of devices and platforms.</p>
-                  </div>
-              </div>
-          </div>
-
-          <div className="benefit col-md-4 col-12">
-              <div className="media pt-4 pb-4">
-              <div className="text-center icon text-primary mr-3 mt-2 mb-4">
-                <Image 
-                  alt='ChatGPT-powered Therapy Notes'
-                  src={SecurityIcon}
-                  height={24}
-                  width={0}
-                  />
-              </div>
-                  <div className="media-body">
-                    <h5 className="title">Built-in Security</h5>
-                    <p className="mb-0">All sensitive information is encrypted while in transit [TLS] or at rest using 256-bit encryption. </p>
-                  </div>
-              </div>
-          </div>
+          ))}  
         </div>
       </div>
-      </div>
-      </section>
+    </section>
   )
 }
 
