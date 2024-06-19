@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp-light.svg';
+import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp@2x.png';
 import Image
   from "next/image";
 export default function Footer() {
@@ -30,10 +30,6 @@ export default function Footer() {
                 <Link
                 href="/contact/#book-demo"
                 className="btn"
-              style={{
-                padding: "12px 2rem !important",
-                lineHeight: "1.2 !important"
-              }}
               >
                 
                     Book a demo
@@ -48,6 +44,7 @@ export default function Footer() {
                 <li><a href="/" className="text-muted">Clients</a></li>
                 <li><a href="/" className="text-muted">Therapists</a></li>
                 <li><a href="/" className="text-muted">ZenNotes</a></li>
+                <li><a href="/" className="text-muted">ZenPath</a></li>
                 <li><a href="/" className="text-muted">ZenMatch</a></li>
               </ul>
             </div>    
@@ -77,7 +74,7 @@ export default function Footer() {
                 </ul>
             </div>
           </div>
-          <div className="subfooter" style={{ borderTop: '1px solid #d8d8d850' }}>
+          <div className="subfooter">
             <div>©2024 ZenSpaceApp Inc. All Rights Reserved.</div>
             <ul>
               <li>

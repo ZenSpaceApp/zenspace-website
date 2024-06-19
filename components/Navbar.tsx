@@ -91,7 +91,7 @@ export default function Navbar({ home }: { home: string} ) {
             {/* onMouseLeave={() => handleMouseOut()}> */}
             <li>
               {/* onMouseOver={() => handleMouseOver('products')} > */}
-              <a>Features</a>
+              <a>Therapists</a>
               {renderProducts()}
             </li>
             <li>
@@ -101,7 +101,7 @@ export default function Navbar({ home }: { home: string} ) {
             </li>
             <li>
               {/* onMouseOver={() => handleMouseOver('company')} > */}
-              <a>ZenMatch</a>
+              <a>ZenPath</a>
               {renderCompany()}
             </li>
             <li><Link href='/pricing'>Pricing</Link></li>

@@ -26,12 +26,11 @@ export const CTA = () => {
       <div className="content">
         <h3>
           Reclaim your time and streamline your practice.
-          Try ZenSpaceApp <span className="underline">free for 30-days</span> - no commitment, no risk.</h3>
+          Try <span className="bold-accent">ZenSpaceApp</span> <span className="underline">free for 30-days</span> - no commitment, no risk.</h3>
         <div className="text-center">
           <Link
             href="/pricing"
             className="btn btn-outline-dark mt-2"
-            style={{borderColor: "var(--bg--alt--2)"}}
           >
               Start free trial
           </Link>

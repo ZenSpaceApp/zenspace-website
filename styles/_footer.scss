@@ -4,36 +4,35 @@
 .footer {
     
     background: var(--bg--alt--2);
-    color: white !important;
     font-size: 0.9rem;
-
-    .text-dark {
-        color: white !important;    
+    
+    .text-dark {   
+        color: $color-main !important;
     }
 
     a {
 			line-height: 1.0;
+			font-weight: 600 !important;
 			&.btn {
-				border: 2px solid white;
-        color: white !important;
+				border: 3px solid #676767;
 				line-height: 1;
 				font-size: 0.9rem !important;
+				height: 46px !important;
 			}
     }
 
     .slogan {
-        color: #ccc;
-        font-size: 0.9rem;
-        max-width: 75%;
-        // margin-top: 0.5rem;
+      font-size: 0.9rem;
+      max-width: 75%;
+      margin-top: 0.5rem;
     }
 
-    // padding: 60px 0;
     position: relative;
     margin-bottom: 0 !important;
-    .text-muted {
-        // color: #00000080;
-        color: #ccc !important;
+
+		.text-muted {
+        color: #676767 !important;
+        // color: #ccc !important;
         font-weight: 500;
         // font-weight: 500;
         // font-size: 1em !important;
@@ -43,7 +42,7 @@
         font-size: 22px;
         // color: $color-main;
         font-weight: 500;
-        color: white !important;
+        // color: white !important;
 
         .logo-only {
             margin-bottom: 0.5rem;
@@ -110,6 +109,7 @@
 	font-size: 12px;
 	padding: 12px 0;
 	margin: 0 -12px;
+	border-top: 1px solid #00000015;
 
 	// show subfooter as a row
 	@media screen and #{$mq-medium} {
