@@ -953,7 +953,58 @@ section.route-section {
   }
 }
 
+#integrations {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    background: #efece7;
+    background: var(--color--complimentary);
+    border-radius: 12px;
+    padding: 40px 0;
 
+    @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1fr;
+      border-radius: 24px;
+      padding: 40px;
+    }
+
+    .heading-icons {
+      text-align: center;
+
+      @media screen and #{$mq-large} {
+        text-align: left;
+      }
+    }
+
+    .intg-icons {
+      display: block;
+      max-width: 50%;
+      height: auto;
+      margin: auto;
+      margin-top: 32px;
+      
+      @media screen and #{$mq-large} {
+        margin-left: 0;
+        max-width: 35%;
+      }
+    }
+
+    .intg-img {
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: auto;
+      
+      @media screen and #{$mq-large} {
+        height: auto;
+        width: auto;
+        max-width: 45%;
+      }
+    }
+  }
+
+}
 
 //
 // Section: footer

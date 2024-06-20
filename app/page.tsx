@@ -15,6 +15,7 @@ import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
 import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
 import WorkflowScheduleImg from '@/public/images/home/schedule-view.jpg';
 import WorkflowClientsImg from '@/public/images/home/clients-view.jpg';
+import IntegrationImg from '@/public/images/home/payment-screencap@2x.png';
 
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
@@ -38,11 +39,13 @@ import SecurityIcon from '@/public/images/icons/security.svg';
 import ClientsIcon from '@/public/images/icons/clients.svg';
 import DashIcon from '@/public/images/icons/dashboard.svg';
 import ChartBarIcon from '@/public/icons/chart-bar.svg';
+import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
 
 import {
   UilChartBar,
   UilUsdCircle
 } from '@iconscout/react-unicons';
+import { auto } from '@popperjs/core';
 
 const CrossDeviceSync = () => {
   return (<>
@@ -641,6 +644,30 @@ const Hero = () => {
   )
 }
 
+const Integrations = () => {
+  return <section id="integrations" className='bg-half-170 slideanim'>
+    <div className='container'>
+      <div className='grid-container'>
+        <div className='heading-icons'>
+          <h2>Integrates with your favorite apps.</h2>
+          <Image
+            alt='Ingeration with popular apps icons'
+            src={IntegratonIcons}
+            className='intg-icons'
+            />
+        </div>
+        <div>
+          <Image 
+            alt="Image of stripe and paypal integrations."
+            src={IntegrationImg}
+            className='intg-img'
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+}
+
 export default function HomePage() {
   return (
     <Layout>
@@ -651,6 +678,7 @@ export default function HomePage() {
       <SimpleWorkflow/>
       <PersonalizedTherapyExperience />
       <CollabMoodTracking />
+      <Integrations/>
       <FAQ />
     </Layout>   
   )
