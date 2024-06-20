@@ -646,24 +646,31 @@ const Hero = () => {
 
 const Integrations = () => {
   return <section id="integrations" className='bg-half-170 slideanim'>
+    <div className='container'>
+      <div className='heading'>
+        <h2>Integrates with Your Favorite Apps.</h2>
+        <div>
+          Bring all your favorite apps together with our seamless integrations with a myriad of tools.
+        </div>
+      </div>
     <div className='grid-container'>
-      <div className='heading-icons'>
-        <h2>Integrates with your favorite apps.</h2>
+      <div className='grid-item'>
         <Image
           alt='Ingeration with popular apps icons'
           src={IntegratonIcons}
           className='intg-icons'
-          />
+        />
       </div>
-      <div>
+      <div className='grid-item'>
         <Image 
           alt="Image of stripe and paypal integrations."
           src={IntegrationImg}
           className='intg-img'
         />
       </div>
+      </div>
     </div>
-  </section>
+  </section> 
 }
 
 export default function HomePage() {

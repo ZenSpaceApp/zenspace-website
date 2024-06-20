@@ -954,57 +954,67 @@ section.route-section {
 }
 
 #integrations {
+  background: white;
+  .heading {
+    max-width: 640px;
+    margin: auto;
+    text-align: center;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    background: #efece7;
     background: var(--color--complimentary);
-    padding: 40px 15px;
-    max-width: 1600px;
-    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 40px auto;
+    border-radius: 1rem;
 
     @media screen and #{$mq-large} {
+      justify-content: center;
       grid-template-columns: 1fr 1fr;
       border-radius: 30px;
       padding: 40px;
+      align-items: center;
+      column-gap: 80px;
     }
 
-    .heading-icons {
-      text-align: center;
 
-      @media screen and #{$mq-large} {
-        text-align: left;
-      }
+    .grid-item {
+      display: grid;
     }
 
     .intg-icons {
       display: block;
       max-width: 50%;
       height: auto;
-      margin: auto;
-      margin-top: 32px;
-      
-      @media screen and #{$mq-large} {
-        margin-left: 0;
-        max-width: 35%;
+      margin: auto;      
+
+      @media screen and #{$mq-large} {  
+        margin: 0;
+        justify-self: flex-end;
       }
     }
 
     .intg-img {
-      display: block;
+      // display: block;
       max-width: 80%;
       height: auto;
       margin: auto;
-      
+      display: flex;
+      justify-content: center;
+      margin-right: 20px; // accounts for shadow ade to the width
+
       @media screen and #{$mq-large} {
         height: auto;
         width: auto;
-        max-width: 45%;
+        max-width: 60%;
+        margin: 0;
+        justify-self: flex-start;
       }
     }
   }
-
 }
 
 //
