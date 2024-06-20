@@ -395,7 +395,7 @@ section.route-section {
 
     @media screen and #{$mq-small} {
       
-      background: #efece7;
+      background: var(--bg--alt--3);
       background: var(--color--complimentary);
       padding: 40px;
       padding-right: 0;
@@ -453,7 +453,6 @@ section.route-section {
       row-gap: 0;
       align-content: flex-start; /* Prevent extra space distribution */
       align-items: flex-start;
-      background: #efece7;
       padding: 40px;
       padding-right: 0;
       padding-bottom: 60px;

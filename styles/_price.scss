@@ -1,73 +1,66 @@
-.price-option {
-    min-height: 100%;
-    // padding: 25px 15px;
-    padding-right: 15px;
-    padding-bottom: 30px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid;
+.pricing-tiers {
 
-    padding: 2rem 25px;
-    // margin-bottom: rem;
+	display: grid;
+	row-gap: 2rem;
 
-    @media screen and #{$mq-large} {
-        padding: 3rem;
-    }
+	@media screen and #{$mq-large} {
+		column-gap: 2rem;
+		grid-template-columns: repeat(3, 1fr);
+	} 
 
-    &.styling-yearly {
-        border: 3px solid;
-        box-shadow: 10px 10px rgba(0, 0,0, 0.8);
-    }
-    
-    .savings-banner {
-        color: white;
-        font-size: 0.9rem;
-        font-family: var(--font--alt);
-        border-radius: 6px;
-        background: var(--secondary);
-        width: 120px;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 1rem;
-        padding: 8px 12px;
-        font-weight: 500;
+	.price-option {
+			min-height: 100%;
+			padding-right: 15px;
+			padding-bottom: 30px;
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			border: 1px solid #474747;
+			padding: 2rem 20px;
+			font-weight: 500;
+			color: #676767;
 
-        margin-top: -3.3rem;
+			@media screen and #{$mq-large} {
+				padding: 2rem 3rem;
+			}
+			
+			.price-heading {
+				font-family: var(--font--alt);
+				font-size: 1.4rem;
+				font-weight: 650;
+			}
 
-        @media screen and #{$mq-large} {
-          margin-top: -4.3rem;
-        }
-    }
-
-
-    h6 { 
-        text-transform: uppercase;
-        font-weight: 700;
-        opacity: 0.5;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-    }
-
-    ul {
-        padding-left:  0 !important;
-        li {
-            font-size: 1rem;
-            line-height: 1.5;
-            display: flex;
-            margin: 10px 0;
-            // margin-top: -5px;
-            // align-items: center;
-            &::before {
-                content: "\25a0";
-                // color: #222222;
-                font-size: 9px !important;
-                margin-top: 6px;
-                display: inline-flex;
-                padding-right: 10px;
-            }
-        }
-    }
+			&.styling-yearly {
+				border: 3px solid #474747;
+				box-shadow: 10px 10px #474747;
+			}
+			
+			h6 { 
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+	
+			ul {
+					padding-left:  0 !important;
+					align-self: flex-start;
+					display: flex;
+					flex-direction: column;
+					li {
+							font-size: 1rem;
+							line-height: 1.5;
+							display: flex;
+							padding-bottom: 12px;
+							&::before {
+									content: "\25a0";
+									// color: #222222;
+									font-size: 9px !important;
+									margin-top: 6px;
+									display: inline-flex;
+									padding-right: 10px;
+							}
+					}
+			}
+	}
 }
 

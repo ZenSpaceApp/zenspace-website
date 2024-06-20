@@ -10,43 +10,11 @@ export const metadata: Metadata = {
   description: "Check out our competitive and affordable pricing and plans.",
 };
 
-const PatientPlans = () => {
-  return (
-    <div className="container">
-      <h1 className="display-2 mt-5 mb-5 text-center">
-          Pricing and Plans
-        </h1>
-      <div className="row mb-5 mt-5">
-        <div className="col-12 col-lg-4">
-          <div className="price-option border-gray">
-            <div className="price-card">
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}><h3 className="display-6">Video consultation</h3><h3 style={{ color: '#0080ff', fontWeight: 'bold' }}>$79</h3> </div>
-              <h6 className="mt-4">What&apos;s included</h6>
-              <ul className="list-unstyled mb-0 pl-0">
-                <li>Video consultation with a follow-up call</li>
-                <li>Message your doctor</li>
-                <li><mark>Add family members</mark></li>
-                <li>Refill prescriptions</li>
-                <li>All your treatment history, in one place.</li>
-                <li>100% refundable</li>
-                <li>Cancel/reschedule (2 hrs before) to avoid a fee</li>
-              </ul>
-              <Link href="pt-4">
-                <a href="/contact" className="btn btn-primary mt-4">Get the App</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 const PayAsYouGo = () => {
   return <div className="price-option border-gray">
-    <div>
-      <h3 className="display-6">Pay-as-you-go</h3>
-      <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
+    <div className='mb-4'>
+      <div className="price-heading">Pay-as-you-go</div>
       <h2 className="display-4">$79 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
       <div>
         Perfect for therapists with a flexible workload or those just starting out.
@@ -79,16 +47,14 @@ const PayAsYouGo = () => {
 const Yearly = () => {
 
   return <div className="price-option styling-yearly">
-    <div className="savings-banner">Save 30%</div>
-    <div>
-      <h3><b>Yearly</b></h3>
-      <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: '800' }} className="mt-4">Single sign-on</span>
-      <h2 className="display-4">$1325 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
+    <div className='mb-4'>
+      <div className='price-heading'>Yearly</div>
+      <h2 className="display-4">$1325 <span style={{fontSize: "1rem"}}>/yr (-30%) </span> </h2>
       <div>
         Ideal for therapists committed to ZenSpaceApp for the long term.
       </div>
     </div>
-    <div>
+    <div style={{ display: "flex",  flexDirection: "column", flex: "1 1 0"}}>
       <h6 className="mt-4">What&apos;s included</h6>
       <ul className="list-unstyled mb-0 pl-0">
         <li>Unlimited HIPAA-compliant HD-video calling</li>
@@ -113,12 +79,11 @@ const Yearly = () => {
 const Monthly = () => {
 
   return <div className="price-option border-gray">
-  <div>
-    <h3 className="display-6">Monthly</h3>
-    <span style={{ display: 'block', opacity: '0.6', fontSize: '0.8rem', fontWeight: 'bold' }} className="mt-4">Single sign-on</span>
+  <div className='mb-4'>
+    <div className='price-heading'>Monthly</div>
     <h2 className="display-4">$158 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
     <div>
-      Well-suited for therapists with a consistent client base who prefer predictable monthly costs.
+      Ideal for therapists who prefer predictable monthly costs.
     </div>
   </div>
   <div>
@@ -152,17 +117,11 @@ const Monthly = () => {
 const TherapistPlans = () => {
   return (
     <section className="bg-half-170">
-      <div className="container" style={{ paddingBottom: '170px' }}>
-        <div className="row mb-5 mt-4">
-          <div className="col-12 col-lg-4 pb-4 pt-2">
-            <PayAsYouGo />
-          </div>
-          <div className="col-12 col-lg-4 pb-4 pt-2">
-            <Yearly />
-          </div>
-          <div className="col-12 col-lg-4 pb-4 pt-2">
-            <Monthly />
-          </div>
+      <div className="container">
+        <div className="pricing-tiers">
+          <PayAsYouGo />
+          <Yearly />
+          <Monthly />
         </div>
       </div>
     </section>
