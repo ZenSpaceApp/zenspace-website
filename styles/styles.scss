@@ -396,6 +396,7 @@ section.route-section {
     @media screen and #{$mq-small} {
       
       background: #efece7;
+      background: var(--color--complimentary);
       padding: 40px;
       padding-right: 0;
       border-radius: 24px;
