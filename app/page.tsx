@@ -652,7 +652,7 @@ const Integrations = () => {
     <div className='container'>
       <div className='heading'>
         <h2>Integrates with Your Favorite Apps.</h2>
-        <div>
+        <div className='subhead'>
           Bring all your favorite apps together with our seamless integrations with a myriad of tools.
         </div>
       </div>
