@@ -70,7 +70,7 @@ export default function Footer() {
                 <ul className="list-unstyled footer-list mt-2">
                   {/* <li><a href="/help" className="text-muted">Help</a></li> */}
                 <li><a href="/contact-us" className="text-muted">Contact Us</a></li>
-                <li><a href="./#faqs" className="text-muted">FAQs</a></li>
+                <li><a href="./faqs" className="text-muted">FAQs</a></li>
                 </ul>
             </div>
           </div>
