@@ -72,7 +72,7 @@ const CrossDeviceSync = () => {
         </div>
 
         <div className="col-lg-6 col-md-5 order-1 order-md-2">
-          <div className="app-feature-shape-left position-relative">
+          <div className="app-feature-shapeleft position-relative">
             <div className="text-center text-md-right">
             <Image
                 className="img-fluid"
@@ -102,7 +102,7 @@ const PersonalizedTherapyExperience = () => {
     <div className="container bg-half-170 overflow-hidden">
         <div className="row align-items-center">
           <div className="offset-lg-1 col-lg-6 col-md-5">
-            <div className="app-feature-shape-right position-relative">
+            <div className="app-feature-shaperight position-relative">
               <div className="text-center text-md-left">
               <Image
                 className="img-fluid "
@@ -371,10 +371,10 @@ function WorkflowCarousel() {
 const SimpleWorkflow = () => {
   return (
     <section id="zen-workflow">
-      <h3 className="display-6 u-textcenter">
+      <h2 className="u-textcenter">
         Simple Workflow.<br />
         Powerful Capabilities.
-      </h3>
+      </h2>
       <div className="subhead">
         Secure, AI-powered platform connecting therapists and clients for seamless
         practice management and care.
@@ -596,7 +596,7 @@ const Hero = () => {
 
   const HeroImage = () => {
     return (
-      <div className="heroImg classic-saas-image saas-feature-shape-right position-relative">
+      <div className="heroImg classic-saasimage saasfeature-shape-right position-relative">
         <Image
           src={ZenNotesImg}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

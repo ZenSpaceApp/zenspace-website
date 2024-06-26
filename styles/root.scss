@@ -6,7 +6,7 @@
   
   // colors
   --primary: #FFA634;
-  --secondary: #149e53 !important;
+  --secondary: var(--green-600) !important;
   
   // --bg--body--main: #F4F3EA;
   --bg--body--main: #fff;
@@ -30,7 +30,22 @@
   --font--main: Inter, sans-serif;
   --font--alt: Syne;
   
-  --type--h1: calc(3rem + 0.7vw) !important;
-  --type--h2: calc(2rem + 0.5vw) !important;
+  --type--h1: calc(3rem + 0.5vw) !important;
+  --type--h2: calc(2rem + 0.2vw) !important;
   --type--h3: 1.5rem;
+  
+  
+  --green-50: #f0fdf5;
+  --green-100: #dcfcea;
+  --green-200: #baf8d5;
+  --green-300: #85f0b5;
+  --green-400: #49df8d;
+  --green-500: #21c66c;
+  --green-600: #149e53;
+  --green-700: #148147;
+  --green-800: #15663b;
+  --green-900: #135433;
+  --green-950: #052e1a;
+
 }
+

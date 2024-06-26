@@ -110,7 +110,7 @@ export default function FAQ() {
           ))}
           </div>
       </div>
-      <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem", fontFamily: "Syne"}}>
+      <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem"}}>
         Read a detailed version of our 
         <span>
           <Link

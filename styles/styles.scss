@@ -38,7 +38,8 @@ $color-background-secondary: #00000005;
 $color-background-dark: #d8d8d8;
 
 // $color-main: var(--bg--alt--2) !important;
-$color-main: #474747 !important;
+// $color-main: #212529 !important;
+$color-main: var(--green-950) !important;
 $color-background: var(--bg--body--main);
 $color-dominant: #0080ff;
 $color-active: #3e566e;
@@ -211,9 +212,9 @@ a {
 }
 
 h1, h2, h3   {
-  font-weight: 700 !important;
-  font-family: Syne, sans-serif;
-  line-height: 1.1 !important;
+  font-weight: 800 !important;
+  // font-family: Syne, sans-serif;
+  line-height: 1 !important;
 }
 
 h1 {
@@ -370,7 +371,7 @@ section.route-section {
         li {
           padding: 0 16px ;
           height: 46px;
-          background: var(--bg--pills);
+          background: var(--green-200);
           font-size: 0.9rem;
           font-weight: 550;
           display: flex;
@@ -395,8 +396,8 @@ section.route-section {
 
     @media screen and #{$mq-small} {
       
-      background: var(--bg--alt--3);
-      background: var(--bg--alt--1);
+      
+      background: var(--green-50);
       padding: 40px;
       padding-right: 0;
       border-radius: 24px;
@@ -552,15 +553,19 @@ section.route-section {
   padding: 4rem 15px;
   margin: auto;
   padding: 8rem 0;
+  background: var(--green-950);
 
-  h2 {text-align: center; }
+  h2{
+    text-align: center; 
+    color: var(--green-100);
+  }
   
   .subhead {
     text-align: center;
     max-width: 560px;
     font-weight: 500;
     margin: auto;
-    color: var(--color--grey2);
+    color: var(--green-300);
   }
     
   .workflow-container {
@@ -608,31 +613,34 @@ section.route-section {
             display: flex;
             justify-content: center;
             align-items: center;  
-            width: 64px;
-            height: 64px;
+            width: 100px;
+            height: 100px;
             border-radius: 16px;  
           }
 
           p { 
             font-size: 0.9rem;
             margin-top:0.5rem;
-            color: var(--color--grey2); 
+            color: var(--green-300); 
             text-align: center;
+            font-weight: 550;
           }
 
           img {
-            height: 24px;
+            height: 2rem;
             width: auto;
             display: block;
           }
 
           &.active {
             .pill {
-              background: #47474720;
+              background: var(--green-800);
+              
             }
 
             p {
               font-weight: 550;
+              color: var(--green-100);
             }
           }  
         }
@@ -955,6 +963,7 @@ section.route-section {
 
 #integrations {
   background: white;
+
   .heading {
     max-width: 640px;
     margin: auto;
@@ -965,7 +974,7 @@ section.route-section {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    background: var(--color--complimentary);
+    background: var(--green-50);
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 40px auto;
@@ -1771,7 +1780,7 @@ footer {
         width: 30vw;
         justify-content: center; 
         align-items: center;
-        background: var(--bg--body--main);
+        background: var(--green-500);
       }
     }
 
@@ -4343,7 +4352,7 @@ input::-webkit-inner-spin-button {
 
 #faqs {
   padding: 160px 0;
-  background: var(--bg--alt--1);
+  // background: var(--bg--alt--1);
   
   
   .psa {
@@ -4394,10 +4403,10 @@ input::-webkit-inner-spin-button {
       margin-top: 0;
       margin-bottom: 0;
       padding-right: 20px;
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 1.1rem;
+      font-weight: 800;
       line-height: 160%;
-      font-family: "Syne";
+      // font-family: "Syne";
     }
 
     .expandable-icon {

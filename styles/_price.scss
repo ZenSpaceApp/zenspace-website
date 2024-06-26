@@ -26,9 +26,11 @@
 			}
 			
 			.price-heading {
-				font-family: var(--font--alt);
-				font-size: 1.4rem;
-				font-weight: 650;
+				// font-family: var(--font--alt);
+				font-size: 1.2rem;
+				font-weight: 600;
+				margin-bottom: 8px;
+				color: var(--green-900);
 			}
 
 			&.styling-yearly {
@@ -37,8 +39,7 @@
 			}
 			
 			h6 { 
-				font-weight: 600;
-				font-size: 0.9rem;
+				font-weight: 800;
 			}
 	
 			ul {
@@ -46,7 +47,7 @@
 					align-self: flex-start;
 					display: flex;
 					flex-direction: column;
-					color: #676767;
+					// color: #676767;
 					li {
 							font-size: 1rem;
 							line-height: 1.5;
