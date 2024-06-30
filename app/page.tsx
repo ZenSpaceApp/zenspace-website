@@ -371,10 +371,10 @@ function WorkflowCarousel() {
 const SimpleWorkflow = () => {
   return (
     <section id="zen-workflow">
-      <h2 className="u-textcenter">
+      <h3 className="u-textcenter">
         Simple Workflow.<br />
-        Powerful Capabilities.
-      </h2>
+        <span style={{color: "var(--green-500)"}}>Powerful Capabilities.</span>
+      </h3>
       <div className="subhead">
         Secure, AI-powered platform connecting therapists and clients for seamless
         practice management and care.
@@ -436,7 +436,8 @@ function Benefits() {
       <div className="container">
         <div className="mb-4 mt-4 u-textcenter"  >
           <h2 className="display-4" style={{width: "100%", maxWidth: "860px", display: 'block', margin: "auto"}}>
-          Unlock Your Practice with Our All-in-One Solution.
+            Everything Integrated. <br />
+            <span style={{color: "var(--green-500)"}}>Unlock Your Potential.</span>
           </h2>
           <div className="subhead mb-4" style={{width: "100%", maxWidth: "640px", display: 'block', margin: "auto", marginTop: "18px", marginBottom: "32px" }}>
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
@@ -523,7 +524,7 @@ const Hero = () => {
             lineHeight: '1.0 !important',
             letterSpacing: "-1px"
           }}>
-          One App to Streamline Your Therapy Practice.
+          One App to Streamline and Grow Your Therapy Practice.
         </h1>
       </div>
     )
@@ -532,7 +533,16 @@ const Hero = () => {
   const Features = () => {
     return (
       <div className="feature-pills">
-          <ul>
+        <ul>
+            <li>
+              <Image 
+                alt='ChatGPT-powered Therapy Notes'
+                src={CalendarIcon}
+                height={16}
+                width={0}
+                />
+              Seamless Scheduling
+            </li>
             <li>
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
@@ -553,7 +563,7 @@ const Hero = () => {
                 HD-Video
               </div>
             </li>
-            <li>
+            {/* <li>
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={ChatIcon}
@@ -561,7 +571,7 @@ const Hero = () => {
                 width={0}
                 />
               Messaging
-            </li>
+            </li> */}
             <li>
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
@@ -578,17 +588,9 @@ const Hero = () => {
                 height={16}
                 width={0}
                 />
-              Payments
+              Subscriptions
             </li>
-            <li>
-              <Image 
-                alt='ChatGPT-powered Therapy Notes'
-                src={CalendarIcon}
-                height={16}
-                width={0}
-                />
-              Seamless Scheduling
-            </li>
+           
           </ul>
         </div>
     )
@@ -596,7 +598,7 @@ const Hero = () => {
 
   const HeroImage = () => {
     return (
-      <div className="heroImg classic-saasimage saasfeature-shape-right position-relative">
+      <div className="heroImg">
         <Image
           src={ZenNotesImg}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -606,9 +608,6 @@ const Hero = () => {
             maxWidth: "100%",
             height: "auto",
             margin: "auto",
-            // boxShadow: "10px 10px rgba(71, 71, 71, 1)",
-            // borderRadius: "1rem",
-            // border: "3px solid #474747" 
           }}
         />
       </div>
