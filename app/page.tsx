@@ -308,16 +308,14 @@ function WorkflowCarousel() {
       className="zen-notes"
     >
       <div className='desc'>
-        <h3
-          className='display-6 pt-3'>
+        <h4>
           Introducing <span className='bold-accent'>
             ZenNotes</span>, ChatGPT-powered therapy notes.
-        </h3>
+        </h4>
         <ul>
           {notesHighLights.map((feature, idx) => (
             <li key={idx}>
               <div>
-
               <h5 className="heading">{feature[0]}</h5>
               <div>{feature[1]}</div>
               </div>
