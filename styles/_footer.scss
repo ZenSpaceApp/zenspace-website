@@ -3,16 +3,17 @@
 //
 .footer {
     
-    background: var(--bg--alt--2);
+    background: var(--green-100);
     font-size: 0.9rem;
     
-    .text-dark {   
-        color: $color-main !important;
+    .text-dark {     
+      color: var(--green-800) !important;
     }
 
     a {
 			line-height: 1.0;
-			font-weight: 500 !important;
+			font-weight: 600 !important;
+			color: var(--green-700) !important;
 			&.btn {
 				border: 3px solid #676767;
 				line-height: 1;

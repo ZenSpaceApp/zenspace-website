@@ -26,7 +26,7 @@ export const CTA = () => {
       <div className="content">
         <h3>
           Reclaim your time and streamline your practice.
-          Try <span className="bold-accent">ZenSpaceApp</span> <span className="underline">free for 30-days</span> - no commitment, no risk.</h3>
+          Try ZenSpaceApp <span className="underline">free for 30-days</span> - no commitment, no risk.</h3>
         <div className="text-center">
           <Link
             href="/pricing"

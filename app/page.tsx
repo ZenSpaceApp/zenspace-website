@@ -41,11 +41,11 @@ import DashIcon from '@/public/images/icons/dashboard.svg';
 import ChartBarIcon from '@/public/icons/chart-bar.svg';
 import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
 
-import {
-  UilChartBar,
-  UilUsdCircle
-} from '@iconscout/react-unicons';
-import { auto } from '@popperjs/core';
+// import {
+//   UilChartBar,
+//   UilUsdCircle
+// } from '@iconscout/react-unicons';
+
 
 const CrossDeviceSync = () => {
   return (<>
@@ -520,11 +520,12 @@ const Hero = () => {
       <div className="headline title-heading grid-item">
         <h1
           style={{
+            // fontWeight:"700 !important",
             paddingTop: "0px",
             lineHeight: '1.0 !important',
             letterSpacing: "-1px"
           }}>
-          One App to Streamline and Grow Your Therapy Practice.
+          One App to <span className='color-accent'>Streamline</span> and <span className='color-accent'>Grow</span> Your Therapy Practice.
         </h1>
       </div>
     )

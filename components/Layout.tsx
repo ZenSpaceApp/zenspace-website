@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { ReactNode } from "react";
 import { CTA } from "./CTA";
 
-const Layout = ({children } : { children: ReactNode} ) => {  
+const Layout = ({showCTA = true, children } : { children: ReactNode, showCTA?: boolean} ) => {  
   
   return <>
     <div className="show fade">
@@ -12,7 +12,7 @@ const Layout = ({children } : { children: ReactNode} ) => {
         <NavBar home=""></NavBar>
       </header>
       {children}
-      <CTA />
+      {showCTA && <CTA /> }
       <footer>
         <Footer />
       </footer>

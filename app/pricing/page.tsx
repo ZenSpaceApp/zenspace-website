@@ -130,7 +130,7 @@ const TherapistPlans = () => {
 
 export default function Pricing() {
   return (
-    <Layout>
+    <Layout showCTA={false}>
       <h1 className="display-3 mt-5 text-center" style={{ paddingTop: "16rem" }}>
         Pricing and Plans.
       </h1>
