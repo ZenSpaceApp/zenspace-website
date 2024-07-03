@@ -907,8 +907,83 @@ section.route-section {
   }
 }
 
-#integrations {
+#subscriptions {
   background: white;
+  
+  .container {
+    max-width: 1600px !important;
+    width: 90vw !important;
+    margin: auto;
+    // padding: 20px;
+    // background: var(--green-100);
+  }
+  .subhead {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  .flex-container {
+    padding: 3rem 20px;
+    background: var(--green-50);
+    border-radius: 30px;
+    
+    @media screen and #{$mq-large} {  
+      padding: 3rem;
+    }
+  }
+  
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {  
+      &:nth-child(2) {
+        border-top: 1px solid #00000025;
+        border-bottom: 1px solid #00000025;
+      }
+      
+      padding-bottom: 20px;
+      padding-top: 20px;      
+    }
+  }
+
+  .expandable-heading { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.0;
+        cursor: pointer;
+  }
+
+  .expandable-bottom {
+    max-height: 0px; 
+    transform-style: preserve-3d; 
+    opacity: 0;
+    overflow: hidden;
+
+    &.open {
+      max-height: 1000px;
+      opacity: 1;
+      transition: max-height 1000ms;
+    }
+
+    .faq-paragraph {
+      transform-origin: 50% 0;
+      margin-bottom: 0;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      font-weight: 400;
+      color: #353535;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+#integrations {
+  // background: white;
 
   .heading {
     max-width: 640px;
@@ -4299,7 +4374,7 @@ input::-webkit-inner-spin-button {
 #faqs {
   padding: 160px 0;
   // background: var(--bg--alt--1);
-  
+  background: white;
   
   .psa {
     font-size: 1rem;

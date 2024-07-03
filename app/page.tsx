@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import { useState } from 'react';
 import Link from 'next/link';
 
-import ZenNotesImg from '@/public/images/home/zen-notes-ipad.jpg';
+import ZenNotesImg from '@/public/images/home/hero-img.jpg';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
@@ -16,6 +16,7 @@ import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
 import WorkflowScheduleImg from '@/public/images/home/schedule-view.jpg';
 import WorkflowClientsImg from '@/public/images/home/clients-view.jpg';
 import IntegrationImg from '@/public/images/home/payment-screencap@2x.png';
+import AvailabilityImg from '@/public/images/home/booking-config.jpg';
 
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
@@ -38,8 +39,12 @@ import CalendarIcon from '@/public/images/icons/calendar.svg';
 import SecurityIcon from '@/public/images/icons/security.svg';
 import ClientsIcon from '@/public/images/icons/clients.svg';
 import DashIcon from '@/public/images/icons/dashboard.svg';
+import ChevronUpIcon from '@/public/images/icons/chevron-up.svg';
+import ChevronDownIcon from '@/public/images/icons/chevron-down.svg';
+
 import ChartBarIcon from '@/public/icons/chart-bar.svg';
 import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
+import { Lexend } from 'next/font/google';
 
 // import {
 //   UilChartBar,
@@ -47,11 +52,21 @@ import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
 // } from '@iconscout/react-unicons';
 
 
+const ExploreMobileApps = () => {
+  return (
+    <section className="bg-half-170" >
+      <h2 className='display-5 u-textcenter mb-4'>
+        Explore the Mobile Apps.
+      </h2>
+      <CrossDeviceSync />
+      <PersonalizedTherapyExperience />
+      <CollabMoodTracking />
+    </section>   
+  )
+}
+
 const CrossDeviceSync = () => {
   return (<>
-    <h2 className='display-5 u-textcenter mb-4'>
-      Explore the App.
-    </h2>
     <div className="container bg-half-170 overflow-hidden">
       <div className="row align-items-center ">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -95,6 +110,103 @@ const CrossDeviceSync = () => {
   )
 }
 
+
+const Subscriptions = () => {
+  const [selIdx, setIndex] = useState<number | null>(0);
+
+  // ref.current
+  const expandAnswer = (idx : null | number) => {
+    if (selIdx === idx) {      
+      setIndex(0)
+    } else {
+      setIndex(idx)
+    }  
+  }
+
+  const features = [
+    [
+      "Customize Your Plans",
+      "Tailor your subscription plans to suit your clients' needs and your therapy offerings. \
+      Set pricing, session frequency, and additional perks to make your plans stand out."
+    ],
+    [
+      "Promote Your Service",
+      "Showcase your subscription plans via your custom page and domain with our Zen Sites suite\
+       and share them with potential clients. We make it easy to spread the word about your practice and attract new subscribers.",
+    ],
+    [
+      "Earnings Dashboard",
+      "Focus on what you do best – helping your clients. ZenPath handles recurring billing\
+       and client management, allowing you to grow your practice and build long-lasting relationships with your subscribers."
+    ]
+  ]
+  
+  return (<section id="subscriptions">
+    <div className="container bg-half-260 ">
+      <div className='u-textcenter mb-5'>
+        <h2>
+          Grow Your Business. <br />
+          <span className='bold-accent color-accent'>ZenPath Subscriptions.</span> </h2>
+        <div className='subhead'>
+          Design and launch custom subscription plans and site in minutes &mdash; <span className='color-accent bold-accent'>no coding required</span>.
+        </div>
+      </div>
+
+      <div className='flex-container'>
+        <div className="row align-items-center ">
+          <div className="col-lg-3 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
+            <div >
+              <ul>
+                {features.map((feature, idx) => (
+                  <li
+                    key={idx}
+                    onClick={() => expandAnswer(idx)}
+                  >
+                    <div className='expandable-heading'>
+                      <div>{feature[0]}</div>
+                      <Image
+                        alt='Icon used to show the content'
+                        src={selIdx === idx ? ChevronUpIcon : ChevronDownIcon}
+                        height={12}
+                      />
+                    </div>
+                    <div className={selIdx === idx ? "expandable-bottom open" : "expandable-bottom"}>
+                      <div>{feature[1]}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className=" col-lg-9 col-md-5 order-1 order-md-2">
+            <div className="app-feature-shapeleft position-relative">
+              <div className="text-center text-md-right">
+              <Image
+                  className="img-fluid"
+                  alt="Cross device sync"
+                  src={AvailabilityImg}
+                  style={{
+                    maxWidth: "90%",
+                    height: "auto",
+                    display: "block",
+                    margin: "auto"
+                  }}
+                />
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+        <div style={{display: 'flex', justifyContent: "center", marginTop: "3rem"}}>
+          <a className='btn btn-dark' style={{display: "flex", alignItems: "center"}}>
+            Learn how it works 
+          </a>
+        </div>
+  </div>
+  </section>
+  )
+}
 
 
 const PersonalizedTherapyExperience = () => {
@@ -649,9 +761,10 @@ const Integrations = () => {
   return <section id="integrations" className='bg-half-170 slideanim'>
     <div className='container'>
       <div className='heading'>
-        <h2>Integrates with Your Favorite Apps.</h2>
+        <h2>Integrates with Your <span className='color-accent'>Favorite Apps.</span></h2>
         <div className='subhead'>
-          Bring all your favorite apps together with our seamless integrations with a myriad of tools.
+          Bring all your favorite apps like quickbooks, google calendar and paypal
+          together with our seamless integrations.
         </div>
       </div>
     <div className='grid-container'>
@@ -680,10 +793,9 @@ export default function HomePage() {
       <Hero/>
       <Stats />
       <Benefits />
-      <CrossDeviceSync />
       <SimpleWorkflow/>
-      <PersonalizedTherapyExperience />
-      <CollabMoodTracking />
+      <ExploreMobileApps />
+      <Subscriptions />
       <Integrations/>
       <FAQ />
     </Layout>   
