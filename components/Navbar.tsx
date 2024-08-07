@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp@2x.png';
+import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp.svg';
 
 
 export default function Navbar({ home }: { home: string} ) {
@@ -43,7 +43,7 @@ export default function Navbar({ home }: { home: string} ) {
         <Image
           alt="ZenSpaceApp logo"
           src={ZenSpaceAppLogo}
-          height={32}
+          height={18}
           width={0}
         />
       </Link>
@@ -103,7 +103,14 @@ export default function Navbar({ home }: { home: string} ) {
               {/* onMouseOver={() => handleMouseOver('company')} > */}
               <a>ZenPath</a>
               {renderCompany()}
-            </li>
+              </li>
+              <li>
+              {/* onMouseOver={() => handleMouseOver('company')} > */}
+              <a>ZenList</a>
+              {renderCompany()}
+              </li>
+              <li>
+              </li>
             <li><Link href='/pricing'>Pricing</Link></li>
           </ul>
         </div>
@@ -113,7 +120,8 @@ export default function Navbar({ home }: { home: string} ) {
               className="btn btn-outline-secondary"
               style={{
                 padding: "12px 2rem !important",
-                lineHeight: "1.2 !important"
+                lineHeight: "1.2 !important",
+                // display: "none"
               }}
               >
                 Sign In
@@ -141,7 +149,7 @@ export default function Navbar({ home }: { home: string} ) {
             </ul>
           </div>
           <div>
-            <h5>SOLUTIONS</h5>
+            <h5>Product</h5>
             <ul className="list-unstyled">
               <Link href=''>
                 <li>Clients</li>

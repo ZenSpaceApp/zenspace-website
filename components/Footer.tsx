@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp@2x.png';
+import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp.svg';
 import Image
   from "next/image";
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
                     className="logo-only"
                     alt="ZenSpaceApp logo"
                     src={ZenSpaceAppLogo}
-                    height={36}
+                    height={22}
                     width={0}
                   />  
                 </Link>
@@ -27,29 +27,32 @@ export default function Footer() {
                   Empowering mental wellness with a touch of Zen.
                 </div>
                 <div className="mt-4">
-                <Link
-                href="/contact/#book-demo"
-                className="btn"
-              >
-                
-                    Book a demo
+                  <Link
+                    className="btn btn-outline-secondary"
+                    style={{
+                      padding: "12px 2rem !important",
+                      lineHeight: "1.2 !important"
+                    }}
+                href="/contact/#book-demo">
+                    
+                    Book a Demo
                   </Link>
                 </div>
               </div>
             </div>
             
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 offset-lg-1">
-              <h6 className="text-dark  mb-4"><b>Solutions</b></h6>
+              <h5 className="text-dark  mb-4"><b>Solutions</b></h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">Clients</a></li>
                 <li><a href="/" className="text-muted">Therapists</a></li>
                 <li><a href="/" className="text-muted">ZenNotes</a></li>
                 <li><a href="/" className="text-muted">ZenPath</a></li>
-                <li><a href="/" className="text-muted">ZenMatch</a></li>
+                <li><a href="/" className="text-muted">ZenList</a></li>
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <h6 className="text-dark  mb-4"><b>Company</b></h6>
+            <h5 className="text-dark  mb-4"><b>Company</b></h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">About Us</a></li>
                 <li><a href="/" className="text-muted">Careers</a></li>
@@ -57,7 +60,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h6 className="text-dark  mb-4"><b>Resources</b></h6>
+              <h5 className="text-dark  mb-4"><b>Resources</b></h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
                 <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
@@ -66,7 +69,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h6 className="text-dark mb-4"><b>Support</b></h6>
+              <h5 className="text-dark mb-4"><b>Support</b></h5>
                 <ul className="list-unstyled footer-list mt-2">
                   {/* <li><a href="/help" className="text-muted">Help</a></li> */}
                 <li><a href="/contact-us" className="text-muted">Contact Us</a></li>

@@ -16,13 +16,14 @@ import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
 import WorkflowScheduleImg from '@/public/images/home/schedule-view.jpg';
 import WorkflowClientsImg from '@/public/images/home/clients-view.jpg';
 import IntegrationImg from '@/public/images/home/payment-screencap@2x.png';
-import AvailabilityImg from '@/public/images/home/booking-config.jpg';
+import ConfigureSubsImg from '@/public/images/home/configure-plans.jpg';
+import PromoteSubsImg from '@/public/images/home/booking-config.jpg';
+import EarningsDashImg from '@/public/images/home/earnings-dash.jpg';
 
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
-  WorkflowNotesImg,
-  WorkflowHDVideoImg,
   WorkflowScheduleImg,
+  WorkflowHDVideoImg,
   WorkflowClientsImg
 ]
 
@@ -41,22 +42,96 @@ import ClientsIcon from '@/public/images/icons/clients.svg';
 import DashIcon from '@/public/images/icons/dashboard.svg';
 import ChevronUpIcon from '@/public/images/icons/chevron-up.svg';
 import ChevronDownIcon from '@/public/images/icons/chevron-down.svg';
-
-import ChartBarIcon from '@/public/icons/chart-bar.svg';
 import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
-import { Lexend } from 'next/font/google';
-
-// import {
-//   UilChartBar,
-//   UilUsdCircle
-// } from '@iconscout/react-unicons';
 
 
-const ExploreMobileApps = () => {
+const ZenNotes = () => {
+
+  const features = [
+    [
+      "Making the Most of Notes",
+      "ZenNotes helps therapists and clients get the most out of their therapy sessions by providing an optimized note-taking experience."
+    ],
+    [
+      "No ChatGPT Account Required",
+      "We make it super-easy for therapists to reap the benefits of advanced\
+       technology."
+    ],
+    [
+      "Seamless Organization",
+      "Effective organization of notes is crucial for therapy sessions, and\
+       ZenNotes makes it effortless."
+    ],
+    [
+      "Self-Reflection Tools",
+      "Leverage past insights to inform current sessions, ensuring continuity\
+       and depth in client care."
+    ],
+    [
+      "User-Friendly Design",
+      "Easy to navigate and use on mobile, tablet or desktop."
+    ]
+  ]
+
+  return <div
+    className="zen-notes"
+  >
+    <div className='desc'>
+      <h3>
+        Introducing <span className='bold-accent'>
+          ZenNotes</span> &mdash; ChatGPT-powered <span className='bold-accent'>Therapy Notes</span>.
+      </h3>
+      <ul>
+        {features.map((feature, idx) => (
+          <li key={idx}>
+            <div>
+            <h5 className="heading">{feature[0]}</h5>
+            <div>{feature[1]}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div
+      className=''
+      style={{
+        paddingRight: 0,
+        marginRight: 0
+      }}>
+      <Image
+        alt="Workflow images"
+        src={WorkflowNotesImg}
+        width={0}
+        height={0}        />
+    </div>
+  </div>
+}
+
+const AIEfficiency = () => {
   return (
-    <section className="bg-half-170" >
-      <h2 className='display-5 u-textcenter mb-4'>
-        Explore the Mobile Apps.
+    <div className='section bg-half-170' id="ai-efficiency">
+      <div className='container '>
+        <h2 className='u-textcenter bold-accent'>AI-Powered Efficiency.</h2>
+        <div className='subhead u-textcenter'>
+          Our advanced AI features, powered by ChatGPT, streamline your workflow
+          by generating and summarizing therapy notes.
+        </div>
+
+        <ZenNotes />
+      </div>
+    </div>
+  )
+}
+
+const ExpTheDifference = () => {
+  return (
+    <section className="bg-half-170">
+      <h2 className=' container u-textcenter'>
+        <span className='bold-accent color-accent'>
+          Experience the Difference.
+        </span>
+        <br />
+        Comprehensive Mobile and Desktop Apps.
       </h2>
       <CrossDeviceSync />
       <PersonalizedTherapyExperience />
@@ -113,6 +188,7 @@ const CrossDeviceSync = () => {
 
 const Subscriptions = () => {
   const [selIdx, setIndex] = useState<number | null>(0);
+  // const [featureImg, setFeatutedImg] = useState<string | ''>(ConfigureSubsImg)
 
   // ref.current
   const expandAnswer = (idx : null | number) => {
@@ -120,7 +196,15 @@ const Subscriptions = () => {
       setIndex(0)
     } else {
       setIndex(idx)
+      // setImg(images[idx])
     }  
+  }
+
+  let imgSrc = ConfigureSubsImg;
+  switch (selIdx) {
+    case 0: imgSrc = ConfigureSubsImg; break;
+    case 1: imgSrc = PromoteSubsImg; break;
+    case 2: imgSrc = EarningsDashImg; break;
   }
 
   const features = [
@@ -135,7 +219,7 @@ const Subscriptions = () => {
        and share them with potential clients. We make it easy to spread the word about your practice and attract new subscribers.",
     ],
     [
-      "Earnings Dashboard",
+      "Maximize your Earnings",
       "Focus on what you do best – helping your clients. ZenPath handles recurring billing\
        and client management, allowing you to grow your practice and build long-lasting relationships with your subscribers."
     ]
@@ -148,7 +232,7 @@ const Subscriptions = () => {
           Grow Your Business. <br />
           <span className='bold-accent color-accent'>ZenPath Subscriptions.</span> </h2>
         <div className='subhead'>
-          Design and launch custom subscription plans and site in minutes &mdash; <span className='color-accent bold-accent'>no coding required</span>.
+          Launch custom site with subscription plans in minutes &mdash; <span className='color-accent bold-accent'>no coding required</span>.
         </div>
       </div>
 
@@ -167,7 +251,7 @@ const Subscriptions = () => {
                       <Image
                         alt='Icon used to show the content'
                         src={selIdx === idx ? ChevronUpIcon : ChevronDownIcon}
-                        height={12}
+                        height={8}
                       />
                     </div>
                     <div className={selIdx === idx ? "expandable-bottom open" : "expandable-bottom"}>
@@ -185,7 +269,7 @@ const Subscriptions = () => {
               <Image
                   className="img-fluid"
                   alt="Cross device sync"
-                  src={AvailabilityImg}
+                  src={imgSrc}
                   style={{
                     maxWidth: "90%",
                     height: "auto",
@@ -200,7 +284,7 @@ const Subscriptions = () => {
       </div>
         <div style={{display: 'flex', justifyContent: "center", marginTop: "3rem"}}>
           <a className='btn btn-dark' style={{display: "flex", alignItems: "center"}}>
-            Learn how it works 
+            Get Started
           </a>
         </div>
   </div>
@@ -211,7 +295,7 @@ const Subscriptions = () => {
 
 const PersonalizedTherapyExperience = () => {
   return (
-    <div className="container bg-half-170 overflow-hidden">
+    <div className="container bg-half170 overflow-hidden">
         <div className="row align-items-center">
           <div className="offset-lg-1 col-lg-6 col-md-5">
             <div className="app-feature-shaperight position-relative">
@@ -250,7 +334,7 @@ const PersonalizedTherapyExperience = () => {
 
 const CollabMoodTracking = () => {
   return (
-    <section className="bg-half-260 overflow-hidden" >
+    <section className="bg-half-170 overflow-hidden" >
       <div className="container mt-100">
         <div className="row align-items-center">
           <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -317,22 +401,21 @@ function WorkflowCarousel() {
             </div>
             <p>Dashboard</p>  
           </li>
-          
           <li
-            key={1}
-            className={(currIdx === 1) ? "active" : "disabled"}
-            onClick={() => showView(1)}
-          >
-            <div className='pill'>
-              <Image 
-              alt='ChatGPT-powered Therapy Notes'
-              src={ZenNotesIcon}
+          key={1}
+          className={(currIdx === 1) ? "active" : "disabled"}
+          onClick={() => showView(1)}
+        > 
+          <div className='pill'>
+            <Image 
+              alt='Seamless schdeuling'
+              src={CalendarIcon}
               height={0}
               width={0}
             />
-            </div>
-            <p>AI</p>  
-          </li>
+          </div>
+          <p>Scheduling</p>  
+        </li>
           <li
             key={2}
             className={(currIdx === 2) ? "active" : "disabled"}
@@ -348,25 +431,11 @@ function WorkflowCarousel() {
           </div>
           <p>Video</p>  
           </li>
+    
         <li
-          key={3}
+          key="3"
           className={(currIdx === 3) ? "active" : "disabled"}
           onClick={() => showView(3)}
-        > 
-          <div className='pill'>
-            <Image 
-              alt='Seamless schdeuling'
-              src={CalendarIcon}
-              height={0}
-              width={0}
-            />
-          </div>
-          <p>Scheduler</p>  
-        </li>
-        <li
-          key="4"
-          className={(currIdx === 4) ? "active" : "disabled"}
-          onClick={() => showView(4)}
         >
           <div className='pill'>
             <Image 
@@ -388,83 +457,13 @@ function WorkflowCarousel() {
     case 1: imgSrc = WORKFLOW_IMAGES[1]; break;
     case 2: imgSrc = WORKFLOW_IMAGES[2]; break;
     case 3: imgSrc = WORKFLOW_IMAGES[3]; break;
-    case 4: imgSrc = WORKFLOW_IMAGES[4]; break;
   }
   
-  const ZenNotes = () => {
-
-    const notesHighLights = [
-      [
-        "No ChatGPT Account Required",
-        "Leveraging the power of AI without requiring a separate ChatGPT account makes it easy for therapists to reap the benefits of advanced technology."
-      ],
-      [
-        "Seamless Organization",
-        "Effective organization of notes is crucial for therapy sessions, and ZenNotes makes this process effortless."
-      ],
-      [
-        "Self-Reflection Tools",
-        "Encouraging self-reflection is essential for personal growth, and having built-in tools to support this is a valuable addition."
-      ],
-      [
-        "User-Friendly Design",
-        "Ensuring that the app is easy to navigate and use is key for both therapists and clients."
-      ],
-      [
-        "Making the Most of Notes",
-        "ZenNotes helps therapists and clients get the most out of their therapy sessions by providing an optimized note-taking experience."
-      ]
-    ]
-
-    return <div
-      className="zen-notes"
-    >
-      <div className='desc'>
-        <h4>
-          Introducing <span className='bold-accent'>
-            ZenNotes</span>, ChatGPT-powered therapy notes.
-        </h4>
-        <ul>
-          {notesHighLights.map((feature, idx) => (
-            <li key={idx}>
-              <div>
-              <h5 className="heading">{feature[0]}</h5>
-              <div>{feature[1]}</div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div
-        className=''
-        style={{
-          paddingRight: 0,
-          marginRight: 0
-        }}>
-        <Image
-          alt="Workflow images"
-          key={currIdx}
-          src={WORKFLOW_IMAGES[currIdx]}
-          className="show fade images"
-          width={0}
-          height={0}
-          style={{
-            borderRadius: 0,
-            maxWidth: "100%",
-            width: "100%"
-          }}
-          />
-      </div>
-    </div>
-  }
+  
 
   return (
     <div className="workflow-container">
       <Pills />
-      {currIdx === 1 ? (        
-          <ZenNotes />
-      )
-        : (
         <div className='image-container'>
           <Image
             alt="Workflow images"
@@ -473,7 +472,6 @@ function WorkflowCarousel() {
             className="show fade images"
             />
         </div>
-      )}
     </div>
   )
 }
@@ -483,7 +481,10 @@ const SimpleWorkflow = () => {
     <section id="zen-workflow">
       <h3 className="u-textcenter">
         Simple Workflow.<br />
-        <span style={{color: "var(--green-500)"}}>Powerful Capabilities.</span>
+        <span
+          className='bold-accent color-accent'>
+          Powerful Capabilities.
+        </span>
       </h3>
       <div className="subhead">
         Secure, AI-powered platform connecting therapists and clients for seamless
@@ -547,7 +548,10 @@ function Benefits() {
         <div className="mb-4 mt-4 u-textcenter"  >
           <h2 className="display-4" style={{width: "100%", maxWidth: "860px", display: 'block', margin: "auto"}}>
             Everything Integrated. <br />
-            <span style={{color: "var(--green-500)"}}>Unlock Your Potential.</span>
+            <span
+              className='bold-accent color-accent'>
+              Unlock Your Potential.
+            </span>
           </h2>
           <div className="subhead mb-4" style={{width: "100%", maxWidth: "640px", display: 'block', margin: "auto", marginTop: "18px", marginBottom: "32px" }}>
             Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
@@ -627,15 +631,15 @@ const Stats = () => {
 const Hero = () => {
   const Heading = () => {
     return (
-      <div className="headline title-heading grid-item">
+      <div className="headline title-heading grid-item ">
         <h1
           style={{
-            // fontWeight:"700 !important",
+            maxWidth: "760px",
             paddingTop: "0px",
             lineHeight: '1.0 !important',
             letterSpacing: "-1px"
           }}>
-          One App to <span className='color-accent'>Streamline</span> and <span className='color-accent'>Grow</span> Your Therapy Practice.
+          One App to <span className='bold-accent color-accent'>Streamline</span> and <span className='color-accent bold-accent'>Grow</span> Your Therapy Practice.
         </h1>
       </div>
     )
@@ -729,22 +733,23 @@ const Hero = () => {
     return (
       <div className="ctaButtons grid-item">
         <Link
-          href="https://form.typeform.com/to/RXZdaaEP"
+          // href="https://form.typeform.com/to/RXZdaaEP"
+          href="./pricing"
           className="btn btn-primary-dark-border  mt-2"
           >
-          Sign up for early access
+          Start 30-day Free Trial
         </Link>
         <Link
           className="btn btn-outline-dark ml-md-4 mt-2"
           href="/contact/#book-demo">
-          Book a demo
+          Book a Demo
         </Link>
       </div>
     )
   }
 
   return (
-    <section id="hero-main" className="d-table w-100 overflow-hidden show fade">
+    <section id="hero-main" className="show fade">
       <div className="container">
         <div className='grid-container'>
           <Heading />
@@ -758,10 +763,10 @@ const Hero = () => {
 }
 
 const Integrations = () => {
-  return <section id="integrations" className='bg-half-170 slideanim'>
+  return <section id="integrations" className='bg-half-170'>
     <div className='container'>
       <div className='heading'>
-        <h2>Integrates with Your <span className='color-accent'>Favorite Apps.</span></h2>
+        <h2>Integrates with Your <span className='bold-accent color-accent'>Favorite Apps.</span></h2>
         <div className='subhead'>
           Bring all your favorite apps like quickbooks, google calendar and paypal
           together with our seamless integrations.
@@ -793,8 +798,9 @@ export default function HomePage() {
       <Hero/>
       <Stats />
       <Benefits />
+      <ExpTheDifference />
+      <AIEfficiency />
       <SimpleWorkflow/>
-      <ExploreMobileApps />
       <Subscriptions />
       <Integrations/>
       <FAQ />

@@ -36,9 +36,9 @@ const PayAsYouGo = () => {
     <div className="pt-4">
       <Link
         style={{display: "flex", justifyContent: "center"}}
-        href="https://form.typeform.com/to/RXZdaaEP"
+        href=""
         className="btn btn-primary-dark-border  mt-2">
-        Sign up for early access
+        Start 30-day Free Trial
       </Link>
     </div>
   </div>
@@ -49,7 +49,7 @@ const Yearly = () => {
   return <div className="price-option styling-yearly">
     <div className='mb-4'>
       <div className='price-heading'>Yearly</div>
-      <h2 className="display-4">$1325 <span style={{fontSize: "1rem"}}>/yr (-30%) </span> </h2>
+      <h2 className="display-4">$949 <span style={{fontSize: "1rem"}}>/yr (-20%) </span> </h2>
       <div>
         Ideal for therapists committed to ZenSpaceApp for the long term.
       </div>
@@ -68,9 +68,9 @@ const Yearly = () => {
     <div className="pt-4">
       <Link
         style={{display: "flex", justifyContent: "center"}}
-        href="https://form.typeform.com/to/RXZdaaEP"
+        href=""
         className="btn btn-primary-dark-border mt-2">
-        Sign up for early access
+        Start 30-day Free Trial
       </Link>
     </div>
   </div>
@@ -81,7 +81,7 @@ const Monthly = () => {
   return <div className="price-option border-gray">
   <div className='mb-4'>
     <div className='price-heading'>Monthly</div>
-    <h2 className="display-4">$158 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
+    <h2 className="display-4">$99 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
     <div>
       Ideal for therapists who prefer predictable monthly costs.
     </div>
@@ -101,9 +101,9 @@ const Monthly = () => {
   <div className="pt-4">
       <Link
         style={{display: "flex", justifyContent: "center"}}
-        href="https://form.typeform.com/to/RXZdaaEP"
+        href=""
         className="btn btn-primary-dark-border  mt-2">
-        Sign up for early access
+        Start 30-day Free Trial
       </Link>
   </div>
 </div>

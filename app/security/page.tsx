@@ -26,7 +26,7 @@ import {
 
 function renderSectionHero() {
   return (
-    <section className="bg-half-170 bg-teal show fade">
+    <section className="bg-half-170 bgteal show fade" style={{background: "var(--green-50)"}}>
       <div className="container">
         <div className="row align-items-center pt-5">
           <div className="col-lg-6 col-md-6 order-2 order-md-1">
@@ -37,19 +37,8 @@ function renderSectionHero() {
             </div>
           </div>
           <div className="col-lg-5 col-md-6 mt-4 pt-2 order-1 order-md-2 mt-sm-0 pt-sm-0 mb-5">
-            <div className="classic-saas-image position-relative">  
-              <Image
-                className="img-fluid d-block"
-                alt=""
-                src={SecureArchIcon}
-                height={0}
-                width={0}
-                style={{
-                  width: '80%',
-                  margin: "auto",
-                  display: "flex"
-                }} />
-            </div>
+              <UilCloudLock className="uilIconLock"
+              />
           </div>
         </div>
       </div>
@@ -83,7 +72,7 @@ function renderSectionFeatures() {
           <div className="col-md-4 col-12 mt-5 mt-sm-0 p-3">
             <div className="feature-card text-left">
               <div className="d-inline-block">
-                <UilCloudShield  className="uilIcon" />
+                <UilCloudShield height={90} width={90} className="uilIcon" />
               </div>
 
               <div className="content mt-4">

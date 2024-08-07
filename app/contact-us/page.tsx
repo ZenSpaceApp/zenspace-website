@@ -176,7 +176,7 @@ const ContactForm = ({ setShowBanner }: { setShowBanner: (value: boolean) => voi
       <div className="email visible-lg">
         <div className="item">
           <a href="#book-demo">
-            Book a demo
+            Book a Demo
           </a>
         </div>
         <div className="item">

@@ -51,8 +51,8 @@ const faqs = [
   [
     "Is there a discount for paying annually?",
     "Yes, we offer a discounted rate for therapists who choose to subscribe to our yearly plan.\
-     By paying a one-time fee of $1740 for the entire year, you'll enjoy a savings of\
-    30% compared to the monthly plan. This equates to $145 per month,\
+     By paying a one-time fee of $949.00 for the entire year, you'll enjoy a savings of\
+    20% compared to the monthly plan. This equates to $79.00 per month,\
     providing you with substantial savings while still offering all the features and\
     benefits of ZenSpaceApp. It's the perfect choice for therapists who are committed\
     to using our platform for the long term."

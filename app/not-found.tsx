@@ -43,12 +43,12 @@ export default function Show404() {
       <h2>We&apos;re sorry, this page isn&apos;t ready yet.</h2>
       <p style={{marginTop: "1rem", lineHeight: 1.6}}>Our team is working behind the scenes to bring ZenSpaceApp
         to life. <Link
-        href="https://form.typeform.com/to/RXZdaaEP"
+        href="./pricing"
         style={{
           color: "wheat !important",
           fontWeight: "700",
           borderBottom: "2px solid"
-          }}>Sign up</Link> for early access and a special offer!
+          }}>Sign up</Link> for Early Access and a special offer!
       </p>
     </div>
     </div>
