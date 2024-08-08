@@ -4561,6 +4561,64 @@ input::-webkit-inner-spin-button {
   } 
 }
 
+#ondemand-hero {
+  .grid-container {
+    display: grid;
+
+    @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1.25fr;
+    }
+  }
+}
+
+#how-it-works {
+  .grid-container {
+    margin-top: 4rem;
+    display: grid;
+
+    @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+#for-clients {
+
+  .vetical-center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+
+    h6 { text-transform: uppercase; font-weight: 800; opacity: 0.6;}
+
+    ul.list-unstyled {
+      list-style: none;
+      padding-left: 0;
+      
+      li {
+        padding: 4px 0;
+        display: flex;
+        gap: 1rem;
+        &::before {
+          content: "-";
+          font-weight: 800;
+  
+        }
+      }
+    }
+  }
+
+  .grid-container {
+    display: grid;
+
+    @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1fr;  
+    }
+  }
+
+}
+
 
 @import './root.scss';
 @import './bootstrap-custom-overrides';

@@ -91,13 +91,8 @@ export default function Navbar({ home }: { home: string} ) {
             {/* onMouseLeave={() => handleMouseOut()}> */}
             <li>
               {/* onMouseOver={() => handleMouseOver('products')} > */}
-              <a>Therapists</a>
+              <Link href="therapists">Therapists</Link>
               {renderProducts()}
-            </li>
-            <li>
-              {/* onMouseOver={() => handleMouseOver('resources')}> */}
-              <a>Clients</a>
-              {renderResources()}
             </li>
             <li>
               {/* onMouseOver={() => handleMouseOver('company')} > */}
