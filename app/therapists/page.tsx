@@ -9,6 +9,7 @@ import ZenNotesImg from '@/public/images/home/hero-img.jpg';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
+import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
@@ -26,6 +27,12 @@ const WORKFLOW_IMAGES = [
   WorkflowHDVideoImg,
   WorkflowClientsImg
 ]
+
+import {
+  UilUserCheck,
+  UilVideo,
+  UilEnvelopeCheck
+} from '@iconscout/react-unicons';
 
 //import icons 
 import CostsIcon from '@/public/images/icons/costs.svg';
@@ -627,6 +634,93 @@ const Stats = () => {
     </div>
   </section>
 }
+
+
+const PracticeNow = () => {
+  return <>
+    <section className="bg-half-260">
+      <div className="container profile-submit pb-5" style={{border: 'none'}}>
+        <div style={{ marginLeft: '10px'}}>
+          {/* <img src="/images/stetho.svg" width="30px" /> */}
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-12">
+            <div className="section-title text-center mb-4 pb-2">
+              <h2>How the <span className='color-accent'>On-Demand</span> Platform Works.</h2>
+              <div className="subhead">
+                In just a few steps start <span className="bold-accent color-accent">growing</span> your practice on our <span className="underline">platform</span>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+          <div> 
+            <Image 
+              alt="Clients using ZenSpaceApp to find therapists on-dmand"
+              src={SetAvailabilityImg}
+              style={{
+                maxWidth: "40%",
+                height: "auto",
+                margin: "auto",
+                justifyContent: "center",
+                display: "flex",
+                marginTop: "4rem",
+                marginBottom: "4rem"
+
+              }}
+            />
+          </div>
+        
+
+        <div className="row">
+          <div className="col-md-4 mt-4 pt-2">
+            <div className=" features feature-clean work-process bg-transparent process-arrow border-0 text-center">
+              <div className="icons text-primary text-center mx-auto">
+              <UilEnvelopeCheck/>
+              </div>
+
+              <div className="card-body">
+                <h3 className="text-dark">Sign Up</h3>
+                <p className="mb-2">Select a plan and create a profile.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div className="col-md-4 mt-md-5 pt-md-3 mt-4 pt-2">
+            <div className="features feature-clean work-process bg-transparent process-arrow border-0 text-center">
+              <div className="icons text-primary text-center mx-auto">
+                <UilUserCheck />
+              </div>
+
+              <div className="card-body">
+                <h3 className="text-dark">Get Verified</h3>
+                <p className="mb-2">Upload your professional license and ID. Once verified, you’ll receive a badge on your profile.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div className="col-md-4 mt-md-5 pt-md-5 mt-4 pt-2">
+            <div className=" features feature-clean work-process bg-transparent d-none-arrow border-0 text-center">
+              <div className="icons text-primary text-center mx-auto">
+              <UilVideo />
+              </div>
+
+              <div className="card-body">
+                <h3 className="text-dark">Start Offering Sessions</h3>
+                <p className="mb-2">Manage your schedule, connect with clients instantly, and provide sessions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center mt-4">   
+          <a className="btn btn-primary-dark-border" href="/pricing">Get Started</a>
+        </div>
+      </div>
+    </section>
+  </>
+}
+
 
 const Hero = () => {
   const Heading = () => {

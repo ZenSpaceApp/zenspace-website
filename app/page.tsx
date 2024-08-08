@@ -11,6 +11,10 @@ import ClientAppsImg from '@/public/images/home/client-apps@2x.png'
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 import ClientQRCodeImg from '@/public/images/home/client-QR.png';
 
+import SearchTherapistImg from '@/public/images/home/search.png';
+import BookTherapistImg from '@/public/images/home/pay.png';
+import StartSessionImg from '@/public/images/home/start-session.png';
+
 import {
   UilArrowUpRight
 } from '@iconscout/react-unicons';
@@ -108,32 +112,70 @@ const HowItWorks = ({ }) => {
   return <section id="how-it-works" className='bg-half-170'>
     <div className='container'>
       <h2 className='u-textcenter'>How it Works.</h2>
-      <div className='grid-container'>
-        <div className='grid-item'>
 
-        </div>
-        <div className='grid-item'>
-          <div>
-            <h3>Search and Find</h3>
-            <div>
-              Use our filters to find the 
-              right therapist for you.
+
+      <div className='grid-container'>
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+              <h3>Search and Find</h3>
+              <div>
+                Use our filters to find the 
+                right therapist for you.
+              </div>
             </div>
-          </div>
-          <div>
+            <div>
+            <Image
+              alt=""
+            src={SearchTherapistImg}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }}
+            ></Image>
+        </div>
+      </div>
+        
+      <div className='grid-container'>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <h3>Book Instantly</h3>
             <div>
             Schedule a session with available therapists now.
             </div>
           </div>
           <div>
+            <Image
+              alt=""
+            src={BookTherapistImg}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }}
+            />
+          </div>
+
+      </div>
+      <div className='grid-container'>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <h3>Start Your Session</h3>
             <div>
               Connect via secure video call.
             </div>
           </div>
+          <div>
+            <Image
+              alt=""
+            src={StartSessionImg}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }}
+            />
+          </div>
         </div>
-      </div>
+        
+          
+          
+      
+      
     </div>
   </section>
 }

@@ -4572,13 +4572,16 @@ input::-webkit-inner-spin-button {
 }
 
 #how-it-works {
+  background: #fafafa;
+  // color: white !important;
   .grid-container {
     margin-top: 4rem;
     display: grid;
-
+    grid-template-columns: 1fr;
     @media screen and #{$mq-large} {
       grid-template-columns: 1fr 1fr;
     }
+
   }
 }
 
