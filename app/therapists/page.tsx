@@ -638,7 +638,7 @@ const Stats = () => {
 
 const PracticeNow = () => {
   return <>
-    <section className="bg-half-260">
+    <section id="sign-up" className="bg-half-260">
       <div className="container profile-submit pb-5" style={{border: 'none'}}>
         <div style={{ marginLeft: '10px'}}>
           {/* <img src="/images/stetho.svg" width="30px" /> */}
@@ -728,7 +728,7 @@ const Hero = () => {
       <div className="headline title-heading grid-item ">
         <h1
           style={{
-            maxWidth: "760px",
+            maxWidth: "90%",
             paddingTop: "0px",
             lineHeight: '1.0 !important',
             letterSpacing: "-1px"

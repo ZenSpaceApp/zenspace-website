@@ -4595,8 +4595,11 @@ input::-webkit-inner-spin-button {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr;
+
     @media screen and #{$mq-large} {
       grid-template-columns: 1fr 1fr;
+      max-width: 80%;
+      margin: auto;
     }
 
   }
@@ -4634,9 +4637,77 @@ input::-webkit-inner-spin-button {
 
     @media screen and #{$mq-large} {
       grid-template-columns: 1fr 1fr;  
+      column-gap: 2rem;
+    }
+
+    .image-container {
+      grid-row: 1;
+
+      background: #ABCCD5;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 2rem;
+
+      img {
+        display: block;
+        height: auto;
+        max-width: 70%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+#for-therapists {
+
+  .vetical-center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+
+    h6 { text-transform: uppercase; font-weight: 800; opacity: 0.6;}
+
+    ul.list-unstyled {
+      list-style: none;
+      padding-left: 0;
+      
+      li {
+        padding: 4px 0;
+        display: flex;
+        gap: 1rem;
+        &::before {
+          content: "-";
+          font-weight: 800;
+  
+        }
+      }
     }
   }
 
+  .grid-container {
+    display: grid;
+
+    @media screen and #{$mq-large} {
+      grid-template-columns: 1fr 1fr;  
+      gap: 2rem;
+    }
+
+    .image-container {
+      background: #ABCCD5;
+      border-radius: 16px;
+      padding: 20px;
+
+      margin-bottom: 2rem;
+      img {
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
 }
 
 

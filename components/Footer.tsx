@@ -45,7 +45,7 @@ export default function Footer() {
               <h5 className="text-dark  mb-4"><b>Solutions</b></h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">Clients</a></li>
-                <li><a href="/" className="text-muted">Therapists</a></li>
+                <li><a href="/therapists" className="text-muted">Therapists</a></li>
                 <li><a href="/" className="text-muted">ZenNotes</a></li>
                 <li><a href="/" className="text-muted">ZenPath</a></li>
                 <li><a href="/" className="text-muted">ZenList</a></li>

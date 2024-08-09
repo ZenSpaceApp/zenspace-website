@@ -25,7 +25,6 @@ const avatars = [Avatar0, Avatar1, Avatar2];
 import {
   UilArrowUpRight
 } from '@iconscout/react-unicons';
-import { IpRecordContext } from 'twilio/lib/rest/voice/v1/ipRecord';
 
 const ForClients = () => {
   return <section id="for-clients" className='bg-half-260'>
@@ -55,7 +54,7 @@ const ForClients = () => {
 
           </div>
         </div>
-        <div> 
+        <div className='image-container'> 
           <Image 
             alt="Clients using ZenSpaceApp to find therapists on-dmand"
             src={ClientAppsImg}
@@ -73,20 +72,13 @@ const ForClients = () => {
 }
 
 const ForTherapists = () => {
-  return <section id="for-clients" className='bg-half-260'>
+  return <section id="for-therapists" className='bg-half-260'>
     <div className='container'>
       <div className='grid-container'>
-        <div> 
+        <div className='image-container'> 
           <Image 
             alt="Clients using ZenSpaceApp to find therapists on-dmand"
             src={SetAvailabilityImg}
-            style={{
-              maxWidth: "70%",
-              height: "auto",
-              margin: "auto",
-              display: "block",
-              marginBottom: "2rem"
-            }}
           />
         </div>
         <div className='grid-item vetical-center'>
@@ -119,7 +111,21 @@ const ForTherapists = () => {
   </section>
 }
 
-
+const GetStarted = () => {
+  return <section id={styles.getStarted} className='bg-half-170'>
+    <div className='container u-textcenter'>
+      <h2>Get Started Today.</h2>
+      <div className={styles.ctaButtons}>
+        <ClientQRButton />
+        <Link
+          className="btn btn-outline-dark ml-md-4 mt-2"
+          href="/therapists/#sign-up">
+          Join as Therapist
+        </Link>
+      </div>
+    </div>
+  </section>
+}
 
 const HowItWorks = ({ }) => {
   return <section id="how-it-works" className='bg-half-170'>
@@ -128,33 +134,36 @@ const HowItWorks = ({ }) => {
 
 
       <div className='grid-container'>
-            <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+          <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
               <h3>Search and Find</h3>
               <div>
                 Use our filters to find the 
                 right therapist for you.
               </div>
             </div>
-            <div>
+          
+          <div>
             <Image
               alt=""
             src={SearchTherapistImg}
             style={{
               maxWidth: "100%",
-              height: "auto"
+              height: "auto",
+              gridRow: "1"
             }}
-            ></Image>
+            />
+          
         </div>
       </div>
         
       <div className='grid-container'>
-        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", }}>
             <h3>Book Instantly</h3>
             <div>
             Schedule a session with available therapists now.
             </div>
           </div>
-          <div>
+          <div >
             <Image
               alt=""
             src={BookTherapistImg}
@@ -173,7 +182,7 @@ const HowItWorks = ({ }) => {
               Connect via secure video call.
             </div>
           </div>
-          <div>
+          <div >
             <Image
               alt=""
             src={StartSessionImg}
@@ -202,7 +211,7 @@ const FeaturedTherapists = () => {
       <div className="u-textcenter mb-5">
         <h2>Featured Therapists of the Week.</h2>
         <div className={`subhead ${styles.subhead}`}>
-          Discover some of our standout therapists who are making a difference in their clients' lives.
+          Discover some of our standout therapists who are making a difference in their clients&apos; lives.
         </div>
       </div>
       <div className={styles.gridContainer}>
@@ -225,6 +234,14 @@ const FeaturedTherapists = () => {
           </div>
         ))}
       </div>
+      
+      <div className='u-textcenter mt-5'>
+        <Link
+          className="btn btn-outline-dark "
+          href="/zenlist">
+          Explore More Therapists
+        </Link>
+      </div>
     </div>
   </section>
 }
@@ -235,12 +252,16 @@ const ClientQRButton = () => {
     <div style={{display: "flex", alignItems: "center", gap: "2rem", border: "2px solid", padding: '4px 12px', borderRadius: "6px"}}> 
       <div>
         Find a Therapist<br />
-        <div style={{fontSize: "0.9rem", fontWeight: "600"}}>Download App</div>
+        <div style={{ fontSize: "0.9rem", fontWeight: "600", textAlign: "left" }}>
+          Download App
+        </div>
       </div>
       <div>
         <Image
           alt=""
           src={ClientQRCodeImg}
+          height={70}
+          width={70}
         />
       </div>
     </div>
@@ -250,10 +271,14 @@ const ClientQRButton = () => {
 const CtaButtons = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: "2rem"}}>
-      <ClientQRButton />
+      <Link
+        className="btn btn-outline-dark"
+        href="./#get-started">
+        Find a Therapist
+      </Link>
       <Link
         className="btn btn-primary-dark-border"
-        href="/therapists">
+        href="/therapists/#sign-up">
         Join as Therapist
       </Link>
     </div>
@@ -278,10 +303,13 @@ const OnDemandHero = () => {
             alt='Image showing a supportive therapist helping a client.'
             src={HeroImg}
               style={{
-                maxWidth: "70%",
+                maxWidth: "80%",
                 height: "auto",
                 margin: "auto",
-                display: "block"
+                display: "block",
+                borderRadius: "16px",
+                padding: "20px",
+                background: "#ABCCD5"
             }}
           />
         </div>
@@ -301,6 +329,7 @@ export default function HomePage() {
       <FeaturedTherapists />
       <ForClients />
       <ForTherapists />
+      <GetStarted />
     </Layout>   
   )
 }

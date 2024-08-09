@@ -13,6 +13,8 @@
   row-gap: 1rem;
   grid-template-columns: 1fr;
   
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   @media screen and #{$mq-large} {
     grid-template-columns: repeat(3, 1fr);
@@ -38,4 +40,36 @@
       font-size: 1rem;
     }
   }
+}
+
+#getStarted {
+  
+  background: #ABCCD5;
+  
+  border-radius: 24px;
+  padding: 40px 0;
+  margin: 8rem 15px;
+
+  @media screen and #{$mq-large} {
+    max-width: 1200px;
+    padding: 6rem;
+    margin: 6rem auto;
+  }
+
+  .ctaButtons {
+    margin: 4rem 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+
+    @media screen and #{$mq-large} {
+      justify-content: center;
+      column-gap: 4rem;
+    }
+    //  alignItems: "center", flexWrap: "wrap", justifyContent: "center", margin: "4rem 0", columnGap: "4rem"
+  }
+
 }
