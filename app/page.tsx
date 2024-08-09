@@ -2,6 +2,7 @@
 
 import Layout from '@/components/Layout';
 import Image from 'next/image';
+import styles from './HomePage.module.scss'
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -13,11 +14,18 @@ import ClientQRCodeImg from '@/public/images/home/client-QR.png';
 
 import SearchTherapistImg from '@/public/images/home/search.png';
 import BookTherapistImg from '@/public/images/home/pay.png';
-import StartSessionImg from '@/public/images/home/start-session.png';
+import StartSessionImg from '@/public/images/home/start-session@2x.png';
+
+import Avatar0 from '@/public/images/home/avatar-0.png';
+import Avatar1 from '@/public/images/home/avatar-1.png';
+import Avatar2 from '@/public/images/home/avatar-2.png';
+
+const avatars = [Avatar0, Avatar1, Avatar2];
 
 import {
   UilArrowUpRight
 } from '@iconscout/react-unicons';
+import { IpRecordContext } from 'twilio/lib/rest/voice/v1/ipRecord';
 
 const ForClients = () => {
   return <section id="for-clients" className='bg-half-260'>
@@ -53,7 +61,9 @@ const ForClients = () => {
             src={ClientAppsImg}
             style={{
               maxWidth: "70%",
-              height: "auto"
+              height: "auto",
+              margin: "auto",
+              display: "block"
             }}
           />
         </div>
@@ -72,7 +82,10 @@ const ForTherapists = () => {
             src={SetAvailabilityImg}
             style={{
               maxWidth: "70%",
-              height: "auto"
+              height: "auto",
+              margin: "auto",
+              display: "block",
+              marginBottom: "2rem"
             }}
           />
         </div>
@@ -171,14 +184,51 @@ const HowItWorks = ({ }) => {
             />
           </div>
         </div>
-        
-          
-          
-      
-      
     </div>
   </section>
 }
+
+
+const FeaturedTherapists = () => {
+
+  const therapists: string[][] = [
+    ["Dr. Emily Foster, PhD", "Cognitive Behavioral Therapy, Anxiety, Depression", "New York, NY", "Rating: 4.5 | 81  Reviews"],
+    ["Sophia Turner, LMFT", "Couples Therapy, LGBTQ+ Issues, Mindfulness", "Seattle, WA", "Rating: 4.0 | 17 Reviews"],
+    ["John Miller, LCSW", "Family Therapy, Trauma, Grief Counseling", "Los Angeles, CA", "Rating: 5.0 | 8 Reviews"]
+  ]
+
+  return <section className='bg-half-260'>
+    <div className='container'>
+      <div className="u-textcenter mb-5">
+        <h2>Featured Therapists of the Week.</h2>
+        <div className={`subhead ${styles.subhead}`}>
+          Discover some of our standout therapists who are making a difference in their clients' lives.
+        </div>
+      </div>
+      <div className={styles.gridContainer}>
+        {therapists.map((therapist, idx) => (
+          <div key={idx} className={styles.gridItem}>
+            <div className={styles.avatar}>
+              <Image
+                alt=""
+                src={avatars[idx]}
+                height={60}
+                width={60}
+              />
+            </div>
+            <div className={styles.details}>
+              <h5>{therapist[0]}</h5>
+              <div>{therapist[1]}</div>
+              <div className='mt-4'>{therapist[2]}</div>
+              <div>{therapist[3]}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+}
+
 
 const ClientQRButton = () => {
   return <>
@@ -211,10 +261,10 @@ const CtaButtons = () => {
 }
 
 const OnDemandHero = () => {
-  return <section id="ondemand-hero" className='bg-half-260'>
+  return <section id="on-demand-hero" className='bg-half-260'>
     <div className='container'>
       <div className='grid-container'>
-        <div style={{display: "flex", flexDirection:"column", justifyContent: "center", gap: "2rem"}}>
+        <div className="grid-item" >
           <h1>
             Therapists at Your <span className='color-accent'>Fingertips</span>.
           </h1>
@@ -223,17 +273,17 @@ const OnDemandHero = () => {
           </div>
           <CtaButtons />
         </div>
-        <div>
-        <Image
-          alt='Image showing a supportive therapist helping a client.'
-          src={HeroImg}
-            style={{
-              maxWidth: "70%",
-              height: "auto",
-              margin: "auto",
-              display: "block"
-          }}
-        />
+        <div className="grid-item">
+          <Image
+            alt='Image showing a supportive therapist helping a client.'
+            src={HeroImg}
+              style={{
+                maxWidth: "70%",
+                height: "auto",
+                margin: "auto",
+                display: "block"
+            }}
+          />
         </div>
       </div>
 
@@ -248,6 +298,7 @@ export default function HomePage() {
     <Layout showCTA={false}>
       <OnDemandHero />
       <HowItWorks />
+      <FeaturedTherapists />
       <ForClients />
       <ForTherapists />
     </Layout>   
