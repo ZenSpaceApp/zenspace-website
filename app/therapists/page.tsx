@@ -118,10 +118,9 @@ const AIEfficiency = () => {
   return (
     <div className='section bg-half-170' id="ai-efficiency">
       <div className='container '>
-        <h2 className='u-textcenter bold-accent'>AI-Powered Efficiency.</h2>
+        <h2 className='u-textcenter bold-accent'>Agentic Clinical Intelligence (ACI).</h2>
         <div className='subhead u-textcenter'>
-          Our advanced AI features, powered by ChatGPT, streamline your workflow
-          by generating and summarizing therapy notes.
+          Stop reliving your sessions. ZenNotes ACI automates the 40% of your day lost to paperwork, turning clinical conversations into high-fidelity documentation the moment the door closes.
         </div>
 
         <ZenNotes />
@@ -638,7 +637,7 @@ const Stats = () => {
 
 const PracticeNow = () => {
   return <>
-    <section id="sign-up" className="bg-half-260">
+    <section id="therapist-sign-up" className="bg-half-260">
       <div className="container profile-submit pb-5" style={{border: 'none'}}>
         <div style={{ marginLeft: '10px'}}>
           {/* <img src="/images/stetho.svg" width="30px" /> */}
@@ -659,16 +658,6 @@ const PracticeNow = () => {
             <Image 
               alt="Clients using ZenSpaceApp to find therapists on-dmand"
               src={SetAvailabilityImg}
-              style={{
-                maxWidth: "40%",
-                height: "auto",
-                margin: "auto",
-                justifyContent: "center",
-                display: "flex",
-                marginTop: "4rem",
-                marginBottom: "4rem"
-
-              }}
             />
           </div>
         
