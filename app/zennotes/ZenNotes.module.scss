@@ -161,7 +161,7 @@
 
 .featureCard {
   h3 {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--color--grey3);
     margin: 0 0 0.5rem;
@@ -169,9 +169,10 @@
   }
 
   p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    color: var(--color--grey2);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--green-800);
+    // font-weight: 500;
     margin: 0;
   }
 }
@@ -228,8 +229,8 @@
     gap: 0.15rem;
 
     strong {
-      font-size: 0.9rem;
-      font-weight: 700;
+      font-size: 0.975rem;
+      font-weight: 500;
       color: var(--color--grey3);
     }
 
