@@ -19,7 +19,7 @@ export default function Footer() {
                     className="logo-only"
                     alt="ZenSpaceApp logo"
                     src={ZenSpaceAppLogo}
-                    height={22}
+                    height={20}
                     width={0}
                   />  
                 </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">Clients</a></li>
                 <li><a href="/therapists" className="text-muted">Therapists</a></li>
-                <li><a href="/" className="text-muted">ZenNotes</a></li>
+                <li><a href="/zennotes" className="text-muted">ZenNotes</a></li>
                 <li><a href="/" className="text-muted">ZenPath</a></li>
                 <li><a href="/" className="text-muted">ZenList</a></li>
               </ul>

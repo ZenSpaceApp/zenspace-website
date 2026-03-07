@@ -92,20 +92,13 @@ export default function Navbar({ home }: { home: string} ) {
             <li>
               {/* onMouseOver={() => handleMouseOver('products')} > */}
               <Link href="therapists">Therapists</Link>
-              {renderProducts()}
-            </li>
-            <li>
-              {/* onMouseOver={() => handleMouseOver('company')} > */}
+              </li>
+              <li>
+                <Link href="/zennotes">ZenNotes</Link>
+              </li>
+            <li>              
               <a>ZenPath</a>
-              {renderCompany()}
-              </li>
-              <li>
-              {/* onMouseOver={() => handleMouseOver('company')} > */}
-              <a>ZenList</a>
-              {renderCompany()}
-              </li>
-              <li>
-              </li>
+            </li>
             <li><Link href='/pricing'>Pricing</Link></li>
           </ul>
         </div>
@@ -114,8 +107,8 @@ export default function Navbar({ home }: { home: string} ) {
                 href="/login"
               className="btn btn-outline-secondary"
               style={{
-                padding: "12px 2rem !important",
-                lineHeight: "1.2 !important",
+                padding: "12px 1rem !important",
+                lineHeight: "1.0 !important",
                 // display: "none"
               }}
               >

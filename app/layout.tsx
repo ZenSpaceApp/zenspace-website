@@ -11,7 +11,7 @@ const syne = Syne({
 import '../styles/styles.scss';
 
 export const metadata: Metadata = {
-  title: "One App to Streamline Your Therapy Practice.",
+  title: "Therapists. On-demand.",
   description: "Empowering mental wellness with a touch of Zen.",
 };
 

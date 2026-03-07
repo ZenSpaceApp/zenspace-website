@@ -23,37 +23,44 @@
   .gridItem {
 
     display: flex;
-    border: 2px solid;
-    padding: 2rem;
-    border-radius: 6px;
+    border: 1px solid var(--green-700);
+    padding:  2rem 1rem;
+    border-radius: 24px;
     column-gap: 1rem;
+
+    @media screen and #{$mq-large} {
+      padding:  2rem 2rem;
+    }
 
     .details {
 
       h5 { 
         font-weight: 600 !important;
-        margin: 0;
+        // margin: 0;
       }
 
       display: flex;
       flex-direction: column;
-      font-size: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #474747;
     }
   }
 }
 
-#getStarted {
+.getStarted {
   
-  background: #ABCCD5;
+  // background: #ABCCD5;
+  background: var(--green-100);
   
-  border-radius: 24px;
+  // border-radius: 24px;
   padding: 40px 0;
-  margin: 8rem 15px;
+  // margin: 8rem 15px;
 
   @media screen and #{$mq-large} {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding: 6rem;
-    margin: 6rem auto;
+    // margin: 6rem auto;
   }
 
   .ctaButtons {

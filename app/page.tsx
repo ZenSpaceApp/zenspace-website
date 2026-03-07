@@ -4,10 +4,9 @@ import Layout from '@/components/Layout';
 import Image from 'next/image';
 import styles from './HomePage.module.scss'
 
-import { useState } from 'react';
 import Link from 'next/link';
 
-import HeroImg from '@/public/images/right-banner.png';
+import HeroImg from '@/public/images/home/hero-img-map@2x.png';
 import ClientAppsImg from '@/public/images/home/client-apps@2x.png'
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 import ClientQRCodeImg from '@/public/images/home/client-QR.png';
@@ -27,24 +26,23 @@ import {
 } from '@iconscout/react-unicons';
 
 const ForClients = () => {
-  return <section id="for-clients" className='bg-half-260'>
+  return <section id="for-clients" className='bg-half-170'>
     <div className='container'>
       <div className='grid-container'>
-        <div className='vetical-center'>
+        <div className='desc-item vetical-center'>
           <div>
             <h6>For Clients</h6>
             <h2>Why Choose ZenList?</h2>
           </div>
           <ul className="list-unstyled ">
-            <li>Immediate Access to Therapists</li>
-            <li>Flexible Scheduling</li>
-            <li>Secure and Confidential</li> 
+            <li>Immediate access to therapists</li>
+            <li>Flexible scheduling</li>
+            <li>Secure and confidential</li> 
             <li>Get the support you need without delay</li>
             <li>Pay using credit card, Venmo, Cashapp</li>
           </ul>
           <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap"}}>
             <ClientQRButton />
-
             <Link
               className="btn btn-outline-dar ml-md-4 mt-2"
               href="/zenlist">
@@ -54,16 +52,10 @@ const ForClients = () => {
 
           </div>
         </div>
-        <div className='image-container'> 
+        <div className='image-item'> 
           <Image 
             alt="Clients using ZenSpaceApp to find therapists on-dmand"
             src={ClientAppsImg}
-            style={{
-              maxWidth: "70%",
-              height: "auto",
-              margin: "auto",
-              display: "block"
-            }}
           />
         </div>
       </div>
@@ -72,7 +64,7 @@ const ForClients = () => {
 }
 
 const ForTherapists = () => {
-  return <section id="for-therapists" className='bg-half-260'>
+  return <section id="for-therapists" className='bg-half-170'>
     <div className='container'>
       <div className='grid-container'>
         <div className='image-container'> 
@@ -88,14 +80,15 @@ const ForTherapists = () => {
           </div>
           <ul className="list-unstyled ">
             <li>Be in control of your revenue</li>
-            <li>Set Your Own Hours</li>
-            <li>Dynamic Pricing</li>
-            <li>Comprehensive Practice Management Tools</li> 
+            <li>Set your own hours</li>
+            <li>Set your own rates</li>
+            <li>No long-term contract or employment required</li>
+            <li>Comprehensive practice management tools</li> 
           </ul>
           <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap"}}>
             <Link
               className="btn btn-outline-dark ml-md-4 mt-2"
-              href="/therapists">
+              href="/therapists#therapist-sign-up">
                 Join as Therapist
             </Link>
             <Link
@@ -112,14 +105,14 @@ const ForTherapists = () => {
 }
 
 const GetStarted = () => {
-  return <section id={styles.getStarted} className='bg-half-170'>
+  return <section id="get-started" className={`${styles.getStarted} bg-half-170`}>
     <div className='container u-textcenter'>
       <h2>Get Started Today.</h2>
       <div className={styles.ctaButtons}>
         <ClientQRButton />
         <Link
-          className="btn btn-outline-dark ml-md-4 mt-2"
-          href="/therapists/#sign-up">
+          className="btn btn-primary-dark-border ml-md-4 mt-2"
+          href="/therapists/#therapist-sign-up">
           Join as Therapist
         </Link>
       </div>
@@ -206,7 +199,7 @@ const FeaturedTherapists = () => {
     ["John Miller, LCSW", "Family Therapy, Trauma, Grief Counseling", "Los Angeles, CA", "Rating: 5.0 | 8 Reviews"]
   ]
 
-  return <section className='bg-half-260'>
+  return <section className='bg-half-170'>
     <div className='container'>
       <div className="u-textcenter mb-5">
         <h2>Featured Therapists of the Week.</h2>
@@ -237,10 +230,11 @@ const FeaturedTherapists = () => {
       
       <div className='u-textcenter mt-5'>
         <Link
-          className="btn btn-outline-dark "
+          className="btn btn-outline-dark underline"
           href="/zenlist">
           Explore More Therapists
         </Link>
+          {/* <UilArrowUpRight  style={{ color: "white !important", height: '24px' }}  /> */}
       </div>
     </div>
   </section>
@@ -270,15 +264,11 @@ const ClientQRButton = () => {
 
 const CtaButtons = () => {
   return (
-    <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: "2rem"}}>
-      <Link
-        className="btn btn-outline-dark"
-        href="./#get-started">
-        Find a Therapist
-      </Link>
+    <div className="cta" style={{}} >
+      <ClientQRButton />
       <Link
         className="btn btn-primary-dark-border"
-        href="/therapists/#sign-up">
+        href="/therapists/#therapist-sign-up">
         Join as Therapist
       </Link>
     </div>
@@ -286,14 +276,14 @@ const CtaButtons = () => {
 }
 
 const OnDemandHero = () => {
-  return <section id="on-demand-hero" className='bg-half-260'>
+  return <section id="on-demand-hero" className='bg-half-170'>
     <div className='container'>
       <div className='grid-container'>
         <div className="grid-item" >
           <h1>
-            Therapists at Your <span className='color-accent'>Fingertips</span>.
+             Therapists.<br/> <span className='color-accent'>On-demand.</span>
           </h1>
-          <div className='subheading'>
+          <div className='subhead mt-2'>
             Instantly connect with licensed therapists anytime, anywhere through our app.
           </div>
           <CtaButtons />
@@ -302,15 +292,7 @@ const OnDemandHero = () => {
           <Image
             alt='Image showing a supportive therapist helping a client.'
             src={HeroImg}
-              style={{
-                maxWidth: "80%",
-                height: "auto",
-                margin: "auto",
-                display: "block",
-                borderRadius: "16px",
-                padding: "20px",
-                background: "#ABCCD5"
-            }}
+            className='hero-img'
           />
         </div>
       </div>
@@ -325,8 +307,8 @@ export default function HomePage() {
   return (
     <Layout showCTA={false}>
       <OnDemandHero />
-      <HowItWorks />
       <FeaturedTherapists />
+      <HowItWorks />
       <ForClients />
       <ForTherapists />
       <GetStarted />
