@@ -79,7 +79,7 @@ export default function FAQ() {
       <div className='container'>
         <div className='Grid Grid--full small-Grid--1of2' >
           <div className='Grid-cell' >
-            <h2 className="u-textcenter display-4 bold-accent">FAQs.</h2>
+            <h2 className="u-textcenter display-4 bold-accent">FAQ.</h2>
             <div className='u-textcenter'>
             Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@zenspaceapp.com" target="_blank">
             email 
@@ -116,7 +116,7 @@ export default function FAQ() {
           <Link
             style={{marginLeft: "4px", borderBottom: "2px solid"}}
             href="https://zenspaceapp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
-            FAQs.
+            FAQ.
           </Link>
         </span>  
       </div>
