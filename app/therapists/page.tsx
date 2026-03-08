@@ -11,6 +11,8 @@ import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.pn
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
+import ZenPlatform from '@/public/images/zen-platform@2x.png';
+
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
 import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
@@ -120,10 +122,26 @@ const AIEfficiency = () => {
       <div className='container '>
         <h2 className='u-textcenter bold-accent'>Agentic Clinical Intelligence (ACI).</h2>
         <div className='subhead u-textcenter'>
-          Stop reliving your sessions. ZenNotes ACI automates the 40% of your day lost to paperwork, turning clinical conversations into high-fidelity documentation the moment the door closes.
+          Stop reliving your sessions. <b>ZenNotes</b> automates the 40% of your day lost to paperwork, turning clinical conversations into high-fidelity documentation the moment the door closes.
         </div>
 
-        <ZenNotes />
+        <Image 
+          alt="Agentic Clinical Intelligence (ACI) transforming therapy notes"
+          src={ZenPlatform}
+          style={{
+            display: 'block',
+            margin: 'auto',
+            marginTop: "3rem",
+            maxWidth: "100%",
+
+          }}
+        />
+
+        <button className='btn btn-dark' style={{display: "block", margin: "auto", marginTop: "3rem"}}>
+          <Link href="/zennotes" passHref>
+              Learn More
+          </Link> 
+        </button>
       </div>
     </div>
   )
