@@ -336,9 +336,9 @@ export default function ZenNotesPage() {
         <div className={styles.publicText}>
           <h2>Private and public notes. Finally!</h2>
           <p className={styles.publicSub}>
-            Your SOAP note stays yours — encrypted, HIPAA-compliant, audit-ready.
+            Your SOAP note stays yours — <b>  encrypted, HIPAA-compliant, audit-ready</b>.
             Your patient gets context — names, team, actionable.
-            Same session. Two truths. Both honored.
+            <b> Same session. Two truths</b>. Both honored.
           </p>
         </div>
 
