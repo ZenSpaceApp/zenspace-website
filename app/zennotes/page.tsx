@@ -10,6 +10,13 @@ import Layout from '@/components/Layout';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
+interface WorkdayItem {
+  label: string;
+  detail: string;
+  imageLabel: string;
+  imageSrc?: string; // replace with actual asset path e.g. '/assets/soap-notes.png'
+}
+
 interface FaqItem {
   q: string;
   a: string;
@@ -36,18 +43,35 @@ const FEATURES = [
   },
 ];
 
-const WORKDAY_ITEMS = [
+
+const WORKDAY_ITEMS: WorkdayItem[] = [
   {
     label: 'Documentation — SOAP note drafting in real time',
-    detail: null,
+    detail:
+      'As your session runs, ZenNotes listens and structures your notes live. By the time you say goodbye, your SOAP note is 95% complete — ready for your final review and signature.',
+    imageLabel: 'SOAP note modal — documentation view',
+    imageSrc: SOAPPreview, // replace: '/assets/workday-soap.png'
   },
   {
     label: 'Coding — ICD-10 and CPT codes assigned automatically',
-    detail: null,
+    detail:
+      'ZenNotes maps clinical content to the correct ICD-10 diagnosis and CPT procedure codes in real time, eliminating manual lookup and reducing claim errors.',
+    imageLabel: 'ICD-10 / CPT coding modal',
+    imageSrc: SOAPPreview, // replace: '/assets/workday-coding.png'
   },
   {
-    label: 'Session and Patient Summaries — plain-language care plan sent immediately after the call',
-    detail: null,
+    label: 'Public Notes — plain-language summaries for patients',
+    detail:
+      'Alongside your private SOAP note, ZenNotes generates a warm, plain-language summary for your patient — same session, two truths. Sent automatically after the call.',
+    imageLabel: 'Public patient note modal',
+    imageSrc: SOAPPreview, // replace: '/assets/workday-public-notes.png'
+  },
+  {
+    label: 'Billing — superbill generated before you close the laptop',
+    detail:
+      'ZenNotes automatically generates a HIPAA-compliant superbill with CPT code, ICD-10, session duration, and Provider NPI — ready to send to your patient in one click.',
+    imageLabel: 'Billing / superbill modal',
+    imageSrc: SOAPPreview, // replace: '/assets/workday-billing.png'
   },
 ];
 
@@ -98,6 +122,68 @@ function ImagePlaceholder({ label }: { label: string }) {
         <path d="M21 15l-5-5L5 21" />
       </svg>
       <span>{label}</span>
+    </div>
+  );
+}
+
+function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
+  const [openIndex, setOpenIndex] = useState<number>(0);
+
+  return (
+    < div className={styles.workday}>
+      <div className={styles.workdayIntro}>
+        <h2 className={styles.workdayHeading}>Say goodbye to&nbsp;"27-hour workday"</h2>
+        <p className={styles.workdaySub}>We guarantee 2 hours back every single day.</p> 
+        </div>
+    <div className={styles.workdaySection}>
+      {/* Left: accordion list */}
+      <div className={styles.workdayAccordion}>
+
+        <ul className={styles.workdayList}>
+          {items.map((item, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <li key={i} className={`${styles.workdayItem} ${isOpen ? styles.workdayItemOpen : ''}`}>
+                <button
+                  className={styles.workdayItemBtn}
+                  onClick={() => setOpenIndex(i)}
+                  aria-expanded={isOpen}
+                >
+                  {/* <span className={styles.workdayItemDot} /> */}
+                  <span className={styles.workdayItemLabel}>{item.label}</span>
+                  <svg className={styles.workdayChevron} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
+                <div className={styles.workdayItemDetail} data-open={String(isOpen)}>
+                  {item.detail}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* Right: image panel */}
+      <div className={styles.workdayImagePanel}>
+        {items.map((item, i) => (
+          <div
+            key={i}
+            className={`${styles.workdayImageSlide} ${openIndex === i ? styles.workdayImageSlideActive : ''}`}
+            aria-hidden={openIndex !== i}
+          >
+            {item.imageSrc ? (
+              <Image
+                src={item.imageSrc}
+                alt={item.imageLabel}
+              />
+            ) : (
+              <ImagePlaceholder label={item.imageLabel} />
+            )}
+          </div>
+        ))}
+      </div>
+      </div>
     </div>
   );
 }
@@ -178,27 +264,10 @@ export default function ZenNotesPage() {
         </div>
       </section>
 
-      {/* ── Workday Section ── */}
-      <section className={styles.workdaySection}>
-        <div className={styles.workdayText}>
-          <h2>Say goodbye to 27-hour workday</h2>
-          <p className={styles.workdaySub}>
-            We guarantee 2 hours back every single day.
-          </p>
-          <ul className={styles.workdayList}>
-            {WORKDAY_ITEMS.map((item, i) => (
-              <li key={i}>
-                <strong>{item.label}</strong>
-              </li>
-            ))}
-          </ul>
-        </div>
 
-        <div className={styles.workdayImage}>
-          {/* Replace with <Image src="/assets/zennotes-soap.png" alt="SOAP note preview" fill /> */}
-          <Image src={SOAPPreview} alt="SOAP note preview" />
-        </div>
-      </section>
+      {/* ── Workday Section ── */}
+      <WorkdayAccordion items={WORKDAY_ITEMS} />
+
 
       {/* ── Privacy Section ── */}
       <section className={styles.privacySection}>
