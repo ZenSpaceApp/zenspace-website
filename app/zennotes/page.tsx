@@ -7,8 +7,40 @@ import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
 import SOAPPreview from '@/public/images/soap-preview.svg';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
+import Link from 'next/link';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
+function WaveformIcon() {
+  // Bar heights — varied to look like a natural audio waveform
+  const bars = [3, 6, 10, 16, 22, 28, 22, 32, 18, 28, 14, 24, 32, 20, 28, 14, 22, 32, 18, 24, 10, 16, 6, 3];
+
+  return (
+    <svg
+      className={styles.waveformIcon}
+      viewBox="0 0 120 40"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      {bars.map((h, i) => {
+        const x = i * 5 + 2.5;
+        const y = (40 - h) / 2;
+        return (
+          <rect
+            key={i}
+            className={styles.waveformBar}
+            x={x - 1}
+            y={y}
+            width={2}
+            height={h}
+            rx={1}
+            style={{ animationDelay: `${i * 0.06}s` }}
+          />
+        );
+      })}
+    </svg>
+  );
+}
+
 
 interface WorkdayItem {
   label: string;
@@ -226,6 +258,10 @@ export default function ZenNotesPage() {
       {/* ── Hero ── */}
       <section className={styles.hero}>
         <div className={styles.heroText}>
+          <div className={styles.heroEyebrow}>
+            <WaveformIcon />
+            <span>Ambient Clinical Intelligence</span>
+          </div>
           <h1>
             Your session ends.<br />
             Your notes are<br />
@@ -235,9 +271,11 @@ export default function ZenNotesPage() {
             Capture every nuance without the Digital Wall. Our Ambient AI transcribes your soul,
             not just your computer audio.
           </p>
-          <a href="#" className={styles.ctaButton}>
+          <Link
+            className="btn btn-primary-dark-border"
+            href="/therapists/#therapist-sign-up">
             Sign up for Alpha
-          </a>
+          </Link>
         </div>
 
         <div className={styles.heroImage}>
