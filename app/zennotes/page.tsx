@@ -312,12 +312,8 @@ export default function ZenNotesPage() {
         <div className={styles.privacyInner}>
           <div className={styles.privacyPhone}>
             <div className={styles.phoneWrapper}>
-              {/* Replace with <Image src="/assets/zennotes-call.png" alt="Call screen" fill /> */}
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#444" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="12" r="3" fill="#333" />
-              </svg>
-              <span style={{ color: '#555', fontSize: '0.7rem' }}>Phone UI — Calling screen</span>
+              <WaveformIcon />
+              {/* <span style={{ color: '#555', fontSize: '0.7rem' }}>Phone UI — Calling screen</span> */}
             </div>
           </div>
 

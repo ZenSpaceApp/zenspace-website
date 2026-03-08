@@ -416,7 +416,7 @@
   .phoneWrapper {
     width: 260px;
     aspect-ratio: 9/19;
-    background: #111;
+    // background: #111;
     border-radius: 40px;
     border: 2px solid #333;
     overflow: hidden;
@@ -438,7 +438,7 @@
     font-family: var(--font--alt), sans-serif;
     font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 700;
-    color: #fff;
+    color: #ffffff50;
     letter-spacing: -0.025em;
     line-height: 1.1;
     margin: 0 0 0.5rem;
@@ -446,6 +446,7 @@
 
   .privacySub {
     font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.4;
     color: #888;
     margin: 0 0 1.5rem;
