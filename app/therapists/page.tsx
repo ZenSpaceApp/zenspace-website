@@ -120,9 +120,9 @@ const AIEfficiency = () => {
   return (
     <div className='section bg-half-170' id="ai-efficiency">
       <div className='container '>
-        <h2 className='u-textcenter bold-accent'>Agentic Clinical Intelligence (ACI).</h2>
+        <h2 className='u-textcenter bold-accent'>ZenNotes Just Got Smarter.</h2>
         <div className='subhead u-textcenter'>
-          Stop reliving your sessions. <b>ZenNotes</b> automates the 40% of your day lost to paperwork, turning clinical conversations into high-fidelity documentation the moment the door closes.
+          Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em>Your session documents itself.</em>
         </div>
 
         <Image 
@@ -137,9 +137,9 @@ const AIEfficiency = () => {
           }}
         />
 
-        <button className='btn btn-dark' style={{display: "block", margin: "auto", marginTop: "3rem"}}>
+        <button className='btn btn-primary' style={{display: "block", margin: "auto", marginTop: "3rem"}}>
           <Link href="/zennotes" passHref>
-              Learn More
+              See ZenNotes ACI
           </Link> 
         </button>
       </div>
