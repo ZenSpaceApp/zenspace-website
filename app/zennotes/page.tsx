@@ -164,7 +164,7 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
   return (
     < div className={styles.workday}>
       <div className={styles.workdayIntro}>
-        <h2 className={styles.workdayHeading}>Say goodbye to&nbsp;"27-hour workday"</h2>
+        <h2 className={styles.workdayHeading}>Say goodbye to&nbsp;&quot;27-hour workday&quot;</h2>
         <p className={styles.workdaySub}>We guarantee 2 hours back every single day.</p> 
         </div>
     <div className={styles.workdaySection}>
