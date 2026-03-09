@@ -69,7 +69,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem 2rem;
+    padding: 6rem 1.5rem 2rem;
   }
 }
 
@@ -95,6 +95,11 @@
     color: var(--color--grey2);
     max-width: 420px;
     margin: 0 0 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+      max-width: 100%;
+    } 
   }
 }
 
@@ -168,7 +173,7 @@
   border-bottom: 1px solid var(--color--border--1);
 
   text-align: center;
-  padding: 8rem 0;
+  padding: 8rem 2rem;
 
 
   .trustHeading {
@@ -233,7 +238,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
 }
 
@@ -249,6 +254,7 @@
   // max-width: 1200px;
   margin: 0 auto;
   align-items: start;
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 3rem 1.5rem;
@@ -546,7 +552,7 @@
   background: var(--bg--alt--1);
   border-top: 1px solid var(--color--border--1);
   border-bottom: 1px solid var(--color--border--1);
-  padding: 8rem 0rem;
+  padding: 8rem 2rem;
   text-align: center;
 
   .billingInner {
@@ -568,7 +574,13 @@
     line-height: 1.4;
     color: var(--color--grey2);
     margin: 0 0 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+      font-weight: 500;
+    }
   }
+
 }
 
 .billingList {

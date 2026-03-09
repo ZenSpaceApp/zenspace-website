@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
-import ZenNoteHeroImg from '@/public/images/zen-aci@2x.png';
+import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
+
 import SOAPPreview from '@/public/images/soap-preview.svg';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
@@ -199,35 +200,35 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
   );
 }
 
-function FaqAccordion({ items }: { items: FaqItem[] }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+// function FaqAccordion({ items }: { items: FaqItem[] }) {
+//   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  return (
-    <div className={styles.faqList}>
-      {items.map((item, i) => {
-        const isOpen = openIndex === i;
-        return (
-          <div className={styles.faqItem} key={i}>
-            <button
-              className={styles.faqQuestion}
-              data-open={String(isOpen)}
-              onClick={() => setOpenIndex(isOpen ? null : i)}
-              aria-expanded={isOpen}
-            >
-              {item.q}
-              <svg className={styles.faqChevron} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-            <div className={styles.faqAnswer} data-open={String(isOpen)} aria-hidden={!isOpen}>
-              {item.a}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+//   return (
+//     <div className={styles.faqList}>
+//       {items.map((item, i) => {
+//         const isOpen = openIndex === i;
+//         return (
+//           <div className={styles.faqItem} key={i}>
+//             <button
+//               className={styles.faqQuestion}
+//               data-open={String(isOpen)}
+//               onClick={() => setOpenIndex(isOpen ? null : i)}
+//               aria-expanded={isOpen}
+//             >
+//               {item.q}
+//               <svg className={styles.faqChevron} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+//                 <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+//               </svg>
+//             </button>
+//             <div className={styles.faqAnswer} data-open={String(isOpen)} aria-hidden={!isOpen}>
+//               {item.a}
+//             </div>
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 

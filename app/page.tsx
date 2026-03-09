@@ -265,7 +265,7 @@ const ClientQRButton = () => {
 const CtaButtons = () => {
   return (
     <div className="cta" style={{}} >
-      <ClientQRButton />
+      {/* <ClientQRButton /> */}
       <Link
         className="btn btn-primary-dark-border"
         href="/therapists/#therapist-sign-up">
