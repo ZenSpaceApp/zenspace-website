@@ -10,6 +10,10 @@ import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import ZenNotesFAQ from '@/components/ZenNotesFAQ';
+import AudioTap from '@/public/images/icons/audio-tap.svg';
+import HumanFirst from '@/public/images/icons/soul.svg';
+import ZeroPersistence from '@/public/images/icons/ram-only.svg';
+import HumanSignature from '@/public/images/icons/human-first.svg';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 function WaveformIcon() {
@@ -60,18 +64,22 @@ interface FaqItem {
 
 const FEATURES = [
   {
+    icon: AudioTap,
     title: 'High-Fidelity Audio Tap',
     body: 'Uses a native WebRTC audio stream (owned by InstaGR/ZenSpace) rather than clunky external bots.',
   },
   {
+    icon: HumanFirst,
     title: 'AI is the muscle. You are the soul.',
     body: 'The system simultaneously handles documentation, ICD-10 coding, and generating plain-language patient summaries.',
   },
   {
+    icon: ZeroPersistence,
     title: 'Zero-Persistence Privacy.',
     body: 'Audio is processed in real-time and not permanently stored, adhering to the highest trust and HIPAA standards.',
   },
   {
+    icon: HumanSignature,
     title: 'Human Final Signature.',
     body: 'Every note remains a draft until you authenticate it. You provide the soul.',
   },
@@ -281,6 +289,16 @@ export default function ZenNotesPage() {
         <div className={styles.featuresGrid}>
           {FEATURES.map((f) => (
             <div className={styles.featureCard} key={f.title}>
+              <Image
+                src={f.icon}
+                alt={`${f.title} icon`}
+                height={32}
+                width={32}
+                style={{
+                  marginBottom: '1rem',
+                }}
+                className={styles.featureIcon}
+              />
               <h3>{f.title}</h3>
               <p>{f.body}</p>
             </div>
