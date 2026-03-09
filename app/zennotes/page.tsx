@@ -272,6 +272,9 @@ export default function ZenNotesPage() {
 
       {/* ── Trust Bar ── */}
       <section className={styles.trustBar}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem'}}>
+          <WaveformIcon />
+        </div>
         <h2 className={styles.trustHeading}>Built for the most sensitive<br />conversations on earth.</h2>
         <p className={styles.trustSub}>Enter Ambient Clinical Intelligence (ACI).</p>
 

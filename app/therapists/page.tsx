@@ -504,13 +504,13 @@ function WorkflowCarousel() {
 const SimpleWorkflow = () => {
   return (
     <section id="zen-workflow">
-      <h3 className="u-textcenter">
+      <h2 className="u-textcenter">
         Simple Workflow.<br />
         <span
           className='bold-accent color-accent'>
           Powerful Capabilities.
         </span>
-      </h3>
+      </h2>
       <div className="subhead">
         Secure, AI-powered platform connecting therapists and clients for seamless
         practice management and care.
