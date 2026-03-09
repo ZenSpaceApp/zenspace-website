@@ -1,13 +1,18 @@
 import { Metadata } from 'next'
 import { Inter } from "next/font/google";
 import { Syne } from "next/font/google";
+import { PT_Serif } from 'next/font/google';
+
 const inter = Inter({
   subsets: ['latin']
 });
 const syne = Syne({
   subsets: ['latin'],
 });
-
+const ptSerif = PT_Serif({
+  subsets: ['latin'],
+  weight: ['400', '700']
+});
 import '../styles/styles.scss';
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${syne.className} `}>{children}</body>
+      <body className={`${inter.className} ${syne.className} ${ptSerif.className}`}>{children}</body>
     </html>
   );
 }

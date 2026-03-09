@@ -116,7 +116,7 @@ const ZenNotes = () => {
   </div>
 }
 
-const AIEfficiency = () => {
+const ACI = () => {
   return (
     <div className='section bg-half-170' id="ai-efficiency">
       <div className='container '>
@@ -133,6 +133,7 @@ const AIEfficiency = () => {
             margin: 'auto',
             marginTop: "3rem",
             maxWidth: "100%",
+            height: "auto"
 
           }}
         />
@@ -835,14 +836,19 @@ const Hero = () => {
       <div className="ctaButtons grid-item">
         <Link
           // href="https://form.typeform.com/to/RXZdaaEP"
-          href="./pricing"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfwzPnrq_3K4zCOhyUdhwroBsw-haYHsY6Xn4wgRUXCCB8Urw/viewform?usp=header_1  "
           className="btn btn-primary-dark-border  mt-2"
+          target="_blank"
+          rel="noopener noreferrer"
           >
-          Start 30-day Free Trial
+          Get Early Access
         </Link>
         <Link
           className="btn btn-outline-dark ml-md-4 mt-2"
-          href="/contact/#book-demo">
+          href="https://calendly.com/rp2701-dev/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
           Book a Demo
         </Link>
       </div>
@@ -901,7 +907,7 @@ export default function Therapists() {
       <Benefits />
       <PracticeNow />
       <ExpTheDifference />
-      <AIEfficiency />
+      <ACI />
       <SimpleWorkflow/>
       <Subscriptions />
       <Integrations/>

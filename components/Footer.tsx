@@ -33,7 +33,10 @@ export default function Footer() {
                       padding: "12px 2rem !important",
                       lineHeight: "1.2 !important"
                     }}
-                href="/contact/#book-demo">
+                    href="https://calendly.com/rp2701-dev/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     
                     Book a Demo
                   </Link>
@@ -47,8 +50,8 @@ export default function Footer() {
                 <li><a href="/" className="text-muted">Clients</a></li>
                 <li><a href="/therapists" className="text-muted">Therapists</a></li>
                 <li><a href="/zennotes" className="text-muted">ZenNotes</a></li>
-                <li><a href="/" className="text-muted">ZenPath</a></li>
-                <li><a href="/" className="text-muted">ZenList</a></li>
+                {/* <li><a href="/" className="text-muted">ZenPath</a></li> */}
+                {/* <li><a href="/" className="text-muted">ZenList</a></li> */}
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">

@@ -202,7 +202,7 @@ a {
   @media #{$mq-large} {
     margin: 0 auto !important;
     width: 86% !important;
-    max-width: 1200px !important;
+    max-width: 1340px !important;
   }
 
   @media #{$mq-xlarge} {
@@ -211,22 +211,21 @@ a {
   }
 }
 
-h1, h2, h3   {
-  font-weight: 700 !important;
-  // font-family: Syne, sans-serif;
-  line-height: 1 !important;
-}
+
 
 h1 {
-  font-size: var(--type--h1) !important;
+  font-size: clamp(2rem, 4vw, 3.5rem) !important;
+  font-family: var(--font--alt)
 }
 
 h2 {
-  font-size: var(--type--h2) !important;
+  font-size: clamp(1.5rem, 3vw, 2.25rem) !important;
+  font-family: var(--font--alt)
 }
 
 h3 {
-  font-size: var(--type--h3) !important;
+  font-size: var(--type--h3);
+  font-family: Inter, serif;
 }
 
 h5 {
@@ -497,7 +496,7 @@ section.route-section {
 
 
 .bold-accent {
-  font-weight: 900 !important;
+  font-weight: 700 !important;
 }
 
 .color-accent {
@@ -805,9 +804,9 @@ section.route-section {
 
   padding: 60px 20px;
   font-size: 1.5rem;
+
   @media screen and #{$mq-large} {
     padding: 80px 40px;
-    padding: 170px 20px;
   }
   
   .cta-container {

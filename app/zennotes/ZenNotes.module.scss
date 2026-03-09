@@ -63,8 +63,8 @@
   grid-template-columns: 1fr 1.5fr;
   gap: 20px;
   align-items: center;
-  padding: 16rem 2.5rem 16rem;
-  max-width: 1200px;
+  padding: 16rem 2rem 16rem;
+  max-width: 1340px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
@@ -76,8 +76,8 @@
 .heroText {
   h1 {
     font-family: var(--font--alt), sans-serif;
-    font-size: clamp(2.4rem, 4vw, 3.5rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    // font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.03em;
     color: var(--color--grey3);

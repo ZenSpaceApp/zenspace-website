@@ -96,9 +96,9 @@ export default function Navbar({ home }: { home: string} ) {
               <li>
                 <Link href="/zennotes">ZenNotes</Link>
               </li>
-            <li>              
+            {/* <li>              
               <a>ZenPath</a>
-            </li>
+            </li> */}
             <li><Link href='/pricing'>Pricing</Link></li>
           </ul>
         </div>

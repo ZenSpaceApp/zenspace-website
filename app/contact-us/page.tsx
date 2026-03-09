@@ -179,11 +179,11 @@ const ContactForm = ({ setShowBanner }: { setShowBanner: (value: boolean) => voi
             Book a Demo
           </a>
         </div>
-        <div className="item">
+        {/* <div className="item">
           <a href="mailto:info@zenspaceapp.com" target="_blank">
             info@zenspaceapp.com
           </a>
-        </div>
+        </div> */}
       </div>
     )
   }

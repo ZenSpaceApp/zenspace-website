@@ -13,46 +13,46 @@ const faqs = [
     care to their clients."
   ],
   [
-    "How secure is my data on ZenSpaceApp?",
+    "How secure is my data on ZenspaceApp?",
     "At ZenSpaceApp, we take data security and privacy seriously. Our app is fully HIPAA-compliant,\
     ensuring that we meet the highest standards for safeguarding sensitive patient information.\
     We implement robust security measures, including end-to-end encryption for data in transit and at rest. This means that your data is encrypted when it's being transferred between your device and our servers, as well as when it's stored on our servers.\
     In addition to encryption, we regularly monitor our systems for potential threats and vulnerabilities to maintain a secure environment for your practice's data. You can trust that your information is protected and secure when using ZenSpaceApp."
   ],
   [
-    "How easy is it to get started with ZenSpaceApp?",
-    "ZenSpaceApp is designed to be user-friendly and easy to get started with. The sign-up process\
+    "How easy is it to get started with ZenspaceApp?",
+    "ZenspaceApp is designed to be user-friendly and easy to get started with. The sign-up process\
      is quick, taking just a few minutes, and the onboarding process will guide you through the\
       app's features and help you customize your settings to best suit your practice's needs.\
-       The app's clean and organized design makes it simple to navigate and access all of its features, while our dedicated support team is always available to assist you. With these features, you can quickly and easily start using ZenSpaceApp to streamline your practice management, enhance patient communication, and simplify therapy documentation."
+       The app's clean and organized design makes it simple to navigate and access all of its features, while our dedicated support team is always available to assist you. With these features, you can quickly and easily start using ZenspaceApp to streamline your practice management, enhance patient communication, and simplify therapy documentation."
   ],
   [
-    "Does ZenSpaceApp integrate with my existing therapy tools and workflows?",
-    "Yes, ZenSpaceApp is designed to seamlessly integrate with your existing therapy tools and\
+    "Does ZenspaceApp integrate with my existing therapy tools and workflows?",
+    "Yes, ZenspaceApp is designed to seamlessly integrate with your existing therapy tools and\
      workflows. We understand the importance of maintaining continuity in your practice, which\
     is why we offer calendar integration with popular services like Google and Apple. This allows\
-    you to manage your appointments and client bookings within ZenSpaceApp while keeping your\
+    you to manage your appointments and client bookings within ZenspaceApp while keeping your\
     existing calendars up-to-date.\
-    Additionally, ZenSpaceApp integrates with common payment gateways such as PayPal and Stripe,\
+    Additionally, ZenspaceApp integrates with common payment gateways such as PayPal and Stripe,\
     enabling you to manage client payments directly within the app. By offering these integrations,\
     we aim to streamline your practice management and simplify your daily tasks, allowing you t\
      focus on providing exceptional care to your clients."
   ],
   [
-    "What types of therapists and practices can benefit from using ZenSpaceApp?",
-    "ZenSpaceApp is designed to benefit a wide range of therapists and practices within the\
+    "What types of therapists and practices can benefit from using ZenspaceApp?",
+    "ZenspaceApp is designed to benefit a wide range of therapists and practices within the\
      mental health field. Whether you're a solo practitioner or part of a larger therapy practice,\
-      ZenSpaceApp can help streamline your practice management and enhance your overall workflow.\
+      ZenspaceApp can help streamline your practice management and enhance your overall workflow.\
     From psychologists, psychiatrists, and counselors to social workers, marriage and family\
      therapists, and more, any mental health professional seeking a comprehensive solution for\
-      telehealth, therapy notes, scheduling, and patient communication can benefit from using ZenSpaceApp."
+      telehealth, therapy notes, scheduling, and patient communication can benefit from using ZenspaceApp."
   ],
   [
-    "Can I try ZenSpaceApp before committing to a subscription?",
-    "Absolutely! We believe in letting potential users experience the full potential of ZenSpaceApp\
+    "Can I try ZenspaceApp before committing to a subscription?",
+    "Absolutely! We believe in letting potential users experience the full potential of ZenspaceApp\
     before committing to a subscription. That's why we offer a 30-day free trial, allowing you to\
     test out all of the app's features and ensure it's the right fit for your practice.\
-    During the trial period, you'll have access to all of ZenSpaceApp's functionality, including\
+    During the trial period, you'll have access to all of Zenspace App functionality, including\
     telehealth, AI-powered therapy notes, scheduling, and patient communication tools. This gives\
     you plenty of time to explore the app and see how it can benefit your practice.\
     In some cases, such as for Lighthouse customers, we may be able to extend the trial period\
@@ -80,11 +80,11 @@ export default function FAQ() {
         <div className='Grid Grid--full small-Grid--1of2' >
           <div className='Grid-cell' >
             <h2 className="u-textcenter display-4 bold-accent">FAQ.</h2>
-            <div className='u-textcenter'>
+            {/* <div className='u-textcenter'>
             Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@zenspaceapp.com" target="_blank">
             email 
           </a> us if you have a question)
-            </div>
+            </div> */}
           </div>
           <div className='Grid-cell content'>    
           {faqs.map((faq, idx) => (
