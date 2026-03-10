@@ -54,6 +54,7 @@ import DashIcon from '@/public/images/icons/dashboard.svg';
 import ChevronUpIcon from '@/public/images/icons/chevron-up.svg';
 import ChevronDownIcon from '@/public/images/icons/chevron-down.svg';
 import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
+import WaveformIco from '@/public/images/icons/audio-tap.svg';
 
 
 const ZenNotes = () => {
@@ -519,7 +520,7 @@ const SimpleWorkflow = () => {
  */
 function Benefits() {
   const iconsAlt = [
-    [ZenNotesIcon, "ZenNotes app icon for AI-Powered therapy notes"],
+    [WaveformIco, "ZenNotes app icon for AI-Powered therapy notes"],
     [VideoIcon, "Video call icon for telehealth consultations"],
     [ChatIcon, "Chat message icon for therapist-client communication"],
     [CreditCardIcon, "Credit card icon for secure online payments" ],
@@ -529,8 +530,8 @@ function Benefits() {
 
   const benefits: Array<[string, string]> = [
     [
-      "ChatGPT-Powered Therapy Notes",
-      "Experience the power of AI in your practice, makes taking notes and creating summaries\
+      "Ambient Clinical Intelligence (ACI)",
+      "Experience the power of ambient AI in your practice, makes taking notes and creating summaries\
        a breeze so you can focus on your clients' needs."
     ],
     [
@@ -603,7 +604,7 @@ const Stats = () => {
       <div className='grid-container'>
         <div className="grid-item">
           <Image 
-            alt='ChatGPT-powered Therapy Notes'
+            alt='Ambient Clinical Intelligence (ACI) Powered Notes'
             src={CostsIcon}
             height={32}
             width={0}
@@ -617,7 +618,7 @@ const Stats = () => {
         </div>
         <div className="grid-item">
           <Image 
-            alt='ChatGPT-powered Therapy Notes'
+            alt='Telehealth impact on patient satisfaction and access to care'
             src={ImpactIcon}
             height={32}
             width={0}
@@ -630,7 +631,7 @@ const Stats = () => {
         </div>
         <div className="grid-item">
           <Image 
-            alt='ChatGPT-powered Therapy Notes'
+            alt='reduce no-shows with telehealth appointments'
             src={NoShowIcon}
             height={32}
             width={0}
@@ -752,7 +753,7 @@ const Hero = () => {
         <ul>
             <li>
               <Image 
-                alt='ChatGPT-powered Therapy Notes'
+                alt='ambient clinical intelligence powered therapy notes'
                 src={CalendarIcon}
                 height={16}
                 width={0}
@@ -761,7 +762,7 @@ const Hero = () => {
             </li>
             <li>
               <Image 
-                alt='ChatGPT-powered Therapy Notes'
+                alt='HD-video calling for telehealth sessions'
                 src={VideoIcon}
                 height={16}
                 width={0}
@@ -781,7 +782,7 @@ const Hero = () => {
             </li>
             <li>
               <Image 
-                alt='ChatGPT-powered Therapy Notes'
+                alt='HIPAA-compliant security for telehealth sessions'
                 src={SecurityIcon}
                 height={18}
                 width={0}
@@ -790,7 +791,7 @@ const Hero = () => {
             </li>
             <li>
               <Image 
-                alt='ChatGPT-powered Therapy Notes'
+                alt='subscription management for therapists and clients'
                 src={CreditCardIcon}
                 height={16}
                 width={0}
