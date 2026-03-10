@@ -32,14 +32,14 @@ const ForClients = () => {
         <div className='desc-item vetical-center'>
           <div>
             <h6>For Clients</h6>
-            <h2>Why Choose ZenList?</h2>
+            <h2>Why Zenspace</h2>
           </div>
           <ul className="list-unstyled ">
             <li>Immediate access to therapists</li>
             <li>Flexible scheduling</li>
             <li>Secure and confidential</li> 
-            <li>Get the support you need without delay</li>
-            <li>Pay using credit card, Venmo, Cashapp</li>
+            <li>Support you need without the delay</li>
+            <li>Myriad ways to pay</li>
           </ul>
           <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap"}}>
             <ClientQRButton />
@@ -76,7 +76,7 @@ const ForTherapists = () => {
         <div className='grid-item vetical-center'>
           <div>
           <h6>For Therapists</h6>
-          <h2>Why Join ZenSpaceApp?</h2>
+          <h2>Zenspace Platform and Tools</h2>
           </div>
           <ul className="list-unstyled ">
             <li>Be in control of your revenue</li>
@@ -107,14 +107,12 @@ const ForTherapists = () => {
 const GetStarted = () => {
   return <section id="get-started" className={`${styles.getStarted} bg-half-170`}>
     <div className='container u-textcenter'>
-      <h2>Get Started Today.</h2>
-      <div className={styles.ctaButtons}>
-        <ClientQRButton />
-        <Link
-          className="btn btn-primary-dark-border ml-md-4 mt-2"
-          href="/therapists/#therapist-sign-up">
-          Join as Therapist
-        </Link>
+      <h3 style={{ fontSize: "1.75rem !important" }}>Get Started Today.</h3>
+      <div className={`subhead ${styles.subhead}`}>
+        Whether you&apos;re seeking support or looking to expand your practice, Zenspace makes it easy to get started.
+      </div>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem"}}>
+        <CtaButtons />
       </div>
     </div>
   </section>
@@ -124,6 +122,9 @@ const HowItWorks = ({ }) => {
   return <section id="how-it-works" className='bg-half-170'>
     <div className='container'>
       <h2 className='u-textcenter'>How it Works.</h2>
+      <p className='u-textcenter' style={{ maxWidth: "600px", display: "block", margin: "2rem auto", fontWeight: "500" }} >
+        ZenspaceApp connects clients with licensed therapists through a simple 3-step process:
+      </p>
 
 
       <div className='grid-container'>
@@ -138,7 +139,7 @@ const HowItWorks = ({ }) => {
           <div>
             <Image
               alt=""
-            src={SearchTherapistImg}
+              src={SearchTherapistImg}
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -150,12 +151,6 @@ const HowItWorks = ({ }) => {
       </div>
         
       <div className='grid-container'>
-        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", }}>
-            <h3>Book Instantly</h3>
-            <div>
-            Schedule a session with available therapists now.
-            </div>
-          </div>
           <div >
             <Image
               alt=""
@@ -165,6 +160,12 @@ const HowItWorks = ({ }) => {
               height: "auto"
             }}
             />
+          </div>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", }}>
+            <h3>Book Instantly</h3>
+            <div>
+            Schedule a session with available therapists now.
+            </div>
           </div>
 
       </div>
@@ -245,18 +246,18 @@ const ClientQRButton = () => {
   return <>
     <div style={{display: "flex", alignItems: "center", gap: "2rem", border: "2px solid", padding: '4px 12px', borderRadius: "6px"}}> 
       <div>
-        Find a Therapist<br />
-        <div style={{ fontSize: "0.9rem", fontWeight: "600", textAlign: "left" }}>
+        {/* Find a Therapist<br /> */}
+        {/* <div style={{ fontSize: "0.9rem", fontWeight: "600", textAlign: "left" }}> */}
           Download App
-        </div>
+        {/* </div> */}
       </div>
       <div>
-        <Image
+        {/* <Image
           alt=""
           src={ClientQRCodeImg}
-          height={70}
-          width={70}
-        />
+          height={32}
+          width={32}
+        /> */}
       </div>
     </div>
   </>
@@ -264,8 +265,13 @@ const ClientQRButton = () => {
 
 const CtaButtons = () => {
   return (
-    <div className="cta" style={{}} >
+    <div className="cta" style={{display: "flex", gap: "1rem"}} >
       {/* <ClientQRButton /> */}
+      <Link
+        className="btn btn-outline-secondary"
+        href="/">
+        Download App
+      </Link>
       <Link
         className="btn btn-primary-dark-border"
         href="/therapists/#therapist-sign-up">

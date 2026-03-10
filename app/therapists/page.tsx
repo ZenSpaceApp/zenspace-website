@@ -22,6 +22,7 @@ import IntegrationImg from '@/public/images/home/payment-screencap@2x.png';
 import ConfigureSubsImg from '@/public/images/home/configure-plans.jpg';
 import PromoteSubsImg from '@/public/images/home/booking-config.jpg';
 import EarningsDashImg from '@/public/images/home/earnings-dash.jpg';
+import WaveformIcon from '@/components/waveform/Waveform';
 
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
@@ -120,6 +121,9 @@ const ACI = () => {
   return (
     <div className='section bg-half-170' id="ai-efficiency">
       <div className='container '>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>        
+          <WaveformIcon />
+        </div>
         <h2 className='u-textcenter bold-accent'>ZenNotes Just Got Smarter.</h2>
         <div className='subhead u-textcenter'>
           Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em>Your session documents itself.</em>
@@ -150,7 +154,7 @@ const ACI = () => {
 
 const ExpTheDifference = () => {
   return (
-    <section className="bg-half-170">
+    <section className="bg-half-170" style={{background: "var(--green-50)"}}>
       <h2 className=' container u-textcenter'>
         <span className='bold-accent color-accent'>
           Experience the Difference.
@@ -167,7 +171,7 @@ const ExpTheDifference = () => {
 
 const CrossDeviceSync = () => {
   return (<>
-    <div className="container bg-half-170 overflow-hidden">
+    <div className="container  overflow-hidden" style={{padding: "4rem 2rem"}}>
       <div className="row align-items-center ">
         <div className="offset-lg-1 col-lg-5 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
           <div className="explore-app">
@@ -251,7 +255,7 @@ const Subscriptions = () => {
   ]
   
   return (<section id="subscriptions">
-    <div className="container bg-half-260 ">
+    <div className="container bg-half-170">
       <div className='u-textcenter mb-5'>
         <h2>
           Grow Your Business. <br />
@@ -320,7 +324,7 @@ const Subscriptions = () => {
 
 const PersonalizedTherapyExperience = () => {
   return (
-    <div className="container bg-half170 overflow-hidden">
+    <div className="container overflow-hidden" style={{padding: "4rem 2rem"}}>
         <div className="row align-items-center">
           <div className="offset-lg-1 col-lg-6 col-md-5">
             <div className="app-feature-shaperight position-relative">
@@ -359,7 +363,7 @@ const PersonalizedTherapyExperience = () => {
 
 const CollabMoodTracking = () => {
   return (
-    <section className="bg-half-170 overflow-hidden" >
+    <section className="overflow-hidden" style={{padding: "4rem 2rem"}}>
       <div className="container mt-100">
         <div className="row align-items-center">
           <div className="offset-lg-2 col-lg-4 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -568,7 +572,7 @@ function Benefits() {
   ]
 
   return (
-    <section id="unlock-practice" className="bg-half-260">
+    <section id="unlock-practice" className="bg-half-170">
       <div className="container">
         <div className="mb-4 mt-4 u-textcenter"  >
           <h2 className="display-4" style={{width: "100%", maxWidth: "860px", display: 'block', margin: "auto"}}>
@@ -603,7 +607,7 @@ function Benefits() {
 }
 
 const Stats = () => {
-  return <section id="stats">
+  return <section id="stats" className='bg-half-170'>
     <div className='container'> 
       <div className="sub-heading">Telehealth By the numbers</div>
       <div className='grid-container'>
@@ -656,7 +660,7 @@ const Stats = () => {
 
 const PracticeNow = () => {
   return <>
-    <section id="therapist-sign-up" className="bg-half-260">
+    <section id="therapist-sign-up" className="bg-half-170">
       <div className="container profile-submit pb-5" style={{border: 'none'}}>
         <div style={{ marginLeft: '10px'}}>
           {/* <img src="/images/stetho.svg" width="30px" /> */}
@@ -762,12 +766,12 @@ const Hero = () => {
             </li>
             <li>
               <Image 
-                alt='ChatGPT-powered Therapy Notes'
+                alt='Ambient Clinical Intelligence (ACI) powered therapy notes'
                 src={ZenNotesIcon}
                 height={16}
                 width={0}
                 />
-              AI-Powered Therapy Notes
+              Ambient Notes
             </li>
             <li>
               <Image 
@@ -780,15 +784,6 @@ const Hero = () => {
                 HD-Video
               </div>
             </li>
-            {/* <li>
-              <Image 
-                alt='ChatGPT-powered Therapy Notes'
-                src={ChatIcon}
-                height={18}
-                width={0}
-                />
-              Messaging
-            </li> */}
             <li>
               <Image 
                 alt='ChatGPT-powered Therapy Notes'
@@ -807,7 +802,6 @@ const Hero = () => {
                 />
               Subscriptions
             </li>
-           
           </ul>
         </div>
     )
@@ -831,7 +825,22 @@ const Hero = () => {
     )
   }
 
-  const CtaButtons = () => {
+  
+  return (
+    <section id="hero-main" className="show fade">
+      <div className="container">
+        <div className='grid-container'>
+          <Heading />
+          <Features />
+          <HeroImage />
+          <CtaButtons />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const CtaButtons = () => {
     return (
       <div className="ctaButtons grid-item">
         <Link
@@ -854,20 +863,6 @@ const Hero = () => {
       </div>
     )
   }
-
-  return (
-    <section id="hero-main" className="show fade">
-      <div className="container">
-        <div className='grid-container'>
-          <Heading />
-          <Features />
-          <CtaButtons />
-          <HeroImage />
-        </div>
-      </div>
-    </section>
-  )
-}
 
 const Integrations = () => {
   return <section id="integrations" className='bg-half-170'>
@@ -902,13 +897,14 @@ const Integrations = () => {
 export default function Therapists() {
   return (
     <Layout>
-      <Hero/>
+      <Hero />
+      
       <Stats />
       <Benefits />
-      <PracticeNow />
       <ExpTheDifference />
       <ACI />
       <SimpleWorkflow/>
+      <PracticeNow />
       <Subscriptions />
       <Integrations/>
       <FAQ />

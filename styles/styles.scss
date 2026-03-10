@@ -215,17 +215,23 @@ a {
 
 h1 {
   font-size: clamp(2rem, 4vw, 3.5rem) !important;
-  font-family: var(--font--alt)
+  font-family: var(--font--alt);
+  letter-spacing: -0.02em !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
 }
 
 h2 {
   font-size: clamp(1.5rem, 3vw, 2.25rem) !important;
-  font-family: var(--font--alt)
+  font-family: var(--font--alt);
+  font-weight: 700 !important;
 }
 
 h3 {
-  font-size: var(--type--h3);
+  font-size: var(--type--h3) !important;
   font-family: Inter, serif;
+  line-height: 1.5;
+  font-weight: 700 !important;
 }
 
 h5 {
@@ -727,9 +733,7 @@ section.route-section {
 }
 
 #stats {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
-  background: var(--bg--body--main--translucent);
+  background: var(--green-50);
 
   h3 {
     font-family: Inter;
@@ -996,7 +1000,7 @@ section.route-section {
 }
 
 #integrations {
-  background: var(--bg--body--main--translucent);
+  background: var(--green-50);
 
   .heading {
     max-width: 640px;
@@ -4314,6 +4318,10 @@ input::-webkit-inner-spin-button {
   font-size: 1rem !important;
   font-weight: 600 !important;
   border-radius: 6px !important;
+  line-height: 1.0 !important;
+  align-items: center !important;
+  display: flex;
+  justify-content: center !important;
 }
 
 .btn-primary-dark-border {

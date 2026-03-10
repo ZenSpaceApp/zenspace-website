@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="slogan">
                   Empowering mental wellness with a touch of Zen.
                 </div>
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <Link
                     className="btn btn-outline-secondary"
                     style={{
@@ -40,7 +40,7 @@ export default function Footer() {
                     
                     Book a Demo
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             
