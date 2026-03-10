@@ -126,7 +126,7 @@ const ACI = () => {
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>        
           <WaveformIcon />
         </div>
-        <h2 className='u-textcenter bold-accent'>ZenNotes Just Got Smarter.</h2>
+        <h2 className='u-textcenter bold-accent'>Therapy Notes Just Got Smarter.</h2>
         <div className='subhead u-textcenter'>
           Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em><b>Your session documents itself.</b></em>
         </div>
