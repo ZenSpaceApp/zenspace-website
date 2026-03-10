@@ -6,10 +6,10 @@ import styles from './HomePage.module.scss'
 
 import Link from 'next/link';
 
-import HeroImg from '@/public/images/home/hero-img-map@2x.png';
+import HeroImg from '@/public/images/hero-img.png';
 import ClientAppsImg from '@/public/images/home/client-apps@2x.png'
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
-import ClientQRCodeImg from '@/public/images/home/client-QR.png';
+// import ClientQRCodeImg from '@/public/images/home/client-QR.png';
 
 import SearchTherapistImg from '@/public/images/home/search.png';
 import BookTherapistImg from '@/public/images/home/pay.png';
@@ -180,10 +180,7 @@ const HowItWorks = ({ }) => {
             <Image
               alt=""
             src={StartSessionImg}
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }}
+            
             />
           </div>
         </div>
@@ -284,25 +281,26 @@ const CtaButtons = () => {
 const OnDemandHero = () => {
   return <section id="on-demand-hero" className='bg-half-170'>
     <div className='container'>
-      <div className='grid-container'>
+      <div className='gridcontainer' style={{ display: "grid", gridTemplateColumns: "1fr 1fr", alignItems: "center", gap: "2rem"  }}>
         <div className="grid-item" >
-          <h1>
+          <h1 style={{paddingTop: "3rem"}}>
              Therapists.<br/> <span className='color-accent'>On-demand.</span>
           </h1>
-          <div className='subhead mt-2'>
+          <div className='subhead mt-2' style={{ maxWidth: "80%", fontWeight: "500" }}>
             Instantly connect with licensed therapists anytime, anywhere through our app.
           </div>
           <CtaButtons />
         </div>
-        <div className="grid-item">
+        <div className="grid-item" style={{background: "var(--green-500)", borderRadius: "24px", padding: "40px"  }}>
           <Image
             alt='Image showing a supportive therapist helping a client.'
             src={HeroImg}
             className='hero-img'
+            height={550}
+            width={550}
           />
         </div>
       </div>
-
     </div>
   </section>
 }

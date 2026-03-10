@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="subfooter">
-            <div>©2024 ZenSpaceApp Inc. All Rights Reserved.</div>
+            <div>©2026 ZenspaceApp Inc. All Rights Reserved.</div>
             <ul>
               <li>
                 <a href="/privacy" className="text-muted">Cookies</a></li> 
