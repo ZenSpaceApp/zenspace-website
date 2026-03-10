@@ -13,7 +13,7 @@ import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
 import SearchTherapistImg from '@/public/images/home/search.png';
 import BookTherapistImg from '@/public/images/home/pay.png';
-import StartSessionImg from '@/public/images/on-demand-calling.jpg';
+import StartSessionImg from '@/public/images/on-demand-calling.png';
 import Avatar0 from '@/public/images/home/avatar-0.png';
 import Avatar1 from '@/public/images/home/avatar-1.png';
 import Avatar2 from '@/public/images/home/avatar-2.png';
@@ -106,7 +106,7 @@ const ForTherapists = () => {
 const GetStarted = () => {
   return <section id="get-started" className={`${styles.getStarted} bg-half-170`}>
     <div className='container u-textcenter'>
-      <h3 style={{ fontSize: "1.75rem !important" }}>Get Started Today.</h3>
+      <h3 style={{ fontSize: "1.75rem !important" }}>Get Started Today</h3>
       <div className={`subhead ${styles.subhead}`}>
         Whether you&apos;re seeking support or looking to expand your practice, Zenspace makes it easy to get started.
       </div>
@@ -120,7 +120,7 @@ const GetStarted = () => {
 const HowItWorks = ({ }) => {
   return <section id="how-it-works" className='bg-half-170'>
     <div className='container'>
-      <h2 className='u-textcenter'>How it Works.</h2>
+      <h2 className='u-textcenter'>How it Works</h2>
       <p className='u-textcenter' style={{ maxWidth: "600px", display: "block", margin: "2rem auto", fontWeight: "500" }} >
         ZenspaceApp connects clients with licensed therapists through a simple 3-step process:
       </p>
@@ -201,12 +201,12 @@ const FeaturedTherapists = () => {
   return <section className='bg-half-170'>
     <div className='container'>
       <div className="u-textcenter mb-5">
-        <h2>Featured Therapists of the Week.</h2>
+        <h2>Featured Therapists of the Week</h2>
         <div className={`subhead ${styles.subhead}`}>
           Discover some of our standout therapists who are making a difference in their clients&apos; lives.
         </div>
       </div>
-      <div className={styles.gridContainer}>
+      <div className={styles.gridContainer} style={{margin: "auto 4rem"}}>
         {therapists.map((therapist, idx) => (
           <div key={idx} className={styles.gridItem}>
             <div className={styles.avatar}>
@@ -219,7 +219,7 @@ const FeaturedTherapists = () => {
             </div>
             <div className={styles.details}>
               <h5>{therapist[0]}</h5>
-              <div>{therapist[1]}</div>
+              <div><b>{therapist[1]}</b></div>
               <div className='mt-4'>{therapist[2]}</div>
               <div>{therapist[3]}</div>
             </div>
@@ -231,7 +231,7 @@ const FeaturedTherapists = () => {
         <Link
           className="btn btn-outline-dark underline"
           href="/zenlist">
-          Explore More Therapists
+          View All Therapists
         </Link>
           {/* <UilArrowUpRight  style={{ color: "white !important", height: '24px' }}  /> */}
       </div>
