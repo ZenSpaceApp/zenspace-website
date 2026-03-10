@@ -13,8 +13,7 @@ import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
 import SearchTherapistImg from '@/public/images/home/search.png';
 import BookTherapistImg from '@/public/images/home/pay.png';
-import StartSessionImg from '@/public/images/home/start-session@2x.png';
-
+import StartSessionImg from '@/public/images/on-demand-calling.jpg';
 import Avatar0 from '@/public/images/home/avatar-0.png';
 import Avatar1 from '@/public/images/home/avatar-1.png';
 import Avatar2 from '@/public/images/home/avatar-2.png';
@@ -126,7 +125,6 @@ const HowItWorks = ({ }) => {
         ZenspaceApp connects clients with licensed therapists through a simple 3-step process:
       </p>
 
-
       <div className='grid-container'>
           <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
               <h3>Search and Find</h3>
@@ -180,7 +178,10 @@ const HowItWorks = ({ }) => {
             <Image
               alt=""
             src={StartSessionImg}
-            
+            style={{
+              maxWidth: "60%",
+              height: "auto"
+            }}
             />
           </div>
         </div>
