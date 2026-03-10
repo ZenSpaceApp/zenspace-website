@@ -15,9 +15,10 @@ import ZenPlatform from '@/public/images/zen-platform@2x.png';
 
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
-import WorkflowHDVideoImg from '@/public/images/home/video-calling.jpg';
-import WorkflowScheduleImg from '@/public/images/home/schedule-view.jpg';
+import WorkflowHDVideoImg from '@/public/images/home/video-calling.png';
+import WorkflowScheduleImg from '@/public/images/home/schedule-view.png';
 import WorkflowClientsImg from '@/public/images/home/clients-view.jpg';
+
 import IntegrationImg from '@/public/images/home/payment-screencap@2x.png';
 import ConfigureSubsImg from '@/public/images/home/configure-plans.jpg';
 import PromoteSubsImg from '@/public/images/home/booking-config.jpg';
@@ -126,7 +127,7 @@ const ACI = () => {
         </div>
         <h2 className='u-textcenter bold-accent'>ZenNotes Just Got Smarter.</h2>
         <div className='subhead u-textcenter'>
-          Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em>Your session documents itself.</em>
+          Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em><b>Your session documents itself.</b></em>
         </div>
 
         <Image 
@@ -200,7 +201,7 @@ const CrossDeviceSync = () => {
                 height={0}
                 width={0}
                 style={{
-                  maxWidth: "80%",
+                  maxWidth: "70%",
                   display: "block",
                   margin: "auto"
                 }}
@@ -336,7 +337,7 @@ const PersonalizedTherapyExperience = () => {
                 height={0}
                 width={0}
                 style={{
-                  maxWidth: "80%",
+                  maxWidth: "70%",
                   // height: "auto",
                   display: "block",
                   margin: "auto"
@@ -508,17 +509,6 @@ function WorkflowCarousel() {
 const SimpleWorkflow = () => {
   return (
     <section id="zen-workflow">
-      <h2 className="u-textcenter">
-        Simple Workflow.<br />
-        <span
-          className='bold-accent color-accent'>
-          Powerful Capabilities.
-        </span>
-      </h2>
-      <div className="subhead">
-        Secure, AI-powered platform connecting therapists and clients for seamless
-        practice management and care.
-      </div>
       <WorkflowCarousel />
     </section>
   )
@@ -658,9 +648,9 @@ const Stats = () => {
 }
 
 
-const PracticeNow = () => {
+const OnDemandPlatform = () => {
   return <>
-    <section id="therapist-sign-up" className="bg-half-170">
+    <section id="on-demand" className="bg-half-170">
       <div className="container profile-submit pb-5" style={{border: 'none'}}>
         <div style={{ marginLeft: '10px'}}>
           {/* <img src="/images/stetho.svg" width="30px" /> */}
@@ -733,19 +723,24 @@ const PracticeNow = () => {
   </>
 }
 
+const HeroHeading = () => {
+    return (
+      <div className="grid-item ">
+        <h1 className="headline">
+          
+          One App to <span className='bold-accent color-accent'>Streamline</span> Your Therapy Practice
+        </h1>
+      </div>
+    )
+  }
 
 const Hero = () => {
   const Heading = () => {
     return (
-      <div className="headline title-heading grid-item ">
-        <h1
-          style={{
-            maxWidth: "90%",
-            paddingTop: "0px",
-            lineHeight: '1.0 !important',
-            letterSpacing: "-1px"
-          }}>
-          One App to <span className='bold-accent color-accent'>Streamline</span> and <span className='color-accent bold-accent'>Grow</span> Your Therapy Practice.
+      <div className="grid-item ">
+        <h1 className="headline">
+          
+          One App to <span className='bold-accent color-accent'>Streamline</span> Your Therapy Practice
         </h1>
       </div>
     )
@@ -766,15 +761,6 @@ const Hero = () => {
             </li>
             <li>
               <Image 
-                alt='Ambient Clinical Intelligence (ACI) powered therapy notes'
-                src={ZenNotesIcon}
-                height={16}
-                width={0}
-                />
-              Ambient Notes
-            </li>
-            <li>
-              <Image 
                 alt='ChatGPT-powered Therapy Notes'
                 src={VideoIcon}
                 height={16}
@@ -783,6 +769,15 @@ const Hero = () => {
               <div>
                 HD-Video
               </div>
+            </li>
+            <li>
+              <Image 
+                alt='Ambient Clinical Intelligence (ACI) powered therapy notes'
+                src={ZenNotesIcon}
+                height={16}
+                width={0}
+                />
+              Ambient Notes
             </li>
             <li>
               <Image 
@@ -811,9 +806,9 @@ const Hero = () => {
     return (
       <div className="heroImg">
         <Image
-          src={ZenNotesImg}
+          src={WorkflowDashImg}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt='ZenNotes'
+          alt='AI-Powered therapy notes on ZenNotes platform'
           priority
           style={{
             maxWidth: "100%",
@@ -831,8 +826,9 @@ const Hero = () => {
       <div className="container">
         <div className='grid-container'>
           <Heading />
-          <Features />
-          <HeroImage />
+          <SimpleWorkflow />
+          {/* <Features /> */}
+          {/* <HeroImage /> */}
           <CtaButtons />
         </div>
       </div>
@@ -898,13 +894,11 @@ export default function Therapists() {
   return (
     <Layout>
       <Hero />
-      
       <Stats />
       <Benefits />
       <ExpTheDifference />
       <ACI />
-      <SimpleWorkflow/>
-      <PracticeNow />
+      <OnDemandPlatform />
       <Subscriptions />
       <Integrations/>
       <FAQ />

@@ -330,9 +330,7 @@ section.route-section {
 }
 
 #hero-main {
-
-  padding-top: 8rem;
-  padding-bottom: 16rem;
+  padding: 10rem 0;
 
   .grid-container {
     display: grid;
@@ -355,6 +353,7 @@ section.route-section {
       max-width: 100%;
       grid-row: 2 / span 1;
       margin-right: auto;
+      // padding: 4rem;
     }
 
     .feature-pills {
@@ -413,13 +412,14 @@ section.route-section {
     }
 
 
-    @media screen and #{$mq-medium} {
+    @media #{$mq-medium} {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, minmax(10px, auto));
     
       .headline {
         grid-row: 1; /* First row, span 1 row */
-        font-size: 4rem;
+        max-width: 840px;
+        margin: auto;
       }
       
       .feature-pills {
@@ -429,19 +429,20 @@ section.route-section {
       }
       
       .ctaButtons {
-        grid-row: 3; /* Third row, span 1 row */
+        grid-row: 4; /* Third row, span 1 row */
         flex-direction: row;
         justify-content: center;
         display: flex;
+        margin-top: 2rem;
       }
       
       .heroImg {
-        grid-row: 4; /* First row, span 3 rows */
+        grid-row: 3; /* First row, span 3 rows */
         margin-top: 32px;
         max-width: 100%;
         background: var(--green-100);
         border-radius: 30px;
-        padding: 40px;
+        padding: 3rem;
         padding-bottom: 0;
       }
     }   
@@ -511,9 +512,9 @@ section.route-section {
 
 #zen-workflow {
   
-  margin: auto;
-  padding: 8rem 0;
-  background: var(--green-950);
+  // margin: auto;
+  // padding: 8rem 0;
+  // background: var(--green-950);
 
   h2 {
     color: var(--green-50);
@@ -543,7 +544,7 @@ section.route-section {
     .pills {
       display: flex;
       overflow-x: auto;
-      margin: 4rem auto 1rem;
+      margin: 2rem auto 1rem;
       padding-left: 25px;
       padding-right: 25px;
 
@@ -593,7 +594,7 @@ section.route-section {
 
             p {
               font-weight: 550;
-              color: var(--green-100);
+              color: var(--green-900);
             }
           }  
         }
@@ -603,9 +604,14 @@ section.route-section {
     .image-container {
       border-radius: 8px;  
       margin: 20px;
-      padding: 1rem;
-      background: var(--green-100);
-
+      padding: 2rem;
+      background: var(--green-50);
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: inherit;
+      } 
 
       @media screen and #{$mq-large} {
         border-radius: 24px;
@@ -4774,7 +4780,9 @@ input::-webkit-inner-spin-button {
   }
 }
 
-#therapist-sign-up {
+#on-demand {
+
+  background: var(--green-50);
   img {
     max-width: 80%;
     height: auto;
