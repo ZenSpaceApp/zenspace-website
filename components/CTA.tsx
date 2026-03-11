@@ -44,7 +44,7 @@ export const CTA = () => {
         <div className="text-center">
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSfwzPnrq_3K4zCOhyUdhwroBsw-haYHsY6Xn4wgRUXCCB8Urw/viewform?usp=header"
-            className="btn btn-outline-dark mt-2"
+            className="btn btn-primary-dark-border mt-2"
             target="_blank"
             rel="noopener noreferrer" 
           >
