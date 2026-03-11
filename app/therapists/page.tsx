@@ -11,7 +11,7 @@ import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.pn
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
-import ZenNotes from '@/public/images/zen-platform@2x.png';
+import ZenNotes from '@/public/images/therapy-notes.jpg';
 
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
@@ -80,16 +80,18 @@ const ACI = () => {
             margin: 'auto',
             marginTop: "3rem",
             maxWidth: "100%",
-            height: "auto"
-
+            height: "auto",
+            border: "1px solid var(--green-200)",
+            borderRadius: "10px",
+            boxShadow: "0 4px 12px rgba(20, 129, 71, 0.1)"
           }}
         />
 
-<Link href="/zennotes" passHref>
+      <Link href="/zennotes" passHref>
         <button
           className='btn btn-primary-dark-border'
-          style={{ display: "block", margin: "auto", marginTop: "3rem" }}>
-              See ZenNotes ACI
+          style={{ display: "block", margin: "auto", marginTop: "4rem" }}>
+              See ZenNotes
         </button>
           </Link> 
       </div>
@@ -123,7 +125,7 @@ const CrossDeviceSync = () => {
             <h3 className="display-6">Cross-device Syncing.</h3>
             <ul className="list-unstyled">
               <li>  
-                  ZenSpaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
+                  ZenspaceApp works seamlessly across multiple devices and platforms, so you can use the tools you&apos;re most comfortable with.
               </li>
               <li>
                 Access your practice data from your iPad, iPhone, or web browser, anytime, anywhere.
@@ -296,7 +298,7 @@ const PersonalizedTherapyExperience = () => {
               <h3>Personalized Therapy Experience.</h3>
               <ul className="list-unstyled">
               <li>Dedicated client apps tailored to each individual&apos;s needs and preferences.</li>
-              <li>ZenSpaceApp&apos;s dedicated mobile apps for client allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
+              <li>ZenspaceApp&apos;s dedicated mobile apps for client allow for greater engagement and collaboration, improving outcomes and strengthening the therapy experience.</li>
               </ul>
             </div>
           </div>
@@ -504,12 +506,12 @@ function Benefits() {
     ],
     [
       "Grow Your Therapy Business", 
-      "Create and manage your own customizable subscription service on ZenSpaceApp,\
+      "Create and manage your own customizable subscription service on ZenspaceApp,\
        allowing you to earn predictable, recurring income."
     ],
     [
       "On-the-go Access",
-      "Access ZenSpaceApp from anywhere and at any time,\
+      "Access ZenspaceApp from anywhere and at any time,\
        ensuring that you can manage and book therapy sessions even when\
         you're on the move."
     ],
@@ -532,7 +534,7 @@ function Benefits() {
             </span>
           </h2>
           <div className="subhead mb-4" style={{width: "100%", maxWidth: "640px", display: 'block', margin: "auto", marginTop: "18px", marginBottom: "32px" }}>
-            Save time, reduce no-shows, and streamline your workflow with ZenSpaceApp.
+            Save time, reduce no-shows, and streamline your workflow with ZenspaceApp.
           </div>
         </div>
 
@@ -628,7 +630,7 @@ const OnDemandPlatform = () => {
         
           <div> 
             <Image 
-              alt="Clients using ZenSpaceApp to find therapists on-dmand"
+              alt="Clients using ZenspaceApp to find therapists on-dmand"
               src={SetAvailabilityImg}
             />
           </div>

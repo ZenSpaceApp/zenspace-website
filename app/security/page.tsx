@@ -91,7 +91,7 @@ function renderSectionFeatures() {
 
               <div className="content mt-4">
                 <h4 className="title"><b>For your eyes only</b></h4>
-                <p className=" mb-0">Employees or personnel at ZenSpaceApp cannot access or read any identifiable personal health information.</p>
+                <p className=" mb-0">Employees or personnel at ZenspaceApp cannot access or read any identifiable personal health information.</p>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ function renderSectionAppSecurity() {
               <h2 className="display-5 mb-4">App and Data Security</h2>
               <ul className="list-unstyled">
                 <li style={{ display: 'flex' }} className="mb-0"><h5 className="mr-2"><i className="uil uil-padlock align-middle text-primary"></i></h5>
-                  <p>All patient data and communications is encrypted using 256-bit encryption. Hence no one at ZenSpaceApp can read or tamper with your data.</p>
+                  <p>All patient data and communications is encrypted using 256-bit encryption. Hence no one at ZenspaceApp can read or tamper with your data.</p>
                 </li>
                 <li style={{ display: 'flex' }} className="mb-0"><h5 className="mr-2"><i className="uil uil-padlock align-middle text-primary"></i></h5>
                   <p>We never analyze, sell or share ePHI with a third-party. It is also not feasible since any identifiable data is encrypted.</p></li>

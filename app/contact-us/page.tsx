@@ -25,8 +25,8 @@ const BookDemo = ({ }) => {
         Book a Demo.
       </h2>
       <div className="subhead u-textcenter">
-        In our 30-min demo, explore ZenSpaceApp&apos;s features and learn how we can enhance your therapy
-        practice. Our team will guide you through a personalized walkthrough, answer questions, and help choose the ideal pricing plan. Book now to see the ZenSpaceApp difference!
+        In our 30-min demo, explore ZenspaceApp&apos;s features and learn how we can enhance your therapy
+        practice. Our team will guide you through a personalized walkthrough, answer questions, and help choose the ideal pricing plan. Book now to see the ZenspaceApp difference!
       </div>
       <InlineWidget 
         styles={{ height: '1000px' }}

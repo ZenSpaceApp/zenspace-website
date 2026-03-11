@@ -51,7 +51,7 @@ const Yearly = () => {
       <div className='price-heading'>Yearly</div>
       <h2 className="display-4">$949 <span style={{fontSize: "1rem"}}>/yr (-20%) </span> </h2>
       <div>
-        Ideal for therapists committed to ZenSpaceApp for the long term.
+        Ideal for therapists committed to ZenspaceApp for the long term.
       </div>
     </div>
     <div style={{ display: "flex",  flexDirection: "column", flex: "1 1 0"}}>

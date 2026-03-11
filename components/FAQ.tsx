@@ -4,20 +4,20 @@ import { useState } from "react";
 
 const faqs = [
   [
-    "What is ZenSpaceApp and how does it work?",
-    "ZenSpaceApp is an innovative app designed to help mental health professionals\
+    "What is ZenspaceApp and how does it work?",
+    "ZenspaceApp is an innovative app designed to help mental health professionals\
     streamline their practice management, enhance patient communication, and simplify\
     therapy documentation. By combining telehealth capabilities, AI-powered therapy notes,\
     scheduling features, and integrated patient communication tools into a single,\
-    user-friendly solution, ZenSpaceApp enables therapists to focus on providing exceptional\
+    user-friendly solution, ZenspaceApp enables therapists to focus on providing exceptional\
     care to their clients."
   ],
   [
     "How secure is my data on ZenspaceApp?",
-    "At ZenSpaceApp, we take data security and privacy seriously. Our app is fully HIPAA-compliant,\
+    "At ZenspaceApp, we take data security and privacy seriously. Our app is fully HIPAA-compliant,\
     ensuring that we meet the highest standards for safeguarding sensitive patient information.\
     We implement robust security measures, including end-to-end encryption for data in transit and at rest. This means that your data is encrypted when it's being transferred between your device and our servers, as well as when it's stored on our servers.\
-    In addition to encryption, we regularly monitor our systems for potential threats and vulnerabilities to maintain a secure environment for your practice's data. You can trust that your information is protected and secure when using ZenSpaceApp."
+    In addition to encryption, we regularly monitor our systems for potential threats and vulnerabilities to maintain a secure environment for your practice's data. You can trust that your information is protected and secure when using ZenspaceApp."
   ],
   [
     "How easy is it to get started with ZenspaceApp?",
@@ -81,7 +81,7 @@ export default function FAQ() {
           <div className='Grid-cell' >
             <h2 className="u-textcenter display-4 bold-accent">FAQ.</h2>
             {/* <div className='u-textcenter'>
-            Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@zenspaceapp.com" target="_blank">
+            Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@ZenspaceApp.com" target="_blank">
             email 
           </a> us if you have a question)
             </div> */}
@@ -115,7 +115,7 @@ export default function FAQ() {
         <span>
           <Link
             style={{marginLeft: "4px", borderBottom: "2px solid"}}
-            href="https://zenspaceapp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
+            href="https://ZenspaceApp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
             FAQ.
           </Link>
         </span>  

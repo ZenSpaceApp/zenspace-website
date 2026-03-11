@@ -14,17 +14,17 @@ function renderBreachCompliance() {
   )
 }
 
-function renderZenSpaceAppSecurityCompliance() {
+function renderZenspaceAppSecurityCompliance() {
   return (
     <>  
       <p className="mt-4">
-        At ZenSpaceApp we are committed to ensuring that our customers are protected from
+        At ZenspaceApp we are committed to ensuring that our customers are protected from
         becoming vistims of fraud and abuse.<br/>
         We have implemented HIPAA security guidelines whenever the ePHI is in transit or rest. At rest
         means the device on which ePHI has been saved (cloud-servers, databases), and in transit relates to any electronic
         communications (video, messaging, file transfer). <br /> <br/>
       
-        At ZenSpaceApp we have implemented the following safeguards as required by the <mark>HIPAA Security Rule</mark>:
+        At ZenspaceApp we have implemented the following safeguards as required by the <mark>HIPAA Security Rule</mark>:
       </p>
 
       <div className="pt-4 pb-4">
@@ -76,7 +76,7 @@ function renderZenSpaceAppSecurityCompliance() {
               records or make amendments to ePHI. Audit logs must be created, and the system
               must be capable of generating security incident tracking reports.
               <span className="hipaa-answer">
-                We have a BAA agreement with Amazon Web Services (AWS) and Google Cloud where ZenSpaceApp application is hosted and deployed. Both of these 
+                We have a BAA agreement with Amazon Web Services (AWS) and Google Cloud where ZenspaceApp application is hosted and deployed. Both of these 
                 cloud service providers support HIPAA compliance, as described in their documentation. They also provide logging and 
                 auditing capabilities to identify any potenital breach or malicilous activity. Additionaly all sensitive data is encrypted
                 before being stored on these cloud servers (databases) rendering it useless without matching crypto keys.
@@ -106,7 +106,7 @@ function renderZenSpaceAppSecurityCompliance() {
             <li>Authorization and/or Supervision (Addressable): Policies must be developed and procedures implemented which allow users to be
               granted authorization to access or amend ePHI commensurate with their position. <br />
               <span className="hipaa-answer">
-                No individual/employee at ZenSpaceApp has access or can amend any ePHI due to its encrypted nature. ePHI can only
+                No individual/employee at ZenspaceApp has access or can amend any ePHI due to its encrypted nature. ePHI can only
                 be amended by clients using our mobile apps.</span>
             </li>
             <li>Workforce Clearance Procedure (Addressable): A clearance procedure must exist that assesses whether the level of access to ePHI
@@ -134,7 +134,7 @@ function renderZenSpaceAppSecurityCompliance() {
           <ol>
             <li>Isolating Healthcare Clearinghouse Functions (Required):
               <span className="hipaa-answer">
-                ZenSpaceApp does not perform any functions of a clearinghouse.
+                ZenspaceApp does not perform any functions of a clearinghouse.
               </span>
             </li>
             <li>Access Authorization (Addressable): This speci:cation is similar to that stated in the Workforce Security section, but
@@ -143,7 +143,7 @@ function renderZenSpaceAppSecurityCompliance() {
               particular workstation or for speci:c transactions, programs, processes, or other
               mechanisms.
               <span className="hipaa-answer">
-                No function at ZenSpaceApp require any direct interaction with patient ePHI.</span>
+                No function at ZenspaceApp require any direct interaction with patient ePHI.</span>
               </li>
             <li>Access Establishment and Modification (Addressable): A covered entity must implement policies and procedures that, based upon the
               entity’s access authorization policies, establish, document, review, and modify a
@@ -329,24 +329,24 @@ function renderZenSpaceAppSecurityCompliance() {
               allow facility access in support of restoration of lost data under the disaster recovery
               plan and emergency mode operations plan in the event of an emergency.
               <span className="hipaa-answer">
-                N/A. ZenSpaceApp does not own or operate any facilities.
+                N/A. ZenspaceApp does not own or operate any facilities.
               </span>
             </li>
             <li>Facility security plan (Addressable). Implement policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.
               <span className="hipaa-answer">
-                N/A. ZenSpaceApp does not own or operate any facilities.
+                N/A. ZenspaceApp does not own or operate any facilities.
               </span>
             </li>
             <li>Access control and validation procedures (Addressable). Implement procedures to control and validate a person&apos;s access to facilities based on their role or function, 
               including visitor control, and control of access to software programs for testing and revision.
               <span className="hipaa-answer">
-                N/A. ZenSpaceApp does not own or operate any facilities.
+                N/A. ZenspaceApp does not own or operate any facilities.
               </span>
             </li>
             <li>Maintenance records (Addressable). Implement policies and procedures to document repairs and modifications to the physical 
               components of a facility which are related to security (for example, hardware, walls, doors, and locks).
               <span className="hipaa-answer">
-                ZenSpaceApp does not own or operate any facilities. All of our equipments for development and testing are 
+                ZenspaceApp does not own or operate any facilities. All of our equipments for development and testing are 
                 secured and kept up-to-date with software updates.
               </span>
 
@@ -433,7 +433,7 @@ function renderZenSpaceAppSecurityCompliance() {
         <ol>
           <li>Unique user identification (Required). Assign a unique name and/or number for identifying and tracking user identity.
             <span className="hipaa-answer">
-              A unique identifier is generated for every user (patient, provider, admin) that creates an account with ZenSpaceApp.
+              A unique identifier is generated for every user (patient, provider, admin) that creates an account with ZenspaceApp.
             </span>
           </li>
           <li>Emergency access procedure (Required). Establish (and implement as needed) procedures for obtaining 
@@ -445,7 +445,7 @@ function renderZenSpaceAppSecurityCompliance() {
           </li>
           <li>Automatic logoff (Addressable). Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.
             <span className="hipaa-answer">
-              ZenSpaceApp used short-lived tokens that needs to be refreshed frquently for accessing PHI.
+              ZenspaceApp used short-lived tokens that needs to be refreshed frquently for accessing PHI.
             </span>
           </li>
           <li>Encryption and decryption (Addressable). Implement a mechanism to encrypt and decrypt electronic protected health information.
@@ -463,7 +463,7 @@ function renderZenSpaceAppSecurityCompliance() {
           activity in information systems that contain or use electronic protected health information.
         </p>
         <span className="hipaa-answer">
-          Logging capabilities provided by AWS, Google Cloud and custom ZenSpaceApp is used for monitoring 
+          Logging capabilities provided by AWS, Google Cloud and custom ZenspaceApp is used for monitoring 
           the footrprint.
         </span>
       </div>
@@ -570,7 +570,7 @@ function renderSecurityCompliance() {
       <div className="container">
         <h2 className="display-6">Security Compliance</h2>
         {renderHIPAASecurityRule()}
-        {renderZenSpaceAppSecurityCompliance()}
+        {renderZenspaceAppSecurityCompliance()}
       </div>
     </section>
   )
@@ -589,10 +589,10 @@ function renderHIPAASecurityRule() {
 }
 
 
-function renderZenSpaceAppPrivacyCompliance() {
+function renderZenspaceAppPrivacyCompliance() {
   return (
     <div>
-      <h3 className="mt-4">ZenSpaceApp Notice of Privacy Practices <mark>(NPP)</mark></h3>
+      <h3 className="mt-4">ZenspaceApp Notice of Privacy Practices <mark>(NPP)</mark></h3>
       <ul className="hipaaanswer">
         <li>We may disclose your Personal Health Information (<mark>PHI</mark>) to facilitate treatment, payment or healthcare
           operations. We take maximum precautions to disclose only the
@@ -637,7 +637,7 @@ function renderPrivacyCompliance() {
       <div className="container">
         <h2 className="display-6">Privacy Compliance</h2>
         {renderHIPAAPrivacyRule()}
-        {renderZenSpaceAppPrivacyCompliance()}
+        {renderZenspaceAppPrivacyCompliance()}
       </div>
     </section>
   )
@@ -648,7 +648,7 @@ function renderIntro() {
   return (
     <section className="pb-8 pt-8 show fade bg-half-170" >
       <div className="container ">
-        <h1 className="display-5 mt-4">ZenSpaceApp HIPAA Compliance.</h1>
+        <h1 className="display-5 mt-4">ZenspaceApp HIPAA Compliance.</h1>
         <p className="lead" style={{maxWidth: "760px"}}>
           The accompanying sections describe in detail how we maintain
           compliance with the Health Insurance Portability and Accountability Act (HIPAA) 

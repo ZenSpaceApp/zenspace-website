@@ -20,7 +20,7 @@ export default function Show404() {
             marginRight: "10px"
           }}
         />
-        ZenSpaceApp
+        ZenspaceApp
       </Link>
     </div>
     <div

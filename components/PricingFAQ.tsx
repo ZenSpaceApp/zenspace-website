@@ -6,7 +6,7 @@ const faqs = [
   [
     "Is there a free trial available?",
     "Absolutely! We offer a 3-day no-commitment, no-fee trial for our yearly plan,\
-    allowing you to experience the full range of ZenSpaceApp's features without any\
+    allowing you to experience the full range of ZenspaceApp's features without any\
     financial commitment. We believe the yearly plan provides the best value and most\
     comprehensive experience for our users. However, if you'd like to explore our other\
     options, we can also discuss a trial for our pay-as-you-go and monthly plans.\
@@ -17,7 +17,7 @@ const faqs = [
     "The main differences between our plans are the pricing structure, the level of commitment, and the included features.\
     Pay-as-you-go: This plan offers the most flexibility, as you only pay for the clients and features you use each month. It's perfect for therapists with variable client loads or those just starting out.\
     Monthly: With a fixed monthly fee, this plan includes a set number of clients and all features. It's ideal for therapists with a consistent client base who prefer predictable monthly costs.\
-    Yearly: By paying a one-time fee, you enjoy unlimited clients and all features for the entire year. This plan is best for therapists who are committed to using ZenSpaceApp long-term and value cost savings.\
+    Yearly: By paying a one-time fee, you enjoy unlimited clients and all features for the entire year. This plan is best for therapists who are committed to using ZenspaceApp long-term and value cost savings.\
     Choose the plan that suits your needs and budget, and remember that you can always switch plans if your requirements change."
   ],
   [
@@ -34,7 +34,7 @@ const faqs = [
   [
     "Are there any additional fees for using payment processing services?",
     "To ensure a seamless and secure payment experience for you and your clients,\
-     ZenSpaceApp utilizes a payment processing service that charges a small fee.\
+     ZenspaceApp utilizes a payment processing service that charges a small fee.\
     The fee for using our payment processing service is 4% of the transaction amount.\
     This fee is necessary to cover the costs associated with processing payments and\
     maintaining a secure platform for financial transactions. The fee applies to\
@@ -42,11 +42,11 @@ const faqs = [
   ],
   [
     "Are there any long-term contracts or commitments?",
-    "At ZenSpaceApp, we believe in providing flexible solutions that adapt to your needs.\
+    "At ZenspaceApp, we believe in providing flexible solutions that adapt to your needs.\
      That's why none of our plans—pay-as-you-go, monthly, or yearly—require any long-term\
     contracts or commitments. You're free to subscribe to the plan that best suits your\
     requirements and adjust your subscription as your needs evolve. We want you to feel\
-    confident in choosing ZenSpaceApp, knowing that you have the freedom to make changes as necessary."
+    confident in choosing ZenspaceApp, knowing that you have the freedom to make changes as necessary."
   ],
   [
     "Is there a discount for paying annually?",
@@ -54,7 +54,7 @@ const faqs = [
      By paying a one-time fee of $949.00 for the entire year, you'll enjoy a savings of\
     20% compared to the monthly plan. This equates to $79.00 per month,\
     providing you with substantial savings while still offering all the features and\
-    benefits of ZenSpaceApp. It's the perfect choice for therapists who are committed\
+    benefits of ZenspaceApp. It's the perfect choice for therapists who are committed\
     to using our platform for the long term."
   ],
   [
@@ -70,7 +70,7 @@ const faqs = [
     "Are there any additional features or integrations available for purchase?",
     "Currently, we do not offer any additional features or integrations for purchase.\
     However, we are actively working on adding new Add-ons in the future. At present,\
-   ZenSpaceApp integrates with Google and Apple calendars, as well as popular payment gateways."
+   ZenspaceApp integrates with Google and Apple calendars, as well as popular payment gateways."
   ],
   [
     "Is there a limit to the number of clients I can have in the system?",
@@ -128,7 +128,7 @@ export default function PricingFAQ() {
         <span>
           <Link
             style={{marginLeft: "4px", borderBottom: "2px solid"}}
-            href="https://zenspaceapp.notion.site/Pricing-FAQs-e502ea568b43406888e25fabe94450c3?pvs=4">
+            href="https://ZenspaceApp.notion.site/Pricing-FAQs-e502ea568b43406888e25fabe94450c3?pvs=4">
             Pricing and Plans.
           </Link>
         </span>  
