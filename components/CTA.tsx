@@ -2,6 +2,7 @@ import Image from "next/image";
 import CTAIconsGroup from '../public/images/cta-icons@2x.png';
 import { left } from "@popperjs/core";
 import Link from "next/link";
+import WaveformIcon from "./waveform/Waveform";
 
 
 export const CTA = () => {
@@ -12,7 +13,7 @@ export const CTA = () => {
         justifyContent: "center",
       }}
       >
-      <Image 
+      {/* <Image 
         alt="cta icons"
         src={CTAIconsGroup}
         height={35}
@@ -20,7 +21,20 @@ export const CTA = () => {
           style={{
             marginTop: "-115px",
           }}
-      />
+      /> */}
+        <div style={{ marginTop: "-110px", background: "var(--bg--alt--1)", paddingLeft: "10px", paddingRight: "10px" }}>
+          <WaveformIcon  />
+        </div>
+      {/* </div> */}
+      <div className="gradient-overlay" style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        background: "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%)",
+        zIndex: -1,
+      }}></div>
 
       </div>
       <div className="content">

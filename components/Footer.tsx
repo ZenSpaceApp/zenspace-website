@@ -2,6 +2,8 @@ import Link from "next/link";
 import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp.svg';
 import Image
   from "next/image";
+import WaveformIcon from "../public/images/icons/audio-tap.svg";
+
 export default function Footer() {
   
   return (
@@ -15,15 +17,13 @@ export default function Footer() {
                   href="/"
                   className="logo-footer"
                 >
-                  <Image
-                    className="logo-only"
-                    alt="ZenSpaceApp logo"
-                    src={ZenSpaceAppLogo}
-                    height={20}
-                    width={0}
-                  />  
+                  <div style={{display: "flex", alignItems: "center", gap: "0.5rem"}}>
+          
+          <Image alt="ZenSpaceApp logo" src={WaveformIcon} width={30} height={30} />
+          <span style={{fontFamily: "var(--font--alt)", color: "#148147 !important", fontWeight: "700"}}>ZenspaceApp</span>
+        </div>
                 </Link>
-                <div className="slogan">
+                <div className="slogan" style={{ marginTop: "1.5rem", color: "var(--text--alt)"   }}>
                   Empowering mental wellness with a touch of Zen.
                 </div>
                 {/* <div className="mt-4">
