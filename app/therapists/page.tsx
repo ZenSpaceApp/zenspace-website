@@ -57,78 +57,18 @@ import IntegratonIcons from '@/public/images/icons/integration-icons@2x.png';
 import WaveformIco from '@/public/images/icons/audio-tap.svg';
 
 
-const ZenNotes = () => {
-
-  const features = [
-    [
-      "Making the Most of Notes",
-      "ZenNotes helps therapists and clients get the most out of their therapy sessions by providing an optimized note-taking experience."
-    ],
-    [
-      "No ChatGPT Account Required",
-      "We make it super-easy for therapists to reap the benefits of advanced\
-       technology."
-    ],
-    [
-      "Seamless Organization",
-      "Effective organization of notes is crucial for therapy sessions, and\
-       ZenNotes makes it effortless."
-    ],
-    [
-      "Self-Reflection Tools",
-      "Leverage past insights to inform current sessions, ensuring continuity\
-       and depth in client care."
-    ],
-    [
-      "User-Friendly Design",
-      "Easy to navigate and use on mobile, tablet or desktop."
-    ]
-  ]
-
-  return <div
-    className="zen-notes"
-  >
-    <div className='desc'>
-      <h3>
-        Introducing <span className='bold-accent'>
-          ZenNotes</span> &mdash; ChatGPT-powered <span className='bold-accent'>Therapy Notes</span>.
-      </h3>
-      <ul>
-        {features.map((feature, idx) => (
-          <li key={idx}>
-            <div>
-            <h5 className="heading">{feature[0]}</h5>
-            <div>{feature[1]}</div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <div
-      className=''
-      style={{
-        paddingRight: 0,
-        marginRight: 0
-      }}>
-      <Image
-        alt="Workflow images"
-        src={WorkflowNotesImg}
-        width={0}
-        height={0}        />
-    </div>
-  </div>
-}
-
 const ACI = () => {
   return (
     <div className='section bg-half-170' id="ai-efficiency">
       <div className='container '>
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>        
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem', gap: "0.5rem" }}>        
           <WaveformIcon />
+          
         </div>
-        <h2 className='u-textcenter bold-accent'>Therapy Notes Just Got Smarter.</h2>
+        <h2 className='u-textcenter bold-accent color-accent'>Therapy Notes Just Got Smarter.</h2>
         <div className='subhead u-textcenter'>
-          Ambient Clinical Intelligence (ACI). Stop reliving your sessions. From AI-assisted notes to fully ambient. <em><b>Your session documents itself.</b></em>
+          Stop reliving your sessions. From AI-assisted notes to fully ambient intelligence.
+          <br/> <em><span className='bold-accent coloraccent'>Your session documents itself.</span></em>
         </div>
 
         <Image 
@@ -144,11 +84,13 @@ const ACI = () => {
           }}
         />
 
-        <button className='btn btn-primary' style={{display: "block", margin: "auto", marginTop: "3rem"}}>
-          <Link href="/zennotes" passHref>
+<Link href="/zennotes" passHref>
+        <button
+          className='btn btn-primary-dark-border'
+          style={{ display: "block", margin: "auto", marginTop: "3rem" }}>
               See ZenNotes ACI
-          </Link> 
         </button>
+          </Link> 
       </div>
     </div>
   )
@@ -260,10 +202,10 @@ const Subscriptions = () => {
     <div className="container bg-half-170">
       <div className='u-textcenter mb-5'>
         <h2>
-          Grow Your Business. <br />
+          {/* Grow Your Business. <br /> */}
           <span className='bold-accent color-accent'>ZenPath Subscriptions.</span> </h2>
         <div className='subhead'>
-          Launch custom site with subscription plans in minutes &mdash; <span className='color-accent bold-accent'>no coding required</span>.
+          Launch custom site with subscription plans in minutes &mdash; <em><span className='color-accent bold-accent'>no coding required</span>.</em>
         </div>
       </div>
 

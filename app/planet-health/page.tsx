@@ -77,7 +77,7 @@ export default function PlanetHealth() {
         <title>Planet Health</title>
       </Head>
       {renderSectionHero()}
-      {renderSectionVolunteer()}
+      {/* {renderSectionVolunteer()} */}
     </Layout>
   )
 }

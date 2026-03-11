@@ -162,9 +162,9 @@ const ContactForm = ({ setShowBanner }: { setShowBanner: (value: boolean) => voi
         Get in Touch.
       </h1>
       <div className="subhead left-aligned">
-        At ZenSpaceApp, we believe in the power of connection and communication.
-        We&apos;re here to support you every step of the way, ensuring that you have
-        everything you need to transform your therapy practice. Drop us a message, and let&apos;s chat!
+        At ZenspaceApp, we believe in the power of connection and communication.
+        Send us a message with questions or feedback and we wll get back to
+        you within 24 hours. We look forward to hearing from you!
       </div>
     </div>
   }

@@ -45,9 +45,9 @@ export default function Footer() {
             </div>
             
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 offset-lg-1">
-              <h5 className="text-dark  mb-4"><b>Solutions</b></h5>
+              <h5 className="text-dark  mb-4">Solutions</h5>
               <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/" className="text-muted">Clients</a></li>
+                <li><a href="/#for-clients" className="text-muted">Clients</a></li>
                 <li><a href="/therapists" className="text-muted">Therapists</a></li>
                 <li><a href="/zennotes" className="text-muted">ZenNotes</a></li>
                 {/* <li><a href="/" className="text-muted">ZenPath</a></li> */}
@@ -55,7 +55,7 @@ export default function Footer() {
               </ul>
             </div>    
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <h5 className="text-dark  mb-4"><b>Company</b></h5>
+            <h5 className="text-dark  mb-4">Company</h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">About Us</a></li>
                 <li><a href="/" className="text-muted">Careers</a></li>
@@ -63,7 +63,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h5 className="text-dark  mb-4"><b>Resources</b></h5>
+              <h5 className="text-dark  mb-4">Resources</h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
                 <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
@@ -72,7 +72,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h5 className="text-dark mb-4"><b>Support</b></h5>
+              <h5 className="text-dark mb-4">Support</h5>
                 <ul className="list-unstyled footer-list mt-2">
                   {/* <li><a href="/help" className="text-muted">Help</a></li> */}
                 <li><a href="/contact-us" className="text-muted">Contact Us</a></li>

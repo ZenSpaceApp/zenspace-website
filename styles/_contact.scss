@@ -1,7 +1,7 @@
 
 
 #contact {  
-		background-image: url('../public/images/zenspaceapp-bg.jpg'); /* Replace with the path to your image */
+		// background-image: url('../public/images/zenspaceapp-bg.jpg'); /* Replace with the path to your image */
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
@@ -29,8 +29,10 @@
     .subhead {
       color: var(--color--grey1);
 			font-weight: 500;
-      max-width: 640px;
+      max-width: 540px;
       margin: auto;
+      font-size: 1.15rem;
+      margin-top: 2rem;
 		}
   
     .contact-form {
@@ -38,7 +40,7 @@
       flex-direction: column;
 			row-gap: 2rem;
 			padding: 2rem 1rem;
-      background: #f8bd6c;
+      background: #f8f8f8;
 			border-radius: 16px;
 			border: 1.5px solid #00000010;
 			margin: 0 -1rem 0 -1rem;
