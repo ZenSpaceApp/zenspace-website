@@ -3,48 +3,47 @@ import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp.svg';
 import Image
   from "next/image";
 import WaveformIcon from "../public/images/icons/audio-tap.svg";
+import ZenspaceLogo from "./ZenspaceLogo";
+import AppStore from '../public/images/app-store.svg';
+import GooglePlay from '../public/images/play-store.svg';
 
 export default function Footer() {
+
+  const DownloadApps = () => {
+    return (
+      <div className=" mt-2 mb-4">
+        <div className="d-flex gap-3 gap-sm-4" style={{ gap: "12px" }} >
+          <a href="https://apps.apple.com/app/zenspaceapp/id6444890867" target="_blank" rel="noopener noreferrer">
+            <Image
+              alt="Download on the App Store"
+              src={AppStore}
+              width={150}
+              height={50}
+            />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.zenspaceapp" target="_blank" rel="noopener noreferrer">
+            <Image
+              alt="Get it on Google Play"
+              src={GooglePlay}
+              width={150}
+              height={50}
+            />
+          </a>
+        </div>
+      </div>
+    )
+  }
   
   return (
     <>
       <div className="footer">
         <div className="container">
-          <div className="row" style={{   padding: '100px 0' }}>
-            <div className="col-lg-3 col-md-12 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-              <div>
-                <Link
-                  href="/"
-                  className="logo-footer"
-                >
-                  <div style={{display: "flex", alignItems: "center", gap: "0.5rem"}}>
-          
-          <Image alt="ZenSpaceApp logo" src={WaveformIcon} width={30} height={30} />
-          <span style={{fontFamily: "var(--font--alt)", color: "#148147 !important", fontWeight: "700"}}>ZenspaceApp</span>
-        </div>
-                </Link>
-                <div className="slogan" style={{ marginTop: "1.5rem", color: "var(--text--alt)"   }}>
-                  Empowering mental wellness with a touch of Zen.
-                </div>
-                {/* <div className="mt-4">
-                  <Link
-                    className="btn btn-outline-secondary"
-                    style={{
-                      padding: "12px 2rem !important",
-                      lineHeight: "1.2 !important"
-                    }}
-                    href="https://calendly.com/rp2701-dev/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    
-                    Book a Demo
-                  </Link>
-                </div> */}
-              </div>
-            </div>
-            
-            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 offset-lg-1">
+        
+          <div style={{fontSize: "1.25rem"}}>
+          <ZenspaceLogo />
+          </div>
+          <div className="row" style={{padding: "4rem 0"}}>
+            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
               <h5 className="text-dark  mb-4">Solutions</h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/#for-clients" className="text-muted">Clients</a></li>
@@ -54,7 +53,7 @@ export default function Footer() {
                 {/* <li><a href="/" className="text-muted">ZenList</a></li> */}
               </ul>
             </div>    
-            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <h5 className="text-dark  mb-4">Company</h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/" className="text-muted">About Us</a></li>
@@ -62,7 +61,7 @@ export default function Footer() {
                 <li><a href="/planet-health" className="text-muted">Planet Health</a></li>
               </ul>
             </div>
-            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h5 className="text-dark  mb-4">Resources</h5>
               <ul className="list-unstyled footer-list mt-2">
                 <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
@@ -71,7 +70,7 @@ export default function Footer() {
                 {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
               </ul>
             </div>
-            <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h5 className="text-dark mb-4">Support</h5>
                 <ul className="list-unstyled footer-list mt-2">
                   {/* <li><a href="/help" className="text-muted">Help</a></li> */}
@@ -80,6 +79,7 @@ export default function Footer() {
                 </ul>
             </div>
           </div>
+          <DownloadApps />
           <div className="subfooter">
             <div>©2026 ZenspaceApp Inc. All Rights Reserved.</div>
             <ul>
