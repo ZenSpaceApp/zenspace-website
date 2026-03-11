@@ -15,7 +15,7 @@ const PayAsYouGo = () => {
   return <div className="price-option border-gray">
     <div className='mb-4'>
       <div className="price-heading">Pay-as-you-go</div>
-      <h2 className="display-4">$79 <span style={{fontSize: "1rem"}}>/yr</span> </h2>
+      <h2 className="display-4">$79 <span style={{fontSize: "1rem"}}>/mo</span> </h2>
       <div>
         Perfect for therapists with a flexible workload or those just starting out.
       </div>
