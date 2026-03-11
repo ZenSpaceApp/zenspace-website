@@ -38,9 +38,13 @@ export const CTA = () => {
 
       </div>
       <div className="content">
-        <h3>
-          Reclaim your time and streamline your practice.
-          Try ZenspaceApp <span className="underline">free for 30 days</span> - no commitment, no risk.</h3>
+        <h3 style={{ fontSize: "2rem !important", fontFamily: "Syne", marginBottom: "1rem" }}>
+          Ready to Transform Your Practice?
+        </h3>
+        <p style={{fontSize: "1.25rem", fontWeight: "500", marginBottom: "1.5rem"}}>
+          
+          Try ZenspaceApp <span className="underline">free for 30 days</span> - no commitment, no risk.
+        </p>
         <div className="text-center">
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSfwzPnrq_3K4zCOhyUdhwroBsw-haYHsY6Xn4wgRUXCCB8Urw/viewform?usp=header"
