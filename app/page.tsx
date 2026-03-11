@@ -285,7 +285,7 @@ const OnDemandHero = () => {
       <div className='gridcontainer' style={{ display: "grid", gridTemplateColumns: "1fr 1fr", alignItems: "center", gap: "2rem"  }}>
         <div className="grid-item" >
           <h1 style={{paddingTop: "3rem"}}>
-             Therapists.<br/> <span className='color-accent'>On-demand.</span>
+             Therapists.<br/> <span className='color-accent'>On-Demand.</span>
           </h1>
           <div className='subhead mt-2' style={{ maxWidth: "80%", fontWeight: "500" }}>
             Instantly connect with licensed therapists anytime, anywhere through our app.

@@ -3,6 +3,7 @@ import Image from "next/image";
 import ZenSpaceAppLogo from '../public/images/logo/zenspaceapp.svg';
 // import WaveformIcon from "./waveform/Waveform";
 import WaveformIcon from '../public/images/icons/audio-tap.svg';
+import ZenspaceLogo from "./ZenspaceLogo";
 
 export default function Navbar({ home }: { home: string} ) {
   
@@ -38,24 +39,7 @@ export default function Navbar({ home }: { home: string} ) {
     }
   }
 
-  function renderLogo() {
-    return (
-      <Link className="logo-center" href="/" style={{ paddingRight: '15px', zIndex: '9999'  }}>
-        {/* <Image
-          alt="ZenSpaceApp logo"
-          src={ZenSpaceAppLogo}
-          height={18}
-          width={0}
-        /> */}
-        <div style={{display: "flex", alignItems: "center", gap: "0.5rem"}}>
-          {/* <WaveformIcon width={30} height={30} /> */}
-          <Image alt="ZenSpaceApp logo" src={WaveformIcon} width={30} height={30} />
-        <span style={{fontFamily: "var(--font--alt)"}}>ZenspaceApp</span>
-        </div>
-      </Link>
-    )
-  }
-
+  
   function openMenu() {
     // animate the toggle button to open and close 
     document.getElementsByClassName("navbar-toggle")[0].classList.toggle("open");
@@ -90,7 +74,9 @@ export default function Navbar({ home }: { home: string} ) {
           justifyContent: "space-between"
         }}>
           
-        <span>{renderLogo()}   </span>
+          <div>
+        <ZenspaceLogo />
+          </div>  
         {/* {renderToggleMenu()} */}
         <div className="nav-submenu" id="nav" >   
           <ul className="list-unstyled">

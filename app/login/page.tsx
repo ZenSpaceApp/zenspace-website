@@ -8,24 +8,7 @@ import { auto } from '@popperjs/core';
 // const small = '/images/left-banner-sm-330w.jpg';
 // const medium = '/images/left-banner-md-768w.jpg';
 const large = '/images/right-banner.png';
-
-import ZenSpaceAppLogo from '../../public/images/logo/zenspaceapp@2x.png';
-
-const ZenSpaceLogo = () => {
-  return (
-    <Link
-      href="/"
-      className="logo"
-    >
-        <Image
-        alt="ZenSpaceApp logo"
-        src={ZenSpaceAppLogo}
-        height={32}
-        width={0}
-        />
-    </Link>
-  )
-}
+import ZenSpaceLogo from '@/components/ZenspaceLogo';
 
 const ResponsiveImage = () => (
   <div className="responsive-image">
@@ -95,14 +78,15 @@ export default function Login() {
   
   return (
     <div id="sign-in" className="show fade">
-      <ZenSpaceLogo />
+      <div className="logo">
+        <ZenSpaceLogo />
+      </div>
       <div className="main" style={{overflow: 'hidden'}}>
         <div className="login-form">
           <div className='form-fields'>
-
-              <h3 className="u-textleft" style={{ letterSpacing: '0', marginBottom: "2rem" }}>
-                Sign in to Your Account
-              </h3>
+              <h2 className="u-textcenter" style={{ letterSpacing: '0', marginBottom: "2rem" }}>
+                Sign in
+              </h2>
                 {/* {error !== '' ? <p className="errorMessage">{error.errorMessage}</p> :
                     <div style={{display: 'none'}}></div>
                   }   
