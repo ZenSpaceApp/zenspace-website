@@ -11,7 +11,7 @@ import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.pn
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
-import ZenPlatform from '@/public/images/zen-platform@2x.png';
+import ZenNotes from '@/public/images/zen-platform@2x.png';
 
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
@@ -28,6 +28,7 @@ import WaveformIcon from '@/components/waveform/Waveform';
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
   WorkflowScheduleImg,
+  ZenNotes,
   WorkflowHDVideoImg,
   WorkflowClientsImg
 ]
@@ -73,7 +74,7 @@ const ACI = () => {
 
         <Image 
           alt="Agentic Clinical Intelligence (ACI) transforming therapy notes"
-          src={ZenPlatform}
+          src={ZenNotes}
           style={{
             display: 'block',
             margin: 'auto',
@@ -348,7 +349,7 @@ const CollabMoodTracking = () => {
 
 
 function WorkflowCarousel() {
-  const [currIdx, setIndex] = useState<number>(0);
+  const [currIdx, setIndex] = useState<number>(2);
   let imgSrc;
 
   function showView(atIdx : number) {
@@ -388,11 +389,26 @@ function WorkflowCarousel() {
             />
           </div>
           <p>Scheduling</p>  
+          </li>
+        <li
+          key="2"
+          className={(currIdx === 2) ? "active" : "disabled"}
+          onClick={() => showView(2)}
+        >
+          <div className='pill'>
+            <Image 
+              alt='Clients View'
+              src={WaveformIco}
+              height={0}
+              width={0}
+            />
+          </div>
+          <p>Therapy Notes</p>  
         </li>
           <li
-            key={2}
-            className={(currIdx === 2) ? "active" : "disabled"}
-            onClick={() => showView(2)}
+            key={3}
+            className={(currIdx === 3) ? "active" : "disabled"}
+            onClick={() => showView(3)}
           >
           <div className='pill'>
             <Image 
@@ -406,9 +422,9 @@ function WorkflowCarousel() {
           </li>
     
         <li
-          key="3"
-          className={(currIdx === 3) ? "active" : "disabled"}
-          onClick={() => showView(3)}
+          key="4"
+          className={(currIdx === 4) ? "active" : "disabled"}
+          onClick={() => showView(4)}
         >
           <div className='pill'>
             <Image 
@@ -682,86 +698,85 @@ const Hero = () => {
     return (
       <div className="grid-item ">
         <h1 className="headline">
-          
           One App to <span className='bold-accent color-accent'>Streamline</span> Your Therapy Practice
         </h1>
       </div>
     )
   }
 
-  const Features = () => {
-    return (
-      <div className="feature-pills">
-        <ul>
-            <li>
-              <Image 
-                alt='ambient clinical intelligence powered therapy notes'
-                src={CalendarIcon}
-                height={16}
-                width={0}
-                />
-              Seamless Scheduling
-            </li>
-            <li>
-              <Image 
-                alt='HD-video calling for telehealth sessions'
-                src={VideoIcon}
-                height={16}
-                width={0}
-                />
-              <div>
-                HD-Video
-              </div>
-            </li>
-            <li>
-              <Image 
-                alt='Ambient Clinical Intelligence (ACI) powered therapy notes'
-                src={ZenNotesIcon}
-                height={16}
-                width={0}
-                />
-              Ambient Notes
-            </li>
-            <li>
-              <Image 
-                alt='HIPAA-compliant security for telehealth sessions'
-                src={SecurityIcon}
-                height={18}
-                width={0}
-                />
-              HIPAA
-            </li>
-            <li>
-              <Image 
-                alt='subscription management for therapists and clients'
-                src={CreditCardIcon}
-                height={16}
-                width={0}
-                />
-              Subscriptions
-            </li>
-          </ul>
-        </div>
-    )
-  }
+  // const Features = () => {
+  //   return (
+  //     <div className="feature-pills">
+  //       <ul>
+  //           <li>
+  //             <Image 
+  //               alt='ambient clinical intelligence powered therapy notes'
+  //               src={CalendarIcon}
+  //               height={16}
+  //               width={0}
+  //               />
+  //             Seamless Scheduling
+  //           </li>
+  //           <li>
+  //             <Image 
+  //               alt='HD-video calling for telehealth sessions'
+  //               src={VideoIcon}
+  //               height={16}
+  //               width={0}
+  //               />
+  //             <div>
+  //               HD-Video
+  //             </div>
+  //           </li>
+  //           <li>
+  //             <Image 
+  //               alt='Ambient Clinical Intelligence (ACI) powered therapy notes'
+  //               src={ZenNotesIcon}
+  //               height={16}
+  //               width={0}
+  //               />
+  //             Ambient Notes
+  //           </li>
+  //           <li>
+  //             <Image 
+  //               alt='HIPAA-compliant security for telehealth sessions'
+  //               src={SecurityIcon}
+  //               height={18}
+  //               width={0}
+  //               />
+  //             HIPAA
+  //           </li>
+  //           <li>
+  //             <Image 
+  //               alt='subscription management for therapists and clients'
+  //               src={CreditCardIcon}
+  //               height={16}
+  //               width={0}
+  //               />
+  //             Subscriptions
+  //           </li>
+  //         </ul>
+  //       </div>
+  //   )
+  // }
 
-  const HeroImage = () => {
-    return (
-      <div className="heroImg">
-        <Image
-          src={WorkflowDashImg}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt='AI-Powered therapy notes on ZenNotes platform'
-          priority
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-            margin: "auto",
-          }}
-        />
-      </div>
-    )
-  }
+  // const HeroImage = () => {
+  //   return (
+  //     <div className="heroImg">
+  //       <Image
+  //         src={WorkflowDashImg}
+  //         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  //         alt='AI-Powered therapy notes on ZenNotes platform'
+  //         priority
+  //         style={{
+  //           maxWidth: "100%",
+  //           height: "auto",
+  //           margin: "auto",
+  //         }}
+  //       />
+  //     </div>
+  //   )
+  // }
 
   
   return (
