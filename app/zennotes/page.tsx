@@ -6,7 +6,7 @@ import Image from 'next/image';
 import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
 import SuperBill from '@/public/images/superbill.png';
 
-import SOAPPreview from '@/public/images/soap-preview.svg';
+import SOAPPreview from '@/public/images/soap-preview.png';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
@@ -182,6 +182,14 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
               <Image
                 src={item.imageSrc}
                 alt={item.imageLabel}
+                style={{
+                  background: "var(--bg--alt--1)",
+                  border: "12px solid var(--green-100)",
+                  borderRadius: "16px",
+                  // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
             ) : (
               <ImagePlaceholder label={item.imageLabel} />
@@ -366,10 +374,10 @@ export default function ZenNotesPage() {
               height: "auto",
               borderRadius: "8px",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-              border: "1px solid var(--green-100)",
+              border: "1px solid var(--green-300)",
               margin: "2rem auto 4rem",
               display: "block",
-              background: "var(--green-400)"
+              background: "var(--green-500)"
             }}
           />
           
