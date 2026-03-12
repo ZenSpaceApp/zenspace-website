@@ -16,6 +16,9 @@ import ZeroPersistence from '@/public/images/icons/ram-only.svg';
 import HumanSignature from '@/public/images/icons/human-first.svg';
 import WaveformIcon from '@/components/waveform/Waveform';
 
+import GetPaid from '@/public/images/icons/get-paid.svg';
+import Sync from '@/public/images/icons/sync-send.svg';
+import Audit from '@/public/images/icons/audit.svg';
 
 interface WorkdayItem {
   label: string;
@@ -94,9 +97,22 @@ const PRIVACY_BULLETS = [
 ];
 
 const BILLING_BULLETS = [
-  'Auto-Coding: Our Ambient AI maps your session to the exact CPT and ICD-10 codes, ensuring you are paid accurately for your time.',
-  'One-Click Delivery: Generate, sign, and sync to your EHR or email directly to your client.',
-  'Audit Protection: Every bill is backed by the session’s "Clinical Pulse," providing a verifiable trail of medical necessity.',
+  {
+    "i": GetPaid,
+    "h": 'Auto-Coding',
+    "b": 'Our Ambient AI maps your session to the exact CPT and ICD-10 codes, ensuring you are paid accurately for your time.'
+  },
+
+  {
+    "i": Sync,
+    "h": 'One-Click Delivery',
+    "b": 'Generate, sign, and sync to your EHR or email directly to your client.'
+  },
+  {
+    "i": Audit,
+    "h": 'Audit Protection',
+    "b": 'Every bill is backed by the session&apos;s "Clinical Pulse," providing a verifiable trail of medical necessity.',
+  }
 ];
 
 
@@ -345,19 +361,34 @@ export default function ZenNotesPage() {
             height={600}
             width={0}
             style={{
-              margin: "2rem 0",
               maxWidth: "100%",
               height: "auto",
               borderRadius: "8px",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               border: "1px solid var(--green-100)",
-              marginBottom: "3rem"
+              margin: "2rem auto 4rem",
+              display: "block",
             }}
           />
           
           <div className={styles.billingList}>
-            {BILLING_BULLETS.map((b) => (
-              <div key={b}>{b}</div>
+            {BILLING_BULLETS.map((b, idx) => (
+              <div key={idx}>
+                
+                <Image
+                  src={b.i}
+                  alt={`${b.h} icon`}
+                  height={32}
+                  width={32}
+                  style={{
+                    marginBottom: '1rem',
+                    
+                    display: 'block'
+                  }}
+                />
+              <b>{b.h}. </b>
+              {b.b}
+              </div>
             ))}
           </div>
         </div>
