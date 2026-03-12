@@ -4,7 +4,8 @@ import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
 import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
-import SuperBill from '@/public/images/superbill.jpg';
+import SuperBill from '@/public/images/superbill.png';
+
 import SOAPPreview from '@/public/images/soap-preview.svg';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
@@ -111,7 +112,7 @@ const BILLING_BULLETS = [
   {
     "i": Audit,
     "h": 'Audit Protection',
-    "b": 'Every bill is backed by the session&apos;s "Clinical Pulse," providing a verifiable trail of medical necessity.',
+    "b": 'Every bill is backed by the "Clinical Pulse" of the session, providing a verifiable trail of medical necessity.',
   }
 ];
 
@@ -368,6 +369,7 @@ export default function ZenNotesPage() {
               border: "1px solid var(--green-100)",
               margin: "2rem auto 4rem",
               display: "block",
+              background: "var(--green-400)"
             }}
           />
           
