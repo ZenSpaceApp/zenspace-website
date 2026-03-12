@@ -25,7 +25,7 @@ interface WorkdayItem {
   label: string;
   detail: string;
   imageLabel: string;
-  imageSrc?: string; // replace with actual asset path e.g. '/assets/soap-notes.png'
+  imageSrc?: any; // replace with actual asset path e.g. '/assets/soap-notes.png'
 }
 
 interface FaqItem {
