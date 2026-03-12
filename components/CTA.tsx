@@ -38,9 +38,9 @@ export const CTA = () => {
 
       </div>
       <div className="content">
-        <h3 style={{ fontSize: "2rem !important", fontFamily: "Syne", marginBottom: "1rem" }}>
+        <span style={{ fontSize: "1.75rem", fontWeight: "700", fontFamily: "Syne", marginBottom: "1rem" }}>
           Ready to Transform Your Practice?
-        </h3>
+        </span>
         <p style={{fontSize: "1.25rem", fontWeight: "500", marginBottom: "1.5rem"}}>
           
           Try ZenspaceApp <span className="underline">free for 30 days</span> - no commitment, no risk.
