@@ -4,7 +4,7 @@ import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
 import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
-
+import SuperBill from '@/public/images/superbill.jpg';
 import SOAPPreview from '@/public/images/soap-preview.svg';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
 import Layout from '@/components/Layout';
@@ -94,9 +94,9 @@ const PRIVACY_BULLETS = [
 ];
 
 const BILLING_BULLETS = [
-  'No separate billing software.',
-  'No manual entry.',
-  'No pajama time invoicing.',
+  'Auto-Coding: Our Ambient AI maps your session to the exact CPT and ICD-10 codes, ensuring you are paid accurately for your time.',
+  'One-Click Delivery: Generate, sign, and sync to your EHR or email directly to your client.',
+  'Audit Protection: Every bill is backed by the session’s "Clinical Pulse," providing a verifiable trail of medical necessity.',
 ];
 
 
@@ -335,16 +335,31 @@ export default function ZenNotesPage() {
       {/* ── Billing Section ── */}
       <section className={styles.billingSection}>
         <div className={styles.billingInner}>
-          <h2>Your billing done before you close the laptop.</h2>
-          <p>
-            Automatically generates your SOAP note ZenNotes automatically generates a HIPAA-compliant superbill,
-            CPT code, ICD-10, Session duration, Provider NPI. Ready to send to your patient in one click.
+          <h2 className='u-textcenter'>The End of Billing Fatigue</h2>
+          <p className='u-textcenter'>
+            From Session to Superbill in 90 Seconds.
           </p>
-          <ul className={styles.billingList}>
+          <Image 
+            src={SuperBill}
+            alt="Superbill preview"
+            height={600}
+            width={0}
+            style={{
+              margin: "2rem 0",
+              maxWidth: "100%",
+              height: "auto",
+              borderRadius: "8px",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+              border: "1px solid var(--green-100)",
+              marginBottom: "3rem"
+            }}
+          />
+          
+          <div className={styles.billingList}>
             {BILLING_BULLETS.map((b) => (
-              <li key={b}>{b}</li>
+              <div key={b}>{b}</div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 

@@ -530,10 +530,10 @@
   // border-top: 1px solid var(--color--border--1);
   // border-bottom: 1px solid var(--color--border--1);
   padding: 8rem 2rem;
-  text-align: center;
+  // text-align: center;
 
   .billingInner {
-    max-width: 680px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -561,29 +561,28 @@
 }
 
 .billingList {
-  list-style: none;
+  
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  gap: 2rem;
   align-items: center;
-
-  li {
+  max-width: 80%;
+  margin: 0 auto;
+  
+  div {
+    flex: 1 1 33%;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.975rem;
-    color: var(--color--grey2);
-
-    &::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--primary);
-      flex-shrink: 0;
-    }
+    gap: 2rem;
+    font-size: 1.05rem;
+    // color: var(--color--grey2);
+    align-self: flex-start;
+    font-weight: 550;
+    @media (max-width: 768px) {
+       flex-wrap: wrap;
+      font-size: 0.9rem;
+    } 
   }
 }
 
