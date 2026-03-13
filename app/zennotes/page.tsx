@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
-import ZenNoteHeroImg from '@/public/images/ZenNotes.svg';
+import ZenNoteHeroImg from '@/public/images/soap-hero-img.png';
 import SuperBill from '@/public/images/superbill.png';
 
 import SOAPPreview from '@/public/images/soap-preview.png';
