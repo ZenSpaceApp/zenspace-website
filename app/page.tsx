@@ -106,10 +106,10 @@ const ForTherapists = () => {
 const GetStarted = () => {
   return <section id="get-started" className={`${styles.getStarted} bg-half-170`}>
     <div className='container u-textcenter'>
-      <h3 style={{ fontSize: "1.75rem !important" }}>Get Started Today</h3>
-      <div className={`subhead ${styles.subhead}`}>
+      <span className={styles.title}>Get Started Today</span>
+      <p className={`subhead ${styles.subhead}`}>
         Whether you&apos;re seeking support or looking to expand your practice, Zenspace makes it easy to get started.
-      </div>
+      </p>
       <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem"}}>
         <CtaButtons />
       </div>
