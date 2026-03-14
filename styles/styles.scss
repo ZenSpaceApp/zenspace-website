@@ -222,7 +222,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2.25rem) !important;
+  font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
   font-family: var(--font--alt);
   font-weight: 700 !important;
 }
@@ -242,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: var(--green-900) !important;
+  font-weight: 500 !important;
 }
 
 button {
