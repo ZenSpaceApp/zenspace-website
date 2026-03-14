@@ -99,7 +99,7 @@ body {
   }
 
   @media #{$mq-large} {
-    font-size: $base-font-size*1.1 !important;
+    // font-size: $base-font-size*1.1 !important;
   }
 }
 
@@ -206,7 +206,6 @@ a {
   }
 
   @media #{$mq-xlarge} {
-   
     max-width: 1340px !important;
   }
 }

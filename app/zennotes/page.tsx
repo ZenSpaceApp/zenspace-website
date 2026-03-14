@@ -320,6 +320,9 @@ export default function ZenNotesPage() {
 
         <div className={styles.pipesText}>
           <h2>We own the pipes</h2>
+          <p className={styles.pipesSub}>
+            ZenSpace is In-Pipe. Because we own the video/audio transport (WebRTC), we extract intelligence that passive recorders miss.
+          </p>
 
           <ul className={styles.pipesList}>
             <li>
