@@ -816,7 +816,8 @@ section.route-section {
 }
 
 #cta {
-  background: var(--bg--alt--1);
+  // background: var(--bg--alt--1);
+background: linear-gradient(var(--bg--alt--1) 80%, #f8f8f8 100%);
 
   padding: 60px 20px;
   font-size: 1.5rem;
