@@ -327,21 +327,21 @@ export default function ZenNotesPage() {
                 <span className={styles.pipesItemDot} />
                 <strong>Direct Stream Extraction</strong>
               </div>
-              <p>We process audio natively via WebRTC. No Bots, no third-party API lag, no security "middlemen."</p>
+              <p>We process <b>audio natively via WebRTC</b>. No Bots, no third-party API lag, no security middlemen.</p>
             </li>
             <li>
               <div className={styles.pipesItemHeader}>
                 <span className={styles.pipesItemDot} />
                 <strong>Zero-Persistence Processing</strong>
               </div>
-              <p>Audio is analyzed in RAM and evaporates post-session. We deliver the intelligence, not the liability.</p>
+              <p>Audio is analyzed in RAM and evaporates post-session. We <b>deliver the intelligence</b>, not the liability.</p>
             </li>
             <li>
               <div className={styles.pipesItemHeader}>
                 <span className={styles.pipesItemDot} />
                 <strong>Agentic Context Synthesis</strong>
               </div>
-              <p>Unlike legacy scribes, we don't just transcribe; we synthesize the Affect and Thematic Memory directly into the note.</p>
+              <p>Unlike legacy scribes, we don&apos;t just transcribe; we <b>synthesize the Affect and Thematic Memory </b> directly into the note.</p>
             </li>
           </ul>
         </div>
