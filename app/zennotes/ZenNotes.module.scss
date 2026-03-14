@@ -148,7 +148,7 @@
   // border-bottom: 1px solid var(--color--border--1);
 
   text-align: center;
-  padding: 8rem 2rem;
+  padding: 10rem 2rem;
 
 
   .trustHeading {
@@ -209,7 +209,7 @@
 
 .workday {
   
-  padding: 8rem 2.5rem;
+  padding: 10rem 2.5rem;
   max-width: 1340px;
   margin: 0 auto;
 
@@ -228,7 +228,6 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 2rem;
-  // max-width: 1200px;
   margin: 0 auto;
   align-items: start;
 
@@ -372,13 +371,107 @@
   pointer-events: auto;
 }
 
+.pipesSection {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 16rem 20px;
+  max-width: 1340px;
+  margin: 0 auto;
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 3rem 20px;
+  }
+}
+
+.pipesImage {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color--border--1);
+  background: var(--bg--alt--2);
+  // aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.pipesText {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pipesHeading {
+  font-family: var(--font--alt), sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--color--grey3);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.pipesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  p {
+    // font-size: 0.87rem;
+    line-height: 1.7;
+    color: var(--color--grey2);
+    margin: 0;
+    padding-left: calc(8px + 0.6rem);
+  }
+}
+
+.pipesItemHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.25rem !important;
+
+  strong {
+    // font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color--grey3);
+  }
+}
+
+.pipesItemDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+
 // ─── Privacy Section ─────────────────────────────────────────────────────────
 
 .privacySection {
   background:linear-gradient(#1a1c1b, black);
-  padding: 8rem 2.5rem;
-
-  
+  padding: 10rem 2.5rem;
 
   .privacyInner {
     max-width: 1200px;
@@ -451,8 +544,8 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    font-size: 0.88rem;
-    color: #ccc;
+    // font-size: 0.88rem;
+    // color: #ccc;
 
     &::before {
       content: '';
@@ -538,7 +631,7 @@
   background: linear-gradient(#f8f8f8, var(--green-200), var(--green-50));
   // border-top: 1px solid var(--color--border--1);
   // border-bottom: 1px solid var(--color--border--1);
-  padding: 8rem 2rem;
+  padding: 10rem 2rem;
   // text-align: center;
 
   

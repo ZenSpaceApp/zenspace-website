@@ -5,6 +5,7 @@ import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
 import ZenNoteHeroImg from '@/public/images/soap-hero-img.png';
 import SuperBill from '@/public/images/superbill.png';
+import WebRTCInterface from '@/public/images/easy-connecting.jpg';
 
 import SOAPPreview from '@/public/images/soap-preview.png';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
@@ -306,6 +307,46 @@ export default function ZenNotesPage() {
       <WorkdayAccordion items={WORKDAY_ITEMS} />
 
 
+      {/* ── We Own The Pipes Section ── */}
+      <section className={styles.pipesSection}>
+        <div className={styles.pipesImage}>
+          {/* Replace with <Image src="/assets/zennotes-video-call.png" alt="Video calling interface" fill /> */}
+          <Image
+            src={WebRTCInterface}
+            alt="Video calling interface"
+          />
+
+        </div>
+
+        <div className={styles.pipesText}>
+          <h2>We own the pipes</h2>
+
+          <ul className={styles.pipesList}>
+            <li>
+              <div className={styles.pipesItemHeader}>
+                <span className={styles.pipesItemDot} />
+                <strong>Direct Stream Extraction</strong>
+              </div>
+              <p>We process audio natively via WebRTC. No Bots, no third-party API lag, no security "middlemen."</p>
+            </li>
+            <li>
+              <div className={styles.pipesItemHeader}>
+                <span className={styles.pipesItemDot} />
+                <strong>Zero-Persistence Processing</strong>
+              </div>
+              <p>Audio is analyzed in RAM and evaporates post-session. We deliver the intelligence, not the liability.</p>
+            </li>
+            <li>
+              <div className={styles.pipesItemHeader}>
+                <span className={styles.pipesItemDot} />
+                <strong>Agentic Context Synthesis</strong>
+              </div>
+              <p>Unlike legacy scribes, we don't just transcribe; we synthesize the Affect and Thematic Memory directly into the note.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* ── Privacy Section ── */}
       <section className={styles.privacySection}>
         <div className={styles.privacyInner}>
@@ -313,13 +354,16 @@ export default function ZenNotesPage() {
             <div className={styles.phoneWrapper}>
               <WaveformIcon />
               {/* <span style={{ color: '#555', fontSize: '0.7rem' }}>Phone UI — Calling screen</span> */}
+              
             </div>
           </div>
 
           <div className={styles.privacyText}>
             <h2>Zero-Persistence. Total Privacy.</h2>
             <p className={styles.privacySub}>
-              Unlike wrappers that store data in the cloud, ZenSpace uses RAM-only processing.
+              Unlike wrappers that store data in the cloud, Zenspace uses RAM-only processing.
+              Your audio is processed in real-time and then discarded, ensuring that your
+              sensitive conversations never touch the cloud.
             </p>
             <ul className={styles.privacyBullets}>
               {PRIVACY_BULLETS.map((b) => (
