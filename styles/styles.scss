@@ -82,14 +82,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  color: $color-main;
-
+  font-weight: 500 !important;
   font-size: $base-font-size;
   line-height: $base-line-height;
   position: relative;
   margin-top: 80px; // to accomodate navbar.
   // background: $color-background !important;
 
+  color: #848484 !important ;
   position: absolute;
   font-size: $base-font-size*0.8;
 
@@ -1006,7 +1006,7 @@ background: linear-gradient(var(--bg--alt--1) 80%, #f8f8f8 100%);
       margin-bottom: 0;
       padding-top: 16px;
       padding-bottom: 12px;
-      font-weight: 400;
+      // font-weight: 400;
       color: #353535;
       font-size: 1.1rem;
     }
@@ -4442,7 +4442,7 @@ input::-webkit-inner-spin-button {
     opacity: 0.7; 
     margin-top: 15px;
     margin-bottom: 25px;
-    font-weight: 400;
+    // font-weight: 400;
     font-family: var(--font--alt);
     border-radius: 3px;
     text-align: center;
@@ -4484,6 +4484,7 @@ input::-webkit-inner-spin-button {
       font-size: 1.1rem;
       font-weight: 600;
       line-height: 160%;
+      color: var(--color--grey3);
     }
 
     .expandable-icon {
@@ -4514,10 +4515,9 @@ input::-webkit-inner-spin-button {
       .faq-paragraph {
         transform-origin: 50% 0;
         margin-bottom: 0;
+        font-size: 14px;
         padding-top: 16px;
         padding-bottom: 12px;
-        font-weight: 400;
-        color: #353535;
         font-size: 1.1rem;
       }
     }

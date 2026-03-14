@@ -198,9 +198,10 @@
   p {
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--green-800);
+    color: var(--color--grey2);
     margin: 0;
     display: inline;
+    font-weight: 500;
   }
 }
 
@@ -377,6 +378,8 @@
   background:linear-gradient(#1a1c1b, black);
   padding: 8rem 2.5rem;
 
+  
+
   .privacyInner {
     max-width: 1200px;
     margin: 0 auto;
@@ -473,6 +476,11 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  b {
+    font-weight: 700;
+    color: var(--color--grey3) !important;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 3rem 1.5rem;
@@ -532,6 +540,26 @@
   // border-bottom: 1px solid var(--color--border--1);
   padding: 8rem 2rem;
   // text-align: center;
+
+  
+  b {
+    font-weight: 700;
+    color: var(--color--grey3);
+  }
+  
+  .imgHero {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 3rem auto 6rem;
+
+      @media (max-width: 540px) {
+        width: 100%;
+        height: auto;
+        margin: 2rem auto; 
+    }
+  }
 
   .billingInner {
     max-width: 1200px;

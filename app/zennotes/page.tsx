@@ -184,7 +184,7 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
                 alt={item.imageLabel}
                 style={{
                   // background: "var(--bg--alt--1)",
-                  background: "linear-gradient( var(--green-50) 0%,   var(--green-200) 100%)",
+                  background: "linear-gradient( var(--green-50) 0%,   var(--green-200) 50%, var(--green-50) 100%)",
                   border: "12px solid var(--green-100)",
                   borderRadius: "16px",
                   // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
@@ -370,6 +370,7 @@ export default function ZenNotesPage() {
             alt="Superbill preview"
             height={600}
             width={0}
+            className={styles.imgHero}
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -378,8 +379,7 @@ export default function ZenNotesPage() {
               borderBottomRightRadius: "0",
               // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               border: "1px solid var(--green-300)",
-              borderBottom: "none",
-              margin: "2rem auto 4rem",
+              borderBottom: "none", 
               display: "block",
               // background: "var(--green-500)",
               background: "linear-gradient(var(--green-200) 0%, var(--green-400) 50%, var(--bg--alt--1) 100%)"

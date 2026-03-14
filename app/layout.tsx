@@ -4,7 +4,9 @@ import { Syne } from "next/font/google";
 import { PT_Serif } from 'next/font/google';
 
 const inter = Inter({
-  subsets: ['latin']
+  subsets: ['latin'],
+  
+  weight: ['400', '500', '600', '700']
 });
 const syne = Syne({
   subsets: ['latin'],
