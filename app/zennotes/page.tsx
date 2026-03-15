@@ -247,16 +247,16 @@ export default function ZenNotesPage() {
             <span>Ambient Clinical Intelligence</span>
           </div>
           <h1>
-            Your session ends.<br />
-            Your notes are<br />
-            already <em>done.</em>
+            <span className={styles.line}>Your session ends.</span>
+            <span className={styles.line}>Your notes are</span>
+            <span className={styles.line}>already <em>done.</em></span>
           </h1>
           <p>
             Capture every nuance without the Digital Wall. Our Ambient AI transcribes your soul,
             not just your computer audio.
           </p>
           <Link
-            className="btn btn-primary-dark-border"
+            className="btn btn-primary-dark-border  fade show"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfwzPnrq_3K4zCOhyUdhwroBsw-haYHsY6Xn4wgRUXCCB8Urw/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
@@ -321,7 +321,7 @@ export default function ZenNotesPage() {
         <div className={styles.pipesText}>
           <h2>We own the pipes</h2>
           <p className={styles.pipesSub}>
-            ZenSpace is In-Pipe. Because we own the video/audio transport (WebRTC), we extract intelligence that passive recorders miss.
+            ZenNotes is In-Pipe. Because we own the video/audio transport (WebRTC), we extract intelligence that passive recorders miss.
           </p>
 
           <ul className={styles.pipesList}>
