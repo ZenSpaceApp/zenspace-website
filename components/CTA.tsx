@@ -22,11 +22,11 @@ export const CTA = () => {
             marginTop: "-115px",
           }}
       /> */}
-        <div style={{ marginTop: "-110px", background: "var(--bg--alt--1)", paddingLeft: "10px", paddingRight: "10px" }}>
+        {/* <div style={{ marginTop: "-110px", background: "var(--bg--alt--1)", paddingLeft: "10px", paddingRight: "10px" }}> */}
           <WaveformIcon  />
-        </div>
+        {/* </div> */}
       {/* </div> */}
-      <div className="gradient-overlay" style={{
+      {/* <div className="gradient-overlay" style={{
         position: "absolute",
         top: 0,
         left: 0,
@@ -34,7 +34,7 @@ export const CTA = () => {
         height: "100%",
         background: "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%)",
         zIndex: -1,
-      }}></div>
+      }}></div> */}
 
       </div>
       <div className="content">

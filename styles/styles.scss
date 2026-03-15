@@ -816,7 +816,7 @@ section.route-section {
 
 #cta {
   // background: var(--bg--alt--1);
-  background: linear-gradient(var(--bg--alt--1) 80%, #f8f8f8 100%);
+  background: linear-gradient(var(--bg--alt--1), #f8f8f8 100%);
 
   .title {
     font-family: var(--font--alt);
@@ -845,7 +845,7 @@ section.route-section {
   
   .cta-container {
     margin: auto;
-    border: 3px solid;
+    // border: 3px solid;
     padding: 6rem 24px;
     border-radius: 20px;
     max-width: 1600px;
@@ -864,6 +864,7 @@ section.route-section {
       text-align: center;
       margin: auto;  
       // font-size: 2.5rem;
+      margin-top: 2rem;
     }
   }
 }
