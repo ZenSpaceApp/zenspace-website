@@ -89,7 +89,7 @@ body {
   margin-top: 80px; // to accomodate navbar.
   // background: $color-background !important;
 
-  color: #848484 !important ;
+  color: var(--color--grey2) !important;
   position: absolute;
   font-size: $base-font-size*0.8;
 
