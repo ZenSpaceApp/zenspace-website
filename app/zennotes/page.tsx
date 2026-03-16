@@ -321,7 +321,8 @@ export default function ZenNotesPage() {
         <div className={styles.pipesText}>
           <h2>We own the pipes</h2>
           <p className={styles.pipesSub}>
-            ZenNotes is In-Pipe. Because we own the video/audio transport (WebRTC), we extract intelligence that passive recorders miss.
+            ZenNotes is In-Pipe. Because we own the video/audio transport
+            (WebRTC), we extract intelligence that passive recorders miss.
           </p>
 
           <ul className={styles.pipesList}>
@@ -335,7 +336,7 @@ export default function ZenNotesPage() {
             <li>
               <div className={styles.pipesItemHeader}>
                 <span className={styles.pipesItemDot} />
-                <strong>Zero-Persistence Processing</strong>
+                <strong>Instantaneous Processing</strong>
               </div>
               <p>Audio is analyzed in RAM and evaporates post-session. We <b>deliver the intelligence</b>, not the liability.</p>
             </li>
@@ -364,7 +365,7 @@ export default function ZenNotesPage() {
           <div className={styles.privacyText}>
             <h2>Zero-Persistence. Total Privacy.</h2>
             <p className={styles.privacySub}>
-              Unlike wrappers that store data in the cloud, Zenspace uses RAM-only processing.
+              Unlike wrappers that store data in the cloud, ZenNotes is <b>RAM-only processing</b>.
               Your audio is processed in real-time and then discarded, ensuring that your
               sensitive conversations never touch the cloud.
             </p>
