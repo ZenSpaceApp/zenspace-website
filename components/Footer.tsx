@@ -35,62 +35,62 @@ export default function Footer() {
   }
   
   return (
-    <>
-      <div className="footer">
-        <div className="container">
-        
-          <div style={{fontSize: "1.25rem"}}>
-          <ZenspaceLogo />
+    <div className="footer">
+      <div className="container">
+        <div className="row" style={{ padding: "4rem 0" }}>
+          <div className="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
+            <span style={{fontSize: "1.5rem"}}>
+              <ZenspaceLogo />
+            </span>
           </div>
-          <div className="row" style={{padding: "4rem 0"}}>
-            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
-              <h5 className="text-dark  mb-4">Solutions</h5>
-              <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/#for-clients" className="text-muted">Clients</a></li>
-                <li><a href="/therapists" className="text-muted">Therapists</a></li>
-                <li><a href="/zennotes" className="text-muted">ZenNotes</a></li>
-                {/* <li><a href="/" className="text-muted">ZenPath</a></li> */}
-                {/* <li><a href="/" className="text-muted">ZenList</a></li> */}
-              </ul>
-            </div>    
-            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <h5 className="text-dark  mb-4">Company</h5>
-              <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/" className="text-muted">About Us</a></li>
-                <li><a href="/" className="text-muted">Careers</a></li>
-                <li><a href="/planet-health" className="text-muted">Planet Health</a></li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h5 className="text-dark  mb-4">Resources</h5>
-              <ul className="list-unstyled footer-list mt-2">
-                <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
-                <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
-                <li><a href="/hipaa-compliance" className="text-muted">HIPAA Compliance</a></li>
-                {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h5 className="text-dark mb-4">Support</h5>
-                <ul className="list-unstyled footer-list mt-2">
-                  {/* <li><a href="/help" className="text-muted">Help</a></li> */}
-                <li><a href="/contact-us" className="text-muted">Contact Us</a></li>
-                <li><a href="./faqs" className="text-muted">FAQ</a></li>
-                </ul>
-            </div>
-          </div>
-          <DownloadApps />
-          <div className="subfooter">
-            <div>©2026 ZenspaceApp Inc. All Rights Reserved.</div>
-            <ul>
-              <li>
-                <a href="/privacy" className="text-muted">Cookies</a></li> 
-              <li><a href="/privacy" className="text-muted">Privacy Policy</a></li>
-              <li><a href="/service-terms" className="text-muted">Service Terms</a></li>    
+            
+          <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
+            <h5 className="text-dark  mb-4">Solutions</h5>
+            <ul className="list-unstyled footer-list mt-2">
+              <li><a href="/#for-clients" className="text-muted">Clients</a></li>
+              <li><a href="/therapists" className="text-muted">Therapists</a></li>
+              <li><a href="/zennotes" className="text-muted">ZenNotes</a></li>
+              {/* <li><a href="/" className="text-muted">ZenPath</a></li> */}
+              {/* <li><a href="/" className="text-muted">ZenList</a></li> */}
+            </ul>
+          </div>    
+          <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h5 className="text-dark  mb-4">Company</h5>
+            <ul className="list-unstyled footer-list mt-2">
+              <li><a href="/" className="text-muted">About Us</a></li>
+              <li><a href="/" className="text-muted">Careers</a></li>
+              <li><a href="/planet-health" className="text-muted">Planet Health</a></li>
             </ul>
           </div>
+          <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <h5 className="text-dark  mb-4">Resources</h5>
+            <ul className="list-unstyled footer-list mt-2">
+              <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
+              <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
+              <li><a href="/hipaa-compliance" className="text-muted">HIPAA Compliance</a></li>
+              {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
+            </ul>
+          </div>
+          <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <h5 className="text-dark mb-4">Support</h5>
+              <ul className="list-unstyled footer-list mt-2">
+                {/* <li><a href="/help" className="text-muted">Help</a></li> */}
+              <li><a href="/contact-us" className="text-muted">Contact Us</a></li>
+              <li><a href="./faqs" className="text-muted">FAQ</a></li>
+              </ul>
+          </div>
+        </div>
+        {/* <DownloadApps /> */}
+        <div className="subfooter">
+          <div>©2026 ZenspaceApp Inc. All Rights Reserved.</div>
+          <ul>
+            <li>
+              <a href="/privacy" className="text-muted">Cookies</a></li> 
+            <li><a href="/privacy" className="text-muted">Privacy Policy</a></li>
+            <li><a href="/service-terms" className="text-muted">Service Terms</a></li>    
+          </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }
