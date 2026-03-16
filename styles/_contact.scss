@@ -6,7 +6,7 @@
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: top center;
-
+    background: linear-gradient(45deg, var(--green-200), var(--green-50));
     .grid {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -31,7 +31,7 @@
 			font-weight: 500;
       max-width: 540px;
       margin: auto;
-      font-size: 1.15rem;
+      // font-size: 1.15rem;
       margin-top: 2rem;
 		}
   

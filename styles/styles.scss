@@ -92,6 +92,7 @@ body {
   color: var(--color--grey2) !important;
   position: absolute;
   font-size: $base-font-size*0.8;
+  letter-spacing: -0.02em;
 
   @media #{$mq-medium} {
     // line-height: $base-line-height*1.1;
@@ -328,7 +329,7 @@ section.route-section {
 }
 
 .subhead {
-  font-size: 1.3rem;
+  // font-size: 1.3rem;
   line-height: 1.4;
   font-weight: 500;
   color: var(--color--grey2);
@@ -509,7 +510,7 @@ section.route-section {
 
 
 .bold-accent {
-  font-weight: 700 !important;
+  // font-weight: 400 !important;
 }
 
 .color-accent {
