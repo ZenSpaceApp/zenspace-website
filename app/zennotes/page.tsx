@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
-import ZenNoteHeroImg from '@/public/images/soap-hero-img.png';
+import ZenNoteHeroImg from '@/public/images/magic-moment.png';
 import SuperBill from '@/public/images/superbill.png';
 import WebRTCInterface from '@/public/images/easy-connecting.jpg';
+import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
 
 import SOAPPreview from '@/public/images/soap-preview.png';
 import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
@@ -267,10 +268,11 @@ export default function ZenNotesPage() {
 
         <div className={styles.heroImage}>
           {/* Replace with <Image src="/assets/zennotes-hero.png" alt="ZenNotes dashboard" fill /> */}
-          <Image
+          {/* <Image
             src={ZenNoteHeroImg}
             alt="ZenNotes dashboard"
-          />
+          /> */}
+          <SessionTimeline autoPlay loop loopDelay={2200} showReplay={false} />
         </div>
       </section>
 
