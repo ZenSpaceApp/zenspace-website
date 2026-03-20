@@ -100,7 +100,7 @@
     // font-size: 1.15rem;
     line-height: 1.5;
     color: var(--color--grey2);
-    max-width: 80%;
+    max-width: 400px;
     font-weight: 500;
     margin: 0 0 2rem;
     // opacity: 0.8;
@@ -265,10 +265,10 @@
 
 .workdaySection {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
   margin: 0 auto;
-  align-items: start;
+  align-items: center;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -401,6 +401,9 @@
   transition: opacity 0.4s ease;
   pointer-events: none;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   img {
     // width: 100%;
     max-width: 100%;

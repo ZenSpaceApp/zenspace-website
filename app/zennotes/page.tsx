@@ -23,6 +23,11 @@ import GetPaid from '@/public/images/icons/get-paid.svg';
 import Sync from '@/public/images/icons/sync-send.svg';
 import Audit from '@/public/images/icons/audit.svg';
 
+import SOAPNoteTab from '@/public/images/soapnote_tab.png';
+import CodingTab from '@/public/images/coding_tab.png';
+import PublicNoteTab from '@/public/images/publicnote_tab.png';
+import BillingTab from '@/public/images/superbill_tab.png';
+
 interface WorkdayItem {
   label: string;
   detail: string;
@@ -67,28 +72,28 @@ const WORKDAY_ITEMS: WorkdayItem[] = [
     detail:
       'As your session runs, ZenNotes listens and structures your notes live. By the time you say goodbye, your SOAP note is 95% complete — ready for your final review and signature.',
     imageLabel: 'SOAP note modal — documentation view',
-    imageSrc: SOAPPreview, // replace: '/assets/workday-soap.png'
+    imageSrc: SOAPNoteTab, // replace: '/assets/workday-soap.png'
   },
   {
     label: 'Coding — ICD-10 and CPT codes assigned automatically',
     detail:
       'ZenNotes maps clinical content to the correct ICD-10 diagnosis and CPT procedure codes in real time, eliminating manual lookup and reducing claim errors.',
     imageLabel: 'ICD-10 / CPT coding modal',
-    imageSrc: SOAPPreview, // replace: '/assets/workday-coding.png'
+    imageSrc: CodingTab, // replace: '/assets/workday-coding.png'
   },
   {
     label: 'Public Notes — plain-language summaries for patients',
     detail:
       'Alongside your private SOAP note, ZenNotes generates a warm, plain-language summary for your patient — same session, two truths. Sent automatically after the call.',
     imageLabel: 'Public patient note modal',
-    imageSrc: SOAPPreview, // replace: '/assets/workday-public-notes.png'
+    imageSrc: PublicNoteTab, // replace: '/assets/workday-public-notes.png'
   },
   {
     label: 'Billing — superbill generated before you close the laptop',
     detail:
       'ZenNotes automatically generates a HIPAA-compliant superbill with CPT code, ICD-10, session duration, and Provider NPI — ready to send to your patient in one click.',
     imageLabel: 'Billing / superbill modal',
-    imageSrc: SOAPPreview, // replace: '/assets/workday-billing.png'
+    imageSrc: BillingTab, // replace: '/assets/workday-billing.png'
   },
 ];
 
@@ -186,8 +191,8 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
                 alt={item.imageLabel}
                 style={{
                   // background: "var(--bg--alt--1)",
-                  background: "linear-gradient( var(--green-50) 0%,   var(--green-200) 50%, var(--green-50) 100%)",
-                  border: "12px solid var(--green-100)",
+                  // background: "linear-gradient( var(--green-50) 0%,   var(--green-200) 50%, var(--green-50) 100%)",
+                  border: "2px solid var(--green-100)",
                   borderRadius: "16px",
                   // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                   maxWidth: "100%",
