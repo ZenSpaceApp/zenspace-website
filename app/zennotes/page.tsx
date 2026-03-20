@@ -271,7 +271,7 @@ export default function ZenNotesPage() {
           </Link>
         </div>
 
-        <div className={styles.heroImage}>
+        <div className={styles.postSessionTimeline}>
           {/* Replace with <Image src="/assets/zennotes-hero.png" alt="ZenNotes dashboard" fill /> */}
           {/* <Image
             src={ZenNoteHeroImg}

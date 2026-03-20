@@ -66,7 +66,7 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: center;
   padding: 16rem 2rem 16rem;
@@ -157,6 +157,15 @@
   //   object-fit: cover;
   //   display: block;
   // }
+}
+
+.postSessionTimeline {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color--border--1);
+  padding: 2rem 2.5rem;
 }
 
 .imagePlaceholder {
