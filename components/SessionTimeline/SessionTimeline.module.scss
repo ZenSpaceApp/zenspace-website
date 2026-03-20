@@ -118,10 +118,14 @@ $color-bg:             #ffffff;
 }
 
 .stepName {
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 500;
   color: $color-text-secondary;
   line-height: 1.4;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .stepNameActive {
@@ -133,10 +137,12 @@ $color-bg:             #ffffff;
 }
 
 .stepSub {
-  font-size: 11px;
+  font-size: 12.4px;
   color: $color-text-tertiary;
   margin: 2px 0 0 0;
   line-height: 1.4;
+  font-weight: 500;
+
 }
 
 // ── Tag pill ──────────────────────────────────────────────────
