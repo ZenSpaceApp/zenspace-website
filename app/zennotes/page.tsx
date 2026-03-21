@@ -5,7 +5,7 @@ import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
 import ZenNoteHeroImg from '@/public/images/magic-moment.png';
 import SuperBill from '@/public/images/superbill.png';
-import WebRTCInterface from '@/public/images/easy-connecting.jpg';
+import WebRTCInterface from '@/public/images/easy-connecting.webp';
 import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
 
 import SOAPPreview from '@/public/images/soap-preview.png';
@@ -326,30 +326,34 @@ export default function ZenNotesPage() {
         </div>
 
         <div className={styles.pipesText}>
-          <h2>We own the pipes</h2>
+          <h2>Studio-quality calls</h2>
           <p className={styles.pipesSub}>
-            ZenNotes is In-Pipe. Because we own the video/audio transport
-            (WebRTC), we extract intelligence that passive recorders miss.
+            ZenNotes is built into the call — not a passive recorder watching from outside.
+            That&apos;s why we catch what others miss, and why nothing ever joins your session uninvited.
           </p>
 
           <ul className={styles.pipesList}>
             <li>
               <div className={styles.pipesItemHeader}>
-                <span className={styles.pipesItemDot} />
+                {/* <span className={styles.pipesItemDot} /> */}
                 <strong>Direct Stream Extraction</strong>
               </div>
-              <p>We process <b>audio natively via WebRTC</b>. No Bots, no third-party API lag, no security middlemen.</p>
+              <p>We process <b>audio and video natively delivering a seamless HD experience</b>.
+                No Bots, no third-party API lag, no security middlemen.</p>
             </li>
             <li>
               <div className={styles.pipesItemHeader}>
-                <span className={styles.pipesItemDot} />
+                {/* <span className={styles.pipesItemDot} /> */}
                 <strong>Instantaneous Processing</strong>
               </div>
-              <p>Audio is analyzed in RAM and evaporates post-session. We <b>deliver the intelligence</b>, not the liability.</p>
+              <p>
+                Audio is analyzed and evaporates as soon as the session ends.
+                We <b>deliver the intelligence</b>, not the liability.
+              </p>
             </li>
             <li>
               <div className={styles.pipesItemHeader}>
-                <span className={styles.pipesItemDot} />
+                {/* <span className={styles.pipesItemDot} /> */}
                 <strong>Agentic Context Synthesis</strong>
               </div>
               <p>Unlike legacy scribes, we don&apos;t just transcribe; we <b>synthesize the Affect and Thematic Memory </b> directly into the note.</p>
