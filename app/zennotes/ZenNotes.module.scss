@@ -328,7 +328,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   border-top: 1px solid var(--color--border--1);
 }
 
@@ -418,7 +418,7 @@
 }
 
 .workdayImageSlide {
-  position: absolute;
+  // position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -427,6 +427,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   img {
     // width: 100%;
     max-width: 100%;
@@ -444,7 +445,7 @@
 .pipesSection {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: center;
   padding: 10rem 20px 16rem ;
   max-width: 1440px;
@@ -463,15 +464,20 @@
 }
 
 .pipesImage {
-  // border-radius: 20px;
+  border-radius: 20px;
   overflow: hidden;
-  // box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
   // border: 1px solid var(--color--border--1);
   // background: var(--bg--alt--2);
-  // aspect-ratio: 4/3;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  // padding: 40px;
+
+  @media (max-width: 540px) {
+    padding: 20px;
+  }
 
   img {
     width: 100%;
@@ -514,7 +520,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
 
   li {
     display: flex;
