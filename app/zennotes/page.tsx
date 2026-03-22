@@ -28,6 +28,8 @@ import CodingTab from '@/public/images/coding_tab.png';
 import PublicNoteTab from '@/public/images/publicnote_tab.png';
 import BillingTab from '@/public/images/superbill_tab.png';
 
+import { JobsSection } from '@/components/JobsSection/JobsSection';
+
 interface WorkdayItem {
   label: string;
   detail: string;
@@ -298,8 +300,9 @@ export default function ZenNotesPage() {
 
 
       {/* ── Workday Section ── */}
-      <WorkdayAccordion items={WORKDAY_ITEMS} />
+      {/* <WorkdayAccordion items={WORKDAY_ITEMS} /> */}
 
+      <JobsSection />
 
       {/* ── We Own The Pipes Section ── */}
       <section className={styles.pipesSection}>
