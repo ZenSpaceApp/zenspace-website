@@ -48,7 +48,7 @@ const FEATURES = [
   {
     icon: AudioTap,
     title: 'High-Fidelity Audio Tap',
-    body: 'Uses a native WebRTC audio stream (owned by InstaGR/ZenSpace) rather than clunky external bots.',
+    body: 'We\'re built into the call, not watching from outside, which means studio-quality audio. We capture the soul of the session, not just the computer audio.',
   },
   {
     icon: HumanFirst,
@@ -247,8 +247,8 @@ export default function ZenNotesPage() {
             <span className={styles.line}>already <em>done.</em></span>
           </h1>
           <p>
-            Capture every nuance without the Digital Wall. Our Ambient AI transcribes your soul,
-            not just your computer audio.
+            Capture every nuance. Our Ambient AI transcribes the soul of the session,
+            not just the computer audio.
           </p>
           <Link
             className="btn btn-primary-dark-border  fade show"
