@@ -8,7 +8,7 @@ $color-navy:    #0F2744;
 $color-blue:    #185FA5;
 $color-blue-bg: #E6F1FB;
 $color-blue-text: #0C447C;
-$color-green:   #1D9E75;
+$color-green:   var(--green-600);
 $color-green-bg:#E1F5EE;
 $color-green-text: #085041;
 $color-amber-bg:#FAEEDA;
@@ -45,7 +45,7 @@ $white:         #ffffff;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $color-blue;
+  color: var(--green-600);
   margin: 0 0 16px;
 }
 
@@ -96,7 +96,7 @@ $white:         #ffffff;
   padding: 14px 8px;
   font-size: 15px;
   font-weight: 400;
-  color: #000000;
+  color: #353535;
   background: none;
   border: none;
   cursor: pointer;
@@ -117,13 +117,13 @@ $white:         #ffffff;
     bottom: -1px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 2.75px;
     background: transparent;
     transition: background 0.2s ease;
   }
 
   &:hover {
-    color: $color-navy;
+    color: var(--green-600);
   }
 }
 
@@ -131,7 +131,7 @@ $white:         #ffffff;
   font-weight: 700;
 
   &::after {
-    background: #000000;
+    background: var(--green-600);
   }
 }
 
@@ -240,9 +240,6 @@ $white:         #ffffff;
   white-space: nowrap;
 }
 
-.pillAmber { background: $color-amber-bg; color: $color-amber-text; }
-.pillBlue  { background: $color-blue-bg;  color: $color-blue-text; }
-.pillTeal  { background: $color-green-bg; color: $color-green-text; }
 
 // ── ICD output ───────────────────────────────────────────────
 .icd {
@@ -274,8 +271,7 @@ $white:         #ffffff;
 .icdCode {
   font-size: 12px;
   font-weight: 500;
-  color: $color-blue-text;
-  background: $color-blue-bg;
+  background: var(--green-100);
   padding: 3px 8px;
   border-radius: 6px;
   min-width: 52px;
@@ -321,6 +317,7 @@ $white:         #ffffff;
   font-weight: 500;
   color: $color-purple-text;
   background: $color-purple-bg;
+  background: var(--green-500);
   padding: 3px 8px;
   border-radius: 6px;
   min-width: 52px;
@@ -570,13 +567,13 @@ $white:         #ffffff;
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: $color-blue-bg;
+  background: var(--green-500);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
   font-weight: 500;
-  color: $color-blue-text;
+  // color: $color-blue-text;
 }
 
 .videoAvatarTherapist {
