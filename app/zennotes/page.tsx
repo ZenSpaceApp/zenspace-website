@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import styles from './ZenNotes.module.scss';
 import Image from 'next/image';
-import ZenNoteHeroImg from '@/public/images/magic-moment.png';
 import SuperBill from '@/public/images/superbill.png';
 import WebRTCInterface from '@/public/images/easy-connecting.webp';
 import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
+import { JobsSection } from '@/components/JobsSection/JobsSection';
+import { PatientNoteMockup } from '@/components/PatientNoteMockup/PatientNoteMockup';
 
-import SOAPPreview from '@/public/images/soap-preview.png';
-import PatientNotesMobile from '@/public/images/patient-notes@2x.png';
+
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import ZenNotesFAQ from '@/components/ZenNotesFAQ';
@@ -28,7 +28,7 @@ import CodingTab from '@/public/images/coding_tab.png';
 import PublicNoteTab from '@/public/images/publicnote_tab.png';
 import BillingTab from '@/public/images/superbill_tab.png';
 
-import { JobsSection } from '@/components/JobsSection/JobsSection';
+
 
 interface WorkdayItem {
   label: string;
@@ -390,21 +390,7 @@ export default function ZenNotesPage() {
           </p>
         </div>
 
-        <div className={styles.publicPhone}>
-          <div className={styles.phoneard}>
-            {/* Replace with <Image src="/assets/zennotes-phone-notes.png" alt="Patient notes on phone" fill /> */}
-            {/* <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color--grey2)" strokeWidth="1.5">
-              <rect x="5" y="2" width="14" height="20" rx="2" />
-              <line x1="9" y1="9" x2="15" y2="9" />
-              <line x1="9" y1="13" x2="15" y2="13" />
-              <line x1="9" y1="17" x2="12" y2="17" />
-            </svg> */}
-            {/* <span>Phone UI — Patient note view</span> */}
-            <Image
-              src={PatientNotesMobile}
-              alt="Patient notes on phone" />
-          </div>
-        </div>
+        <PatientNoteMockup />
       </section>
 
       {/* ── Billing Section ── */}
