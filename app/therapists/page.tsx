@@ -93,7 +93,7 @@ const ACI = () => {
         <button
           className='btn btn-primary-dark-border'
           style={{ display: "block", margin: "auto", marginTop: "4rem" }}>
-              See ZenNotesImg
+              See ZenNotes
         </button>
           </Link> 
       </div>
