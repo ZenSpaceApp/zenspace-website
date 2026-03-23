@@ -1,0 +1,96 @@
+/* Create file: PressRelease.module.scss */
+
+.container {
+  max-width: 810px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.heroWrapper {
+  margin-bottom: 48px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+// .section {}
+
+.sectionHeading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.sectionContent {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.sectionImageWrapper {
+  margin: 24px 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+}
+
+.quote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 16px;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.email {
+  font-weight: 500;
+  margin-left: 4px;
+}
