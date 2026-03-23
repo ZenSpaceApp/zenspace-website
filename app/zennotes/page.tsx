@@ -199,35 +199,6 @@ function WorkdayAccordion({ items }: { items: WorkdayItem[] }) {
   );
 }
 
-// function FaqAccordion({ items }: { items: FaqItem[] }) {
-//   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-//   return (
-//     <div className={styles.faqList}>
-//       {items.map((item, i) => {
-//         const isOpen = openIndex === i;
-//         return (
-//           <div className={styles.faqItem} key={i}>
-//             <button
-//               className={styles.faqQuestion}
-//               data-open={String(isOpen)}
-//               onClick={() => setOpenIndex(isOpen ? null : i)}
-//               aria-expanded={isOpen}
-//             >
-//               {item.q}
-//               <svg className={styles.faqChevron} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-//                 <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-//               </svg>
-//             </button>
-//             <div className={styles.faqAnswer} data-open={String(isOpen)} aria-hidden={!isOpen}>
-//               {item.a}
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -400,6 +371,12 @@ export default function ZenNotesPage() {
 
       {/* ── Billing Section ── */}
       <section className={styles.billingSection}>
+         <div className='u-textcenter'>
+              <h2>The End of Billing Fatigue</h2>
+              <p>
+                From Session to Superbill in 90 Seconds.
+              </p>
+            </div>
         <div className={styles.billingInner}>
           <Image 
             src={BillingTab}
@@ -409,7 +386,7 @@ export default function ZenNotesPage() {
             className={styles.imgHero}
             style={{
               display: "block",
-              margin: "0 auto 3rem",
+              margin: "0 auto",
               maxWidth: "100%",
               height: "auto",
               borderRadius: "8px",
@@ -422,15 +399,7 @@ export default function ZenNotesPage() {
               // background: "linear-gradient(var(--green-200) 0%, var(--green-400) 50%, var(--bg--alt--1) 100%)"
             }}
           />
-          
-          <div>
-
-            <div>
-              <h2>The End of Billing Fatigue</h2>
-              <p>
-                From Session to Superbill in 90 Seconds.
-              </p>
-            </div>
+            
             <div className={styles.billingList}>
               {BILLING_BULLETS.map((b, idx) => (
                 <div key={idx}>
@@ -450,9 +419,8 @@ export default function ZenNotesPage() {
               ))}
             </div>
           </div>
-          </div>
       </section>
-
+    
       {/* ── FAQ ── */}
       <ZenNotesFAQ />
     </Layout>
