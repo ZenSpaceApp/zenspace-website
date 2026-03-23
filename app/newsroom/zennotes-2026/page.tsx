@@ -7,17 +7,18 @@ export default function Page() {
       subtitle="A new category: Ambient Clinical Intelligence built on proven infrastructure"
       author="ZenNotes Team"
       date="March 23, 2026"
-      heroImage="/zennotes-hero.jpg"
+      heroImage="/images/zennotes.png"
       sections={[
         {
           content:
             "For decades, the digital revolution in healthcare has felt more like a burden than a benefit. Clinicians have been forced to choose between being present with their patients or being compliant with their paperwork. Today, that choice ends.",
         },
         {
+          content: "\n\nListening is active. Present. Intentional. It's what therapists are trained to do. It's the whole job. The entire therapeutic relationship is built on being heard. The therapist\'s primary tool is listening. The patient's primary need is to feel heard.The session itself is sound — words, tone, silence, breath. And yet every documentation system built for therapy is visual.Text boxes.Forms.Typing.It forces therapists to split their attention between hearing their patient and capturing what they hear. Our ACI closes that gap completely. The therapist stays in the hearing. The machine captures what was heard. That's not a feature — that\'s the philosophical justification for why ambient AI belongs in therapy more than anywhere else."
+        },
+        {
           content:
             "Introducing ZenNotes Ambient Clinical Intelligence (ACI)—a reimagined approach to documentation built on the proven, high-availability infrastructure that has been powering care since 2020.",
-          quote:
-            "We didn't start from scratch. We started with the infrastructure we’ve been perfecting since 2020. ZenNotes isn’t a new experiment; it’s the intelligence layer finally arriving on a foundation that already supports the weight of modern care.",
         },
         {
           heading: "Passive by Design",
