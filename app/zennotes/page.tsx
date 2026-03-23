@@ -306,22 +306,26 @@ export default function ZenNotesPage() {
 
       {/* ── We Own The Pipes Section ── */}
       <section className={styles.pipesSection}>
+        <div style={{ maxWidth: '600px', margin: '0 auto 4rem', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem'}}>
+          <WaveformIcon />
+        </div>
+        <h2 style={{marginTop: '2rem'}}>Studio-quality calls</h2>
+        <p className={styles.pipesSub}>
+          ZenNotes is built into the call — not a passive recorder watching from outside.
+          That&apos;s why we catch what others miss, and why nothing ever joins your session uninvited.
+        </p>
+        </div>
+      <div className={styles.pipesInner}>
         <div className={styles.pipesImage}>
           {/* Replace with <Image src="/assets/zennotes-video-call.png" alt="Video calling interface" fill /> */}
           <Image
             src={WebRTCInterface}
             alt="Video calling interface"
           />
-
         </div>
 
         <div className={styles.pipesText}>
-          <h2>Studio-quality calls</h2>
-          <p className={styles.pipesSub}>
-            ZenNotes is built into the call — not a passive recorder watching from outside.
-            That&apos;s why we catch what others miss, and why nothing ever joins your session uninvited.
-          </p>
-
           <ul className={styles.pipesList}>
             <li>
               <div className={styles.pipesItemHeader}>
@@ -349,7 +353,8 @@ export default function ZenNotesPage() {
               <p>Unlike legacy scribes, we don&apos;t just transcribe; we <b>synthesize the Affect and Thematic Memory </b> directly into the note.</p>
             </li>
           </ul>
-        </div>
+          </div>
+          </div>
       </section>
 
       {/* ── Privacy Section ── */}
@@ -396,17 +401,15 @@ export default function ZenNotesPage() {
       {/* ── Billing Section ── */}
       <section className={styles.billingSection}>
         <div className={styles.billingInner}>
-          <h2 className='u-textcenter'>The End of Billing Fatigue</h2>
-          <p className='u-textcenter'>
-            From Session to Superbill in 90 Seconds.
-          </p>
           <Image 
-            src={SuperBill}
+            src={BillingTab}
             alt="Superbill preview"
             height={600}
             width={0}
             className={styles.imgHero}
             style={{
+              display: "block",
+              margin: "0 auto 3rem",
               maxWidth: "100%",
               height: "auto",
               borderRadius: "8px",
@@ -414,34 +417,40 @@ export default function ZenNotesPage() {
               borderBottomRightRadius: "0",
               // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               border: "1px solid var(--green-300)",
-              borderBottom: "none", 
-              display: "block",
+              // borderBottom: "none", 
               // background: "var(--green-500)",
-              background: "linear-gradient(var(--green-200) 0%, var(--green-400) 50%, var(--bg--alt--1) 100%)"
+              // background: "linear-gradient(var(--green-200) 0%, var(--green-400) 50%, var(--bg--alt--1) 100%)"
             }}
           />
           
-          <div className={styles.billingList}>
-            {BILLING_BULLETS.map((b, idx) => (
-              <div key={idx}>
-                
-                <Image
-                  src={b.i}
-                  alt={`${b.h} icon`}
-                  height={32}
-                  width={32}
-                  style={{
-                    marginBottom: '1rem',
-                    
-                    display: 'block'
-                  }}
-                />
-              <b>{b.h}. </b>
-              {b.b}
-              </div>
-            ))}
+          <div>
+
+            <div>
+              <h2>The End of Billing Fatigue</h2>
+              <p>
+                From Session to Superbill in 90 Seconds.
+              </p>
+            </div>
+            <div className={styles.billingList}>
+              {BILLING_BULLETS.map((b, idx) => (
+                <div key={idx}>
+                  {/* <Image
+                    src={b.i}
+                    alt={`${b.h} icon`}
+                    height={22}
+                    width={22}
+                    style={{
+                      marginBottom: '1rem',
+                      display: 'block'
+                    }}
+                  /> */}
+                <b>{b.h}. </b> <br/>
+                {b.b}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+          </div>
       </section>
 
       {/* ── FAQ ── */}
