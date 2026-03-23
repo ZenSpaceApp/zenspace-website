@@ -5,13 +5,13 @@ import FAQ from '@/components/FAQ';
 import { useState } from 'react';
 import Link from 'next/link';
 
-import ZenNotesImg from '@/public/images/home/hero-img.jpg';
+import ZenNotesDashImg from '@/public/images/zen-platform@2x.png';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';
 import SetAvailabilityImg from '@/public/images/home/set-hours@2x.png';
 
-import ZenNotes from '@/public/images/therapy-notes.jpg';
+import ZenNotesImg from '@/public/images/zennotes.png';
 
 import WorkflowDashImg from '@/public/images/home/dash-view.jpg';
 import WorkflowNotesImg from '@/public/images/home/zennotes-view.jpg';
@@ -28,7 +28,7 @@ import WaveformIcon from '@/components/waveform/Waveform';
 const WORKFLOW_IMAGES = [
   WorkflowDashImg,
   WorkflowScheduleImg,
-  ZenNotes,
+  ZenNotesDashImg,
   WorkflowHDVideoImg,
   WorkflowClientsImg
 ]
@@ -74,16 +74,18 @@ const ACI = () => {
 
         <Image 
           alt="Agentic Clinical Intelligence (ACI) transforming therapy notes"
-          src={ZenNotes}
+          src={ZenNotesImg}
           style={{
             display: 'block',
             margin: 'auto',
             marginTop: "3rem",
-            maxWidth: "100%",
+            maxWidth: "80%",
             height: "auto",
             border: "1px solid var(--green-200)",
-            borderRadius: "10px",
-            boxShadow: "0 4px 12px rgba(20, 129, 71, 0.1)"
+            borderRadius: "12px",
+            boxShadow: "0 4px 12px rgba(20, 129, 71, 0.1)",
+            background: "var(--green-50)"
+
           }}
         />
 
@@ -91,7 +93,7 @@ const ACI = () => {
         <button
           className='btn btn-primary-dark-border'
           style={{ display: "block", margin: "auto", marginTop: "4rem" }}>
-              See ZenNotes
+              See ZenNotesImg
         </button>
           </Link> 
       </div>
@@ -480,7 +482,7 @@ const SimpleWorkflow = () => {
  */
 function Benefits() {
   const iconsAlt = [
-    [WaveformIco, "ZenNotes app icon for AI-Powered therapy notes"],
+    [WaveformIco, "ZenNotesImg app icon for AI-Powered therapy notes"],
     [VideoIcon, "Video call icon for telehealth consultations"],
     [ChatIcon, "Chat message icon for therapist-client communication"],
     [CreditCardIcon, "Credit card icon for secure online payments" ],
@@ -768,7 +770,7 @@ const Hero = () => {
   //       <Image
   //         src={WorkflowDashImg}
   //         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-  //         alt='AI-Powered therapy notes on ZenNotes platform'
+  //         alt='AI-Powered therapy notes on ZenNotesImg platform'
   //         priority
   //         style={{
   //           maxWidth: "100%",

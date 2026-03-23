@@ -611,14 +611,16 @@ section.route-section {
 
     .image-container {
       border-radius: 8px;  
-      margin: 20px;
-      padding: 20px;
-      background: var(--green-100);
+      // margin: 20px;
+      padding: 12px;
+      background: var(--green-50);
+
       img {
         width: 100%;
         height: auto;
         display: block;
         border-radius: inherit;
+        max-width: 80%;
       } 
 
       @media screen and #{$mq-large} {
