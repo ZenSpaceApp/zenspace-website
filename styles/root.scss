@@ -27,9 +27,9 @@
 
   --color--border--1: #47474720;
   --color--complimentary: #f5f6fa;
-  --font--display: 'Lora', sans-serif;
-  --font--main: Inter, sans-serif;
-  --font--alt: Syne;
+  --font--display: var(--font-lora), sans-serif;
+  --font--main: var(--font-inter);
+  --font--alt: var(--font-syne), serif;
   
   --type--h1: clamp(2rem, 4vw, 4rem);;
   --type--h2: calc(2rem + 0.3vw);

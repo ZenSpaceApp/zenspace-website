@@ -26,7 +26,7 @@ import Audit from '@/public/images/icons/audit.svg';
 import SOAPNoteTab from '@/public/images/soapnote_tab.png';
 import CodingTab from '@/public/images/coding_tab.png';
 import PublicNoteTab from '@/public/images/publicnote_tab.png';
-import BillingTab from '@/public/images/superbill_tab.png';
+import BillingTab from '@/public/images/superbill_final.png';
 
 
 
@@ -371,12 +371,6 @@ export default function ZenNotesPage() {
 
       {/* ── Billing Section ── */}
       <section className={styles.billingSection}>
-         <div className='u-textcenter'>
-              <h2>The End of Billing Fatigue</h2>
-              <p>
-                From Session to Superbill in 90 Seconds.
-              </p>
-            </div>
         <div className={styles.billingInner}>
           <Image 
             src={BillingTab}
@@ -385,40 +379,28 @@ export default function ZenNotesPage() {
             width={0}
             className={styles.imgHero}
             style={{
-              display: "block",
-              margin: "0 auto",
-              maxWidth: "100%",
-              height: "auto",
-              borderRadius: "8px",
-              borderBottomLeftRadius: "0",
-              borderBottomRightRadius: "0",
-              // boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-              border: "1px solid var(--green-300)",
               // borderBottom: "none", 
               // background: "var(--green-500)",
               // background: "linear-gradient(var(--green-200) 0%, var(--green-400) 50%, var(--bg--alt--1) 100%)"
             }}
           />
-            
+          <div style={{display: "flex", justifyContent: "center", flexDirection: "column",  maxWidth: "500px", margin: "0 auto"}}>
+            <div>
+              <h2>The End of Billing Fatigue</h2>
+              <p>
+                From Session to Superbill in 90 Seconds.
+              </p>
+            </div>
             <div className={styles.billingList}>
               {BILLING_BULLETS.map((b, idx) => (
                 <div key={idx}>
-                  {/* <Image
-                    src={b.i}
-                    alt={`${b.h} icon`}
-                    height={22}
-                    width={22}
-                    style={{
-                      marginBottom: '1rem',
-                      display: 'block'
-                    }}
-                  /> */}
                 <b>{b.h}. </b> <br/>
                 {b.b}
                 </div>
               ))}
             </div>
           </div>
+        </div>
       </section>
     
       {/* ── FAQ ── */}

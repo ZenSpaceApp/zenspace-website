@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import { useState } from 'react';
 import Link from 'next/link';
 
-import ZenNotesDashImg from '@/public/images/zen-platform@2x.png';
+import ZenNotesDashImg from '@/public/images/therapy-notes.webp';
 import CrossDevSyncImg from '@/public/images/home/cross-device-sync@2x.png';
 import PersonalizedTherapyImg from '@/public/images/home/therapist-invites@2x.png';
 import CollabMoodTrackingImg from '@/public/images/home/mood-tracking-cropped@2x.png';

@@ -774,14 +774,19 @@
   }
   
   .imgHero {
-    width: 90%;
+    width: 70%;
     height: auto;
     max-width: 100%;
     display: block;
     margin: 3rem auto 6rem;
+    border: 2px solid linear-gradient(180deg,#f8f8f8, var(--green-900), var(--green-50));
+    border: 1px solid var(--color--border--1);
+    box-shadow: 0 24px 64px rgba(0,0,0,0.1);
+    border-radius: 8px;
+
 
       @media (max-width: 540px) {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin: 2rem auto; 
     }
@@ -839,7 +844,7 @@
     max-width: 100%;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 2rem;
+    // margin-top: 2rem;
   }
 
   div {

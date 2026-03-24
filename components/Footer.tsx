@@ -65,9 +65,9 @@ export default function Footer() {
           <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <h5 className="text-dark  mb-3">Resources</h5>
             <ul className="list-unstyled footer-list mt-2">
-              <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
-              <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
-              <li><a href="/hipaa-compliance" className="text-muted">HIPAA Compliance</a></li>
+              <li><a href="/pricing" className="text-muted">Pricing</a></li>
+              <li><a href="/security" className="text-muted">Security</a></li>
+              <li><a href="/hipaa-compliance" className="text-muted">HIPAA</a></li>
               {/* <li><a href="/cookie-prefs" className="text-muted">Cookie Preferences</a></li>  */}
             </ul>
           </div>
