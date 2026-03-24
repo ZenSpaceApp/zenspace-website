@@ -80,7 +80,7 @@ export default function FAQ() {
         <div>
           <div>
             <h2 className="u-textcenter">FAQ</h2>
-            <p className="u-textcenter text-muted lead">Have questions? We have answers.</p>
+            <p className="u-textcenter">Have questions? We have answers.</p>
           </div>
           <div className='Grid-cell content'>    
           {faqs.map((faq, idx) => (

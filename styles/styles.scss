@@ -1,248 +1,108 @@
-// @import 'bootstrap/dist/css/bootstrap.css';
+/* 1. CONFIGURATION: No CSS output here */
+@import './root'; // Move your CSS variables here
+@import './variables'; // If you still use $ variables
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
-/* // Breakpoints */
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-
-// Font-Size
-// $base-font-size: calc(0.5vw + 0.1em);
-$base-font-size: 1rem;
-
-// Line-Height
-$base-line-height: 1.4;
-$header-line-height: 1.25;
-
-
-// https://getbootstrap.com/docs/4.3/content/typography/#responsive-font-sizes
-$enable-responsive-font-sizes: true;
-
-
-// $color-background: #F6f7fb;
-// $color-background: #fafafa;
-$color-background-light: #e5f5f5;
-$color-background-secondary: #00000005;
-$color-background-dark: #d8d8d8;
-
-// $color-main: var(--bg--alt--2) !important;
-// $color-main: #212529 !important;
-$color-main: var(--green-900) !important;
-// $color-background: var(--bg--body--main);
-$color-dominant: #0080ff;
-$color-active: #3e566e;
-$color-link: #ffffff;
-$color-link: #474747;
-
- 
-$button-height: 27px;
-$button-width: 35px;
-$border-color: #00000010;
-
+/* 2. REFINED BREAKPOINTS (Bootstrap 5 compatible) */
+$mq-medium: "(min-width: 768px)";
+$mq-large:  "(min-width: 1024px)";
+$mq-xlarge: "(min-width: 1366px)";
+$mq-xxlarge: "(min-width: 1920px)";
 
 @mixin app-container {
-  margin: 0 4%;
+  // margin: 0 4%;
   
-  @media #{$mq-large} {
-    margin: 0 8%;
-  }
+  // @media #{$mq-large} {
+  //   margin: 0 8%;
+  // }
 
-  @media #{$mq-xlarge} {
-    margin: 0 12%;
-  }
+  // @media #{$mq-xlarge} {
+  //   margin: 0 12%;
+  // }
 
-  @media #{$mq-xxlarge} {
-    margin: 0 18%;
-  }
+  // @media #{$mq-xxlarge} {
+  //   margin: 0 18%;
+  // }
 }
 
+/* 3. BOOTSTRAP (Load before your custom overrides) */
+@import "~bootstrap/scss/bootstrap";
+@import "_breakpoints";
+/* 4. MODERN RESET & GLOBAL BASE */
+* { box-sizing: border-box; }
 
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
 }
 
-
 body {
   margin: 0;
-  font-family: 'Inter', 'Open Sans', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  font-weight: 500 !important;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  margin-top: 80px; // Navbar space
   position: relative;
-  margin-top: 80px; // to accomodate navbar.
-  // background: $color-background !important;
-
-  color: var(--color--grey2) !important;
-  position: absolute;
-  font-size: $base-font-size*0.8;
+  
+  // Use the variables from layout.tsx
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 525; // Using your custom variable weight
+  font-size: 1rem;
+  line-height: 1.4 !important;
   letter-spacing: -0.02em;
+  color: var(--green-900) !important; // Using your custom token
+  
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 
-  @media #{$mq-medium} {
-    // line-height: $base-line-height*1.1;
-    font-size: $base-font-size*0.9;
-  }
-
-  @media #{$mq-large} {
-    // font-size: $base-font-size*1.1 !important;
-  }
+  @media #{$mq-medium} { font-size: 0.9rem; }
 }
 
-* {
-  box-sizing: border-box;
+/* 5. THEMED COMPONENTS (Cleaned of !important) */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--green-950);
 }
-
-.primary-text {
-  color: #0080ff !important;
-  font-weight: 500;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.lead {
-  // font-size: calc(0.5vw + 0.5em) !important;
-  // font-size: 21px !important;
-  font-size: 1.3rem !important;
-  margin: 10px 0 15px;
-  font-weight: 500 !important;
-  // opacity: 0.8;
-  // line-height: 1.6;
-
-  &.narrow {
-    @media #{$mq-medium} {
-      width: 70%;
-      margin: auto;
-    }
-  }
-
-  &.subheading {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #373836;
-  }
-}
-
-// iconscout icon styling
-svg {
-  height: 2.2rem;
-  width: auto;    
-  fill: var(--secondary);
-}
-
-
-
-.borders {
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
-}
-
-.underline {
-  border-bottom: 2px solid;
-}
-
-.translucent-veneer {
-  position: absolute;
-  top: 0;
-  right:0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 128, 255, 0.35);
-  // background: #003f8410;
-  border-radius: 20px;
-}
-
-.right-aligned {
-  float: right;
-}
-
-.margin-t100  {
-  margin-top: 100px;
-}
-
-.margin-t50  {
-  margin-top: 50px;
-}
-
-
-a {
-  color: #373836 !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-
-
-.u-textcenter {
-  text-align: center;
-}
-
-.container {
-  // margin: 0 4% !important;
-  display: block !important;
-  margin: 0 5% !important;
-  width: 90%!important;
-
-  @media #{$mq-large} {
-    margin: 0 auto !important;
-    width: 86% !important;
-    max-width: 1240px !important;
-  }
-
-  @media #{$mq-xlarge} {
-    max-width: 1340px;
-  }
-}
-
-
 
 h1 {
   font-size: clamp(2.25rem, 4vw, 4rem) !important;
-  font-family: var(--font--display) !important;
-  letter-spacing: -0.03em !important;
-  font-weight: 400 !important;
-  line-height: 1.1 !important;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-family: var(--font-lora), sans-serif; // Consistent display font
 }
 
 h2 {
   font-size: clamp(1.75rem, 3vw, 2.5rem) !important;
-  font-family: var(--font--display) !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.03em !important;
+  letter-spacing: -0.03em;
+  font-family: var(--font-lora), sans-serif; // Consistent display font
 }
 
 h3 {
-  font-size: clamp(1.15rem, 2vw, 1.35rem) !important;
-  font-family: var(--font--main);
-  line-height: 1.5;
-  font-weight: 600 !important;
+    /* Starts at 1.25rem (20px), scales to 1.75rem (28px) */
+  font-size: clamp(1.25rem, 2.5vw, 1.35rem) !important; 
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-h5 {
-  font-weight: 350 !important;
+/* Updated Container to work with modern Bootstrap */
+.container {
+  max-width: 1240px !important;
+  margin: 0 auto;
+  padding: 0 5%;
+  
+  @media #{$mq-xlarge} {
+    max-width: 1340px !important;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  color: var(--green-950) !important;
+/* 6. UTILITIES (Keep these lean) */
+.primary-text { color: var(--color--grey2); font-weight: 500; }
+.u-textcenter { text-align: center; }
+.right-aligned { float: right; }
+
+svg {
+  height: 2.2rem;
+  width: auto;
+  fill: var(--secondary);
 }
 
 button {
@@ -264,8 +124,8 @@ button {
 
   &.outline {
     background: transparent;
-    color: $color-main !important;
-    border: 2px solid $color-dominant;
+    // color: $color-main !important;
+    // border: 2px solid $color-dominant;
   }
 }
 
@@ -1333,7 +1193,7 @@ footer {
         margin-right: 10px;
       }
       .full-name {
-        color: $color-dominant;
+        color: var(--color--grey2);
         font-weight: 700;
         padding-right: 20px;
       }
@@ -1380,8 +1240,8 @@ footer {
   position: fixed;
   top: 24px;
   right: 25px;
-  height: $button-height;
-  width: $button-width;
+  // height: $button-height;
+  // width: $button-width;
   cursor: pointer;
   transition: opacity .25s ease, ;
   z-index: 9999;
@@ -1389,23 +1249,23 @@ footer {
   &.active {
     .top {
       transform: translateY(11px) translateX(0) rotate(45deg);
-      -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-      background: $color-active;
+      // -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+      // background: $color-active;
     }
     .middle {
       opacity: 0;
-      background: $color-active;
+      // background: $color-active;
     }
   
     .bottom {
       transform: translateY(-11px) translateX(0) rotate(-45deg);
       -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: $color-active;
+      // background: $color-active;
     }
   }
            
   span {
-    background: $color-main;
+    // background: $color-main;
     height: 2px;
     width: 100%;
     position: absolute;
@@ -2607,7 +2467,7 @@ footer {
 }
 
 .appts-wrapper {
-  @include app-container();
+  // @include app-container();
 
   display: grid;						
   grid-template-columns: 1fr;
@@ -2661,7 +2521,7 @@ footer {
 
   .topbar {
     grid-area: date-head;
-    background: $color-background-light;
+    background: var(--green-50);
     display: grid;
     grid-template-columns: 1fr;
     border-bottom: 1px solid #97979750;
@@ -2739,7 +2599,7 @@ footer {
 
   .appt-list {
     grid-area: appointments;
-		background: $color-background-secondary;
+		background: var(--bg--alt--1);
     padding: 15px;
     overflow-y: auto;
     padding-bottom: 40px;
@@ -2749,7 +2609,7 @@ footer {
       box-shadow: 0 2px 4px 0 rgba(239,224,224,0.50);
       border-radius: 12px;
       
-      background-color: $color-background-secondary;
+      background-color: var(--bg--alt--1);
       padding: 10px;
       margin: auto;
       margin-bottom: 15px;
@@ -2820,7 +2680,7 @@ footer {
     }
     
     .normal {
-      background-color: $color-background-secondary;
+      background-color: var(--bg--alt--1);
       color: #222222;
     }
   }
@@ -3214,7 +3074,7 @@ footer {
 
 .patients-wrapper {
 
-  @include app-container();
+  // @include app-container();
   border: 1px solid #97979750;
   border-radius: 4px;
   background: #fafafa;
@@ -3234,7 +3094,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 3fr;
     // padding: 10px;
-    background: $color-background-light;
+    background: #f8f8f8;
     height: 60px;
     align-items: center;
 
@@ -3257,7 +3117,7 @@ footer {
 
   .labels-bar {
     padding: 15px 20px  !important;
-    background-color: $color-background-light;
+    background-color: #f8f8f8;
     border-bottom: 2px solid #97979725;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr .25fr;
@@ -3319,7 +3179,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: $color-background-light;
+    background: #f8f8f8;
     height: 60px;
     // border-bottom: 1px solid $border-color;
     // position: absolute;
@@ -3578,7 +3438,7 @@ footer {
       border-radius: 25px;  
       font-size: 14px;
       height: 40px;
-      border-color: $color-main;
+      border-color: var(--green-950);
       // padding: 16px 12px;
     }
   }
@@ -4522,7 +4382,7 @@ input::-webkit-inner-spin-button {
       font-size: 1.1rem;
       font-weight: 600;
       line-height: 160%;
-      color: var(--color--grey3);
+      color: var(--color--grey2);
     }
 
     .expandable-icon {
@@ -4553,10 +4413,13 @@ input::-webkit-inner-spin-button {
       .faq-paragraph {
         transform-origin: 50% 0;
         margin-bottom: 0;
-        font-size: 14px;
+        // font-size: 15px;
         padding-top: 16px;
         padding-bottom: 12px;
-        font-size: 1.1rem;
+        color: var(--color--grey2);
+        // font-weight: 550;
+        // opacity: 0.7;
+        line-height: 1.6;
       }
     }
   }
@@ -4855,3 +4718,4 @@ input::-webkit-inner-spin-button {
 @import './_components';
 @import './_price';
 @import './contact';
+@import './breakpoints';
