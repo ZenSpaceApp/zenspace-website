@@ -331,7 +331,7 @@ export default function ZenNotesPage() {
       {/* ── Privacy Section ── */}
       <section className={styles.privacySection}>
         <div className={styles.privacyInner}>
-          <div className={styles.privacyPhone}>
+          <div className={` ${styles.privacyPhone}`}>
             <div className={styles.phoneWrapper}>
               <WaveformIcon />
               {/* <span style={{ color: '#555', fontSize: '0.7rem' }}>Phone UI — Calling screen</span> */}

@@ -77,14 +77,10 @@ export default function FAQ() {
 
   return <section id="faqs">
       <div className='container'>
-        <div className='Grid Grid--full small-Grid--1of2' >
-          <div className='Grid-cell' >
-            <h2 className="u-textcenter display-4 bold-accent">FAQ.</h2>
-            {/* <div className='u-textcenter'>
-            Some of the Most Asked Questions (but don&apos;t hesitate to <a className="anchor underline" href="mailto:info@ZenspaceApp.com" target="_blank">
-            email 
-          </a> us if you have a question)
-            </div> */}
+        <div>
+          <div>
+            <h2 className="u-textcenter">FAQ</h2>
+            <p className="u-textcenter text-muted lead">Have questions? We have answers.</p>
           </div>
           <div className='Grid-cell content'>    
           {faqs.map((faq, idx) => (
@@ -109,16 +105,6 @@ export default function FAQ() {
             </div>
           ))}
           </div>
-      </div>
-      <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem"}}>
-        Read a detailed version of our 
-        <span>
-          <Link
-            style={{marginLeft: "4px", borderBottom: "2px solid"}}
-            href="https://ZenspaceApp.notion.site/FAQs-ab76283d23394fe3be19624835214574">
-            FAQ.
-          </Link>
-        </span>  
       </div>
     </div>
   </section>

@@ -39,17 +39,12 @@ export default function ZenNotesFAQ() {
 
   return <section id="faqs">
       <div className='container'>
-        <div className='Grid Grid--full small-Grid--1of2' >
-          <div className='Grid-cell' >
-          <h2 className="u-textcenter"
-            style={{
-              marginBottom: "3rem",
-              fontWeight: "700"
-            }}>
+        <div>
+          <h2 className="u-textcenter">
             Privacy and Trust Questions?
           </h2>
-          </div>
-          <div className='Grid-cell content'>    
+
+          <div>
           {faqs.map((faq, idx) => (
             <div
               className="expandable-single-faq"

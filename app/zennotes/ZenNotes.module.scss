@@ -79,7 +79,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 10rem 1.5rem 2rem;
+    padding: 10rem 1.5rem 6rem;
   }
 }
 
@@ -206,7 +206,14 @@
   // border-bottom: 1px solid var(--color--border--1);
 
   text-align: center;
+  
   padding: 10rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 6rem 1.5rem;
+  }
+
+
 
 
   .trustHeading {
@@ -457,7 +464,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 3rem 20px;
+    padding: 6rem 1.5rem;
     gap: 24px;
   }
 }
@@ -584,6 +591,10 @@
   background:linear-gradient(#1a1c1b, black);
   padding: 10rem 2.5rem;
 
+  @media (max-width: 768px) {
+    padding: 6rem 1.5rem;
+  }
+
   .privacyInner {
     max-width: 1200px;
     margin: 0 auto;
@@ -602,6 +613,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 540px) {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: none;
+  }
 
   .phoneWrapper {
     width: 260px;
@@ -688,7 +705,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
 }
 
@@ -747,7 +764,7 @@
   // text-align: center;
 
   @media (max-width: 768px) {
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
 
   }
   

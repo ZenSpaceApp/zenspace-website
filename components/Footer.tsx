@@ -37,9 +37,9 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row" style={{ padding: "4rem 0" }}>
+        <div className="row" >
           <div className="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
-            <span style={{fontSize: "1.5rem"}}>
+            <span style={{fontSize: "1.25rem"}}>
               <ZenspaceLogo />
             </span>
           </div>

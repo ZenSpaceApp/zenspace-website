@@ -214,7 +214,7 @@ a {
 
 
 h1 {
-  font-size: clamp(2.5rem, 4vw, 4rem) !important;
+  font-size: clamp(2.25rem, 4vw, 4rem) !important;
   font-family: var(--font--display) !important;
   letter-spacing: -0.03em !important;
   font-weight: 400 !important;
@@ -222,14 +222,14 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
+  font-size: clamp(1.75rem, 3vw, 2.5rem) !important;
   font-family: var(--font--display) !important;
   font-weight: 400 !important;
   letter-spacing: -0.03em !important;
 }
 
 h3 {
-  font-size: var(--type--h3) !important;
+  font-size: clamp(1.25rem, 2vw, 1.75rem) !important;
   font-family: var(--font--main);
   line-height: 1.5;
   font-weight: 700 !important;
@@ -4451,10 +4451,16 @@ input::-webkit-inner-spin-button {
 }
 
 #faqs {
-  padding: 160px 0;
-  // background: var(--bg--alt--1);
-  background: white;
+  padding: 6rem 0;
+  background: var(--bg--alt--1);
   
+  @media screen and #{$mq-large} {
+    padding: 10rem 40px;
+  }
+
+  h2 {
+    // margin-bottom: 3rem;
+  }
   .psa {
     font-size: 1rem;
     padding: 12px; 
@@ -4474,6 +4480,13 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  .container {
+    max-width: 768px !important;
+    padding: 2rem 10px !important;
+
+    margin-top: 3rem;
+  }
+
   .Grid-cell {
     margin-top: 2rem;
     &.content {
@@ -4491,7 +4504,13 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 
     border-top: 0.02rem solid;  
-    padding: 20px 25px;
+
+    padding: 10px;
+
+    @media screen and #{$mq-large} {
+      padding: 20px 10px;
+    }
+    
 
     &:last-child {
       border-bottom: none;  
