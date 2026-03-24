@@ -203,11 +203,11 @@ a {
   @media #{$mq-large} {
     margin: 0 auto !important;
     width: 86% !important;
-    max-width: 1340px !important;
+    max-width: 1240px !important;
   }
 
   @media #{$mq-xlarge} {
-    max-width: 1340px !important;
+    max-width: 1340px;
   }
 }
 
