@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
             
           <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 ">
-            <h5 className="text-dark  mb-4">Solutions</h5>
+            <h5 className="text-dark  mb-3">Solutions</h5>
             <ul className="list-unstyled footer-list mt-2">
               <li><a href="/#for-clients" className="text-muted">Clients</a></li>
               <li><a href="/therapists" className="text-muted">Therapists</a></li>
@@ -55,15 +55,15 @@ export default function Footer() {
             </ul>
           </div>    
           <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-          <h5 className="text-dark  mb-4">Company</h5>
+          <h5 className="text-dark  mb-3">Company</h5>
             <ul className="list-unstyled footer-list mt-2">
               <li><a href="/" className="text-muted">About Us</a></li>
               <li><a href="/" className="text-muted">Careers</a></li>
-              <li><a href="/planet-health" className="text-muted">Planet Health</a></li>
+              {/* <li><a href="/planet-health" className="text-muted">Planet Health</a></li> */}
             </ul>
           </div>
           <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <h5 className="text-dark  mb-4">Resources</h5>
+            <h5 className="text-dark  mb-3">Resources</h5>
             <ul className="list-unstyled footer-list mt-2">
               <li><a href="/pricing" className="text-muted">Pricing and Plans</a></li>
               <li><a href="/security" className="text-muted">Data Security and Privacy</a></li>
@@ -72,9 +72,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-lg-2 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <h5 className="text-dark mb-4">Support</h5>
+            <h5 className="text-dark mb-3">Support</h5>
               <ul className="list-unstyled footer-list mt-2">
-                {/* <li><a href="/help" className="text-muted">Help</a></li> */}
+                <li><a href="/help" className="text-muted">Help</a></li>
               <li><a href="/contact-us" className="text-muted">Contact Us</a></li>
               <li><a href="./faqs" className="text-muted">FAQ</a></li>
               </ul>

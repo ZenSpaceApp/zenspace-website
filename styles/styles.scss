@@ -229,10 +229,10 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2vw, 1.75rem) !important;
+  font-size: clamp(1.15rem, 2vw, 1.35rem) !important;
   font-family: var(--font--main);
   line-height: 1.5;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 h5 {
@@ -4452,7 +4452,7 @@ input::-webkit-inner-spin-button {
 
 #faqs {
   padding: 6rem 0;
-  background: var(--bg--alt--1);
+  // background: var(--green-50);
   
   @media screen and #{$mq-large} {
     padding: 10rem 40px;
@@ -4482,8 +4482,6 @@ input::-webkit-inner-spin-button {
 
   .container {
     max-width: 768px !important;
-    padding: 2rem 10px !important;
-
     margin-top: 3rem;
   }
 

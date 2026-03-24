@@ -97,7 +97,7 @@ export default function PricingFAQ() {
       <div className='container'>
         <div className='Grid Grid--full small-Grid--1of2' >
           <div className='Grid-cell' >
-            <h2 className="u-textcenter display-4" style={{marginBottom: "64px"}}>Pricing Questions?</h2>
+            <h2 className="u-textcenter display-4" style={{marginBottom: "2rem"}}>Pricing Questions?</h2>
           </div>
           <div className='Grid-cell content'>    
           {faqs.map((faq, idx) => (
@@ -123,7 +123,7 @@ export default function PricingFAQ() {
           ))}
           </div>
         </div>
-        <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem"}}>
+        {/* <div style={{ display: "flex", margin: "auto", justifyContent: 'center', paddingTop: "2rem"}}>
         Read a detailed version of our 
         <span>
           <Link
@@ -132,7 +132,7 @@ export default function PricingFAQ() {
             Pricing and Plans.
           </Link>
         </span>  
-      </div>
+      </div> */}
       </div>
     </section>
 }

@@ -40,7 +40,7 @@ export default function ZenNotesFAQ() {
   return <section id="faqs">
       <div className='container'>
         <div>
-          <h2 className="u-textcenter mb-4">
+          <h2 className="u-textcenter mb-6" style={{marginBottom: "32px"}}>
             Privacy and Trust Questions?
           </h2>
 

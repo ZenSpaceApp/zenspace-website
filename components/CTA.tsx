@@ -39,7 +39,7 @@ export const CTA = () => {
       </div>
       <div className="content">
         <span className="title">
-          Ready to Transform Your Practice?
+          Ready to transform your practice?
         </span>
         <p>
           
